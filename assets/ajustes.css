@@ -1,0 +1,496 @@
+/* Ajustes feitos sobre o design original. Carregado por último. */
+
+/* Hero: foto nova, textos intactos */
+.elementor-8746 .elementor-element.elementor-element-177b9b0:not(.elementor-motion-effects-element-type-background) {
+  background-color: #000;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 80%, #000 100%), url("hero.webp");
+  background-size: 100% 100%, cover;
+  background-position: top left, right center;
+  background-repeat: no-repeat;
+}
+
+/* Hero: logo Perennia e título como h1 com o mesmo estilo do texto original */
+.elementor-8746 .elementor-element.elementor-element-6625968 img {
+  display: block;
+  width: 230px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Logo da hero recomposta: símbolo alinhado à esquerda com o início do nome.
+   Recortes de logo-perennia.png (496x317): símbolo x183 y15 133x173, nome x16 y219 466x84. */
+.pn-logo {
+  --s: calc(230 / 466);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: calc(30px * var(--s));
+}
+
+.pn-logo span {
+  display: block;
+  background: url("logo-perennia.png") no-repeat;
+  background-size: calc(496px * var(--s)) calc(317px * var(--s));
+}
+
+.pn-logo__marca {
+  width: calc(133px * var(--s));
+  height: calc(173px * var(--s));
+  background-position: calc(-183px * var(--s)) calc(-15px * var(--s)) !important;
+}
+
+.pn-logo__nome {
+  width: calc(466px * var(--s));
+  height: calc(84px * var(--s));
+  background-position: calc(-16px * var(--s)) calc(-219px * var(--s)) !important;
+}
+
+@media (max-width: 767px) {
+  .pn-logo {
+    --s: calc(190 / 466);
+  }
+}
+
+/* Botão da hero em dourado claro */
+.elementor-8746 .elementor-element.elementor-element-a4b1ba5 .elementor-button,
+.elementor-8746 .elementor-element.elementor-element-a4b1ba5 .elementor-button:hover,
+.elementor-8746 .elementor-element.elementor-element-a4b1ba5 .elementor-button:focus {
+  background-color: transparent;
+  background-image: linear-gradient(180deg, #f8e7c4 0%, #ecd09b 50%, #dbb677 100%);
+  color: #2b1d0e;
+  box-shadow: 0 10px 24px -12px rgba(219, 182, 119, 0.7);
+}
+
+.elementor-8746 .elementor-element.elementor-element-a4b1ba5 .elementor-button:hover {
+  background-image: linear-gradient(180deg, #fbefd6 0%, #f1d9aa 50%, #e2c087 100%);
+}
+
+.elementor-8746 .elementor-element.elementor-element-43b7718 h1 {
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  letter-spacing: inherit;
+}
+
+.elementor-8746 .elementor-element.elementor-element-a4b1ba5 .elementor-button-text {
+  text-transform: uppercase;
+}
+
+/* Tipografia da hero no estilo da referência (Lato, título justo, destaque em dourado degradê) */
+.elementor-8746 .elementor-element.elementor-element-43b7718 h1 {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.12;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+}
+
+.elementor-8746 .elementor-element.elementor-element-43b7718 h1 span,
+.elementor-8746 .elementor-element.elementor-element-43b7718 h1 strong {
+  font-weight: 400;
+  background: linear-gradient(180deg, #f7dcae 0%, #e2b273 55%, #c98f4a 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.elementor-8746 .elementor-element.elementor-element-3fb1be2 p {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.elementor-8746 .elementor-element.elementor-element-43b7718 h1 {
+  margin-bottom: 18px;
+}
+
+.elementor-8746 .elementor-element.elementor-element-a4b1ba5 .elementor-button {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+  padding: 20px 56px;
+}
+
+.elementor-8746 .elementor-element.elementor-element-a4b1ba5 .elementor-button-text::after {
+  content: "\2197";
+  margin-left: 12px;
+  font-weight: 400;
+}
+
+@media (max-width: 767px) {
+  .elementor-8746 .elementor-element.elementor-element-3fb1be2 p {
+    font-size: 17px;
+  }
+
+  .elementor-8746 .elementor-element.elementor-element-a4b1ba5 .elementor-button {
+    padding: 18px 20px;
+    font-size: 15px;
+  }
+}
+
+/* Seção "Quem é a Perennia": fundo claro, texto e vídeo */
+.pn-sobre {
+  --pn-creme: #f5efe6;
+  --pn-verde: #10221f;
+  --pn-texto: #4a4740;
+  --pn-ouro: #a8742a;
+  background: #faf8f5 url("fundo-sobre.webp") left center / cover no-repeat;
+  padding: 110px 20px 120px;
+}
+
+.pn-sobre__conteudo {
+  max-width: 780px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.pn-sobre__selo {
+  margin: 0 0 18px;
+  font-family: "Lato", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--pn-ouro);
+}
+
+.pn-sobre__titulo {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-size: clamp(28px, 2.4vw + 15px, 52px);
+  text-wrap: balance;
+  font-weight: 400;
+  line-height: 1.12;
+  letter-spacing: -0.01em;
+  color: var(--pn-verde);
+}
+
+.pn-sobre__titulo span {
+  font-weight: 400;
+  background: linear-gradient(180deg, #d9a35b 0%, #b5803d 55%, #94622a 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.pn-sobre__subtitulo {
+  margin: 24px 0 0;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.65;
+  color: var(--pn-texto);
+}
+
+.pn-video {
+  position: relative;
+  max-width: 780px;
+  margin: 56px auto 0;
+  aspect-ratio: 16 / 9;
+  border-radius: 14px;
+  overflow: hidden;
+  background: radial-gradient(circle at 30% 20%, #1d3b37 0%, #10221f 70%);
+  box-shadow: 0 30px 60px -30px rgba(16, 34, 31, 0.55);
+}
+
+.pn-video video,
+.pn-video iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  object-fit: cover;
+}
+
+/* Capa-modelo do vídeo: foto da hero, informações à esquerda */
+.pn-video__capa {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  padding: 0 7%;
+  background:
+    linear-gradient(90deg, rgba(16, 34, 31, 0.97) 0%, rgba(16, 34, 31, 0.85) 34%, rgba(16, 34, 31, 0) 62%),
+    url("hero.webp") right center / cover no-repeat;
+}
+
+.pn-video__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 44%;
+}
+
+.pn-video__logo {
+  display: block;
+  width: 150px;
+  height: auto;
+  margin-bottom: 26px;
+}
+
+.pn-video__titulo {
+  margin: 0 0 28px;
+  font-family: "Lato", sans-serif;
+  font-size: 38px;
+  font-weight: 400;
+  line-height: 1.12;
+  color: #f5efe6;
+}
+
+.pn-video__titulo span {
+  background: linear-gradient(180deg, #f7dcae 0%, #e2b273 55%, #c98f4a 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.pn-video__botao {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  font-family: "Lato", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(245, 239, 230, 0.9);
+}
+
+.pn-video__play {
+  position: relative;
+  flex-shrink: 0;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: linear-gradient(#fccc9c, #d17f20);
+  box-shadow: 0 0 0 10px rgba(252, 204, 156, 0.15);
+}
+
+.pn-video__play::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 54%;
+  transform: translate(-50%, -50%);
+  border-style: solid;
+  border-width: 14px 0 14px 22px;
+  border-color: transparent transparent transparent #10221f;
+}
+
+
+@media (max-width: 767px) {
+  .pn-sobre {
+    padding: 72px 20px 80px;
+  }
+
+  .pn-sobre__titulo {
+    font-size: clamp(28px, 7.5vw, 34px);
+  }
+
+  .pn-sobre__subtitulo {
+    font-size: 17px;
+  }
+
+  .pn-video {
+    margin-top: 40px;
+    border-radius: 10px;
+  }
+
+  .pn-video__capa {
+    padding: 0 6%;
+    background:
+      linear-gradient(90deg, rgba(16, 34, 31, 0.97) 0%, rgba(16, 34, 31, 0.8) 40%, rgba(16, 34, 31, 0) 70%),
+      url("hero.webp") 70% center / cover no-repeat;
+  }
+
+  .pn-video__info {
+    max-width: 52%;
+  }
+
+  .pn-video__logo {
+    display: none;
+  }
+
+  .pn-video__titulo {
+    margin-bottom: 14px;
+    font-size: 20px;
+  }
+
+  .pn-video__botao {
+    gap: 10px;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+  }
+
+  .pn-video__play {
+    width: 44px;
+    height: 44px;
+    box-shadow: 0 0 0 6px rgba(252, 204, 156, 0.15);
+  }
+
+  .pn-video__play::after {
+    border-width: 8px 0 8px 12px;
+  }
+}
+
+/* Desktop: hero na proporção da foto, texto antes da primeira mulher */
+@media (min-width: 1280px) {
+  .elementor-8746 .elementor-element.elementor-element-177b9b0 {
+    --min-height: 46.9vw;
+  }
+
+  /* Texto encostado à esquerda: sem o contêiner centralizado de 1140px, recuo de 11vw */
+  .elementor-8746 .elementor-element.elementor-element-177b9b0 > .e-con-inner {
+    max-width: none;
+    margin: 0;
+    padding-left: 11vw;
+  }
+
+  /* Coluna termina antes da primeira mulher (~43vw), descontando o recuo */
+  .elementor-8746 .elementor-element.elementor-element-177b9b0 > .e-con-inner > :first-child {
+    max-width: min(calc(32vw - 20px), 470px);
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1365px) {
+  .elementor-8746 .elementor-element.elementor-element-177b9b0 > .e-con-inner {
+    padding-left: 9vw;
+  }
+
+  .elementor-8746 .elementor-element.elementor-element-177b9b0 > .e-con-inner > :first-child {
+    max-width: calc(36vw - max((100vw - 1140px) / 2, 10px));
+  }
+}
+
+/* Tablet e notebook pequeno: foto em cima, texto embaixo */
+@media (min-width: 768px) and (max-width: 1279px) {
+  .elementor-8746 .elementor-element.elementor-element-177b9b0 {
+    --min-height: 0px;
+    --padding-top: 47vw;
+    --padding-bottom: 30px;
+  }
+
+  .elementor-8746 .elementor-element.elementor-element-177b9b0:not(.elementor-motion-effects-element-type-background) {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 32vw, #000 46.9vw), url("hero.webp");
+    background-size: 100% 100%, 100% auto;
+    background-position: top left, top center;
+  }
+}
+
+@media (max-width: 767px) {
+  .elementor-8746 .elementor-element.elementor-element-177b9b0 {
+    --padding-top: 335px;
+  }
+
+  .elementor-8746 .elementor-element.elementor-element-6625968 img {
+    width: 190px;
+  }
+
+  .elementor-8746 .elementor-element.elementor-element-177b9b0:not(.elementor-motion-effects-element-type-background) {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 200px, #000 340px), url("hero.webp");
+    background-size: 100% 100%, auto 340px;
+    background-position: top left, 88% top;
+  }
+}
+
+/* Hero: letras maiores, logo menor */
+.pn-logo {
+  --s: calc(180 / 466);
+}
+
+.elementor-8746 .elementor-element.elementor-element-43b7718 h1 {
+  font-size: 48px;
+}
+
+.elementor-8746 .elementor-element.elementor-element-3fb1be2 p {
+  font-size: 19px;
+}
+
+.elementor-8746 .elementor-element.elementor-element-a4b1ba5 .elementor-button {
+  font-size: 16px;
+}
+
+@media (max-width: 767px) {
+  .pn-logo {
+    --s: calc(150 / 466);
+  }
+
+  .elementor-8746 .elementor-element.elementor-element-43b7718 h1 {
+    font-size: 35px;
+  }
+
+  .elementor-8746 .elementor-element.elementor-element-3fb1be2 p {
+    font-size: 17px;
+  }
+
+  .elementor-8746 .elementor-element.elementor-element-a4b1ba5 .elementor-button {
+    font-size: 15px;
+  }
+}
+
+/* Capa do vídeo: imagem enviada (já traz o botão de play) */
+.pn-video__imagem {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Hero no celular: foto vertical própria; o pé verde da foto continua na cor de fundo */
+@media (max-width: 767px) {
+  .elementor-8746 .elementor-element.elementor-element-177b9b0 {
+    --padding-top: 112vw;
+  }
+
+  .elementor-8746 .elementor-element.elementor-element-177b9b0:not(.elementor-motion-effects-element-type-background) {
+    background-color: #001e1f;
+    background-image: url("hero-mobile.webp");
+    background-size: 100% auto;
+    background-position: top center;
+  }
+}
+
+/* Hero no celular: logo e textos menores, fluidos e centralizados */
+@media (max-width: 767px) {
+  .elementor-8746 .elementor-element.elementor-element-177b9b0 > .e-con-inner,
+  .elementor-8746 .elementor-element.elementor-element-177b9b0 > .e-con-inner > :first-child {
+    align-items: center;
+    text-align: center;
+  }
+
+  .pn-logo {
+    --s: calc(110 / 466);
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .elementor-8746 .elementor-element.elementor-element-43b7718,
+  .elementor-8746 .elementor-element.elementor-element-3fb1be2,
+  .elementor-8746 .elementor-element.elementor-element-a4b1ba5 {
+    text-align: center;
+    align-self: center;
+  }
+
+  .elementor-8746 .elementor-element.elementor-element-43b7718 h1 {
+    font-size: clamp(21px, 6.3vw, 27px);
+    text-wrap: balance;
+  }
+
+  .elementor-8746 .elementor-element.elementor-element-3fb1be2 p {
+    font-size: clamp(13px, 3.7vw, 15.5px);
+    line-height: 1.55;
+    text-wrap: pretty;
+  }
+
+  .elementor-8746 .elementor-element.elementor-element-a4b1ba5 .elementor-button-wrapper {
+    text-align: center;
+  }
+
+  .elementor-8746 .elementor-element.elementor-element-a4b1ba5 .elementor-button {
+    font-size: clamp(12px, 3.6vw, 15px);
+    padding: 15px 26px;
+  }
+}
