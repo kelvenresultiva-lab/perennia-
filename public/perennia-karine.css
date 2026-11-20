@@ -595,3 +595,23 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
   .ks-nav-cta svg{width:24px;height:24px}
 }
 .ks-nav-cta{margin-left:auto}
+
+/* ===== Cabeçalho completo (largura total, sem caixa flutuante) ===== */
+.ks-nav{top:0;left:0;transform:none;width:100%;border-radius:0;border:0;border-bottom:1px solid rgba(243,223,177,.12);
+  padding:14px max(24px,calc((100% - 1180px)/2)) 14px calc(max(24px,calc((100% - 1180px)/2)) + 112px);
+  background:linear-gradient(180deg,rgba(4,33,11,.72),rgba(4,33,11,.38));box-shadow:none}
+.ks-nav-logo{top:11px;left:max(24px,calc((100% - 1180px)/2));width:76px}
+.ks-nav-links{margin:0 auto}
+@media(max-width:700px){
+  .ks-nav{top:0;width:100%;padding:10px 16px 10px 88px;border-radius:0}
+  .ks-nav-logo{top:8px;left:16px;width:58px}
+}
+/* alinha o cabeçalho com a coluna de texto da hero (76% centralizado) */
+@media(min-width:1101px){
+  .ks-nav{padding-left:calc(12% + 112px);padding-right:12%}
+  .ks-nav-logo{left:12%}
+}
+@media(min-width:701px) and (max-width:1100px){
+  .ks-nav{padding-left:136px;padding-right:24px}
+  .ks-nav-logo{left:24px}
+}
