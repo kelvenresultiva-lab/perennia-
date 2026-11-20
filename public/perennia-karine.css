@@ -574,3 +574,6 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 /* faixa rolante removida: fica só a curva de transição da hero */
 .ks-brand-band{padding:0;height:96px}
 @media(max-width:700px){.ks-brand-band{height:52px;padding:0}}
+
+/* transição natural hero → vídeo: o quadriculado não começa colado na emenda da curva */
+#cuidado{background-position:50% 42px,50% 42px}
