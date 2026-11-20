@@ -668,3 +668,13 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 @media(max-width:700px){#cuidado:before{left:58%;top:50%;font-size:150vw;-webkit-text-stroke-width:1.2px}}
 #cuidado:before{content:none!important}
 #cuidado{background:#fff!important}#cuidado:before,#cuidado:after{content:none!important}
+
+/* HERO mobile: conteúdo centralizado */
+@media(max-width:700px){
+  .perennia-hero .perennia-copy{text-align:center!important;display:flex!important;flex-direction:column!important;align-items:center!important}
+  .perennia-hero .perennia-copy h1,.perennia-hero .perennia-copy p{text-align:center!important;margin-left:auto!important;margin-right:auto!important}
+  .perennia-hero .ks-kicker{margin-left:auto!important;margin-right:auto!important;align-self:center!important}
+  .perennia-hero .ks-trust{justify-content:center!important;flex-wrap:wrap!important;width:100%}
+  .perennia-hero .perennia-cta{align-self:stretch!important}
+}
+@media(max-width:700px){.perennia-hero .perennia-cta{justify-content:center!important;gap:14px!important;text-align:center!important}}
