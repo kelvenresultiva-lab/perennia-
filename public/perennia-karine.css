@@ -570,3 +570,7 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
   .ks-steps-list{gap:44px}
 }
 @media(prefers-reduced-motion:reduce){.ks-step-ring{transition:none}}
+
+/* faixa rolante removida: fica só a curva de transição da hero */
+.ks-brand-band{padding:0;height:96px}
+@media(max-width:700px){.ks-brand-band{height:52px;padding:0}}
