@@ -1,0 +1,12 @@
+/* Video introduction inside the existing ivory card. */
+.perennia-about{padding:20px 0 58px;background:#ffffff}
+.perennia-about>.scroll-cue{width:40px;height:40px;margin-bottom:26px}
+.perennia-about .care-card{display:flex;flex-direction:column;align-items:center;width:calc(100% - 80px);max-width:1000px;aspect-ratio:auto;min-height:0;padding:32px 48px 36px;border:1px solid #a67f5035;border-radius:14px;background:#ffffff;box-shadow:none;overflow:hidden}
+.perennia-about .care-card:before{display:none}
+.perennia-about h2{font-family:Georgia,'Times New Roman',serif;font-size:clamp(30px,2.8vw,38px);font-weight:400;line-height:1.1;letter-spacing:-1.1px;text-align:center;color:#04210b;margin:0 0 26px;max-width:700px}
+.perennia-video-cover{display:block;position:relative;flex:none;width:100%;max-width:660px;aspect-ratio:987/539;overflow:hidden;padding:0;border:1px solid #a67f5040;border-radius:16px;background:#ffffff;cursor:pointer;isolation:isolate}
+.perennia-video-cover img{position:absolute;display:block;width:118.541%;max-width:none;height:auto;left:-12.158%;top:-43.228%;transition:filter .2s ease}
+.perennia-video-cover:hover img{filter:brightness(1.025)}
+.perennia-video-cover:focus-visible{outline:3px solid #79562f;outline-offset:5px}
+@media(max-width:900px){.perennia-about .care-card{width:calc(100% - 48px);padding:30px 30px 32px}.perennia-about h2{font-size:34px;margin-bottom:22px}.perennia-video-cover{border-radius:17px}}
+@media(max-width:600px){.perennia-about{padding:20px 0 42px}.perennia-about>.scroll-cue{margin-bottom:22px}.perennia-about .care-card{width:calc(100% - 32px);padding:26px 16px 24px;border-radius:14px}.perennia-about h2{font-size:27px;line-height:1.14;letter-spacing:-1px;margin-bottom:22px}.perennia-video-cover{border-radius:12px}}

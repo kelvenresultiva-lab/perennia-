@@ -1,0 +1,23 @@
+.perennia-specialist{background:#fff;color:#102e20;padding:20px 24px 95px}
+.specialist-wrap{max-width:1000px;margin:0 auto;padding-top:54px;border-top:1px solid #dfe5df}
+.specialist-heading{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:60px;align-items:end;margin-bottom:39px}
+.specialist-heading .eyebrow{background:transparent;border-color:#a67f5040;color:#79562f;box-shadow:none}
+.specialist-heading h2{font:400 37px/1.15 Georgia,'Times New Roman',serif;letter-spacing:-1px;margin:22px 0 0;color:#102e20}
+.specialist-heading h2 em{color:#88683e}
+.specialist-heading>p{font-size:17px;line-height:1.65;letter-spacing:-.2px;color:#506057;margin:0 0 3px;max-width:400px}
+.specialist-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:44px}
+.specialist-item{padding:27px 0 30px;border-top:1px solid #dfe5df}
+.specialist-item h3{font:400 25px/1.25 Georgia,'Times New Roman',serif;letter-spacing:-.5px;color:#102e20;margin:0 0 13px}
+.specialist-item p{font-size:16px;line-height:1.65;letter-spacing:-.2px;color:#506057;margin:0;max-width:440px}
+.specialist-action{text-align:center;padding-top:18px}
+.specialist-action .cta{background:#a67f50;color:#04210b;min-height:62px;padding:17px 29px;font-size:13px;letter-spacing:0;border-color:#a67f50;box-shadow:none}
+@media(max-width:740px){.perennia-specialist{padding:10px 20px 75px}.specialist-wrap{padding-top:38px}.specialist-heading{grid-template-columns:1fr;gap:22px;margin-bottom:30px}.specialist-heading h2{font-size:34px}.specialist-heading>p{max-width:550px;font-size:16px}.specialist-grid{gap:0 25px}.specialist-item h3{font-size:23px}}
+@media(max-width:540px){.perennia-specialist{padding-inline:18px}.specialist-heading h2{font-size:31px;line-height:1.15;letter-spacing:-.8px}.specialist-heading h2 br{display:none}.specialist-grid{grid-template-columns:1fr}.specialist-item{padding:24px 0}.specialist-item h3{font-size:25px}.specialist-action .cta{width:100%;font-size:12px;padding-inline:18px}}
+
+/* Restore the former section's deep-green palette. */
+.perennia-specialist{background:var(--perennia-green,#04210b);color:#fff}
+.specialist-wrap,.specialist-item{border-color:#a67f5045}
+.specialist-heading .eyebrow{color:#c4a476;border-color:#a67f5045}
+.specialist-heading h2,.specialist-item h3{color:#fff}
+.specialist-heading h2 em{color:#c4a476}
+.specialist-heading>p,.specialist-item p{color:#dce5dc}

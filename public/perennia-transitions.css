@@ -1,0 +1,15 @@
+/* Curves at paired content boundaries; existing section colors are retained. */
+.perennia-360,.process,.biography,.faq{position:relative}
+.paired-section-wave{display:block;position:absolute;bottom:-1px;left:0;width:100%;height:76px;z-index:2;pointer-events:none;stroke:none}
+.perennia-360{padding-bottom:120px}
+.process{padding-bottom:120px}
+.biography{padding-bottom:78px}
+.faq{padding-bottom:128px}
+.treatments>.top-wave,.treatments>.treatment-fall{display:none}
+@media(max-width:700px){.paired-section-wave{height:44px}.perennia-360{padding-bottom:84px}.process{padding-bottom:92px}.biography{padding-bottom:46px}.faq{padding-bottom:91px}}
+
+.perennia-hero-wave{height:76px}
+@media(max-width:700px){.perennia-hero-wave{height:44px}}
+
+/* The carousel and follow-up section share a single green canvas. */
+.process{background:var(--perennia-green-panel,#0c2b17)}

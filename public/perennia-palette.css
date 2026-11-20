@@ -1,0 +1,121 @@
+/* Perennia — deep green, restrained gold and warm ivory. */
+:root{--perennia-green:#04210b;--perennia-gold:#a67f50;--perennia-ivory:#ffffff;--perennia-green-panel:#0c2b17;--perennia-green-soft:#153522;--perennia-gold-ink:#79562f;--perennia-paper:#ffffff;--bg:var(--perennia-green);--panel:var(--perennia-green-panel);--hero:var(--perennia-green-panel);--text:var(--perennia-ivory);--gold:#c4a476;--light:var(--perennia-ivory)}
+body{background:var(--perennia-ivory);color:var(--perennia-green)}
+::selection{background:var(--perennia-gold);color:var(--perennia-ivory)}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline-color:var(--perennia-gold)}
+.eyebrow{border-color:#a67f503b;background:#a67f500b;color:inherit;box-shadow:none}
+.cta,.perennia-cta,.care-copy .cta,.symptoms .cta,.process .cta{background:var(--perennia-gold);border:1px solid #a67f50;color:var(--perennia-green);font-weight:700;box-shadow:none}
+.cta:hover,.perennia-cta:hover{background:#b58f5f;filter:none}
+.cta svg{color:var(--perennia-ivory);background:var(--perennia-green)}
+.hero.perennia-hero{background:var(--perennia-green);color:var(--perennia-ivory)}
+.perennia-hero h1{color:var(--perennia-ivory)}
+.perennia-hero h1 strong{color:#c4a476}
+.perennia-copy>p{color:#e5dfd3}
+.perennia-hero:before{background:linear-gradient(180deg,#092312 0%,#06220f 60%,#041c0c 80%,#000 100%)}
+.perennia-logo{mix-blend-mode:lighten}
+.care{background:var(--perennia-ivory);padding-bottom:68px;color:var(--perennia-green)}
+.care>.scroll-cue{border-color:#04210b55;color:var(--perennia-green)}
+.care>.scroll-cue svg{color:var(--perennia-green)}
+.care>.scroll-cue:hover{background:#04210b0a}
+.care-card{background:var(--perennia-paper);box-shadow:0 12px 42px #04210b08;border:1px solid #a67f5020}
+.care-card:before{background-color:#eeeeee;border-color:#a67f502b;opacity:.48}
+.care-image{background-color:var(--perennia-green)}
+.care-image>img{mix-blend-mode:lighten}
+.care-image .location-tag{background:var(--perennia-green);color:var(--perennia-ivory);border-color:#a67f5070;min-height:80px;bottom:9.4%}
+.care-image .location-tag svg{color:#c4a476;border-color:#a67f5038}
+.care-copy h2{color:var(--perennia-green)}
+.care-copy p{color:#294131}
+.care-copy .highlight{color:var(--perennia-gold-ink)}
+.symptoms{background:var(--perennia-green);color:var(--perennia-ivory)}
+.symptoms h2,.symptoms .texture h3,.symptoms .texture p{color:var(--perennia-ivory)}
+.symptoms h2 em{color:#c4a476}
+.symptoms .section-intro{color:#ddd9cd}
+.symptoms .eyebrow,.process .eyebrow{background:#a67f500d;border-color:#a67f5040;color:#ddd3c0}
+.symptoms .texture,.process-grid .texture{background:linear-gradient(130deg,#153522,#0c2b17);border-color:#a67f503d;box-shadow:none}
+.symptoms .texture:before{mix-blend-mode:soft-light;opacity:.23}
+.symptoms .icon-tile,.process-grid .step{color:#e9dcc2;background:linear-gradient(130deg,#a67f5035,#a67f5014);border-color:#a67f5055;box-shadow:none}
+.symptoms .icon-tile svg{color:#ddc9a5}
+.symptoms:before{opacity:.5;background-image:linear-gradient(#a67f5010 1px,transparent 1px),linear-gradient(90deg,#a67f5010 1px,transparent 1px),conic-gradient(from 90deg at 1px 1px,transparent 0 25%,#a67f5007 0 50%,transparent 0 75%,#a67f5007 0)}
+.treatments{background:var(--perennia-green-panel);color:var(--perennia-ivory)}
+.treatments>.top-wave path{fill:var(--perennia-green-panel)}
+.treatments>.treatment-fall{background:var(--perennia-green)}
+.treatments>.treatment-fall path{fill:var(--perennia-green-panel)}
+.treatment-card{background:var(--perennia-green);border-color:#a67f503d}
+.treatment-photo{background:var(--perennia-green)}
+.treatment-photo img{mix-blend-mode:lighten}
+.heading-line{background:#a67f5055}
+.round-arrow{background:var(--perennia-green);color:#c7ad84;border-color:#a67f5040}
+.round-arrow:hover{background:var(--perennia-green-soft);color:var(--perennia-ivory)}
+.dots button{background:#dcd7c9}
+.dots button.active{background:var(--perennia-gold)}
+.process{background:var(--perennia-green);color:var(--perennia-ivory)}
+.process h2,.process-grid h3,.process-grid p{color:var(--perennia-ivory)}
+.process.grid-bg:before{opacity:.65}
+.process-grid .texture:before{mix-blend-mode:soft-light;opacity:.2}
+.process>.section-wave path{fill:var(--perennia-ivory)}
+.light,.testimonials{background:var(--perennia-ivory);color:var(--perennia-green)}
+.light .eyebrow{border-color:#a67f5040;background:#a67f5008}
+.review{background:var(--perennia-paper);border-color:#a67f5030;color:var(--perennia-green);box-shadow:none}
+.review-person>span{background:var(--perennia-green);color:var(--perennia-ivory)}
+.rating{color:var(--perennia-gold)}
+.review-carousel .round-arrow{background:var(--perennia-green);color:var(--perennia-ivory);border-color:#a67f5040}
+.testimonials .dots button{background:#04210b88}
+.testimonials .dots button.active{background:var(--perennia-gold)}
+.biography{background:var(--perennia-green);color:var(--perennia-ivory)}
+.biography .top-wave path{fill:var(--perennia-green)}
+.bio-copy strong,.education svg{color:#c4a476}
+.bio-photo{background:var(--perennia-green)}
+.bio-photo img{mix-blend-mode:lighten}
+.clinic{background:var(--perennia-ivory);color:var(--perennia-green)}
+.clinic .scroll-cue{border-color:#04210b55}
+.clinic .scroll-cue svg{color:var(--perennia-green)}
+.clinic .scroll-cue:hover{background:#04210b0a}
+.clinic .location-tag{background:#ffffff80;border-color:#a67f5045;color:var(--perennia-green)}
+.clinic .location-tag svg{color:var(--perennia-gold-ink);border-color:#a67f5030}
+.clinic .office-photo{background:var(--perennia-green);border:1px solid #a67f5030}
+.clinic .office-photo.side{opacity:.68}
+.clinic .dots button{background:#04210b66}
+.clinic .dots button.active{background:var(--perennia-gold)}
+.clinic.grid-bg:before,.faq.grid-bg:before{background-image:linear-gradient(#04210b07 1px,transparent 1px),linear-gradient(90deg,#04210b07 1px,transparent 1px),conic-gradient(from 90deg at 1px 1px,transparent 0 25%,#a67f5005 0 50%,transparent 0 75%,#a67f5005 0);opacity:.6}
+.faq{background:var(--perennia-ivory);color:var(--perennia-green)}
+.faq details{background:var(--perennia-paper);border-color:#a67f5040}
+.faq summary{color:var(--perennia-green)}
+.faq summary b{color:var(--perennia-gold-ink)}
+.faq summary i{background:var(--perennia-green);color:var(--perennia-ivory)}
+.faq details[open] summary{color:var(--perennia-green)}
+.faq details[open]{border-color:#a67f5080}
+.faq-answer{color:#344a3a}
+.closing{background:var(--perennia-ivory)}
+.closing-card{background:var(--perennia-green);color:var(--perennia-ivory);border:1px solid #a67f5025}
+.closing-card:before{background-color:#eeeeee;border-color:#a67f5030}
+.closing-seal{background:var(--perennia-green);color:var(--perennia-ivory);border-color:#a67f5050;outline-color:var(--perennia-ivory)}
+.ribbon-art{opacity:.28;background-image:repeating-radial-gradient(ellipse at 70% 20%,transparent 0 8px,#a67f5050 9px 11px,transparent 12px 16px)}
+.right-art{background-color:#a67f500d}
+footer.light{background:var(--perennia-green);color:var(--perennia-ivory)}
+.footer-bottom{border-color:#a67f5055}
+.footer-top .brand{color:var(--perennia-ivory)}
+.footer-top .brand small{color:#c4a476}
+.social-list button{background:var(--perennia-gold);color:var(--perennia-green)}
+.reference-note{color:#c7b69c}
+.dialog,.gallery-dialog{background:var(--perennia-green);color:var(--perennia-ivory);border-color:#a67f5060}
+.dialog-close{background:#a67f5025;color:var(--perennia-ivory)}
+.dialog-info{color:#c4a476}
+.dialog .demo-copy{color:#d5cfbf;border-color:#a67f5040}
+.gallery-controls button{background:var(--perennia-green-soft);color:var(--perennia-ivory)}
+@media(max-width:700px){.hero.perennia-hero{background:#04210b}.perennia-visual{background-color:#04210b}.care{padding-bottom:55px}.care-image .location-tag{min-height:72px;bottom:3%;background:var(--perennia-green)}}
+.perennia-logo{mix-blend-mode:screen}
+.perennia-logo img{filter:contrast(1.45) brightness(.94)}
+.care-image>img,.treatment-photo img,.bio-photo img{mix-blend-mode:normal}
+
+/* A continuous ivory surface connects the video and the following section. */
+.symptoms{background:var(--perennia-ivory);color:var(--perennia-green);padding-top:34px}
+.symptoms:before{display:none}
+.symptoms h2,.symptoms .texture h3{color:var(--perennia-green)}
+.symptoms h2 em{color:var(--perennia-gold-ink)}
+.symptoms .section-intro,.symptoms .texture p{color:#344a3a}
+.symptoms .eyebrow{background:#a67f5008;border-color:#a67f5040;color:var(--perennia-gold-ink)}
+.symptoms .texture{background:var(--perennia-paper);border-color:#a67f5035;box-shadow:none}
+.symptoms .texture:before{opacity:.04;mix-blend-mode:multiply}
+.symptoms .icon-tile{background:#a67f5012;border-color:#a67f5045;color:var(--perennia-gold-ink)}
+.symptoms .icon-tile svg{color:var(--perennia-gold-ink)}
+@media(max-width:700px){.symptoms{padding-top:26px}}

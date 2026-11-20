@@ -1,0 +1,25 @@
+/* Follow-up section: sparse grid, fine grain and the curved light transition. */
+.process{padding:34px 0 116px;background:#181a1d;isolation:isolate;position:relative;overflow:visible}
+.process .large-wrap{position:relative;z-index:1;width:79.8%;max-width:1150px}
+.process.grid-bg:before{content:'';position:absolute;inset:auto;top:-235px;bottom:0;left:50%;transform:translateX(-50%);width:960px;max-width:100%;height:auto;z-index:0;background:url('assets/process-grid.svg') center top/960px 960px repeat-y;opacity:1;mask-image:linear-gradient(to bottom,transparent,#000 12%,#000 80%,transparent 100%);pointer-events:none}
+.process .eyebrow{padding:12px 14px;font-size:11px;line-height:1.2;border-radius:6px;background:linear-gradient(135deg,#252629,#1d1e21);border-color:#ffffff14}
+.process h2{font-family:Georgia,'Times New Roman',serif;font-size:36px;line-height:1.12;font-weight:400;letter-spacing:-1.15px;margin:24px auto 31px;color:#f0efea}
+.process-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin:0 0 23px}
+.process-grid .texture{min-height:280px;padding:34px 30px 32px;border-radius:7px;border:1px solid #ffffff1c;background:linear-gradient(125deg,#292b2d,#252729);box-shadow:inset 0 0 25px #ffffff02}
+.process-grid .texture:before{background:url('assets/process-grain.webp') center/145px 70px repeat;opacity:.45;mix-blend-mode:normal}
+.process-grid .step{width:42px;height:42px;display:flex;align-items:center;justify-content:center;font:400 27px/1 var(--serif);border-radius:8px;margin:0 0 19px;background:linear-gradient(130deg,#7173728c,#4a4c4c6b);border-color:#ffffff21}
+.process-grid h3{font-size:18px;line-height:1.35;letter-spacing:-.6px;margin:0 0 16px;font-weight:400}
+.process-grid p{font-size:15.5px;line-height:1.43;letter-spacing:-.35px;color:#eeedeb}
+.process .cta{width:526px;max-width:100%;min-height:78px;font-size:14px;line-height:1.2;letter-spacing:-.5px;padding:19px 30px;gap:9px;background:linear-gradient(100deg,#514321,#9b834e 35%,#c7ac70 57%,#907947 79%,#514321)}
+.process .cta svg{width:32px;height:32px}
+.process>.section-wave{height:98px;bottom:-1px;z-index:2}
+.process>.section-wave path{fill:url('#process-light');stroke:none}
+@media(min-width:1600px){.process .large-wrap{max-width:1280px}.process h2{font-size:40px}.process-grid .texture{padding:38px 34px;min-height:300px}.process-grid p{font-size:17px}}
+@media(max-width:1100px){.process .large-wrap{width:calc(100% - 56px)}.process h2{font-size:34px}.process-grid .texture{padding:30px 23px;min-height:280px}.process-grid h3{font-size:17px}.process-grid p{font-size:15px}.process .cta{font-size:13px}}
+@media(max-width:800px){.process .large-wrap{width:calc(100% - 40px)}.process-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.process-grid .texture{min-height:240px;padding:30px 25px}.process-grid p{font-size:16px}.process-grid h3{font-size:18px}.process h2{max-width:570px}.process .cta{width:510px;font-size:12px}}
+@media(max-width:600px){.process{padding:28px 0 90px}.process .large-wrap{width:calc(100% - 36px)}.process.grid-bg:before{top:-150px;width:100%;background-size:670px 670px;opacity:.8}.process h2{font-size:30px;line-height:1.12;max-width:340px;letter-spacing:-1px;margin:24px auto 29px}.process-grid{gap:8px;margin-bottom:25px}.process-grid .texture{min-height:266px;padding:24px 17px}.process-grid .step{width:37px;height:37px;font-size:24px;margin-bottom:18px}.process-grid h3{font-size:16px;line-height:1.35;margin-bottom:13px;letter-spacing:-.5px}.process-grid p{font-size:14px;line-height:1.5;letter-spacing:-.25px}.process .cta{width:100%;min-height:68px;padding:17px 12px;font-size:10.5px;gap:8px;letter-spacing:-.3px}.process .cta svg{width:29px;height:29px}.process>.section-wave{height:58px}}
+
+.treatments>.treatment-fall{position:absolute;left:0;bottom:-1px;width:100%;height:112px;background:#181a1d;z-index:0;pointer-events:none;stroke:none}
+.treatments>.treatment-fall path{fill:#1e1f22;stroke:none}
+@media(min-width:1101px) and (max-width:1599px){.process-grid .texture{min-height:272px;padding-top:32px;padding-bottom:30px}}
+@media(max-width:600px){.treatments>.treatment-fall{height:65px}}

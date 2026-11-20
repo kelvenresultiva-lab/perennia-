@@ -1,0 +1,26 @@
+/* Refinements limited to the video and 360° sections. */
+.perennia-hero-wave path{fill:#fff}
+.care.perennia-about,.perennia-360{background:#fff;color:#04210b}
+.perennia-about .care-card{background:transparent;border:0;box-shadow:none}
+.perennia-about h2,.perennia-360 h2{color:#04210b}
+.perennia-about>.scroll-cue{color:#04210b;border-color:#04210b40}
+.perennia-360 .diagnostico-card{background:#fff;border:1px solid #04210b26;border-radius:18px;box-shadow:none;color:#04210b}
+.diagnostico-core{background:transparent;border:1px solid #a67f5050;box-shadow:none}
+.diagnostico-orbit{background:none}
+.orbit-ticks{stroke:#a67f5045}
+.orbit-track{stroke:#04210b15}
+.orbit-progress{stroke:#a67f50;filter:none}
+.diagnostico-core>span,.diagnostico-core>strong{color:#04210b}
+.diagnostico-core>small,.diagnostico-areas li,.perennia-360 .diagnostico-description p{color:#344a3a}
+.diagnostico-areas svg{stroke:#79562f}
+.diagnostico-kicker,.perennia-360 .diagnostico-signature,.perennia-360 h2 em{color:#79562f}
+
+@media(max-width:740px){.perennia-360 .diagnostico-card{border-radius:14px}}
+
+/* A neutral surround makes the pure-white 360° card distinct. */
+.perennia-360{background:#f5f6f5}
+.perennia-360 .diagnostico-card{background:#fff;border:1px solid #e3e8e3;box-shadow:0 12px 36px #04210b0b}
+
+/* Shared neutral canvas for the video and 360° card. */
+.care.perennia-about{background:#f5f6f5}
+.perennia-hero-wave path{fill:#f5f6f5}

@@ -1,0 +1,48 @@
+.perennia-360{background:#ffffff;padding:22px 24px 100px;position:relative}
+.diagnostico-card{position:relative;isolation:isolate;max-width:1080px;margin:auto;display:grid;grid-template-columns:42% 58%;align-items:center;min-height:565px;padding:54px 52px;border:1px solid #a6b49760;border-radius:20px;background:radial-gradient(ellipse at 99% 0%,#bdaf7270 0%,transparent 42%),linear-gradient(115deg,#18533b 0%,#103d2a 47%,#041d12 100%);color:#ffffff}
+.diagnostico-card:before{content:"";position:absolute;top:-2px;left:70px;width:145px;height:4px;border-radius:4px;background:linear-gradient(90deg,#ead8a1,#a67f50)}
+.diagnostico-copy{padding-right:30px}
+.diagnostico-kicker{display:inline-block;color:#dcc590;font-size:12px;font-weight:700;letter-spacing:2.7px;margin-bottom:24px}
+.diagnostico-copy h2{font-family:var(--sans);font-size:40px;line-height:1.12;font-weight:500;letter-spacing:-1.6px;margin:0 0 29px;color:#f5f2e9}
+.diagnostico-copy h2 em{font-style:normal;color:#d9bd7f}
+.diagnostico-description{padding-top:22px;border-top:1px solid #c6bb8f66;max-width:350px}
+.diagnostico-description p{font-size:16px;line-height:1.6;letter-spacing:-.15px;color:#e1e7db;margin:0 0 15px}
+.diagnostico-signature{font-size:13px;letter-spacing:.5px;color:#d9bd7f;margin:22px 0 0}
+.diagnostico-map{position:relative;width:100%;max-width:520px;aspect-ratio:1/1;margin:auto}
+.diagnostico-orbit{position:absolute;inset:19%;border-radius:50%}
+.diagnostico-orbit svg{width:100%;height:100%;overflow:visible;transform:rotate(-90deg);fill:none}
+.orbit-ticks{stroke:#b8c59565;stroke-width:10;stroke-dasharray:1.3 8.5}
+.orbit-track{stroke:#d4deac38;stroke-width:5}
+.orbit-progress{stroke:#e8d79c;stroke-width:5;stroke-linecap:round;stroke-dasharray:490 800;filter:drop-shadow(0 0 4px #ddca9438)}
+.diagnostico-core{position:absolute;inset:25%;border-radius:50%;background:linear-gradient(135deg,#81977e30,#031c1370);border:1px solid #d7e1bd30;box-shadow:0 0 0 13px #e7e9bd05,inset 0 0 30px #b5c3900d;display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center}
+.diagnostico-core>span{font-family:Georgia,serif;font-size:13px;letter-spacing:3px;color:#e5d6ad}
+.diagnostico-core>strong{font-family:Georgia,serif;font-size:59px;line-height:1.2;font-weight:400;color:#e8d79c;margin:4px 0}
+.diagnostico-core>small{font-size:13px;line-height:1.4;color:#d9e1d1}
+.diagnostico-areas{list-style:none;margin:0;padding:0;position:absolute;inset:0}
+.diagnostico-areas li{position:absolute;transform:translate(-50%,-50%);width:115px;text-align:center;display:flex;align-items:center;flex-direction:column;gap:9px;color:#e7e8d7;font-size:14px;line-height:1.35}
+.diagnostico-areas svg{width:23px;height:23px;fill:none;stroke:#c5c795;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round}
+.area-1{left:50%;top:6%}.area-2{left:88%;top:28%}.area-3{left:88%;top:72%}.area-4{left:50%;top:94%}.area-5{left:12%;top:72%}.area-6{left:12%;top:28%}
+@media(max-width:1000px){.diagnostico-card{padding:42px 30px;grid-template-columns:42% 58%;min-height:520px}.diagnostico-copy{padding-right:20px}.diagnostico-copy h2{font-size:34px}.diagnostico-areas li{font-size:13px;width:100px}.diagnostico-core>strong{font-size:50px}}
+@media(max-width:740px){.perennia-360{padding:10px 16px 80px}.diagnostico-card{grid-template-columns:1fr;gap:32px;padding:35px 25px 38px;border-radius:15px}.diagnostico-card:before{left:28px;width:115px}.diagnostico-copy{padding:0}.diagnostico-copy h2{font-size:35px;max-width:390px;letter-spacing:-1.2px;margin-bottom:23px}.diagnostico-copy h2 br:nth-of-type(1),.diagnostico-copy h2 em br{display:none}.diagnostico-description{max-width:100%;padding-top:20px}.diagnostico-description p{font-size:16px}.diagnostico-signature{margin-top:18px}.diagnostico-kicker{margin-bottom:20px}.diagnostico-map{max-width:430px;width:100%;margin:15px auto 0}.diagnostico-areas li{font-size:12px;width:90px;gap:6px}.diagnostico-areas svg{width:21px;height:21px}.diagnostico-core>span{font-size:10px;letter-spacing:2px}.diagnostico-core>strong{font-size:44px}.diagnostico-core>small{font-size:11px}.diagnostico-orbit{inset:20%}.diagnostico-core{inset:26%}}
+@media(max-width:380px){.diagnostico-card{padding-inline:18px}.diagnostico-core>strong{font-size:36px}.diagnostico-areas li{font-size:11px;width:78px}.diagnostico-copy h2{font-size:31px}}
+
+/* The 360° composition sits directly on a full-width green section. */
+.perennia-360{background:radial-gradient(ellipse at 86% 0%,#bdaf7238 0%,transparent 47%),linear-gradient(115deg,#18533b 0%,#103d2a 47%,#041d12 100%);padding:40px 24px 96px}
+.diagnostico-card{border:0;border-radius:0;background:none;box-shadow:none}
+.diagnostico-card:before{display:none}
+@media(max-width:740px){.perennia-360{padding:30px 16px 80px}.diagnostico-card{border-radius:0;background:none}}
+
+/* White background with the same open 360° composition. */
+.perennia-360{background:#fff;color:#04210b}
+.diagnostico-card{color:#04210b}
+.diagnostico-kicker,.diagnostico-copy h2 em,.diagnostico-signature{color:#79562f}
+.diagnostico-copy h2{color:#04210b}
+.diagnostico-description{border-top-color:#a67f5050}
+.diagnostico-description p{color:#344a3a}
+.orbit-ticks{stroke:#a67f5060}
+.orbit-track{stroke:#04210b18}
+.orbit-progress{stroke:#a67f50;filter:none}
+.diagnostico-core{background:radial-gradient(circle at 35% 25%,#ffffff,#e9eee8);border-color:#a67f5050;box-shadow:0 0 0 13px #04210b03,inset 0 0 30px #a67f5008}
+.diagnostico-core>span,.diagnostico-core>strong{color:#04210b}
+.diagnostico-core>small,.diagnostico-areas li{color:#344a3a}
+.diagnostico-areas svg{stroke:#79562f}
