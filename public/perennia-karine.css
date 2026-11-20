@@ -1,3 +1,6 @@
+/* Tipografia da marca: Rethink Sans (manual de marca), arquivos locais */
+@font-face{font-family:"Rethink Sans";src:url("assets/rethink-sans.woff2") format("woff2");font-weight:400 800;font-style:normal;font-display:swap}
+@font-face{font-family:"Rethink Sans";src:url("assets/rethink-sans-italic.woff2") format("woff2");font-weight:400 800;font-style:italic;font-display:swap}
 /* Tipografia: Cormorant Garamond (títulos, conversa com o logo) + Inter (texto) — arquivos locais */
 @font-face{font-family:"Perennia Serif";src:url("assets/cormorant.woff2") format("woff2");font-weight:300 700;font-style:normal;font-display:swap}
 @font-face{font-family:"Perennia Serif";src:url("assets/cormorant-italic.woff2") format("woff2");font-weight:300 700;font-style:italic;font-display:swap}
@@ -488,3 +491,29 @@ h1,h2,h3,.diagnostico-core>strong,.ks-360-steps li,.ks-brand-track{font-variant-
 .ks-svc-list .specialist-item:focus-visible{box-shadow:0 0 0 2px rgba(166,127,80,.6)}
 @media(hover:none){.ks-svc-list .specialist-item{border-radius:0}}
 .ks-svc-head{align-self:start}
+
+/* ===== Rethink Sans em todo o site (manual de marca) ===== */
+:root{--serif:"Rethink Sans",Arial,sans-serif;--sans:"Rethink Sans",Arial,sans-serif}
+body{font-family:var(--sans)}
+/* títulos: peso regular, tracking fechado; destaque em dourado sem itálico, como no manual */
+h1,h2,h3{font-weight:400!important;letter-spacing:-.025em!important}
+h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
+.perennia-hero h1{font-size:clamp(40px,3.1vw,58px);line-height:1.06}
+#about-title,#diagnostico-title,#legacy-title,#solutions-title,#specialist-title,#steps-title,#closing-title{font-size:clamp(36px,3vw,54px);line-height:1.1}
+#specialist-title,.perennia-360 #diagnostico-title{font-size:clamp(34px,2.7vw,48px)}
+.process-grid h3,.solution-card h3,.ks-steps-list h3{font-size:clamp(21px,1.6vw,26px)!important;letter-spacing:-.02em!important}
+.ks-svc-list .specialist-item h3{font-size:clamp(22px,1.8vw,30px)}
+.ks-brand-track span{font-size:clamp(52px,5.2vw,96px);font-weight:500;letter-spacing:-.01em}
+.ks-brand-track b,.ks-seal-mark,.ks-closing-word,.ks-svc-count strong{font-style:normal}
+.ks-closing-word{font-weight:600;letter-spacing:-.05em}
+.perennia-360 .diagnostico-core>strong{font-size:clamp(44px,4.2vw,62px);font-weight:500;letter-spacing:-.04em}
+.ks-360-steps li{font-size:18px;font-weight:500;letter-spacing:-.01em}
+.ks-footer-brand p{font-size:23px;font-weight:400;letter-spacing:-.02em}
+.specialist-item h3:before{font-style:normal}
+@media(max-width:700px){
+  .perennia-hero h1{font-size:clamp(31px,8.4vw,37px)}
+  #about-title,#diagnostico-title,#legacy-title,#solutions-title,#specialist-title,#steps-title,#closing-title,.perennia-360 #diagnostico-title{font-size:clamp(30px,8.4vw,38px)}
+  .ks-svc-list .specialist-item h3{font-size:22px}
+  .perennia-360 .diagnostico-core>strong{font-size:38px}
+  .ks-360-steps li{font-size:15px}
+}
