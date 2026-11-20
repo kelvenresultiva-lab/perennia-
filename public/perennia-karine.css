@@ -666,3 +666,4 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
     radial-gradient(55% 50% at 50% 62%,rgba(166,127,80,.14),transparent 72%),
     linear-gradient(180deg,#e9ece9,#e3e7e3)!important}
 @media(max-width:700px){#cuidado:before{left:58%;top:50%;font-size:150vw;-webkit-text-stroke-width:1.2px}}
+#cuidado:before{content:none!important}
