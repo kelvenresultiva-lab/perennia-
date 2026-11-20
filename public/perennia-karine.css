@@ -766,3 +766,10 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 .ks-svc-head .ks-more-icon{border-color:rgba(243,223,177,.45);color:#f3dfb1}
 .ks-svc-head .ks-more:hover .ks-more-icon{background:var(--ks-metal-btn);border-color:transparent;color:#1d2a1f}
 .ks-svc-section .eyebrow{background:rgba(255,255,255,.05)!important;color:#f3dfb1!important;border-color:rgba(243,223,177,.35)!important}
+
+/* SOLUÇÕES: todos os cards no verde-escuro do Perennia 360° */
+.solution-card:not(.solution-featured){background:radial-gradient(90% 140% at 0% 0%,#123a22 0%,#04210b 60%)!important;border:1px solid rgba(243,223,177,.18)!important;box-shadow:0 24px 50px -32px rgba(4,33,11,.55)!important;transition:transform .4s ease,border-color .4s ease}
+.solution-card:not(.solution-featured):hover{transform:translateY(-4px);border-color:rgba(243,223,177,.4)!important}
+.solution-card:not(.solution-featured) .solution-label{color:#c9a468!important}
+.solution-card:not(.solution-featured) h3{background:var(--ks-metal-text)!important;-webkit-background-clip:text!important;background-clip:text!important;color:transparent!important}
+.solution-card:not(.solution-featured) p{color:#d1dad4!important}
