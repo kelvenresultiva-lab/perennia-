@@ -544,3 +544,29 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 .perennia-360 .diagnostico-areas li:hover svg{stroke:#1d2a1f;background:var(--ks-metal-btn) padding-box,linear-gradient(135deg,#e9d3a4,#a67f50 55%,#f3dfb1) border-box}
 @media(max-width:780px){.perennia-360 .diagnostico-card:before{-webkit-mask:radial-gradient(ellipse at 50% 70%,#000 25%,transparent 75%);mask:radial-gradient(ellipse at 50% 70%,#000 25%,transparent 75%)}}
 @media(max-width:540px){.perennia-360 .diagnostico-areas,.perennia-360 .diagnostico-areas li{border-color:rgba(243,223,177,.14)}}
+
+/* ===== Como funciona — versão delicada ===== */
+.ks-steps-list{margin:64px 0 56px;gap:32px}
+.ks-steps-list:before{top:38px;left:calc(12.5% + 52px);right:calc(12.5% + 52px);height:0;background:none;border-top:1px dashed rgba(166,127,80,.35)}
+.ks-step-ring{width:76px;height:76px;color:#0c2b17;border:1px solid transparent;
+  background:linear-gradient(#fff,#fff) padding-box,linear-gradient(135deg,#e9d3a4,#a67f50 50%,#f3dfb1) border-box;
+  box-shadow:0 0 0 8px #fff,0 18px 36px -22px rgba(4,33,11,.35);transition:transform .45s cubic-bezier(.2,.7,.2,1),background .45s,color .45s}
+.ks-step-ring:before{content:'';position:absolute;inset:6px;border-radius:50%;border:1px solid rgba(166,127,80,.18);background:none;transition:border-color .45s}
+.ks-step-ring:after{content:none}
+.ks-step-ring svg{width:26px;height:26px;stroke-width:1.15}
+.ks-steps-list li:after{content:none}
+.ks-step-num{margin-top:30px;font:500 10.5px/1 var(--sans);letter-spacing:.34em;color:#a67f50}
+.ks-steps-list h3{margin:12px 0 10px!important;font-size:clamp(19px,1.35vw,22px)!important;font-weight:400!important;letter-spacing:-.015em!important;color:#102e20}
+.ks-steps-list p{max-width:230px;font:400 14.5px/1.65 var(--sans);color:#66736b}
+/* hover: o anel se preenche de verde e o ícone fica dourado */
+.ks-steps-list li:hover .ks-step-ring{transform:translateY(-4px);color:#f3dfb1;
+  background:radial-gradient(circle at 32% 22%,#1d4a31,#0c2b17 60%,#04210b) padding-box,linear-gradient(135deg,#e9d3a4,#a67f50 50%,#f3dfb1) border-box}
+.ks-steps-list li:hover .ks-step-ring:before{border-color:rgba(243,223,177,.3)}
+@media(max-width:1100px){.ks-steps-list:before{display:none}}
+@media(max-width:700px){
+  .ks-step-ring{width:68px;height:68px}
+  .ks-step-ring svg{width:24px;height:24px}
+  .ks-step-num{margin-top:24px}
+  .ks-steps-list{gap:44px}
+}
+@media(prefers-reduced-motion:reduce){.ks-step-ring{transition:none}}
