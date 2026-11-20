@@ -678,3 +678,4 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
   .perennia-hero .perennia-cta{align-self:stretch!important}
 }
 @media(max-width:700px){.perennia-hero .perennia-cta{justify-content:center!important;gap:14px!important;text-align:center!important}}
+@media(max-width:700px){.perennia-hero .perennia-cta{align-self:center!important;width:88%!important;max-width:300px}}
