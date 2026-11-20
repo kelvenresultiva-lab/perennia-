@@ -7,7 +7,7 @@ Site estático da Perennia Consultoria Empresarial. Leia `README.md` antes de ed
 - Preservar a hero, suas fotos e a identidade Perennia.
 - Paleta: verde profundo #04210B, verde de seção #0C2B17, dourado #A67F50; fundos claros brancos e cinza neutro #F5F6F5. Evitar bege/caramelo nos fundos.
 - Não espalhar mudanças de cor pelo site todo quando o pedido for de uma seção.
-- A seção do vídeo não tem card externo; o Perennia 360° tem card branco.
+- A seção do vídeo não tem card externo; o Perennia 360° tem card verde-escuro (mesmo fundo e textura do Método Legacy) com textos claros e dourado.
 - LEGACY usa quatro cards verdes, títulos dourados, descrição e tópicos; sem ícones flutuantes no canto superior direito.
 - Manter transições curvas compactas entre blocos quando já existentes.
 - Não inventar contatos, números de experiência, depoimentos ou dados das responsáveis.

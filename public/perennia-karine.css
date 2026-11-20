@@ -517,3 +517,30 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
   .perennia-360 .diagnostico-core>strong{font-size:38px}
   .ks-360-steps li{font-size:15px}
 }
+
+/* ===== Perennia 360° — card escuro no mesmo fundo do Método Legacy ===== */
+.perennia-360 .diagnostico-card{background:radial-gradient(ellipse 70% 60% at 78% 45%,rgba(201,164,104,.14),transparent 65%),#0c2b17;border:1px solid rgba(243,223,177,.14);color:#f3efe6;
+  box-shadow:0 1px 0 rgba(243,223,177,.12) inset,0 50px 90px -50px rgba(4,33,11,.65)}
+.perennia-360 .diagnostico-card:before{width:100%;background:url('assets/process-grid.svg') center/960px 960px;opacity:.9;
+  -webkit-mask:radial-gradient(ellipse at 70% 50%,#000 25%,transparent 75%);mask:radial-gradient(ellipse at 70% 50%,#000 25%,transparent 75%)}
+/* texto */
+.perennia-360 .diagnostico-kicker{border-color:rgba(255,255,255,.1);background:rgba(255,255,255,.045);color:#cdd5cf;box-shadow:0 1px 0 rgba(255,255,255,.06) inset}
+.perennia-360 #diagnostico-title{color:#f7f3ea}
+.perennia-360 #diagnostico-title em{background:var(--ks-metal-text);-webkit-background-clip:text;background-clip:text;color:transparent}
+.perennia-360 #diagnostico-title:after{color:#c9a468}
+.perennia-360 .diagnostico-description p,.perennia-360 .diagnostico-description p:first-child{color:#c9d4cd}
+.perennia-360 .diagnostico-description p:first-child{color:#f3efe6}
+.ks-360-steps,.ks-360-steps li+li{border-color:rgba(243,223,177,.16)}
+.ks-360-steps li{color:#f3efe6}
+.ks-360-steps b{color:#c9a468}
+/* mapa */
+.ks-360-spokes path{stroke:#e9d3a4;stroke-opacity:.45}
+.perennia-360 .orbit-ticks{stroke:#e9d3a4;stroke-opacity:.4}
+.perennia-360 .orbit-track{stroke:#f3dfb1;stroke-opacity:.12}
+.perennia-360 .diagnostico-core{background:radial-gradient(circle at 32% 22%,#24573b 0%,#0f3520 50%,#04210b 100%);
+  box-shadow:0 0 0 6px #0c2b17,0 0 0 7px rgba(243,223,177,.5),0 30px 60px -20px rgba(0,0,0,.6),inset 0 1px 0 rgba(243,223,177,.25)}
+.perennia-360 .diagnostico-areas li{color:#e6ebe7}
+.perennia-360 .diagnostico-areas li svg{stroke:#f3dfb1;background:linear-gradient(#123a24,#0c2b17) padding-box,linear-gradient(135deg,#e9d3a4,#a67f50 55%,#f3dfb1) border-box;box-shadow:0 14px 26px -14px rgba(0,0,0,.6)}
+.perennia-360 .diagnostico-areas li:hover svg{stroke:#1d2a1f;background:var(--ks-metal-btn) padding-box,linear-gradient(135deg,#e9d3a4,#a67f50 55%,#f3dfb1) border-box}
+@media(max-width:780px){.perennia-360 .diagnostico-card:before{-webkit-mask:radial-gradient(ellipse at 50% 70%,#000 25%,transparent 75%);mask:radial-gradient(ellipse at 50% 70%,#000 25%,transparent 75%)}}
+@media(max-width:540px){.perennia-360 .diagnostico-areas,.perennia-360 .diagnostico-areas li{border-color:rgba(243,223,177,.14)}}
