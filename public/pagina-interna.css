@@ -1,0 +1,17 @@
+/* Páginas internas provisórias (uma por seção do site) */
+@font-face{font-family:"Rethink Sans";src:url("assets/rethink-sans.woff2") format("woff2");font-weight:400 800;font-display:swap}
+:root{--green:#04210b;--gold:#a67f50}
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%}
+body{background:radial-gradient(ellipse 70% 55% at 85% 0%,rgba(201,164,104,.16),transparent 70%),#04210b;color:#f3efe6;font-family:"Rethink Sans",Arial,sans-serif;-webkit-font-smoothing:antialiased}
+.pi{min-height:100vh;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:0;width:min(880px,calc(100% - 48px));margin:0 auto;padding:80px 0}
+.pi-logo{display:block;width:92px;margin-bottom:56px;mix-blend-mode:lighten}
+.pi-logo img{display:block;width:100%;height:auto;filter:contrast(1.35)}
+.pi-kicker{display:inline-block;padding:10px 18px;border:1px solid rgba(255,255,255,.12);border-radius:7px;background:rgba(255,255,255,.045);font-size:10.5px;font-weight:500;letter-spacing:.34em;color:#cdd5cf}
+h1{margin:28px 0 0;font-weight:400;font-size:clamp(34px,5vw,60px);line-height:1.08;letter-spacing:-.025em;text-wrap:balance}
+h1 em{font-style:normal;background:linear-gradient(100deg,#c39a5c,#f3dfb1 45%,#c8a066 75%,#e8cd97);-webkit-background-clip:text;background-clip:text;color:transparent}
+p{max-width:520px;margin:26px 0 0;font-size:17px;line-height:1.65;color:#c9d4cd}
+.pi-actions{display:flex;flex-wrap:wrap;align-items:center;gap:18px 30px;margin-top:40px}
+.pi-btn{display:inline-flex;align-items:center;min-height:54px;padding:0 26px;border-radius:10px;background:linear-gradient(100deg,#c79f63,#efd7a3 38%,#f8e9c6 52%,#ddba80 72%,#b98f57);color:#1d2a1f;font-size:12.5px;font-weight:600;letter-spacing:.06em;text-decoration:none;box-shadow:0 18px 34px -18px rgba(201,164,104,.6)}
+.pi-back{color:#e6ebe7;font-size:14px;text-decoration:none;border-bottom:1px solid rgba(243,223,177,.35);padding-bottom:3px}
+.pi-back:hover{color:#f3dfb1}

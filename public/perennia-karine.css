@@ -615,3 +615,24 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
   .ks-nav{padding-left:136px;padding-right:24px}
   .ks-nav-logo{left:24px}
 }
+
+/* ===== "Saiba mais": link secundário de cada seção para a página do assunto ===== */
+.ks-more{display:inline-flex;align-items:center;gap:12px;vertical-align:middle;margin-left:26px;padding:6px 0;
+  font:600 12.5px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;text-decoration:none;color:#102e20;
+  background:linear-gradient(currentColor,currentColor) 0 100%/0 1px no-repeat;transition:background-size .45s cubic-bezier(.2,.7,.2,1),color .3s}
+.ks-more-icon{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;border:1px solid rgba(166,127,80,.55);color:#8a6639;transition:background .35s,color .35s,transform .35s,border-color .35s}
+.ks-more-icon svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.ks-more:hover{background-size:calc(100% - 46px) 1px}
+.ks-more:hover .ks-more-icon{background:#04210b;border-color:#04210b;color:#f3dfb1;transform:translateX(3px)}
+.ks-more:focus-visible{outline:2px solid rgba(166,127,80,.6);outline-offset:4px;border-radius:4px}
+/* em fundos escuros (card do 360° e Método Legacy) */
+.perennia-360 .ks-more,#tratamentos .ks-more{color:#f3efe6}
+.perennia-360 .ks-more-icon,#tratamentos .ks-more-icon{border-color:rgba(243,223,177,.45);color:#f3dfb1}
+.perennia-360 .ks-more:hover .ks-more-icon,#tratamentos .ks-more:hover .ks-more-icon{background:var(--ks-metal-btn);border-color:transparent;color:#1d2a1f}
+.ks-more-wrap{text-align:center;margin-top:34px}
+.ks-more-wrap .ks-more{margin-left:0}
+.ks-svc-head .ks-more{display:flex;width:max-content;margin:22px 0 0}
+@media(max-width:700px){
+  .ks-more{display:flex;width:max-content;margin:18px auto 0}
+  .perennia-360 .ks-more,.ks-svc-head .ks-more{margin:18px 0 0}
+}

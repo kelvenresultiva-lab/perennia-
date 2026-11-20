@@ -33,3 +33,7 @@ O vídeo de apresentação ainda não foi conectado: a capa abre um aviso. O bot
 ## Publicar fora da prévia
 
 A pasta `public/` contém o site estático completo e pode ser usada em hospedagem estática. Nenhum identificador, credencial ou configuração privada da hospedagem desta conversa foi incluído.
+
+## Páginas por assunto
+
+Cada seção da home tem um link "Saiba mais" (classe `.ks-more`) para a página do assunto: `sobre.html`, `perennia-360.html`, `metodo-legacy.html`, `solucoes.html`, `servicos.html` e `como-funciona.html`. Hoje são páginas provisórias ("em construção", `noindex`, estilo em `pagina-interna.css`) com botão de agendar e volta para a seção; o conteúdo completo de cada uma ainda será escrito.
