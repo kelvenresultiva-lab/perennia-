@@ -737,3 +737,32 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 @media(max-width:1000px){.ks-road{margin-top:40px}}
 .ks-steps{overflow:hidden}
 @media(min-width:1001px){.ks-road-step.s3 .ks-road-text{width:17.5cqw}}
+
+/* ---------- SERVIÇOS: fundo verde-escuro igual ao Legacy ---------- */
+.ks-svc-section{background:radial-gradient(ellipse 55% 45% at 0% 0%,rgba(201,164,104,.12),transparent 70%),#0c2b17!important;color:#f3efe6;border-top:0;border-bottom:0}
+.ks-svc-section:before{background:url(assets/process-grid.svg) center top/auto repeat!important;opacity:.9}
+.ks-svc-section .ks-eyebrow{color:#f3dfb1;border-color:rgba(243,223,177,.35);background:rgba(255,255,255,.04)}
+.ks-svc-section #specialist-title{color:#f3efe6}
+.ks-svc-section #specialist-title em{background:var(--ks-metal-text);-webkit-background-clip:text;background-clip:text;color:transparent}
+.ks-svc-section #specialist-title:after{color:#c9a468}
+.ks-svc-head>p{color:#c9d4cd}
+.ks-svc-count{border-color:rgba(243,223,177,.16)}
+.ks-svc-count strong{background:var(--ks-metal-text);-webkit-background-clip:text;background-clip:text}
+.ks-svc-count span{color:#9fb0a6}
+.ks-svc-list{border-bottom-color:rgba(243,223,177,.16)}
+.ks-svc-list .specialist-item{border-top-color:rgba(243,223,177,.16)}
+.ks-svc-num{color:#c9a468}
+.ks-svc-list .specialist-item h3{color:#f3efe6}
+.ks-svc-desc>p{color:#c9d4cd}
+.ks-svc-tag{border-color:rgba(243,223,177,.22);background:transparent;color:#a9b8ae}
+.ks-svc-arrow{border-color:rgba(243,223,177,.32);background:transparent;color:#f3dfb1}
+.ks-svc-list .specialist-item:after{background:linear-gradient(90deg,#c39a5c,#f3dfb1,transparent)}
+.ks-svc-list .specialist-item:is(:hover,:focus-within),.ks-svc-list:not(:hover):not(:focus-within) .specialist-item:first-child{background:linear-gradient(90deg,rgba(201,164,104,.13),rgba(255,255,255,.03) 70%,rgba(255,255,255,.02));box-shadow:0 0 0 1px rgba(243,223,177,.14) inset,0 24px 50px -30px rgba(0,0,0,.5);border-top-color:transparent}
+.ks-svc-list .specialist-item:is(:hover,:focus-within) h3,.ks-svc-list:not(:hover):not(:focus-within) .specialist-item:first-child h3{color:#fff}
+.ks-svc-list .specialist-item:is(:hover,:focus-within) .ks-svc-tag,.ks-svc-list:not(:hover):not(:focus-within) .specialist-item:first-child .ks-svc-tag{color:#f3dfb1;border-color:rgba(243,223,177,.45);background:rgba(243,223,177,.06)}
+.ks-svc-list .specialist-item:is(:hover,:focus-within) .ks-svc-arrow,.ks-svc-list:not(:hover):not(:focus-within) .specialist-item:first-child .ks-svc-arrow{background:var(--ks-metal-btn);border-color:transparent;color:#1d2a1f}
+.ks-svc-list .specialist-item:focus-visible{box-shadow:0 0 0 2px rgba(243,223,177,.5)}
+.ks-svc-head .ks-more{color:#f3efe6}
+.ks-svc-head .ks-more-icon{border-color:rgba(243,223,177,.45);color:#f3dfb1}
+.ks-svc-head .ks-more:hover .ks-more-icon{background:var(--ks-metal-btn);border-color:transparent;color:#1d2a1f}
+.ks-svc-section .eyebrow{background:rgba(255,255,255,.05)!important;color:#f3dfb1!important;border-color:rgba(243,223,177,.35)!important}
