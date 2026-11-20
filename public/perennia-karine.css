@@ -639,3 +639,26 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 
 /* Legacy: um único botão dourado levando à página do método */
 #tratamentos a.cta{text-decoration:none!important}
+
+/* ---------- VÍDEO: fundo com órbitas douradas (eco do 360°) ---------- */
+#cuidado{background-color:#f5f6f5!important;
+  background-image:
+    radial-gradient(48% 42% at 50% 61%,rgba(166,127,80,.24),transparent 70%),
+    radial-gradient(70% 60% at 50% 61%,rgba(12,43,23,.06),transparent 75%),
+    radial-gradient(rgba(12,43,23,.11) 1px,transparent 1.2px)!important;
+  background-size:auto,auto,22px 22px!important;
+  background-position:center,center,center top!important}
+#cuidado:before{background:
+  url(assets/video-orbits.svg) no-repeat 50% 61%/1600px auto!important;
+  -webkit-mask:radial-gradient(75% 70% at 50% 58%,#000 45%,transparent 92%);
+          mask:radial-gradient(75% 70% at 50% 58%,#000 45%,transparent 92%)}
+#cuidado:after{content:'';position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(85% 75% at 50% 58%,transparent 40%,#f5f6f5 92%)}
+#cuidado>.ks-hero-curve{z-index:2}
+@media(max-width:700px){
+  #cuidado:before{background-size:900px auto!important;background-position:50% 55%!important}
+}
+#cuidado:before,#cuidado:after{z-index:0}
+#cuidado>*:not(.ks-hero-curve){z-index:1}
+.ks-more-wrap{display:flex!important;justify-content:center}
+.ks-more-wrap .ks-more{margin-left:auto!important;margin-right:auto!important}
