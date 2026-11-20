@@ -640,25 +640,29 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 /* Legacy: um único botão dourado levando à página do método */
 #tratamentos a.cta{text-decoration:none!important}
 
-/* ---------- VÍDEO: fundo com órbitas douradas (eco do 360°) ---------- */
-#cuidado{background-color:#f5f6f5!important;
-  background-image:
-    radial-gradient(48% 42% at 50% 61%,rgba(166,127,80,.24),transparent 70%),
-    radial-gradient(70% 60% at 50% 61%,rgba(12,43,23,.06),transparent 75%),
-    radial-gradient(rgba(12,43,23,.11) 1px,transparent 1.2px)!important;
-  background-size:auto,auto,22px 22px!important;
-  background-position:center,center,center top!important}
-#cuidado:before{background:
-  url(assets/video-orbits.svg) no-repeat 50% 61%/1600px auto!important;
-  -webkit-mask:radial-gradient(75% 70% at 50% 58%,#000 45%,transparent 92%);
-          mask:radial-gradient(75% 70% at 50% 58%,#000 45%,transparent 92%)}
-#cuidado:after{content:'';position:absolute;inset:0;pointer-events:none;
-  background:radial-gradient(85% 75% at 50% 58%,transparent 40%,#f5f6f5 92%)}
+/* ---------- VÍDEO: fundo no estilo Karine (luz de estúdio + monograma gigante) ---------- */
+#cuidado{background-color:#f5f6f5!important;background-image:
+    linear-gradient(180deg,#f5f6f5 0%,rgba(245,246,245,0) 22%,rgba(245,246,245,0) 78%,#f5f6f5 100%),
+    linear-gradient(103deg,transparent 0 16%,rgba(255,255,255,.95) 22%,transparent 31%,transparent 58%,rgba(255,255,255,.9) 66%,transparent 74%),
+    linear-gradient(103deg,transparent 0 34%,rgba(255,255,255,.7) 40%,transparent 47%,transparent 80%,rgba(255,255,255,.7) 86%,transparent 92%),
+    radial-gradient(55% 50% at 50% 62%,rgba(166,127,80,.13),transparent 72%),
+    linear-gradient(180deg,#eef0ee,#e9ece9)!important;
+  background-size:auto!important;background-position:center!important;overflow:hidden}
+#cuidado:before{content:"P";position:absolute;inset:auto;left:50%;top:58%;transform:translate(-50%,-50%);
+  font-family:"Perennia Serif",serif;font-style:italic;font-weight:300;font-size:min(1150px,92vw);line-height:1;
+  color:transparent;-webkit-text-stroke:1.2px rgba(166,127,80,.28);background:none!important;
+  -webkit-mask:none;mask:none;pointer-events:none;z-index:0;user-select:none}
+#cuidado:after{content:none}
 #cuidado>.ks-hero-curve{z-index:2}
-@media(max-width:700px){
-  #cuidado:before{background-size:900px auto!important;background-position:50% 55%!important}
-}
-#cuidado:before,#cuidado:after{z-index:0}
 #cuidado>*:not(.ks-hero-curve){z-index:1}
+@media(max-width:700px){#cuidado:before{font-size:150vw;top:52%;-webkit-text-stroke-width:1px}}
 .ks-more-wrap{display:flex!important;justify-content:center}
 .ks-more-wrap .ks-more{margin-left:auto!important;margin-right:auto!important}
+#cuidado:before{-webkit-text-stroke:1.5px rgba(166,127,80,.42);left:64%;top:56%;font-size:min(1100px,95vw)}
+#cuidado{background-image:
+    linear-gradient(180deg,#f5f6f5 0%,rgba(245,246,245,0) 20%,rgba(245,246,245,0) 80%,#f5f6f5 100%),
+    linear-gradient(103deg,transparent 0 14%,#fff 21%,transparent 30%,transparent 57%,#fff 65%,transparent 73%),
+    linear-gradient(103deg,transparent 0 33%,rgba(255,255,255,.75) 40%,transparent 47%,transparent 79%,rgba(255,255,255,.8) 86%,transparent 93%),
+    radial-gradient(55% 50% at 50% 62%,rgba(166,127,80,.14),transparent 72%),
+    linear-gradient(180deg,#e9ece9,#e3e7e3)!important}
+@media(max-width:700px){#cuidado:before{left:58%;top:50%;font-size:150vw;-webkit-text-stroke-width:1.2px}}
