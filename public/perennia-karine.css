@@ -667,3 +667,4 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
     linear-gradient(180deg,#e9ece9,#e3e7e3)!important}
 @media(max-width:700px){#cuidado:before{left:58%;top:50%;font-size:150vw;-webkit-text-stroke-width:1.2px}}
 #cuidado:before{content:none!important}
+#cuidado{background:#fff!important}#cuidado:before,#cuidado:after{content:none!important}
