@@ -636,3 +636,6 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
   .ks-more{display:flex;width:max-content;margin:18px auto 0}
   .perennia-360 .ks-more,.ks-svc-head .ks-more{margin:18px 0 0}
 }
+
+/* Legacy: um único botão dourado levando à página do método */
+#tratamentos a.cta{text-decoration:none!important}
