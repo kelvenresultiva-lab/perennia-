@@ -1044,3 +1044,4 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 #sintomas>.ks-curve-360 path{fill:#f5f6f5!important}
 @media(max-width:700px){#sintomas>.ks-curve-360{height:54px}}
 #sintomas>.ks-curve-360 path{stroke:none!important}#sintomas.perennia-360{padding-top:130px!important}@media(max-width:700px){#sintomas.perennia-360{padding-top:80px!important}}
+#sintomas>.ks-curve-360{transform:scaleX(-1)}
