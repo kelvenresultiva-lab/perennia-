@@ -1098,3 +1098,26 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
   #sintomas{padding-bottom:calc(90px + var(--cv))!important}
   #tratamentos.legacy-section{border-top-width:54px}
 }
+
+/* ---------- Curvas em todas as passagens: seções escuras com topo curvo à direita e base curva à esquerda ----------
+   Soluções→Serviços (direita), Serviços→Como funciona (esquerda), Como funciona→Agendar (direita), Agendar→Rodapé (esquerda) */
+#servicos,#agendar{--cv:98px;position:relative;z-index:3;
+  border-top:var(--cv) solid transparent!important;border-bottom:var(--cv) solid transparent!important;
+  background-origin:border-box!important;background-clip:border-box!important;
+  margin-top:calc(var(--cv) * -1)!important;margin-bottom:calc(var(--cv) * -1)!important;
+  -webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 110' preserveAspectRatio='none'%3E%3Cpath d='M0 18H1080C1150 18 1170 110 1240 110H1440V110H0Z'/%3E%3C/svg%3E") top left/100% var(--cv) no-repeat,
+    linear-gradient(#000,#000) left calc(var(--cv) - 2px)/100% calc(100% - var(--cv) * 2 + 4px) no-repeat,
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 110' preserveAspectRatio='none'%3E%3Cpath d='M0 0H1440V18H360C290 18 270 110 200 110H0Z'/%3E%3C/svg%3E") bottom left/100% var(--cv) no-repeat;
+  mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 110' preserveAspectRatio='none'%3E%3Cpath d='M0 18H1080C1150 18 1170 110 1240 110H1440V110H0Z'/%3E%3C/svg%3E") top left/100% var(--cv) no-repeat,
+    linear-gradient(#000,#000) left calc(var(--cv) - 2px)/100% calc(100% - var(--cv) * 2 + 4px) no-repeat,
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 110' preserveAspectRatio='none'%3E%3Cpath d='M0 0H1440V18H360C290 18 270 110 200 110H0Z'/%3E%3C/svg%3E") bottom left/100% var(--cv) no-repeat}
+/* as seções vizinhas ganham o espaço que a curva ocupa */
+#solucoes{border-bottom:98px solid #fff}
+#como-funciona{border-top:98px solid #fff;border-bottom:98px solid #fff}
+#contatos{border-top:98px solid #04210b}
+@media(max-width:700px){
+  #servicos,#agendar{--cv:54px}
+  #solucoes{border-bottom-width:54px}
+  #como-funciona{border-top-width:54px;border-bottom-width:54px}
+  #contatos{border-top-width:54px}
+}
