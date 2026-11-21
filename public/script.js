@@ -34,11 +34,11 @@ $$('[data-perennia-video]').forEach(b=>b.addEventListener('click',()=>openDialog
   const fit = () => {
     if (!matchMedia('(max-width: 700px)').matches) { w.style.removeProperty('--vw-fit'); return; }
     w.style.setProperty('font-size', '100px', 'important');
-    const width = w.scrollWidth, alvo = document.documentElement.clientWidth * 0.95;
+    const width = w.scrollWidth, alvo = document.documentElement.clientWidth * 0.99;
     const fs = Math.floor(100 * alvo / width);
     w.style.setProperty('font-size', fs + 'px', 'important');
-    w.style.setProperty('bottom', 'calc(' + fs + 'px * -.36 + 45px)', 'important');
-    w.parentElement.style.setProperty('padding-bottom', 'calc(' + fs + 'px * .6 + 71px)', 'important');
+    w.style.setProperty('bottom', 'calc(' + fs + 'px * -.2 + 45px)', 'important');
+    w.parentElement.style.setProperty('padding-bottom', 'calc(' + fs + 'px * .76 + 71px)', 'important');
   };
   const reset = () => { if (!matchMedia('(max-width: 700px)').matches) { w.style.removeProperty('font-size'); w.style.removeProperty('bottom'); w.parentElement.style.removeProperty('padding-bottom'); } else fit(); };
   addEventListener('resize', reset); addEventListener('load', fit);
