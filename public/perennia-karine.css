@@ -930,3 +930,17 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 
 @media(max-width:900px){.js-svc .ks-svc-stage{top:max(76px,calc(50svh - 235px))}.ks-svc-card .ks-svc-tag{display:inline-block!important}.ks-svc-card .ks-svc-cta{font-size:11.5px!important;letter-spacing:.08em!important;white-space:nowrap}}
 @media(max-width:900px){.ks-svc-card .ks-svc-cta{padding-left:20px!important;padding-right:10px!important;gap:10px!important}}
+
+/* ---------- LEGACY: cards no estilo do modelo (gradiente, filete lateral, ícone em círculo) ---------- */
+#tratamentos .process-grid article{background:linear-gradient(165deg,#164a2b 0%,#0e3820 45%,#082a15 100%)!important;border:1px solid rgba(243,223,177,.12)!important;border-radius:16px!important;padding:40px 34px 36px!important;overflow:hidden;text-align:left;box-shadow:0 30px 60px -36px rgba(0,0,0,.7),inset 0 1px 0 rgba(255,255,255,.05)!important}
+#tratamentos .process-grid article:before{content:''!important;position:absolute;left:0;top:34px;width:4px;height:58px;border-radius:0 4px 4px 0;background:linear-gradient(180deg,#f3dfb1,#a67f50);box-shadow:0 0 18px rgba(214,172,104,.55);opacity:1!important;inset:auto;inset-inline-start:0;inset-block-start:34px}
+#tratamentos .process-grid article:after{content:none!important}
+#tratamentos .process-grid article:hover{border-color:rgba(243,223,177,.3)!important}
+#tratamentos .lg-ico{display:grid;place-items:center;width:46px;height:46px;margin-bottom:26px;border-radius:50%;color:#f3dfb1;background:radial-gradient(circle at 35% 30%,rgba(243,223,177,.28),rgba(166,127,80,.12) 60%,rgba(255,255,255,.03));border:1px solid rgba(243,223,177,.3);box-shadow:0 0 24px -4px rgba(214,172,104,.45)}
+#tratamentos .lg-ico svg{width:20px;height:20px}
+#tratamentos .process-grid h3:before{content:none!important}
+#tratamentos .process-grid h3{font-family:var(--sans)!important;font-weight:600!important;font-size:clamp(21px,1.6vw,25px)!important;line-height:1.25!important;margin:0 0 16px!important;background:linear-gradient(90deg,#c9a468 0%,#f7f3ea 55%)!important;-webkit-background-clip:text!important;background-clip:text!important;color:transparent!important}
+#tratamentos .process-grid p{color:#d3ddd6!important;font-size:15.5px;line-height:1.65}
+#tratamentos .process-grid article:before{display:block!important;z-index:2!important;right:auto!important;bottom:auto!important}
+#tratamentos .process-grid h3{background:linear-gradient(90deg,#d9bb84 0%,#f7f3ea 70%)!important;-webkit-background-clip:text!important;background-clip:text!important}
+#tratamentos .process-grid article:before{mix-blend-mode:normal!important;filter:none!important}
