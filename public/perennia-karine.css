@@ -955,3 +955,27 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 /* Serviços: o card atual some antes do próximo entrar (sem sobreposição) */
 #servicos.js-svc .ks-svc-card{transition:opacity .25s ease,transform .25s ease!important}
 #servicos.js-svc .ks-svc-card.is-active{transition:opacity .5s ease .25s,transform .7s cubic-bezier(.2,.7,.2,1) .25s!important}
+
+/* ---------- VÍDEO: formato "vídeo sobre painel" (ref.) no estilo Karine ---------- */
+#cuidado .ks-vid{display:flex;flex-direction:column;align-items:center;text-align:center;max-width:1180px;margin:0 auto;padding:0 24px}
+#cuidado .ks-vid .eyebrow{background:rgba(255,255,255,.05)!important;color:#f3dfb1!important;border-color:rgba(243,223,177,.35)!important;margin-bottom:22px}
+#cuidado .ks-vid h2{margin-bottom:18px!important}
+#cuidado .ks-vid-intro{max-width:600px;margin:0 auto 48px;font:400 17px/1.65 var(--sans);color:#c9d4cd}
+#cuidado .ks-vid-stage{--w:min(860px,calc(100% - 64px));position:relative;width:100%;display:flex;flex-direction:column;align-items:center}
+#cuidado .ks-vid-stage .perennia-video-cover{position:relative;z-index:2;width:var(--w)!important;max-width:none!important;margin:0!important}
+#cuidado .ks-vid-panel{position:relative;z-index:1;width:100%;max-width:1080px;margin-top:calc(var(--w) * -.34);padding:calc(var(--w) * .34 + 48px) 48px 52px;border-radius:28px;
+  background:radial-gradient(60% 80% at 50% 100%,rgba(201,164,104,.16),transparent 70%),linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.015));
+  border:1px solid rgba(243,223,177,.2);box-shadow:0 50px 90px -50px rgba(0,0,0,.7),inset 0 1px 0 rgba(255,255,255,.05)}
+#cuidado .ks-vid-panel p{max-width:620px;margin:0 auto 30px;font:400 17px/1.7 var(--sans);color:#dfe6e1}
+#cuidado .ks-vid-actions{display:flex;align-items:center;justify-content:center;gap:28px;flex-wrap:wrap}
+#cuidado .ks-vid-actions .ks-more{margin:0!important}
+@media(max-width:700px){
+  #cuidado .ks-vid{padding:0 16px}
+  #cuidado .ks-vid-intro{font-size:15.5px;margin-bottom:32px}
+  #cuidado .ks-vid-stage{--w:calc(100% - 28px)}
+  #cuidado .ks-vid-panel{padding:calc(var(--w) * .34 + 30px) 22px 34px;border-radius:22px}
+  #cuidado .ks-vid-panel p{font-size:15.5px;margin-bottom:24px}
+  #cuidado .ks-vid-actions{flex-direction:column;gap:18px}
+  #cuidado .ks-vid-actions .ks-btn{width:100%;max-width:300px;justify-content:space-between}
+}
+@media(max-width:700px){#cuidado .ks-vid-actions .ks-btn{white-space:nowrap;font-size:12px!important;letter-spacing:.08em!important}}
