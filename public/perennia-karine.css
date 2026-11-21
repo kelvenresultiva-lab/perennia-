@@ -1052,3 +1052,22 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 @media(max-width:700px){#cuidado .ks-vid-word{top:auto!important;bottom:calc(27cqw * -.13 + 10px)!important}#cuidado .ks-vid-panel{padding-bottom:calc(27cqw * .8 + 24px)!important}}
 #cuidado .ks-vid-word{bottom:calc(27cqw * -.47)!important}#cuidado .ks-vid-panel{padding-bottom:calc(27cqw * .5 + 34px)!important}@media(max-width:700px){#cuidado .ks-vid-word{bottom:calc(27cqw * -.47)!important}#cuidado .ks-vid-panel{padding-bottom:calc(27cqw * .5 + 26px)!important}}
 #cuidado .ks-vid-word{bottom:calc(27cqw * -.36)!important}#cuidado .ks-vid-panel{padding-bottom:calc(27cqw * .6 + 34px)!important}@media(max-width:700px){#cuidado .ks-vid-word{bottom:calc(27cqw * -.36)!important}#cuidado .ks-vid-panel{padding-bottom:calc(27cqw * .6 + 26px)!important}}
+
+/* ---------- 360° cobre o "Perennia": a própria seção escura tem o topo recortado em curva ---------- */
+#sintomas>.ks-curve-360{display:none!important}
+#sintomas{--cv:98px;position:relative;z-index:3;margin-top:calc(var(--cv) * -1)!important;
+  -webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 110' preserveAspectRatio='none'%3E%3Cpath d='M0 18H1080C1150 18 1170 110 1240 110H1440V110H0Z'/%3E%3C/svg%3E") top left/100% var(--cv) no-repeat,linear-gradient(#000,#000) left var(--cv)/100% calc(100% - var(--cv)) no-repeat;
+  mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 110' preserveAspectRatio='none'%3E%3Cpath d='M0 18H1080C1150 18 1170 110 1240 110H1440V110H0Z'/%3E%3C/svg%3E") top left/100% var(--cv) no-repeat,linear-gradient(#000,#000) left var(--cv)/100% calc(100% - var(--cv)) no-repeat}
+#sintomas.perennia-360{padding-top:calc(130px + var(--cv) * .5)!important}
+#cuidado{position:relative;z-index:1}
+/* palavra: metade visível, a outra metade some atrás da curva escura */
+#cuidado .ks-vid-word{bottom:calc(27cqw * -.36 + 82px)!important}
+#cuidado .ks-vid-panel{padding-bottom:calc(27cqw * .6 + 34px + 82px)!important}
+@media(max-width:700px){
+  #sintomas{--cv:54px}
+  #sintomas.perennia-360{padding-top:calc(80px + var(--cv) * .5)!important}
+  #cuidado .ks-vid-word{bottom:calc(27cqw * -.36 + 45px)!important}
+  #cuidado .ks-vid-panel{padding-bottom:calc(27cqw * .6 + 26px + 45px)!important}
+}
+#sintomas{-webkit-mask-position:top left,left calc(var(--cv) - 2px)!important;mask-position:top left,left calc(var(--cv) - 2px)!important;-webkit-mask-size:100% var(--cv),100% calc(100% - var(--cv) + 2px)!important;mask-size:100% var(--cv),100% calc(100% - var(--cv) + 2px)!important}
+#sintomas .diagnostico-card,#sintomas .diagnostico-card:before{border-top:0!important}
