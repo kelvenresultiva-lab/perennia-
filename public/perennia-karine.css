@@ -1075,9 +1075,3 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 
 /* "Perennia" (vídeo): faixa de corte — no desktop não existe; no celular corta as letras no topo reto da curva */
 #cuidado .ks-vid-word-clip{display:contents}
-@media(max-width:700px){#cuidado .ks-vid-word-clip{display:block;position:absolute;left:0;right:0;overflow:hidden;pointer-events:none;z-index:0}}
-
-/* Celular: sem a curva entre vídeo e 360° — a borda reta da seção escura corta o "Perennia" igual em todas as letras */
-@media(max-width:700px){
-  #sintomas{--cv:0px;-webkit-mask:none!important;mask:none!important;margin-top:0!important}
-}

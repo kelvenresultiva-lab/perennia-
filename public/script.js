@@ -28,33 +28,19 @@ $$('[data-perennia-book]').forEach(b => b.addEventListener('click', () => {
 }));
 $$('[data-perennia-video]').forEach(b=>b.addEventListener('click',()=>openDialog($('#perennia-video-dialog'))));
 
-// "Perennia" atrás do vídeo (celular): letras esticadas na altura e ocupando a largura.
-// Ficam dentro de uma faixa (.ks-vid-word-clip) cujo fundo coincide com o topo reto da seção escura,
-// então todas as letras (inclusive o "a", onde a curva desce) são cortadas na mesma linha.
+// "Perennia" atrás do vídeo (celular): mesmo desenho do desktop — a seção escura (com a curva) cobre a metade de baixo.
+// Aqui só ajustamos o tamanho pela largura real da tela, para a palavra caber inteira (o "a" aparece completo na descida da curva).
 (() => {
   const w = document.querySelector("#cuidado .ks-vid-word"); if (!w) return;
-  const clip = w.parentElement, panel = clip.parentElement;
-  const props = ["font-size", "bottom", "top", "transform", "transform-origin", "transition", "clip-path"];
-  const ESTICA = 1.45, CORTE = 0.6; // CORTE: fração da altura das minúsculas que fica visível
+  const panel = w.closest(".ks-vid-panel");
+  const CURVA = 45; // no celular, distância do fim da seção até o topo reto da curva escura (54px de curva)
   const fit = () => {
-    if (!matchMedia("(max-width: 700px)").matches) {
-      props.forEach(p => w.style.removeProperty(p)); clip.style.removeProperty("height"); panel.style.removeProperty("padding-bottom"); return;
-    }
-    const linha = 0; // no celular a seção escura começa reta, exatamente no fim desta seção
+    if (!matchMedia("(max-width: 700px)").matches) { ["font-size", "bottom"].forEach(p => w.style.removeProperty(p)); panel.style.removeProperty("padding-bottom"); return; }
     w.style.setProperty("font-size", "100px", "important");
     const fs = Math.floor(100 * document.documentElement.clientWidth * 0.94 / w.scrollWidth);
-    const yc = 0.28 + 0.52 * CORTE;
-    const visivel = (yc - 0.06) * fs * ESTICA;
     w.style.setProperty("font-size", fs + "px", "important");
-    w.style.setProperty("top", "auto", "important");
-    w.style.setProperty("bottom", (-(1 - yc) * fs * ESTICA).toFixed(1) + "px", "important");
-    w.style.setProperty("transform", "translateX(-50%) scaleY(" + ESTICA + ")", "important");
-    w.style.setProperty("transform-origin", "50% 100%", "important");
-    w.style.setProperty("transition", "none", "important");
-    w.style.setProperty("clip-path", "none", "important");
-    clip.style.setProperty("bottom", linha.toFixed(1) + "px", "important");
-    clip.style.setProperty("height", visivel.toFixed(0) + "px", "important");
-    panel.style.setProperty("padding-bottom", (linha + visivel + 30).toFixed(0) + "px", "important");
+    w.style.setProperty("bottom", (CURVA - 0.36 * fs).toFixed(1) + "px", "important");
+    panel.style.setProperty("padding-bottom", (CURVA + 0.6 * fs + 26).toFixed(0) + "px", "important");
   };
   let tm = 0; const agenda = () => { clearTimeout(tm); tm = setTimeout(fit, 30); };
   addEventListener("resize", agenda); addEventListener("load", agenda);
