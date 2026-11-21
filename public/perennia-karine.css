@@ -998,3 +998,14 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 @media(max-width:700px){#cuidado.perennia-about{padding-top:64px!important}#cuidado .perennia-video-cover{box-shadow:0 0 0 1px rgba(166,127,80,.45),0 0 0 6px #fff,0 0 0 7px rgba(166,127,80,.25),0 24px 50px -20px rgba(4,33,11,.55)!important}}
 #cuidado.perennia-about{padding-bottom:110px!important}@media(max-width:700px){#cuidado.perennia-about{padding-bottom:72px!important}}
 #cuidado .ks-vid-panel{box-shadow:0 30px 50px -30px rgba(4,33,11,.45)!important}
+
+/* ---------- Fechamento: palavra "Perennia" inteira dentro do card ---------- */
+#agendar .ks-closing-card{--word:min(240px,19vw);padding-bottom:calc(var(--word) * .9 + 48px)!important}
+#agendar .ks-closing-word{font-size:var(--word)!important;line-height:1!important;bottom:calc(var(--word) * -.02 + 18px)!important;max-width:calc(100% - 32px);color:rgba(243,223,177,.07)!important}
+@media(max-width:700px){#agendar .ks-closing-card{--word:19vw;padding-bottom:calc(var(--word) * .9 + 36px)!important}#agendar .ks-closing-word{bottom:12px!important}}
+
+/* ---------- Vídeo no mobile: só o CTA abaixo do vídeo ---------- */
+@media(max-width:700px){
+  #cuidado .ks-vid-panel p{display:none!important}
+  #cuidado .ks-vid-panel{padding-bottom:30px!important;padding-top:calc(var(--w) * .34 + 26px)!important}
+}
