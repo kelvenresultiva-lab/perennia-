@@ -40,9 +40,7 @@ $$('[data-perennia-video]').forEach(b=>b.addEventListener('click',()=>openDialog
     if (!matchMedia("(max-width: 700px)").matches) {
       props.forEach(p => w.style.removeProperty(p)); clip.style.removeProperty("height"); panel.style.removeProperty("padding-bottom"); return;
     }
-    const sec = document.querySelector("#sintomas");
-    const cv = sec ? (parseFloat(getComputedStyle(sec).getPropertyValue("--cv")) || 54) : 54;
-    const linha = cv - cv * 18 / 110; // distância do fim da seção até o topo reto da curva escura
+    const linha = 0; // no celular a seção escura começa reta, exatamente no fim desta seção
     w.style.setProperty("font-size", "100px", "important");
     const fs = Math.floor(100 * document.documentElement.clientWidth * 0.94 / w.scrollWidth);
     const yc = 0.28 + 0.52 * CORTE;

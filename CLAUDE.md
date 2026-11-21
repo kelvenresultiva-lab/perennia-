@@ -28,4 +28,4 @@ Cada seção tem um link "Saiba mais" (.ks-more) para sua página: sobre, perenn
 
 REGRA: site institucional — o contato de WhatsApp só pode aparecer na hero. Nenhuma outra seção, rodapé ou botão flutuante leva ao WhatsApp; os CTAs das seções levam às páginas institucionais (sobre, perennia-360, metodo-legacy, solucoes, servicos, como-funciona). O objetivo é mostrar o trabalho da empresa.
 
-Curvas entre seções: mesmo desenho da curva da hero (pequena, no canto), alternando os lados — hero→vídeo à esquerda, vídeo→360° à direita (espelhada), e assim por diante se houver mais.
+Curvas entre seções: mesmo desenho da curva da hero (pequena, no canto), alternando os lados — hero→vídeo à esquerda, vídeo→360° à direita (espelhada; no celular essa passagem é reta para o "Perennia" ser cortado igual em todas as letras), e assim por diante se houver mais.
