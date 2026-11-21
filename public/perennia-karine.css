@@ -747,61 +747,88 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 .solution-card:not(.solution-featured) h3{background:var(--ks-metal-text)!important;-webkit-background-clip:text!important;background-clip:text!important;color:transparent!important}
 .solution-card:not(.solution-featured) p{color:#d1dad4!important}
 
+
+/* ---------- SERVIÇOS: fundo verde-escuro igual ao Legacy ---------- */
+.ks-svc-section{background:radial-gradient(ellipse 55% 45% at 0% 0%,rgba(201,164,104,.12),transparent 70%),#0c2b17!important;color:#f3efe6;border-top:0;border-bottom:0}
+.ks-svc-section:before{background:url(assets/process-grid.svg) center top/auto repeat!important;opacity:.9}
+.ks-svc-section .ks-eyebrow{color:#f3dfb1;border-color:rgba(243,223,177,.35);background:rgba(255,255,255,.04)}
+.ks-svc-section #specialist-title{color:#f3efe6}
+.ks-svc-section #specialist-title em{background:var(--ks-metal-text);-webkit-background-clip:text;background-clip:text;color:transparent}
+.ks-svc-section #specialist-title:after{color:#c9a468}
+.ks-svc-head>p{color:#c9d4cd}
+.ks-svc-count{border-color:rgba(243,223,177,.16)}
+.ks-svc-count strong{background:var(--ks-metal-text);-webkit-background-clip:text;background-clip:text}
+.ks-svc-count span{color:#9fb0a6}
+.ks-svc-list{border-bottom-color:rgba(243,223,177,.16)}
+.ks-svc-list .specialist-item{border-top-color:rgba(243,223,177,.16)}
+.ks-svc-num{color:#c9a468}
+.ks-svc-list .specialist-item h3{color:#f3efe6}
+.ks-svc-desc>p{color:#c9d4cd}
+.ks-svc-tag{border-color:rgba(243,223,177,.22);background:transparent;color:#a9b8ae}
+.ks-svc-arrow{border-color:rgba(243,223,177,.32);background:transparent;color:#f3dfb1}
+.ks-svc-list .specialist-item:after{background:linear-gradient(90deg,#c39a5c,#f3dfb1,transparent)}
+.ks-svc-list .specialist-item:is(:hover,:focus-within),.ks-svc-list:not(:hover):not(:focus-within) .specialist-item:first-child{background:linear-gradient(90deg,rgba(201,164,104,.13),rgba(255,255,255,.03) 70%,rgba(255,255,255,.02));box-shadow:0 0 0 1px rgba(243,223,177,.14) inset,0 24px 50px -30px rgba(0,0,0,.5);border-top-color:transparent}
+.ks-svc-list .specialist-item:is(:hover,:focus-within) h3,.ks-svc-list:not(:hover):not(:focus-within) .specialist-item:first-child h3{color:#fff}
+.ks-svc-list .specialist-item:is(:hover,:focus-within) .ks-svc-tag,.ks-svc-list:not(:hover):not(:focus-within) .specialist-item:first-child .ks-svc-tag{color:#f3dfb1;border-color:rgba(243,223,177,.45);background:rgba(243,223,177,.06)}
+.ks-svc-list .specialist-item:is(:hover,:focus-within) .ks-svc-arrow,.ks-svc-list:not(:hover):not(:focus-within) .specialist-item:first-child .ks-svc-arrow{background:var(--ks-metal-btn);border-color:transparent;color:#1d2a1f}
+.ks-svc-list .specialist-item:focus-visible{box-shadow:0 0 0 2px rgba(243,223,177,.5)}
+.ks-svc-head .ks-more{color:#f3efe6}
+.ks-svc-head .ks-more-icon{border-color:rgba(243,223,177,.45);color:#f3dfb1}
+.ks-svc-head .ks-more:hover .ks-more-icon{background:var(--ks-metal-btn);border-color:transparent;color:#1d2a1f}
+.ks-svc-section .eyebrow{background:rgba(255,255,255,.05)!important;color:#f3dfb1!important;border-color:rgba(243,223,177,.35)!important}
+
 /* =====================================================================
-   RITMO DE SEÇÕES: escuro / branco alternados
-   Hero (escuro) → Vídeo (branco) → 360 (escuro) → Legacy (branco) →
-   Soluções (escuro) → Serviços (branco) → Como funciona (escuro) →
-   Agendar (branco) → Rodapé (escuro)
+   RITMO DE SEÇÕES (escuro / branco):
+   Hero + Vídeo (escuro contínuo) → 360 (branco) → Legacy (escuro) →
+   Soluções (branco) → Serviços (escuro) → Como funciona (branco) →
+   Agendar (escuro) → Rodapé (escuro mais profundo, separado por filete)
+   Seções escuras sem quadriculado.
    ===================================================================== */
+#tratamentos:before,.ks-svc-section:before{background-image:none!important;content:none!important}
+#sintomas,#solucoes,#como-funciona{background:#fff!important}
+.ks-svc-section{background:radial-gradient(ellipse 55% 45% at 0% 0%,rgba(201,164,104,.10),transparent 70%),#0c2b17!important}
 
-/* ---------- base das seções escuras ---------- */
-#sintomas,#solucoes,#como-funciona{position:relative;background:radial-gradient(ellipse 60% 50% at 0% 0%,rgba(201,164,104,.10),transparent 70%),url(assets/process-grid.svg) center top/auto repeat,#0c2b17!important;color:#f3efe6;border:0!important}
-#sintomas :is(.eyebrow,.ks-eyebrow),#solucoes :is(.eyebrow,.ks-eyebrow),#como-funciona :is(.eyebrow,.ks-eyebrow){background:rgba(255,255,255,.045)!important;color:#e6d3ac!important;border-color:rgba(243,223,177,.28)!important}
-#solucoes h2,#como-funciona h2{color:#f7f3ea!important}
-#solucoes h2 em,#como-funciona h2 em{background:var(--ks-metal-text)!important;-webkit-background-clip:text!important;background-clip:text!important;color:transparent!important}
-#solucoes h2:after,#como-funciona h2:after{color:#c9a468!important;background-image:linear-gradient(90deg,transparent,rgba(243,223,177,.45)),linear-gradient(90deg,rgba(243,223,177,.45),transparent)!important}
-#solucoes .solutions-heading p,#como-funciona .ks-steps-intro{color:#c9d4cd!important}
-#solucoes .ks-more,#como-funciona .ks-more{color:#f3efe6}
-#solucoes .ks-more-icon,#como-funciona .ks-more-icon{border-color:rgba(243,223,177,.45);color:#f3dfb1}
-#solucoes .ks-more:hover .ks-more-icon,#como-funciona .ks-more:hover .ks-more-icon{background:var(--ks-metal-btn);border-color:transparent;color:#1d2a1f}
-
-/* ---------- base das seções brancas ---------- */
-#tratamentos,#servicos,#agendar{background:#fff!important;color:var(--ks-ink)}
-#tratamentos:before{content:none!important}
-#tratamentos .eyebrow,#servicos .eyebrow{background:#fff!important;color:#4a5a50!important;border-color:rgba(16,46,32,.14)!important}
-#tratamentos h2{color:#102e20!important}
-#tratamentos h2 em{background:var(--ks-metal-ink)!important;-webkit-background-clip:text!important;background-clip:text!important;color:transparent!important}
-#tratamentos h2:after{color:#a67f50!important;background-image:linear-gradient(90deg,transparent,rgba(16,46,32,.35)),linear-gradient(90deg,rgba(16,46,32,.35),transparent)!important}
-#tratamentos .legacy-intro{color:#4c5a52!important}
-#tratamentos .process-grid article{box-shadow:0 30px 60px -36px rgba(4,33,11,.55)}
-
-/* ---------- 360: card destacado sobre o fundo escuro ---------- */
-#sintomas .diagnostico-card{border:1px solid rgba(243,223,177,.22)!important;box-shadow:0 40px 80px -40px rgba(0,0,0,.6)!important;background-color:#0f3320!important}
-
-/* ---------- Soluções: cards em vidro claro sobre o escuro ---------- */
-#solucoes .solution-card:not(.solution-featured){background:linear-gradient(160deg,rgba(255,255,255,.07),rgba(255,255,255,.02))!important;border:1px solid rgba(243,223,177,.18)!important;box-shadow:none!important}
-#solucoes .solution-card:not(.solution-featured):hover{border-color:rgba(243,223,177,.45)!important;background:linear-gradient(160deg,rgba(255,255,255,.10),rgba(255,255,255,.03))!important}
-#solucoes .solution-featured{background:radial-gradient(90% 140% at 0% 0%,#1d5233 0%,#0f3a22 55%,#0a2a17 100%)!important;border:1px solid rgba(243,223,177,.35)!important}
-
-/* ---------- Ondas entre seções (cor da seção seguinte) ---------- */
-#sintomas>.paired-section-wave path{fill:#fff!important}
-#tratamentos>.paired-section-wave path{fill:#0c2b17!important}
-
-/* ---------- Como funciona no escuro ---------- */
-#ks-road-fade stop{stop-color:#1f5034!important}
-.ks-road-seps path{stroke:#0c2b17!important;opacity:1!important}
-#como-funciona .ks-road-text h3{color:#f3efe6!important}
-#como-funciona .ks-road-num{color:#d9bb84}
-#como-funciona .ks-road-text p{color:#c9d4cd!important}
-#como-funciona .ks-road-chev{color:#f3dfb1;opacity:.85}
-#como-funciona .ks-road .ks-road-seal{box-shadow:0 0 0 1.1cqw rgba(255,255,255,.06),0 0 0 calc(1.1cqw + 1px) rgba(243,223,177,.3),0 18px 34px -14px rgba(0,0,0,.6)}
-#como-funciona .ks-road-node{box-shadow:0 1px 0 #fff inset,0 -6px 12px rgba(12,43,23,.08) inset,0 18px 30px -10px rgba(0,0,0,.55)}
-@media(max-width:1000px){
-  #como-funciona .ks-road:before{background:linear-gradient(180deg,#1f5034 0 85%,rgba(31,80,52,0))}
-  #como-funciona .ks-road .ks-road-seal{box-shadow:0 0 0 8px rgba(255,255,255,.06),0 0 0 9px rgba(243,223,177,.3),0 16px 30px -12px rgba(0,0,0,.6)}
+/* ---------- HERO + VÍDEO: um só fundo escuro ---------- */
+#cuidado{background:#04210b!important;overflow:hidden;color:#f3efe6}
+#cuidado>.ks-hero-curve{display:none!important}
+#cuidado.perennia-about{padding-top:40px!important}
+#cuidado:before{content:''!important;position:absolute;inset:0;z-index:0;pointer-events:none;-webkit-mask:none;mask:none;
+  background:
+    radial-gradient(42% 38% at 50% 62%,rgba(201,164,104,.20),transparent 72%),
+    linear-gradient(115deg,transparent 0 6%,rgba(201,164,104,.16) 6.2%,rgba(201,164,104,.04) 14%,transparent 14.2%),
+    linear-gradient(115deg,transparent 0 16%,rgba(201,164,104,.08) 16.2%,transparent 20%),
+    linear-gradient(295deg,transparent 0 6%,rgba(201,164,104,.16) 6.2%,rgba(201,164,104,.04) 14%,transparent 14.2%),
+    linear-gradient(295deg,transparent 0 16%,rgba(201,164,104,.08) 16.2%,transparent 20%)!important}
+#cuidado:after{content:''!important;position:absolute;left:0;right:0;bottom:0;height:120px;z-index:0;pointer-events:none;background:linear-gradient(180deg,transparent,#04210b)!important}
+#cuidado>*:not(.ks-hero-curve){position:relative;z-index:1}
+#cuidado h2{color:#f7f3ea!important}
+#cuidado h2 em{background:var(--ks-metal-text)!important;-webkit-background-clip:text!important;background-clip:text!important;color:transparent!important}
+#cuidado h2:after{color:#c9a468!important;background-image:linear-gradient(90deg,transparent,rgba(243,223,177,.45)),linear-gradient(90deg,rgba(243,223,177,.45),transparent)!important}
+#cuidado .scroll-cue{color:#f3dfb1!important;border-color:rgba(243,223,177,.35)!important;background:rgba(255,255,255,.04)!important}
+#cuidado .perennia-video-cover{box-shadow:0 0 0 1px rgba(243,223,177,.35),0 0 0 10px rgba(255,255,255,.04),0 0 0 11px rgba(243,223,177,.16),0 50px 90px -30px rgba(0,0,0,.7),0 0 120px -20px rgba(201,164,104,.25)!important}
+#cuidado .ks-more{color:#f3efe6}
+#cuidado .ks-more-icon{border-color:rgba(243,223,177,.45);color:#f3dfb1}
+#cuidado .ks-more:hover .ks-more-icon{background:var(--ks-metal-btn);border-color:transparent;color:#1d2a1f}
+@media(max-width:700px){
+  #cuidado.perennia-about{padding-top:24px!important}
+  #cuidado .perennia-video-cover{box-shadow:0 0 0 1px rgba(243,223,177,.35),0 0 0 6px rgba(255,255,255,.04),0 0 0 7px rgba(243,223,177,.16),0 30px 60px -24px rgba(0,0,0,.7)!important}
 }
 
-/* Seções escuras sem o quadriculado */
-#sintomas,#solucoes,#como-funciona{background:radial-gradient(ellipse 60% 50% at 0% 0%,rgba(201,164,104,.10),transparent 70%),#0c2b17!important}
-#sintomas:before,#solucoes:before,#como-funciona:before,#sintomas .diagnostico-card:before,#sintomas .diagnostico-card:after{background-image:none!important}
-#sintomas .diagnostico-card{background:radial-gradient(70% 60% at 78% 45%,rgba(201,164,104,.10),transparent 70%),#0f3320!important}
+/* ---------- AGENDAR: seção escura, card destacado ---------- */
+#agendar{background:radial-gradient(ellipse 60% 50% at 50% 0%,rgba(201,164,104,.10),transparent 70%),#0c2b17!important}
+#agendar .ks-closing-card{border:1px solid rgba(243,223,177,.25)!important;box-shadow:0 40px 80px -40px rgba(0,0,0,.6)!important}
+.ks-footer{border-top:1px solid rgba(243,223,177,.14)}
+.perennia-hero:before{background:linear-gradient(#092312 0%,#06220f 60%,#04210b 100%)!important}
+.perennia-hero:after{background:linear-gradient(rgba(4,33,11,0) 72%,#04210b 100%)!important}
+#cuidado:before{-webkit-mask:linear-gradient(180deg,transparent 0,#000 260px)!important;mask:linear-gradient(180deg,transparent 0,#000 260px)!important}
+#cuidado .scroll-cue{display:grid!important;place-items:center}
+#cuidado .scroll-cue svg{width:16px!important;height:16px!important;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+#cuidado:before{-webkit-mask:none!important;mask:none!important;background:
+    linear-gradient(180deg,#04210b 0,rgba(4,33,11,.85) 90px,rgba(4,33,11,0) 300px),
+    radial-gradient(42% 38% at 50% 62%,rgba(201,164,104,.20),transparent 72%),
+    linear-gradient(115deg,transparent 0 6%,rgba(201,164,104,.16) 6.2%,rgba(201,164,104,.04) 14%,transparent 14.2%),
+    linear-gradient(115deg,transparent 0 16%,rgba(201,164,104,.08) 16.2%,transparent 20%),
+    linear-gradient(295deg,transparent 0 6%,rgba(201,164,104,.16) 6.2%,rgba(201,164,104,.04) 14%,transparent 14.2%),
+    linear-gradient(295deg,transparent 0 16%,rgba(201,164,104,.08) 16.2%,transparent 20%)!important}
+#cuidado:before{transform:none!important;inset:0!important;left:0!important;top:0!important;font-size:0!important;-webkit-text-stroke:0!important}
+#cuidado .scroll-cue svg{stroke:#f3dfb1!important}
