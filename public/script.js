@@ -17,10 +17,9 @@ const WHATSAPP_MENSAGEM = "Olá! Vim pelo site da Perennia e gostaria de agendar
 const waLink = extra => "https://wa.me/" + WHATSAPP_NUMERO + "?text=" +
   encodeURIComponent(WHATSAPP_MENSAGEM + (extra ? " Tenho interesse em: " + extra + "." : ""));
 
-// Botões de conversa: todos vão para o WhatsApp, exceto o da hero (que segue abrindo o aviso)
+// WhatsApp só na hero (site institucional): o botão da hero abre o WhatsApp quando o número for preenchido
 $$('[data-perennia-book]').forEach(b => b.addEventListener('click', () => {
-  const naHero = !!b.closest('.perennia-hero');
-  if (WHATSAPP_NUMERO && !naHero) {
+  if (WHATSAPP_NUMERO) {
     const servico = b.closest('.specialist-item')?.querySelector('h3')?.textContent.trim();
     window.open(waLink(servico), '_blank', 'noopener');
     return;
