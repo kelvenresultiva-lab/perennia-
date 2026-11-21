@@ -27,3 +27,21 @@ $$('[data-perennia-book]').forEach(b => b.addEventListener('click', () => {
   openDialog($('#perennia-dialog'));
 }));
 $$('[data-perennia-video]').forEach(b=>b.addEventListener('click',()=>openDialog($('#perennia-video-dialog'))));
+
+// "Perennia" atrás do vídeo: no celular, ajusta o tamanho para ocupar a largura toda sem estourar a tela
+(() => {
+  const w = document.querySelector('#cuidado .ks-vid-word'); if (!w) return;
+  const fit = () => {
+    if (!matchMedia('(max-width: 700px)').matches) { w.style.removeProperty('--vw-fit'); return; }
+    w.style.setProperty('font-size', '100px', 'important');
+    const width = w.scrollWidth, alvo = document.documentElement.clientWidth * 0.95;
+    const fs = Math.floor(100 * alvo / width);
+    w.style.setProperty('font-size', fs + 'px', 'important');
+    w.style.setProperty('bottom', 'calc(' + fs + 'px * -.36 + 45px)', 'important');
+    w.parentElement.style.setProperty('padding-bottom', 'calc(' + fs + 'px * .6 + 71px)', 'important');
+  };
+  const reset = () => { if (!matchMedia('(max-width: 700px)').matches) { w.style.removeProperty('font-size'); w.style.removeProperty('bottom'); w.parentElement.style.removeProperty('padding-bottom'); } else fit(); };
+  addEventListener('resize', reset); addEventListener('load', fit);
+  if (document.fonts) document.fonts.ready.then(fit);
+  fit();
+})();
