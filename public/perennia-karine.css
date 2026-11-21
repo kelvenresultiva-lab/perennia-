@@ -1050,3 +1050,5 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 #cuidado .ks-vid-word,#cuidado .ks-vid-word{top:auto!important;bottom:calc(27cqw * -.13 + 16px)!important}
 #cuidado .ks-vid-panel{overflow:hidden!important;padding-bottom:calc(27cqw * .8 + 36px)!important}
 @media(max-width:700px){#cuidado .ks-vid-word{top:auto!important;bottom:calc(27cqw * -.13 + 10px)!important}#cuidado .ks-vid-panel{padding-bottom:calc(27cqw * .8 + 24px)!important}}
+#cuidado .ks-vid-word{bottom:calc(27cqw * -.47)!important}#cuidado .ks-vid-panel{padding-bottom:calc(27cqw * .5 + 34px)!important}@media(max-width:700px){#cuidado .ks-vid-word{bottom:calc(27cqw * -.47)!important}#cuidado .ks-vid-panel{padding-bottom:calc(27cqw * .5 + 26px)!important}}
+#cuidado .ks-vid-word{bottom:calc(27cqw * -.36)!important}#cuidado .ks-vid-panel{padding-bottom:calc(27cqw * .6 + 34px)!important}@media(max-width:700px){#cuidado .ks-vid-word{bottom:calc(27cqw * -.36)!important}#cuidado .ks-vid-panel{padding-bottom:calc(27cqw * .6 + 26px)!important}}
