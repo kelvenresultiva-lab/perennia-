@@ -738,34 +738,7 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 .ks-steps{overflow:hidden}
 @media(min-width:1001px){.ks-road-step.s3 .ks-road-text{width:17.5cqw}}
 
-/* ---------- SERVIÇOS: fundo verde-escuro igual ao Legacy ---------- */
-.ks-svc-section{background:radial-gradient(ellipse 55% 45% at 0% 0%,rgba(201,164,104,.12),transparent 70%),#0c2b17!important;color:#f3efe6;border-top:0;border-bottom:0}
-.ks-svc-section:before{background:url(assets/process-grid.svg) center top/auto repeat!important;opacity:.9}
-.ks-svc-section .ks-eyebrow{color:#f3dfb1;border-color:rgba(243,223,177,.35);background:rgba(255,255,255,.04)}
-.ks-svc-section #specialist-title{color:#f3efe6}
-.ks-svc-section #specialist-title em{background:var(--ks-metal-text);-webkit-background-clip:text;background-clip:text;color:transparent}
-.ks-svc-section #specialist-title:after{color:#c9a468}
-.ks-svc-head>p{color:#c9d4cd}
-.ks-svc-count{border-color:rgba(243,223,177,.16)}
-.ks-svc-count strong{background:var(--ks-metal-text);-webkit-background-clip:text;background-clip:text}
-.ks-svc-count span{color:#9fb0a6}
-.ks-svc-list{border-bottom-color:rgba(243,223,177,.16)}
-.ks-svc-list .specialist-item{border-top-color:rgba(243,223,177,.16)}
-.ks-svc-num{color:#c9a468}
-.ks-svc-list .specialist-item h3{color:#f3efe6}
-.ks-svc-desc>p{color:#c9d4cd}
-.ks-svc-tag{border-color:rgba(243,223,177,.22);background:transparent;color:#a9b8ae}
-.ks-svc-arrow{border-color:rgba(243,223,177,.32);background:transparent;color:#f3dfb1}
-.ks-svc-list .specialist-item:after{background:linear-gradient(90deg,#c39a5c,#f3dfb1,transparent)}
-.ks-svc-list .specialist-item:is(:hover,:focus-within),.ks-svc-list:not(:hover):not(:focus-within) .specialist-item:first-child{background:linear-gradient(90deg,rgba(201,164,104,.13),rgba(255,255,255,.03) 70%,rgba(255,255,255,.02));box-shadow:0 0 0 1px rgba(243,223,177,.14) inset,0 24px 50px -30px rgba(0,0,0,.5);border-top-color:transparent}
-.ks-svc-list .specialist-item:is(:hover,:focus-within) h3,.ks-svc-list:not(:hover):not(:focus-within) .specialist-item:first-child h3{color:#fff}
-.ks-svc-list .specialist-item:is(:hover,:focus-within) .ks-svc-tag,.ks-svc-list:not(:hover):not(:focus-within) .specialist-item:first-child .ks-svc-tag{color:#f3dfb1;border-color:rgba(243,223,177,.45);background:rgba(243,223,177,.06)}
-.ks-svc-list .specialist-item:is(:hover,:focus-within) .ks-svc-arrow,.ks-svc-list:not(:hover):not(:focus-within) .specialist-item:first-child .ks-svc-arrow{background:var(--ks-metal-btn);border-color:transparent;color:#1d2a1f}
-.ks-svc-list .specialist-item:focus-visible{box-shadow:0 0 0 2px rgba(243,223,177,.5)}
-.ks-svc-head .ks-more{color:#f3efe6}
-.ks-svc-head .ks-more-icon{border-color:rgba(243,223,177,.45);color:#f3dfb1}
-.ks-svc-head .ks-more:hover .ks-more-icon{background:var(--ks-metal-btn);border-color:transparent;color:#1d2a1f}
-.ks-svc-section .eyebrow{background:rgba(255,255,255,.05)!important;color:#f3dfb1!important;border-color:rgba(243,223,177,.35)!important}
+
 
 /* SOLUÇÕES: todos os cards no verde-escuro do Perennia 360° */
 .solution-card:not(.solution-featured){background:radial-gradient(90% 140% at 0% 0%,#123a22 0%,#04210b 60%)!important;border:1px solid rgba(243,223,177,.18)!important;box-shadow:0 24px 50px -32px rgba(4,33,11,.55)!important;transition:transform .4s ease,border-color .4s ease}
@@ -773,3 +746,57 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 .solution-card:not(.solution-featured) .solution-label{color:#c9a468!important}
 .solution-card:not(.solution-featured) h3{background:var(--ks-metal-text)!important;-webkit-background-clip:text!important;background-clip:text!important;color:transparent!important}
 .solution-card:not(.solution-featured) p{color:#d1dad4!important}
+
+/* =====================================================================
+   RITMO DE SEÇÕES: escuro / branco alternados
+   Hero (escuro) → Vídeo (branco) → 360 (escuro) → Legacy (branco) →
+   Soluções (escuro) → Serviços (branco) → Como funciona (escuro) →
+   Agendar (branco) → Rodapé (escuro)
+   ===================================================================== */
+
+/* ---------- base das seções escuras ---------- */
+#sintomas,#solucoes,#como-funciona{position:relative;background:radial-gradient(ellipse 60% 50% at 0% 0%,rgba(201,164,104,.10),transparent 70%),url(assets/process-grid.svg) center top/auto repeat,#0c2b17!important;color:#f3efe6;border:0!important}
+#sintomas :is(.eyebrow,.ks-eyebrow),#solucoes :is(.eyebrow,.ks-eyebrow),#como-funciona :is(.eyebrow,.ks-eyebrow){background:rgba(255,255,255,.045)!important;color:#e6d3ac!important;border-color:rgba(243,223,177,.28)!important}
+#solucoes h2,#como-funciona h2{color:#f7f3ea!important}
+#solucoes h2 em,#como-funciona h2 em{background:var(--ks-metal-text)!important;-webkit-background-clip:text!important;background-clip:text!important;color:transparent!important}
+#solucoes h2:after,#como-funciona h2:after{color:#c9a468!important;background-image:linear-gradient(90deg,transparent,rgba(243,223,177,.45)),linear-gradient(90deg,rgba(243,223,177,.45),transparent)!important}
+#solucoes .solutions-heading p,#como-funciona .ks-steps-intro{color:#c9d4cd!important}
+#solucoes .ks-more,#como-funciona .ks-more{color:#f3efe6}
+#solucoes .ks-more-icon,#como-funciona .ks-more-icon{border-color:rgba(243,223,177,.45);color:#f3dfb1}
+#solucoes .ks-more:hover .ks-more-icon,#como-funciona .ks-more:hover .ks-more-icon{background:var(--ks-metal-btn);border-color:transparent;color:#1d2a1f}
+
+/* ---------- base das seções brancas ---------- */
+#tratamentos,#servicos,#agendar{background:#fff!important;color:var(--ks-ink)}
+#tratamentos:before{content:none!important}
+#tratamentos .eyebrow,#servicos .eyebrow{background:#fff!important;color:#4a5a50!important;border-color:rgba(16,46,32,.14)!important}
+#tratamentos h2{color:#102e20!important}
+#tratamentos h2 em{background:var(--ks-metal-ink)!important;-webkit-background-clip:text!important;background-clip:text!important;color:transparent!important}
+#tratamentos h2:after{color:#a67f50!important;background-image:linear-gradient(90deg,transparent,rgba(16,46,32,.35)),linear-gradient(90deg,rgba(16,46,32,.35),transparent)!important}
+#tratamentos .legacy-intro{color:#4c5a52!important}
+#tratamentos .process-grid article{box-shadow:0 30px 60px -36px rgba(4,33,11,.55)}
+
+/* ---------- 360: card destacado sobre o fundo escuro ---------- */
+#sintomas .diagnostico-card{border:1px solid rgba(243,223,177,.22)!important;box-shadow:0 40px 80px -40px rgba(0,0,0,.6)!important;background-color:#0f3320!important}
+
+/* ---------- Soluções: cards em vidro claro sobre o escuro ---------- */
+#solucoes .solution-card:not(.solution-featured){background:linear-gradient(160deg,rgba(255,255,255,.07),rgba(255,255,255,.02))!important;border:1px solid rgba(243,223,177,.18)!important;box-shadow:none!important}
+#solucoes .solution-card:not(.solution-featured):hover{border-color:rgba(243,223,177,.45)!important;background:linear-gradient(160deg,rgba(255,255,255,.10),rgba(255,255,255,.03))!important}
+#solucoes .solution-featured{background:radial-gradient(90% 140% at 0% 0%,#1d5233 0%,#0f3a22 55%,#0a2a17 100%)!important;border:1px solid rgba(243,223,177,.35)!important}
+
+/* ---------- Ondas entre seções (cor da seção seguinte) ---------- */
+#sintomas>.paired-section-wave path{fill:#fff!important}
+#tratamentos>.paired-section-wave path{fill:#0c2b17!important}
+
+/* ---------- Como funciona no escuro ---------- */
+#ks-road-fade stop{stop-color:#1f5034!important}
+.ks-road-seps path{stroke:#0c2b17!important;opacity:1!important}
+#como-funciona .ks-road-text h3{color:#f3efe6!important}
+#como-funciona .ks-road-num{color:#d9bb84}
+#como-funciona .ks-road-text p{color:#c9d4cd!important}
+#como-funciona .ks-road-chev{color:#f3dfb1;opacity:.85}
+#como-funciona .ks-road .ks-road-seal{box-shadow:0 0 0 1.1cqw rgba(255,255,255,.06),0 0 0 calc(1.1cqw + 1px) rgba(243,223,177,.3),0 18px 34px -14px rgba(0,0,0,.6)}
+#como-funciona .ks-road-node{box-shadow:0 1px 0 #fff inset,0 -6px 12px rgba(12,43,23,.08) inset,0 18px 30px -10px rgba(0,0,0,.55)}
+@media(max-width:1000px){
+  #como-funciona .ks-road:before{background:linear-gradient(180deg,#1f5034 0 85%,rgba(31,80,52,0))}
+  #como-funciona .ks-road .ks-road-seal{box-shadow:0 0 0 8px rgba(255,255,255,.06),0 0 0 9px rgba(243,223,177,.3),0 16px 30px -12px rgba(0,0,0,.6)}
+}
