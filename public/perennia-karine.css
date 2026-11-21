@@ -1121,3 +1121,44 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
   #como-funciona{border-top-width:54px;border-bottom-width:54px}
   #contatos{border-top-width:54px}
 }
+
+/* ================= PALETA ÚNICA (coerência) =================
+   Verde profundo #0F2E1F (seções escuras) · rodapé #0A2418
+   Marfim #F8F5EE (seções claras) · faixa/apoio #EFEAE0
+   Ouro fosco #B8955F · ouro claro (no escuro) #D8BE8E · ouro escuro (no claro) #8C6B3C
+   Texto no claro: títulos #14301F, corpo #55625A · no escuro: títulos #F4F0E7, corpo rgba(244,240,231,.74) */
+:root{--pv:#0F2E1F;--pv-rod:#0A2418;--pm:#F8F5EE;--pm2:#EFEAE0;--po:#B8955F;--po-cl:#D8BE8E;--po-es:#8C6B3C;--pt:#14301F;--pc:#55625A}
+
+/* fundos escuros: um verde só, sem manchas de brilho */
+#sintomas,#servicos,#agendar{background-color:var(--pv)!important;background-image:none!important}
+#servicos::before,#agendar .ks-closing-card::after{display:none!important}
+#agendar .ks-closing-card{background:transparent!important}
+#contatos{background:var(--pv-rod)!important;border-top-color:var(--pv-rod)!important}
+
+/* fundos claros: marfim */
+#cuidado,#tratamentos.legacy-section,#solucoes,#como-funciona{background-color:var(--pm)!important;background-image:none!important}
+#cuidado::before{display:none!important}
+#tratamentos.legacy-section,#solucoes,#como-funciona{border-color:var(--pm)!important}
+#cuidado .ks-vid-panel{background:var(--pm2)!important}
+#cuidado .scroll-cue{background:var(--pm)!important}
+
+/* títulos e textos */
+#cuidado h2,#tratamentos h2,#solucoes h2,#como-funciona h2{color:var(--pt)!important}
+#sintomas h2,#servicos h2,#agendar h2{color:#F4F0E7!important}
+
+/* destaques: ouro sólido, sem degradê brilhante */
+#cuidado em,#tratamentos h2 em,#solucoes em,#como-funciona em{background:none!important;-webkit-text-fill-color:var(--po-es)!important;color:var(--po-es)!important}
+#sintomas em,#sintomas strong,#servicos em,#servicos strong,#agendar em,#contatos em,.perennia-hero em{background:none!important;-webkit-text-fill-color:var(--po-cl)!important;color:var(--po-cl)!important}
+#solucoes h3{background:none!important;-webkit-text-fill-color:currentColor!important}
+#tratamentos .process-grid h3{background:none!important;-webkit-text-fill-color:#F4F0E7!important;color:#F4F0E7!important}
+.ks-seal-mark{background:none!important;-webkit-text-fill-color:var(--po-cl)!important;color:var(--po-cl)!important}
+
+/* botões: ouro fosco, degradê discreto */
+.perennia-cta,.ks-btn,a.cta{background-image:linear-gradient(135deg,#DCC496 0%,#B8955F 100%)!important;color:var(--pt)!important;box-shadow:0 10px 24px -14px rgba(15,46,31,.45)!important}
+.ks-cta-icon{background:#F8F5EE!important}
+
+/* cards do Método Legacy no mesmo verde */
+#tratamentos .process-grid article{background:linear-gradient(165deg,#163B28,var(--pv))!important}
+
+/* onda branca antiga entre Legacy e Soluções (sobrava da versão antiga) */
+.paired-section-wave{display:none!important}
