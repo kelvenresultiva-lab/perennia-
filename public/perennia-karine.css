@@ -832,3 +832,52 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
     linear-gradient(295deg,transparent 0 16%,rgba(201,164,104,.08) 16.2%,transparent 20%)!important}
 #cuidado:before{transform:none!important;inset:0!important;left:0!important;top:0!important;font-size:0!important;-webkit-text-stroke:0!important}
 #cuidado .scroll-cue svg{stroke:#f3dfb1!important}
+
+/* ---------- Fundos escuros com brilho dourado difuso nas laterais (ref. modelo enviado) ---------- */
+.perennia-hero:before{background:
+    radial-gradient(38% 55% at -4% 78%,rgba(201,164,104,.34),rgba(201,164,104,.10) 45%,transparent 72%),
+    linear-gradient(#092312 0%,#06220f 60%,#04210b 100%)!important}
+#cuidado:before{background:
+    linear-gradient(180deg,#04210b 0,rgba(4,33,11,.6) 80px,rgba(4,33,11,0) 240px),
+    radial-gradient(34% 46% at -2% 42%,rgba(201,164,104,.30),rgba(201,164,104,.08) 50%,transparent 75%),
+    radial-gradient(30% 40% at 102% 70%,rgba(201,164,104,.26),rgba(201,164,104,.07) 50%,transparent 75%),
+    radial-gradient(40% 36% at 50% 62%,rgba(201,164,104,.16),transparent 72%)!important}
+#tratamentos{background:
+    radial-gradient(34% 40% at 102% 18%,rgba(201,164,104,.26),rgba(201,164,104,.07) 50%,transparent 75%),
+    radial-gradient(32% 40% at -2% 85%,rgba(201,164,104,.22),rgba(201,164,104,.06) 50%,transparent 75%),
+    #0c2b17!important}
+.ks-svc-section{background:
+    radial-gradient(34% 45% at -3% 20%,rgba(201,164,104,.28),rgba(201,164,104,.07) 50%,transparent 75%),
+    radial-gradient(30% 40% at 103% 88%,rgba(201,164,104,.22),rgba(201,164,104,.06) 50%,transparent 75%),
+    #0c2b17!important}
+#agendar{background:
+    radial-gradient(34% 55% at -3% 50%,rgba(201,164,104,.26),rgba(201,164,104,.07) 50%,transparent 75%),
+    radial-gradient(34% 55% at 103% 50%,rgba(201,164,104,.26),rgba(201,164,104,.07) 50%,transparent 75%),
+    #0c2b17!important}
+@media(max-width:700px){
+  #cuidado:before{background:
+    linear-gradient(180deg,#04210b 0,rgba(4,33,11,0) 160px),
+    radial-gradient(70% 30% at -10% 45%,rgba(201,164,104,.30),transparent 75%),
+    radial-gradient(70% 30% at 110% 75%,rgba(201,164,104,.24),transparent 75%)!important}
+}
+/* brilho mais presente */
+.perennia-hero:after{background:
+    linear-gradient(rgba(4,33,11,0) 72%,#04210b 100%),
+    radial-gradient(34% 50% at -6% 70%,rgba(214,172,104,.42),rgba(201,164,104,.12) 45%,transparent 72%)!important}
+#cuidado:before{background:
+    linear-gradient(180deg,#04210b 0,rgba(4,33,11,.5) 70px,rgba(4,33,11,0) 200px),
+    radial-gradient(30% 48% at -4% 45%,rgba(214,172,104,.42),rgba(201,164,104,.12) 45%,transparent 74%),
+    radial-gradient(28% 44% at 104% 72%,rgba(214,172,104,.36),rgba(201,164,104,.10) 45%,transparent 74%),
+    radial-gradient(40% 36% at 50% 62%,rgba(201,164,104,.16),transparent 72%)!important}
+#tratamentos{background:
+    radial-gradient(30% 36% at 104% 16%,rgba(214,172,104,.36),rgba(201,164,104,.10) 45%,transparent 74%),
+    radial-gradient(28% 36% at -4% 86%,rgba(214,172,104,.32),rgba(201,164,104,.09) 45%,transparent 74%),
+    #0c2b17!important}
+.ks-svc-section{background:
+    radial-gradient(30% 42% at -4% 20%,rgba(214,172,104,.38),rgba(201,164,104,.10) 45%,transparent 74%),
+    radial-gradient(28% 38% at 104% 88%,rgba(214,172,104,.32),rgba(201,164,104,.09) 45%,transparent 74%),
+    #0c2b17!important}
+#agendar{background:
+    radial-gradient(30% 55% at -4% 50%,rgba(214,172,104,.36),rgba(201,164,104,.10) 45%,transparent 74%),
+    radial-gradient(30% 55% at 104% 50%,rgba(214,172,104,.36),rgba(201,164,104,.10) 45%,transparent 74%),
+    #0c2b17!important}
