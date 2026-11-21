@@ -35,9 +35,9 @@ $$('[data-perennia-video]').forEach(b=>b.addEventListener('click',()=>openDialog
   const panel = w.closest(".ks-vid-panel");
   const CURVA = 45; // no celular, distância do fim da seção até o topo reto da curva escura (54px de curva)
   const fit = () => {
-    if (!matchMedia("(max-width: 700px)").matches) { ["font-size", "bottom"].forEach(p => w.style.removeProperty(p)); panel.style.removeProperty("padding-bottom"); return; }
-    w.style.setProperty("font-size", "100px", "important");
-    const fs = Math.floor(100 * document.documentElement.clientWidth * 0.94 / w.scrollWidth);
+    if (!matchMedia("(max-width: 700px)").matches) { ["font-size", "bottom", "letter-spacing"].forEach(p => w.style.removeProperty(p)); panel.style.removeProperty("padding-bottom"); return; }
+    w.style.setProperty("font-size", "100px", "important"); w.style.setProperty("letter-spacing", "-.065em", "important");
+    const fs = Math.floor(100 * document.documentElement.clientWidth * 0.995 / w.scrollWidth);
     w.style.setProperty("font-size", fs + "px", "important");
     w.style.setProperty("bottom", (CURVA - 0.36 * fs).toFixed(1) + "px", "important");
     panel.style.setProperty("padding-bottom", (CURVA + 0.6 * fs + 26).toFixed(0) + "px", "important");
