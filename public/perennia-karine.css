@@ -800,3 +800,8 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
   #como-funciona .ks-road:before{background:linear-gradient(180deg,#1f5034 0 85%,rgba(31,80,52,0))}
   #como-funciona .ks-road .ks-road-seal{box-shadow:0 0 0 8px rgba(255,255,255,.06),0 0 0 9px rgba(243,223,177,.3),0 16px 30px -12px rgba(0,0,0,.6)}
 }
+
+/* Seções escuras sem o quadriculado */
+#sintomas,#solucoes,#como-funciona{background:radial-gradient(ellipse 60% 50% at 0% 0%,rgba(201,164,104,.10),transparent 70%),#0c2b17!important}
+#sintomas:before,#solucoes:before,#como-funciona:before,#sintomas .diagnostico-card:before,#sintomas .diagnostico-card:after{background-image:none!important}
+#sintomas .diagnostico-card{background:radial-gradient(70% 60% at 78% 45%,rgba(201,164,104,.10),transparent 70%),#0f3320!important}
