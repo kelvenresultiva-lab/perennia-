@@ -34,7 +34,7 @@ $$('[data-perennia-video]').forEach(b=>b.addEventListener('click',()=>openDialog
   const fit = () => {
     if (!matchMedia('(max-width: 700px)').matches) { w.style.removeProperty('--vw-fit'); return; }
     w.style.setProperty('font-size', '100px', 'important');
-    const width = w.scrollWidth, alvo = document.documentElement.clientWidth * 0.99;
+    const width = w.scrollWidth, alvo = document.documentElement.clientWidth * 0.92;
     const fs = Math.floor(100 * alvo / width);
     w.style.setProperty('font-size', fs + 'px', 'important');
     w.style.setProperty('bottom', 'calc(' + fs + 'px * -.2 + 45px)', 'important');
