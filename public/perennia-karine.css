@@ -1071,3 +1071,4 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 }
 #sintomas{-webkit-mask-position:top left,left calc(var(--cv) - 2px)!important;mask-position:top left,left calc(var(--cv) - 2px)!important;-webkit-mask-size:100% var(--cv),100% calc(100% - var(--cv) + 2px)!important;mask-size:100% var(--cv),100% calc(100% - var(--cv) + 2px)!important}
 #sintomas .diagnostico-card,#sintomas .diagnostico-card:before{border-top:0!important}
+@media(max-width:700px){#cuidado .ks-vid-word{font-size:23.5cqw!important;bottom:calc(23.5cqw * -.36 + 45px)!important;max-width:none!important}#cuidado .ks-vid-panel{padding-bottom:calc(23.5cqw * .6 + 26px + 45px)!important}}
