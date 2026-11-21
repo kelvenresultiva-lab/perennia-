@@ -1045,3 +1045,8 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 @media(max-width:700px){#sintomas>.ks-curve-360{height:54px}}
 #sintomas>.ks-curve-360 path{stroke:none!important}#sintomas.perennia-360{padding-top:130px!important}@media(max-width:700px){#sintomas.perennia-360{padding-top:80px!important}}
 #sintomas>.ks-curve-360{transform:scaleX(-1)}
+
+/* ---------- Vídeo: "Perennia" no fim da seção (abaixo do botão), inteiro ---------- */
+#cuidado .ks-vid-word,#cuidado .ks-vid-word{top:auto!important;bottom:calc(27cqw * -.13 + 16px)!important}
+#cuidado .ks-vid-panel{overflow:hidden!important;padding-bottom:calc(27cqw * .8 + 36px)!important}
+@media(max-width:700px){#cuidado .ks-vid-word{top:auto!important;bottom:calc(27cqw * -.13 + 10px)!important}#cuidado .ks-vid-panel{padding-bottom:calc(27cqw * .8 + 24px)!important}}

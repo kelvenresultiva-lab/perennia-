@@ -7,7 +7,7 @@ Site estático da Perennia Consultoria Empresarial. Leia `README.md` antes de ed
 - Preservar a hero, suas fotos e a identidade Perennia.
 - Paleta: verde profundo #04210B, verde de seção #0C2B17, dourado #A67F50; fundos claros brancos e cinza neutro #F5F6F5. Evitar bege/caramelo nos fundos.
 - Não espalhar mudanças de cor pelo site todo quando o pedido for de uma seção.
-- Ritmo de seções alternado escuro (#0C2B17, sem quadriculado) / branco: Hero escura → Vídeo branca (curva do hero; faixa clara #F5F6F5 a partir do meio do vídeo, "Perennia" gigante dourado-claro atrás do vídeo, link "Conheça as sócias") → 360° escura (sem card suspenso, conteúdo direto na seção) → Legacy escura → Soluções branca (cards verdes) → Serviços escura → Como funciona branca → Agendar escura → Rodapé escuro com filete dourado. Manter essa alternância ao criar ou mover seções.
+- Ritmo de seções alternado escuro (#0C2B17, sem quadriculado) / branco: Hero escura → Vídeo branca (curva do hero; faixa clara #F5F6F5 a partir do meio do vídeo, "Perennia" gigante dourado-claro no fim da seção, abaixo do botão, link "Conheça as sócias") → 360° escura (sem card suspenso, conteúdo direto na seção) → Legacy escura → Soluções branca (cards verdes) → Serviços escura → Como funciona branca → Agendar escura → Rodapé escuro com filete dourado. Manter essa alternância ao criar ou mover seções.
 - LEGACY usa quatro cards verdes, títulos dourados, descrição e tópicos; sem ícones flutuantes no canto superior direito.
 - Manter transições curvas compactas entre blocos quando já existentes.
 - Não inventar contatos, números de experiência, depoimentos ou dados das responsáveis.
