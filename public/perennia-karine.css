@@ -944,3 +944,10 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 #tratamentos .process-grid article:before{display:block!important;z-index:2!important;right:auto!important;bottom:auto!important}
 #tratamentos .process-grid h3{background:linear-gradient(90deg,#d9bb84 0%,#f7f3ea 70%)!important;-webkit-background-clip:text!important;background-clip:text!important}
 #tratamentos .process-grid article:before{mix-blend-mode:normal!important;filter:none!important}
+
+/* ---------- 360°: sem card suspenso — o conteúdo vive direto na seção escura ---------- */
+#sintomas{position:relative;background:radial-gradient(ellipse 45% 55% at 78% 50%,rgba(201,164,104,.16),transparent 70%),radial-gradient(30% 48% at -4% 45%,rgba(214,172,104,.30),rgba(201,164,104,.08) 45%,transparent 74%),#0c2b17!important;border-top:1px solid rgba(243,223,177,.12)}
+#sintomas .diagnostico-card{background:transparent!important;border:0!important;border-radius:0!important;box-shadow:none!important;overflow:visible!important}
+#sintomas .diagnostico-card:before{-webkit-mask:radial-gradient(ellipse at 72% 50%,#000 20%,transparent 62%)!important;mask:radial-gradient(ellipse at 72% 50%,#000 20%,transparent 62%)!important}
+#sintomas>.paired-section-wave{display:none!important}
+#tratamentos{border-top:1px solid rgba(243,223,177,.12)}
