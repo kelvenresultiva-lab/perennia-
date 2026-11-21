@@ -28,20 +28,38 @@ $$('[data-perennia-book]').forEach(b => b.addEventListener('click', () => {
 }));
 $$('[data-perennia-video]').forEach(b=>b.addEventListener('click',()=>openDialog($('#perennia-video-dialog'))));
 
-// "Perennia" atrás do vídeo: no celular, ajusta o tamanho para ocupar a largura toda sem estourar a tela
+// "Perennia" atrás do vídeo (celular): letras esticadas na altura e ocupando a largura.
+// Ficam dentro de uma faixa (.ks-vid-word-clip) cujo fundo coincide com o topo reto da seção escura,
+// então todas as letras (inclusive o "a", onde a curva desce) são cortadas na mesma linha.
 (() => {
-  const w = document.querySelector('#cuidado .ks-vid-word'); if (!w) return;
+  const w = document.querySelector("#cuidado .ks-vid-word"); if (!w) return;
+  const clip = w.parentElement, panel = clip.parentElement;
+  const props = ["font-size", "bottom", "top", "transform", "transform-origin", "transition", "clip-path"];
+  const ESTICA = 1.45, CORTE = 0.6; // CORTE: fração da altura das minúsculas que fica visível
   const fit = () => {
-    if (!matchMedia('(max-width: 700px)').matches) { w.style.removeProperty('--vw-fit'); return; }
-    w.style.setProperty('font-size', '100px', 'important');
-    const width = w.scrollWidth, alvo = document.documentElement.clientWidth * 0.92;
-    const fs = Math.floor(100 * alvo / width);
-    w.style.setProperty('font-size', fs + 'px', 'important');
-    w.style.setProperty('bottom', 'calc(' + fs + 'px * -.2 + 45px)', 'important');
-    w.parentElement.style.setProperty('padding-bottom', 'calc(' + fs + 'px * .76 + 71px)', 'important');
+    if (!matchMedia("(max-width: 700px)").matches) {
+      props.forEach(p => w.style.removeProperty(p)); clip.style.removeProperty("height"); panel.style.removeProperty("padding-bottom"); return;
+    }
+    const sec = document.querySelector("#sintomas");
+    const cv = sec ? (parseFloat(getComputedStyle(sec).getPropertyValue("--cv")) || 54) : 54;
+    const linha = cv - cv * 18 / 110; // distância do fim da seção até o topo reto da curva escura
+    w.style.setProperty("font-size", "100px", "important");
+    const fs = Math.floor(100 * document.documentElement.clientWidth * 0.94 / w.scrollWidth);
+    const yc = 0.28 + 0.52 * CORTE;
+    const visivel = (yc - 0.06) * fs * ESTICA;
+    w.style.setProperty("font-size", fs + "px", "important");
+    w.style.setProperty("top", "auto", "important");
+    w.style.setProperty("bottom", (-(1 - yc) * fs * ESTICA).toFixed(1) + "px", "important");
+    w.style.setProperty("transform", "translateX(-50%) scaleY(" + ESTICA + ")", "important");
+    w.style.setProperty("transform-origin", "50% 100%", "important");
+    w.style.setProperty("transition", "none", "important");
+    w.style.setProperty("clip-path", "none", "important");
+    clip.style.setProperty("bottom", linha.toFixed(1) + "px", "important");
+    clip.style.setProperty("height", visivel.toFixed(0) + "px", "important");
+    panel.style.setProperty("padding-bottom", (linha + visivel + 30).toFixed(0) + "px", "important");
   };
-  const reset = () => { if (!matchMedia('(max-width: 700px)').matches) { w.style.removeProperty('font-size'); w.style.removeProperty('bottom'); w.parentElement.style.removeProperty('padding-bottom'); } else fit(); };
-  addEventListener('resize', reset); addEventListener('load', fit);
-  if (document.fonts) document.fonts.ready.then(fit);
+  let tm = 0; const agenda = () => { clearTimeout(tm); tm = setTimeout(fit, 30); };
+  addEventListener("resize", agenda); addEventListener("load", agenda);
+  if (document.fonts) document.fonts.ready.then(agenda);
   fit();
 })();
