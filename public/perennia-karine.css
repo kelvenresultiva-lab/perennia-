@@ -951,3 +951,11 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 #sintomas .diagnostico-card:before{-webkit-mask:radial-gradient(ellipse at 72% 50%,#000 20%,transparent 62%)!important;mask:radial-gradient(ellipse at 72% 50%,#000 20%,transparent 62%)!important}
 #sintomas>.paired-section-wave{display:none!important}
 #tratamentos{border-top:1px solid rgba(243,223,177,.12)}
+
+/* ---------- Serviços: sem caixa flutuante — conteúdo direto na seção ---------- */
+#servicos .ks-svc-card{background:none!important;border:0!important;border-radius:0!important;box-shadow:none!important;padding:0!important;backdrop-filter:none!important}
+#servicos .ks-svc-card-top{border-bottom:1px solid rgba(243,223,177,.16);padding-bottom:22px}
+@media(max-width:900px){#servicos .ks-svc-card{padding:0!important}#servicos .js-svc .ks-svc-cards{min-height:360px}}
+#servicos.js-svc .ks-svc-card{transform:translateY(36px)!important;transition:opacity .25s ease,transform .25s ease!important}
+#servicos.js-svc .ks-svc-card.is-past{transform:translateY(-36px)!important}
+#servicos.js-svc .ks-svc-card.is-active{transform:none!important;transition:opacity .5s ease .25s,transform .7s cubic-bezier(.2,.7,.2,1) .25s!important}
