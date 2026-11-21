@@ -979,3 +979,22 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
   #cuidado .ks-vid-actions .ks-btn{width:100%;max-width:300px;justify-content:space-between}
 }
 @media(max-width:700px){#cuidado .ks-vid-actions .ks-btn{white-space:nowrap;font-size:12px!important;letter-spacing:.08em!important}}
+
+/* ---------- VÍDEO: fundo branco (painel verde escuro em destaque) ---------- */
+#cuidado{background:#fff!important;color:var(--ks-ink)}
+#cuidado:before,#cuidado:after{content:none!important;background:none!important}
+#cuidado>.ks-hero-curve{display:block!important}
+#cuidado>.ks-hero-curve path{fill:#04210b!important}
+#cuidado.perennia-about{padding-top:96px!important}
+#cuidado .ks-vid .eyebrow{background:#fff!important;color:#4a5a50!important;border-color:rgba(16,46,32,.14)!important}
+#cuidado h2{color:#102e20!important}
+#cuidado h2 em{background:var(--ks-metal-ink)!important;-webkit-background-clip:text!important;background-clip:text!important;color:transparent!important}
+#cuidado h2:after{color:#a67f50!important;background-image:linear-gradient(90deg,transparent,rgba(16,46,32,.35)),linear-gradient(90deg,rgba(16,46,32,.35),transparent)!important}
+#cuidado .ks-vid-intro{color:#4c5a52!important}
+#cuidado .scroll-cue{color:#a67f50!important;border-color:rgba(16,46,32,.18)!important;background:#fff!important}
+#cuidado .scroll-cue svg{stroke:#a67f50!important}
+#cuidado .ks-vid-panel{background:radial-gradient(60% 80% at 50% 100%,rgba(201,164,104,.22),transparent 70%),radial-gradient(90% 140% at 0% 0%,#123a22 0%,#04210b 60%)!important;border:1px solid rgba(243,223,177,.22)!important;box-shadow:0 50px 90px -40px rgba(4,33,11,.55)!important}
+#cuidado .perennia-video-cover{box-shadow:0 0 0 1px rgba(166,127,80,.45),0 0 0 10px #fff,0 0 0 11px rgba(166,127,80,.25),0 40px 80px -30px rgba(4,33,11,.55)!important}
+@media(max-width:700px){#cuidado.perennia-about{padding-top:64px!important}#cuidado .perennia-video-cover{box-shadow:0 0 0 1px rgba(166,127,80,.45),0 0 0 6px #fff,0 0 0 7px rgba(166,127,80,.25),0 24px 50px -20px rgba(4,33,11,.55)!important}}
+#cuidado.perennia-about{padding-bottom:110px!important}@media(max-width:700px){#cuidado.perennia-about{padding-bottom:72px!important}}
+#cuidado .ks-vid-panel{box-shadow:0 30px 50px -30px rgba(4,33,11,.45)!important}
