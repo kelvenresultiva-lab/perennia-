@@ -1299,3 +1299,8 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 .ks-road .ks-road-seal text{font-size:17px!important;letter-spacing:1.2px!important;font-weight:700!important}
 .ks-road .ks-road-seal .ks-seal-ring{inset:0!important;width:100%!important;height:100%!important}
 .ks-road-logo{width:50%}
+
+/* selo do Como funciona: só o símbolo "P" da logo (recorte de x 8–59, y 3–77 da imagem 202×127) */
+.ks-road-p{--h:4.6cqw;position:relative;z-index:1;display:block;width:calc(var(--h) * 51 / 74);height:var(--h);overflow:hidden}
+.ks-road-p img{position:absolute;max-width:none!important;width:calc(var(--h) * 202 / 74)!important;height:auto!important;left:calc(var(--h) * -8 / 74);top:calc(var(--h) * -3 / 74)}
+@media(max-width:1000px){.ks-road-p{--h:42px}}
