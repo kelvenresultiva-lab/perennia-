@@ -2112,3 +2112,19 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 .ks-wave-1{width:min(760px,62%);aspect-ratio:auto;height:125%;top:-12%;right:-14%;background-size:cover;background-position:30% 40%}
 .ks-wave-2{width:min(460px,40%);bottom:-22%;left:-12%}
 @media(max-width:700px){.ks-wave-1{width:95%;height:80%;top:-8%;right:-40%}.ks-wave-2{width:80%;bottom:-18%;left:-34%}}
+
+/* Rodapé mais compacto (22/11): menos vão entre o card e o rodapé, colunas mais próximas */
+#agendar{padding-bottom:24px!important}
+#contatos.ks-footer{padding-top:36px!important;padding-bottom:28px!important}
+#contatos .ks-footer-wrap{max-width:980px!important;margin-left:auto!important;margin-right:auto!important}
+#contatos .ks-footer-top{gap:40px!important;padding-bottom:36px!important}
+#contatos .ks-footer-bottom{padding-top:20px!important}
+@media(max-width:700px){
+  #agendar{padding-bottom:16px!important}
+  #contatos.ks-footer{padding-top:24px!important;padding-bottom:28px!important}
+  #contatos .ks-footer-top{gap:30px!important;padding-bottom:28px!important}
+}
+/* fechamento e rodapé agora têm a mesma cor: sem máscara de curva entre eles (evita a linha/emenda); a faixa branca começa no topo do #agendar */
+#agendar{-webkit-mask:none!important;mask:none!important;margin-bottom:calc(var(--cv) * -1 - 3px)!important}
+#agendar .ks-closing-card:before{top:calc(var(--cv) * -2 - 20px)!important}
+@media(max-width:700px){#agendar .ks-closing-card:before{top:calc(var(--cv) * -2 - 100px)!important}}
