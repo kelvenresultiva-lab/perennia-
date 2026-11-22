@@ -1436,3 +1436,17 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 @keyframes ks-360-spin{to{transform:rotate(360deg)}}
 @media(prefers-reduced-motion:reduce){#sintomas .ks-360-arrow{animation:none}}
 @media(max-width:700px){#sintomas .ks-360-arrow{inset:-22px;width:calc(100% + 44px);height:calc(100% + 44px)}}
+
+/* ---------- 360° no celular: card mais largo e tudo centralizado ---------- */
+@media(max-width:700px){
+  #sintomas{padding-left:0!important;padding-right:0!important}
+  #sintomas .diagnostico-card{margin:0 10px!important;padding-left:22px!important;padding-right:22px!important}
+  #sintomas .diagnostico-copy{text-align:center!important}
+  #sintomas .diagnostico-copy>*{margin-left:auto!important;margin-right:auto!important}
+  #sintomas .diagnostico-kicker{display:table!important}
+  #sintomas .ks-360-cta{display:flex!important;width:100%!important;max-width:320px}
+  #sintomas .diagnostico-areas{justify-content:center!important;gap:22px 12px!important;grid-template-columns:1fr 1fr!important}
+  #sintomas .diagnostico-areas li{flex-direction:column!important;align-items:center!important;text-align:center!important;gap:8px!important}
+  #sintomas .diagnostico-areas li span{text-align:center!important;margin:0!important;font-size:14px!important;line-height:1.3!important}
+  #sintomas .diagnostico-areas li span br{display:inline!important}
+}
