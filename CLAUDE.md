@@ -61,3 +61,6 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - Cards de serviço empilhando: do card 3 em diante são `position:sticky` (top `max(24px, 50vh - 150px)`). O próximo sobe por cima e o card coberto encolhe e apaga via JS no fim do `script.js` (opacidade até .1, para não aparecer pelo recorte do canto).
 - No desktop (>900px), o título e as fotos das sócias (`.ks-svc-head`) ficam `sticky` (top `max(24px, 50vh - 420px)!important`; precisa do `!important` porque uma regra antiga força `top:auto`) e acompanham os cards empilhando.
 - No celular (≤900px) o empilhamento começa no 1º card; no desktop, no 3º. O JS escolhe isso com `matchMedia("(max-width: 900px)")` a cada rolagem.
+- As fotos das sócias (`.ks-svc-duo`) agora são fundo da coluna do título. São `position:absolute` atrás do texto, dessaturadas e com opacidade .5.
+  - Desktop: coladas na borda da tela (`left: calc(540px - 50vw + 10px)`), `scale(1.5)`, e o bloco tem `min-height: 100vh - 48px`.
+  - Celular: aparecem e ficam centralizadas abaixo do botão; o bloco tem `min-height: 720px`.

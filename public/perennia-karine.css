@@ -1900,3 +1900,24 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 }
 /* celular: empilha desde o 1º card */
 @media(max-width:900px){#servicos .ks-svc-cards .specialist-item{position:sticky!important;top:max(24px,calc(50vh - 150px));transform-origin:50% 0;will-change:transform,opacity}}
+
+/* ---------- serviços: fotos das sócias viram FUNDO da coluna (fundidas no verde) ---------- */
+#servicos .ks-svc-head{isolation:isolate}
+#servicos .ks-svc-head>*:not(.ks-svc-duo){position:relative;z-index:1}
+#servicos .ks-svc-duo{position:absolute!important;z-index:0!important;margin:0!important;pointer-events:none;opacity:.62;
+  transform-origin:0 100%}
+#servicos .ks-svc-duo .ks-socia-1 img{filter:saturate(.7) brightness(.78) contrast(1.05)!important}
+#servicos .ks-svc-duo .ks-socia-2 img{filter:saturate(.7) brightness(.62) contrast(1.12)!important}
+@media(min-width:901px){
+  #servicos .ks-svc-head{min-height:calc(100vh - 48px)}
+  #servicos .ks-svc-duo{left:-90px;bottom:0;transform:scale(1.22)}
+}
+@media(max-width:900px){
+  #servicos .ks-svc-head{min-height:560px}
+  #servicos .ks-svc-duo{display:flex!important;left:50%;bottom:-40px;transform:translateX(-50%) scale(.82);transform-origin:50% 100%;opacity:.42}
+}
+@media(min-width:901px){
+  #servicos .ks-svc-duo{left:calc(540px - 50vw + 10px);bottom:-10px;transform:scale(1.5);opacity:.5}
+}
+@media(min-width:901px){#servicos .ks-svc-duo{bottom:-80px}}
+@media(max-width:900px){#servicos .ks-svc-head{min-height:720px}#servicos .ks-svc-duo{bottom:-20px;opacity:.5}}
