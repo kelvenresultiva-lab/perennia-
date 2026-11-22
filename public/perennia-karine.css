@@ -1428,3 +1428,11 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 #sintomas .ks-core-p{--h:54px!important;margin:0 auto 4px}
 #sintomas .ks-core-p img{mix-blend-mode:lighten}
 @media(max-width:700px){#sintomas .ks-core-p{--h:44px!important}}
+
+/* ---------- 360°: seta circular dourada em volta do núcleo (literalmente "360") ---------- */
+#sintomas .ks-360-arrow{position:absolute;inset:-30px;width:calc(100% + 60px);height:calc(100% + 60px);pointer-events:none;overflow:visible;
+  animation:ks-360-spin 40s linear infinite}
+#sintomas .ks-360-arrow path{fill:none;stroke:url(#ks360a);stroke-width:1.1;stroke-linecap:round;stroke-linejoin:round}
+@keyframes ks-360-spin{to{transform:rotate(360deg)}}
+@media(prefers-reduced-motion:reduce){#sintomas .ks-360-arrow{animation:none}}
+@media(max-width:700px){#sintomas .ks-360-arrow{inset:-22px;width:calc(100% + 44px);height:calc(100% + 44px)}}
