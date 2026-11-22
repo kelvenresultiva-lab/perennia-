@@ -1332,3 +1332,21 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 @media(max-width:1000px){.ks-road-text h3{font-size:19.5px!important}.ks-road-text p{font-size:15.5px!important}.ks-road-node svg{width:28px!important;height:28px!important}}
 #como-funciona{background:linear-gradient(rgba(248,245,238,.88),rgba(248,245,238,.93)),url('assets/office-main.webp') center/cover no-repeat!important;
   background-origin:border-box!important;border-color:transparent!important}
+
+/* ---------- Como funciona v2: sem foto; fundo champanhe quente (contraste com o marfim das vizinhas), textos maiores ---------- */
+#como-funciona{background:radial-gradient(70% 60% at 50% 45%,#F6EFE2 0%,#ECE0C8 70%,#E4D5B8 100%)!important;background-origin:border-box!important;border-color:transparent!important}
+#como-funciona h2{font-size:clamp(34px,4.2vw,58px)!important}
+#como-funciona .ks-steps-intro{font-size:clamp(16px,1.35vw,19px)!important;color:#3F4D45!important}
+#como-funciona .ks-eyebrow{background:#FBF8F2!important}
+.ks-road-text h3{font-size:clamp(21px,2.2cqw,27px)!important;color:#14301F!important}
+.ks-road-text p{font-size:clamp(16px,1.55cqw,18.5px)!important;color:#33413A!important}
+@media(min-width:1001px){
+  .ks-road-step .ks-road-text{width:27cqw!important;max-width:340px!important}
+  .ks-road-node{width:6.8cqw!important;height:6.8cqw!important;min-width:66px!important;min-height:66px!important}
+  .ks-road .ks-road-seal{width:13cqw!important}.ks-road-p{--h:4.8cqw}
+  .ks-road-step.s1 .ks-road-text,.ks-road-step.s2 .ks-road-text{bottom:calc(max(3.4cqw,33px) + 22px)!important}
+  .ks-road-step.s3 .ks-road-text,.ks-road-step.s4 .ks-road-text{top:calc(max(3.4cqw,33px) + 22px)!important}
+  .ks-road{margin-top:70px!important;margin-bottom:70px!important}
+}
+@media(max-width:1000px){.ks-road-text h3{font-size:21px!important}.ks-road-text p{font-size:16.5px!important}
+  .ks-road-node{width:74px!important;height:74px!important}.ks-road-node svg{width:31px!important;height:31px!important}}
