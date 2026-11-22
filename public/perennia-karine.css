@@ -1853,3 +1853,39 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
   #servicos .ks-svc-cards .ks-svc-num{font-size:100px!important}
 }
 @media(max-width:900px){#servicos .ks-svc{grid-template-columns:minmax(0,1fr)!important}#servicos .ks-svc-cards,#servicos .ks-svc-cards .specialist-item{min-width:0;max-width:100%}}
+
+/* ---------- card de serviço com RECORTE real no canto superior esquerdo (igual ao modelo) ----------
+   forma = retângulo arredondado menos o retângulo do canto [0,W]x[0,H], com cantos convexos (R) e o canto de dentro côncavo (C).
+   :before = contorno (cor da linha) ; :after = miolo (inset 1px, mesmas medidas com R-1 e C+1) */
+#servicos .ks-svc-cards .specialist-item{--W:74px;--H:66px}
+#servicos .ks-svc-cards .specialist-item:before,#servicos .ks-svc-cards .specialist-item:after{
+  content:''!important;display:block!important;position:absolute;z-index:-1;border:0!important;
+  -webkit-mask:var(--ks-notch);mask:var(--ks-notch);-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-composite:source-over;mask-composite:add;
+  --ks-notch:
+    linear-gradient(#000,#000) 0 calc(var(--H) + var(--R)) / 100% calc(100% - var(--H) - var(--R)),
+    linear-gradient(#000,#000) var(--R) var(--H) / calc(100% - var(--R)) var(--R),
+    radial-gradient(circle at 100% 100%,#000 calc(var(--R) - .5px),transparent var(--R)) 0 var(--H) / var(--R) var(--R),
+    linear-gradient(#000,#000) calc(var(--W) + var(--R)) 0 / calc(100% - var(--W) - var(--R)) calc(var(--H) + 1px),
+    linear-gradient(#000,#000) var(--W) var(--R) / var(--R) calc(var(--H) - var(--R) + 1px),
+    radial-gradient(circle at 100% 100%,#000 calc(var(--R) - .5px),transparent var(--R)) var(--W) 0 / var(--R) var(--R),
+    radial-gradient(circle at 0 0,transparent calc(var(--C) - .5px),#000 var(--C)) calc(var(--W) - var(--C)) calc(var(--H) - var(--C)) / var(--C) var(--C)}
+#servicos .ks-svc-cards .specialist-item:before{--R:14px;--C:14px;inset:0!important;height:auto!important;border-radius:0 16px 16px 16px!important;background:rgba(216,190,142,.34)!important}
+#servicos .ks-svc-cards .specialist-item:after{--R:13px;--C:15px;inset:1px!important;border-radius:0 15px 15px 15px!important;
+  background:linear-gradient(180deg,#0B2217 0%,#0F2E1F 42%,#17452E 100%)!important}
+/* ícone dentro do recorte, fora do card */
+#servicos .ks-svc-ico{top:4px!important;left:4px!important;width:58px!important;height:56px!important;border-radius:8px!important;box-shadow:0 8px 18px -10px rgba(0,0,0,.7)!important;
+  outline:1px solid rgba(216,190,142,.25);outline-offset:3px}
+@media(max-width:700px){
+  #servicos .ks-svc-cards .specialist-item{--W:66px;--H:60px}
+  #servicos .ks-svc-ico{width:52px!important;height:50px!important;box-shadow:0 8px 18px -10px rgba(0,0,0,.7)!important}
+}
+/* recorte: peças da máscara sobrepostas 1px para não deixar emenda (fio de luz) */
+#servicos .ks-svc-cards .specialist-item:before,#servicos .ks-svc-cards .specialist-item:after{
+  --ks-notch:
+    linear-gradient(#000,#000) 0 calc(var(--H) + var(--R) - 1px) / 100% calc(100% - var(--H) - var(--R) + 1px),
+    linear-gradient(#000,#000) calc(var(--R) - 1px) var(--H) / calc(100% - var(--R) + 1px) calc(var(--R) + 1px),
+    radial-gradient(circle at 100% 100%,#000 calc(var(--R) - .5px),transparent var(--R)) 0 var(--H) / var(--R) var(--R),
+    linear-gradient(#000,#000) calc(var(--W) + var(--R) - 1px) 0 / calc(100% - var(--W) - var(--R) + 1px) calc(var(--H) + 2px),
+    linear-gradient(#000,#000) var(--W) calc(var(--R) - 1px) / calc(var(--R) + 1px) calc(var(--H) - var(--R) + 2px),
+    radial-gradient(circle at 100% 100%,#000 calc(var(--R) - .5px),transparent var(--R)) var(--W) 0 / var(--R) var(--R),
+    radial-gradient(circle at 0 0,transparent calc(var(--C) - .5px),#000 var(--C)) calc(var(--W) - var(--C)) calc(var(--H) - var(--C)) / calc(var(--C) + 1px) calc(var(--C) + 1px)}
