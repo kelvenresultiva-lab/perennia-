@@ -39,3 +39,4 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 360°: número gigante é marca-d'água (opacidade .07) contida no cartão (overflow clip), no canto inferior direito; o círculo central mostra o P da logo + PERENNIA + "Visão completa do seu negócio" (sem repetir "360").
 - 360°: seta circular dourada (svg .ks-360-arrow) contorna o núcleo e gira devagar (40s; parada com prefers-reduced-motion).
 - 360° no celular: card com margem lateral de 10px (seção sem padding lateral), textos/botão centralizados, áreas em 2 colunas com ícone em cima e nome centralizado em 2 linhas.
+- 360° no celular: as 6 áreas viram mini-cards marfim (borda dourada, ícone em cima alinhado, nome centralizado), grade 2x3 com gap 10px; sem espaço reservado pro 360 gigante (fica atrás dos cards).

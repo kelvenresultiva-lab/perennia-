@@ -1450,3 +1450,15 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
   #sintomas .diagnostico-areas li span{text-align:center!important;margin:0!important;font-size:14px!important;line-height:1.3!important}
   #sintomas .diagnostico-areas li span br{display:inline!important}
 }
+
+/* ---------- 360° no celular: áreas em mini-cards compactos, sem espaço morto ---------- */
+@media(max-width:700px){
+  #sintomas .diagnostico-card{padding-bottom:28px!important}
+  #sintomas .diagnostico-map{padding-top:256px!important;margin-top:8px!important}
+  #sintomas .diagnostico-areas{gap:10px!important;padding-top:0!important;position:relative;z-index:1}
+  #sintomas .diagnostico-areas li{background:rgba(255,253,248,.72)!important;border:1px solid rgba(184,149,95,.38)!important;border-radius:16px!important;
+    padding:16px 8px 14px!important;gap:9px!important;justify-content:flex-start!important;min-height:112px;
+    box-shadow:0 10px 22px -16px rgba(78,52,25,.45)!important}
+  #sintomas .diagnostico-areas li span{font-size:14px!important}
+  .ks-360-giant{bottom:-12vw!important}
+}
