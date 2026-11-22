@@ -1624,3 +1624,56 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
   #sintomas .diagnostico-areas li span{font-size:11.5px!important}
 }
 @media(max-width:700px){#sintomas .diagnostico-core{width:100px!important;height:100px!important}#sintomas .diagnostico-core>strong{font-size:30px!important}}
+
+/* ---------- Serviços especializados em CARDS COM FOTO (título em cima; 4 col desktop, 2 tablet, carrossel no celular) ---------- */
+#servicos .ks-svc{display:block!important;max-width:1240px;margin:0 auto}
+#servicos .ks-svc-head{position:static!important;display:grid!important;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);column-gap:80px;align-items:end}
+#servicos .ks-svc-head .eyebrow{grid-column:1;grid-row:1;justify-self:start}
+#servicos .ks-svc-head h2{grid-column:1;grid-row:2}
+#servicos .ks-svc-head>p{grid-column:2;grid-row:2;margin:0!important;max-width:440px;align-self:end}
+#servicos .ks-svc-count{grid-column:1;grid-row:3;margin:34px 0 0!important;max-width:none}
+#servicos .ks-svc-head .ks-btn{grid-column:2;grid-row:3;justify-self:start;align-self:end}
+#servicos .ks-svc-cards{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;margin:56px 0 0!important;padding:0!important;border:0!important;list-style:none}
+#servicos .ks-svc-cards .specialist-item{position:relative;display:flex!important;flex-direction:column;margin:0!important;padding:10px 10px 24px!important;
+  border:1px solid rgba(216,190,142,.16)!important;border-radius:18px!important;background:linear-gradient(165deg,#173D29 0%,#11321F 75%)!important;
+  box-shadow:0 22px 40px -28px rgba(0,0,0,.7);transition:transform .45s cubic-bezier(.2,.7,.2,1),border-color .35s;min-width:0}
+#servicos .ks-svc-cards .specialist-item:is(:hover,:focus-within){transform:translateY(-4px);border-color:rgba(216,190,142,.38)!important}
+#servicos .ks-svc-photo{margin:0 0 20px;aspect-ratio:3/2;border-radius:12px;overflow:hidden;position:relative}
+#servicos .ks-svc-photo:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,32,15,.05) 40%,rgba(6,32,15,.45))}
+#servicos .ks-svc-photo img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.82) brightness(.95);transition:transform .7s cubic-bezier(.2,.7,.2,1)}
+#servicos .ks-svc-cards .specialist-item:is(:hover,:focus-within) .ks-svc-photo img{transform:scale(1.05)}
+#servicos .ks-svc-cards .ks-svc-num{display:inline-grid;place-items:center;align-self:flex-start;width:36px;height:36px;margin:0 12px 16px;padding:0!important;border-radius:9px;
+  border:1px solid rgba(216,190,142,.35);background:rgba(216,190,142,.10);font:600 12px/1 var(--sans);letter-spacing:.06em;color:#D8BE8E}
+#servicos .ks-svc-cards .ks-svc-body{padding:0 12px}
+#servicos .ks-svc-cards .specialist-item h3{margin:0!important;font:500 clamp(19px,1.55vw,22px)/1.2 var(--sans)!important;letter-spacing:-.01em;color:#F3EFE6!important;transform:none!important}
+#servicos .ks-svc-cards .ks-svc-desc{display:block!important;opacity:1!important}
+#servicos .ks-svc-cards .ks-svc-desc>p{margin:10px 0 0!important;font:400 14.5px/1.6 var(--sans)!important;color:#B9C6BE!important;max-width:none}
+#servicos .ks-svc-cards .ks-svc-tag{position:absolute;top:22px;left:22px;z-index:2;padding:6px 10px;border-radius:999px;border:1px solid rgba(243,235,218,.35)!important;
+  background:rgba(6,32,15,.55)!important;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);color:#F3EBDA!important;font:500 9.5px/1 var(--sans);letter-spacing:.18em}
+#servicos .ks-svc-cards .ks-svc-arrow{position:absolute;top:20px;right:20px;z-index:2;width:38px;height:38px;border:0!important;background:linear-gradient(135deg,#DCC496,#B8955F)!important;color:#14301F!important}
+#servicos .ks-svc-cards .ks-svc-arrow svg{transform:rotate(-45deg)}
+#servicos .ks-svc-cards .specialist-item:is(:hover,:focus-within) .ks-svc-arrow svg{transform:rotate(0)}
+@media(max-width:1100px){
+  #servicos .ks-svc-cards{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:900px){
+  #servicos .ks-svc-head{grid-template-columns:1fr;row-gap:0}
+  #servicos .ks-svc-head>*{grid-column:1!important;grid-row:auto!important}
+  #servicos .ks-svc-head>p{margin-top:22px!important}
+  #servicos .ks-svc-count{margin:28px 0 26px!important}
+}
+@media(max-width:700px){
+  #servicos .ks-svc-cards{display:flex!important;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;margin:40px -20px 0!important;padding:0 20px 6px!important;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  #servicos .ks-svc-cards::-webkit-scrollbar{display:none}
+  #servicos .ks-svc-cards .specialist-item{flex:0 0 82%;scroll-snap-align:center}
+  #servicos .ks-svc-cards .specialist-item h3{font-size:20px!important}
+  #servicos .ks-svc-cards .ks-svc-tag{display:block!important}
+  #servicos .ks-svc-cards .ks-svc-arrow{width:36px;height:36px}
+}
+/* fotos dos serviços com a paleta do site: dessatura + sépia (dourado nas luzes) + verde por blend "color" nas sombras */
+#servicos .ks-svc-photo img{filter:grayscale(.55) sepia(.38) saturate(.85) contrast(1.04) brightness(.9)!important}
+#servicos .ks-svc-photo:before{content:'';position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(160deg,#1E4A31 0%,#0F2E1F 100%);mix-blend-mode:color;opacity:.55}
+#servicos .ks-svc-photo:after{z-index:1;background:linear-gradient(180deg,rgba(184,149,95,.10) 0%,rgba(6,32,15,0) 35%,rgba(6,32,15,.5) 100%)!important}
+#servicos .ks-svc-cards .specialist-item h3:before,#servicos .ks-svc-cards .specialist-item:before{content:none!important;display:none!important}
+#servicos .ks-svc-photo img{filter:grayscale(.5) sepia(.55) saturate(.9) contrast(1.05) brightness(.9)!important}
+#servicos .ks-svc-photo:before{opacity:.45!important}
