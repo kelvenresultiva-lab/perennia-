@@ -1350,3 +1350,20 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 }
 @media(max-width:1000px){.ks-road-text h3{font-size:21px!important}.ks-road-text p{font-size:16.5px!important}
   .ks-road-node{width:74px!important;height:74px!important}.ks-road-node svg{width:31px!important;height:31px!important}}
+
+/* ---------- Como funciona v3 — padrão Karine: fundo LISO (tom claro da marca, sem degradê nem foto),
+   texto todo num só tom escuro da marca, tipografia grande (título ~50px, texto 20px) ---------- */
+#como-funciona{background:#ECE6D8!important;background-image:none!important;border-color:#ECE6D8!important}
+#como-funciona h2{font-size:clamp(34px,3.6vw,52px)!important;line-height:1.12!important;color:#14301F!important}
+#como-funciona .ks-steps-intro{font-size:clamp(17px,1.45vw,21px)!important;line-height:1.55!important;color:#14301F!important;opacity:.85}
+#como-funciona .ks-eyebrow{background:transparent!important;border:1px solid rgba(20,48,31,.35)!important;color:#14301F!important;font-size:12.5px!important}
+.ks-road-text h3{font-size:clamp(22px,2.3cqw,28px)!important;font-weight:500!important;color:#14301F!important}
+.ks-road-num{color:#8C6B3C!important}
+.ks-road-text p{font-size:clamp(17px,1.7cqw,20px)!important;line-height:1.5!important;color:#14301F!important;opacity:.82}
+.ks-road .ks-road-seal,.ks-road-node{--ring:#ECE6D8}
+.ks-road-node{box-shadow:0 0 0 4px #ECE6D8,0 0 0 5.5px rgba(140,107,60,.7),0 16px 30px -14px rgba(20,30,20,.55)!important}
+.ks-road .ks-road-seal{box-shadow:0 0 0 1px rgba(243,223,177,.35),0 0 0 5px #ECE6D8,0 0 0 6px rgba(140,107,60,.7),0 22px 44px -16px rgba(0,0,0,.45)!important}
+@media(min-width:1001px){.ks-road-step .ks-road-text{width:27.5cqw!important;max-width:360px!important}}
+@media(max-width:1000px){.ks-road-text h3{font-size:23px!important}.ks-road-text p{font-size:18px!important}}
+/* o vizinho de cima (Serviços) e o de baixo (fechamento) recortam as curvas sobre esta cor */
+#servicos+#como-funciona,#como-funciona{border-top-color:#ECE6D8!important;border-bottom-color:#ECE6D8!important}
