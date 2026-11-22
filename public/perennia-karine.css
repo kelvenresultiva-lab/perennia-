@@ -1893,3 +1893,8 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 /* ---------- cards de serviço empilhando: do card 3 em diante cada um gruda e o próximo sobe por cima ---------- */
 #servicos .ks-svc-cards .specialist-item:nth-child(n+3){position:sticky!important;top:max(24px,calc(50vh - 150px));transform-origin:50% 0;will-change:transform,opacity}
 @media(prefers-reduced-motion:reduce){#servicos .ks-svc-cards .specialist-item{transform:none!important}}
+
+/* ---------- serviços: título + fotos das sócias acompanham a rolagem enquanto os cards empilham (só desktop) ---------- */
+@media(min-width:901px){
+  #servicos .ks-svc-head{position:sticky!important;top:max(24px,calc(50vh - 420px))!important;align-self:start!important}
+}
