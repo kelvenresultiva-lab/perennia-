@@ -47,3 +47,15 @@ $$('[data-perennia-video]').forEach(b=>b.addEventListener('click',()=>openDialog
   if (document.fonts) document.fonts.ready.then(agenda);
   fit();
 })();
+
+/* Serviços: arrastar o carrossel com o mouse (no toque o navegador já desliza sozinho) */
+(function(){
+  const el=document.querySelector('#servicos .ks-svc-cards');if(!el)return;
+  let down=false,moved=false,x0=0,s0=0;
+  el.addEventListener('pointerdown',e=>{if(e.pointerType!=='mouse')return;down=true;moved=false;x0=e.clientX;s0=el.scrollLeft;});
+  window.addEventListener('pointermove',e=>{if(!down)return;const dx=e.clientX-x0;if(!moved&&Math.abs(dx)>5){moved=true;el.classList.add('is-dragging');}if(moved){el.scrollLeft=s0-dx;e.preventDefault();}});
+  window.addEventListener('pointerup',()=>{if(!down)return;down=false;if(moved){el.classList.remove('is-dragging');
+    const cards=[...el.children],pl=parseFloat(getComputedStyle(el).scrollPaddingLeft)||0;let best=0,bd=1e9;
+    cards.forEach(c=>{const d=Math.abs(c.offsetLeft-pl-el.scrollLeft);if(d<bd){bd=d;best=c.offsetLeft-pl;}});el.scrollTo({left:best,behavior:'smooth'});}});
+  el.addEventListener('click',e=>{if(moved){e.preventDefault();e.stopPropagation();moved=false;}},true);
+})();

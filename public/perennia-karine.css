@@ -1677,3 +1677,19 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 #servicos .ks-svc-cards .specialist-item h3:before,#servicos .ks-svc-cards .specialist-item:before{content:none!important;display:none!important}
 #servicos .ks-svc-photo img{filter:grayscale(.5) sepia(.55) saturate(.9) contrast(1.05) brightness(.9)!important}
 #servicos .ks-svc-photo:before{opacity:.45!important}
+
+/* ---------- Serviços: TODOS os cards em UMA linha, carrossel de arrastar (desktop e celular) ---------- */
+#servicos{overflow:hidden}
+#servicos .ks-svc-cards{display:flex!important;gap:18px;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scroll-behavior:smooth;
+  margin:56px calc(50% - 50vw) 0!important;padding:4px max(40px,calc(50vw - 620px)) 14px!important;scroll-padding-inline:max(40px,calc(50vw - 620px));
+  scrollbar-width:none;cursor:grab;-webkit-overflow-scrolling:touch;user-select:none}
+#servicos .ks-svc-cards::-webkit-scrollbar{display:none}
+#servicos .ks-svc-cards.is-dragging{cursor:grabbing;scroll-snap-type:none;scroll-behavior:auto}
+#servicos .ks-svc-cards.is-dragging *{pointer-events:none}
+#servicos .ks-svc-cards .specialist-item{flex:0 0 clamp(270px,23vw,320px);scroll-snap-align:start}
+#servicos .ks-svc-cards img{-webkit-user-drag:none;user-drag:none}
+@media(max-width:700px){
+  #servicos .ks-svc-cards{margin:40px -20px 0!important;padding:4px 20px 10px!important;scroll-padding-inline:20px}
+  #servicos .ks-svc-cards .specialist-item{flex:0 0 82%;scroll-snap-align:start}
+}
+@media(min-width:701px){#servicos .ks-svc-cards .specialist-item{flex:0 0 clamp(260px,21vw,300px)!important}}
