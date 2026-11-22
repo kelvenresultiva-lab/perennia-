@@ -1372,3 +1372,29 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 #como-funciona,#servicos+#como-funciona{background:#FFFFFF!important;background-image:none!important;border-color:#FFFFFF!important}
 .ks-road-node{box-shadow:0 0 0 4px #FFFFFF,0 0 0 5.5px rgba(140,107,60,.7),0 16px 30px -14px rgba(20,30,20,.5)!important}
 .ks-road .ks-road-seal{box-shadow:0 0 0 1px rgba(243,223,177,.35),0 0 0 5px #FFFFFF,0 0 0 6px rgba(140,107,60,.7),0 22px 44px -16px rgba(0,0,0,.4)!important}
+
+/* ---------- Como funciona no celular/tablet: caminho em serpentina com curvas (mesma linguagem do "U" do desktop) ---------- */
+.ks-road-svg-m{display:none}
+@media(min-width:1001px){.ks-road-svg-m{display:none!important}}
+@media(max-width:1000px){
+  .ks-road{position:relative!important;container-type:inline-size!important;width:100%!important;max-width:440px!important;aspect-ratio:360/920!important;margin:36px auto 40px!important;padding:0!important;text-align:center!important}
+  .ks-road:before{display:none!important}
+  .ks-road-svg{display:none!important}
+  .ks-road-svg-m{display:block!important;position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+  .ks-road-band-m{fill:none;stroke:url(#ks-road-gm);stroke-width:30}
+  .ks-road-band-m.ks-road-tail-m{stroke:url(#ks-road-fadem)}
+  .ks-road-seps-m path{fill:none;stroke:#FBF8F2;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+  .ks-road .ks-road-seal{position:absolute!important;left:13.89%!important;top:11.96%!important;width:25cqw!important;margin:0!important;transform:translate(-50%,-50%)!important;z-index:3}
+  .ks-road-p{--h:9.4cqw!important}
+  .ks-road-steps{display:block!important;position:static!important;gap:0!important}
+  .ks-road-step,.ks-road-step.s1,.ks-road-step.s2,.ks-road-step.s3,.ks-road-step.s4{position:absolute!important;display:block!important;width:0!important;height:0!important;left:50%!important;z-index:2}
+  .ks-road-step.s1{top:11.96%!important}.ks-road-step.s2{top:34.78%!important}.ks-road-step.s3{top:57.61%!important}.ks-road-step.s4{top:80.43%!important}
+  .ks-road-node{position:absolute!important;left:0!important;top:0!important;margin:0!important;width:18cqw!important;height:18cqw!important;min-width:0!important;min-height:0!important;transform:translate(-50%,-50%)!important}
+  .ks-road-node svg{width:46%!important;height:46%!important}
+  .ks-road-step:hover .ks-road-node{transform:translate(-50%,-50%)!important}
+  .ks-road-chev{display:none!important}
+  .ks-road-step .ks-road-text,.ks-road-step.s1 .ks-road-text,.ks-road-step.s2 .ks-road-text,.ks-road-step.s3 .ks-road-text,.ks-road-step.s4 .ks-road-text{
+    position:absolute!important;left:0!important;top:calc(9cqw + 12px)!important;bottom:auto!important;transform:translateX(-50%)!important;width:66cqw!important;max-width:none!important;text-align:center!important;margin:0!important;padding:0!important}
+  .ks-road-text h3{font-size:clamp(18px,5.2cqw,22px)!important;margin:0 0 .35em!important}
+  .ks-road-text p{font-size:clamp(14.5px,4.1cqw,17px)!important;line-height:1.45!important}
+}
