@@ -2019,3 +2019,35 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
   #servicos .ks-svc-bgm .ks-socia-2 img{filter:saturate(.7) brightness(.62) contrast(1.12)!important}
   #servicos .ks-svc-cards{position:relative;z-index:1}
 }
+
+/* Soluções → Serviços (22/11, modelo do usuário): topo de Serviços com cantos arredondados e um calombo central do branco descendo, com ícone de rolagem */
+#servicos{--E:40px;--r:26px;--bw:160px;
+  -webkit-mask:linear-gradient(#000,#000) left calc(var(--r) - 2px) top var(--E)/calc(50% - var(--bw) / 2 - var(--r) + 6px) calc(var(--cv) - var(--E)) no-repeat,
+    linear-gradient(#000,#000) right calc(var(--r) - 2px) top var(--E)/calc(50% - var(--bw) / 2 - var(--r) + 6px) calc(var(--cv) - var(--E)) no-repeat,
+    linear-gradient(#000,#000) left 0 top calc(var(--E) + var(--r) - 4px)/calc(var(--r) + 4px) calc(var(--cv) - var(--E) - var(--r) + 4px) no-repeat,
+    linear-gradient(#000,#000) right 0 top calc(var(--E) + var(--r) - 4px)/calc(var(--r) + 4px) calc(var(--cv) - var(--E) - var(--r) + 4px) no-repeat,
+    radial-gradient(circle at 100% 100%,#000 calc(var(--r) - .5px),transparent var(--r)) left 0 top var(--E)/var(--r) var(--r) no-repeat,
+    radial-gradient(circle at 0 100%,#000 calc(var(--r) - .5px),transparent var(--r)) right 0 top var(--E)/var(--r) var(--r) no-repeat,
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 58' preserveAspectRatio='none'%3E%3Cpath d='M0 0C28 0 38 4 48 18C58 34 66 44 80 44C94 44 102 34 112 18C122 4 132 0 160 0V58H0Z'/%3E%3C/svg%3E") center top var(--E)/var(--bw) calc(var(--cv) - var(--E)) no-repeat,
+    linear-gradient(#000,#000) left calc(var(--cv) - 2px)/100% calc(100% - var(--cv) * 2 + 4px) no-repeat,
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 110' preserveAspectRatio='none'%3E%3Cpath d='M0 0H1440V18H360C290 18 270 110 200 110H0Z'/%3E%3C/svg%3E") bottom left/100% var(--cv) no-repeat!important;
+  mask:linear-gradient(#000,#000) left calc(var(--r) - 2px) top var(--E)/calc(50% - var(--bw) / 2 - var(--r) + 6px) calc(var(--cv) - var(--E)) no-repeat,
+    linear-gradient(#000,#000) right calc(var(--r) - 2px) top var(--E)/calc(50% - var(--bw) / 2 - var(--r) + 6px) calc(var(--cv) - var(--E)) no-repeat,
+    linear-gradient(#000,#000) left 0 top calc(var(--E) + var(--r) - 4px)/calc(var(--r) + 4px) calc(var(--cv) - var(--E) - var(--r) + 4px) no-repeat,
+    linear-gradient(#000,#000) right 0 top calc(var(--E) + var(--r) - 4px)/calc(var(--r) + 4px) calc(var(--cv) - var(--E) - var(--r) + 4px) no-repeat,
+    radial-gradient(circle at 100% 100%,#000 calc(var(--r) - .5px),transparent var(--r)) left 0 top var(--E)/var(--r) var(--r) no-repeat,
+    radial-gradient(circle at 0 100%,#000 calc(var(--r) - .5px),transparent var(--r)) right 0 top var(--E)/var(--r) var(--r) no-repeat,
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 58' preserveAspectRatio='none'%3E%3Cpath d='M0 0C28 0 38 4 48 18C58 34 66 44 80 44C94 44 102 34 112 18C122 4 132 0 160 0V58H0Z'/%3E%3C/svg%3E") center top var(--E)/var(--bw) calc(var(--cv) - var(--E)) no-repeat,
+    linear-gradient(#000,#000) left calc(var(--cv) - 2px)/100% calc(100% - var(--cv) * 2 + 4px) no-repeat,
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 110' preserveAspectRatio='none'%3E%3Cpath d='M0 0H1440V18H360C290 18 270 110 200 110H0Z'/%3E%3C/svg%3E") bottom left/100% var(--cv) no-repeat!important}
+#servicos{background-origin:border-box!important}
+#solucoes{position:relative;overflow:visible!important}
+.ks-scroll-cue{position:absolute;z-index:5;left:50%;top:calc(100% + 26px);width:26px;height:40px;transform:translateX(-50%);display:block;color:#8C6B3C}
+.ks-scroll-cue svg{width:100%;height:100%;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.ks-scroll-arrow{animation:ks-cue 2.2s ease-in-out infinite}
+@keyframes ks-cue{0%,100%{transform:translateY(-2px);opacity:.6}50%{transform:translateY(3px);opacity:1}}
+@media(prefers-reduced-motion:reduce){.ks-scroll-arrow{animation:none}}
+@media(max-width:700px){
+  #servicos{--E:20px;--r:18px;--bw:124px}
+  .ks-scroll-cue{top:calc(100% + 8px);width:22px;height:34px}
+}
