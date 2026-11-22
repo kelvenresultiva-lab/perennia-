@@ -1258,3 +1258,24 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 @media(max-width:700px){#agendar{--bw:180px}.ks-to-top{top:calc(54px * .64);width:34px;height:34px}.ks-to-top svg{width:18px;height:18px}}
 .ks-to-top{top:calc(98px * -.30)!important}
 @media(max-width:700px){.ks-to-top{top:calc(54px * -.30)!important}}
+
+/* ---------- Como funciona: caminho em "U" (2 etapas em cima, curva à direita, 2 etapas embaixo) ---------- */
+@media(min-width:1001px){
+  .ks-road{aspect-ratio:1200/640!important;max-width:1120px!important;margin:40px auto 56px!important}
+  .ks-road-band{stroke:url(#ks-road-g)!important;stroke-width:40!important;fill:none!important;stroke-linecap:butt}
+  .ks-road-band.ks-road-tail{stroke:url(#ks-road-fade)!important}
+  .ks-road-seps path{fill:none!important;stroke:#7A5630!important;stroke-width:2.6!important;stroke-linecap:round!important;stroke-linejoin:round!important;opacity:.85!important}
+  .ks-road .ks-road-seal{left:9.17%!important;top:32.81%!important;width:10.5cqw!important;box-shadow:0 0 0 .7cqw #FBF8F2,0 0 0 calc(.7cqw + 1px) rgba(184,149,95,.45),0 18px 34px -16px rgba(20,30,20,.45)!important}
+  .ks-road-step.s1{left:35%!important;top:32.81%!important}
+  .ks-road-step.s2{left:63.33%!important;top:32.81%!important}
+  .ks-road-step.s3{left:63.33%!important;top:68.75%!important}
+  .ks-road-step.s4{left:35%!important;top:68.75%!important}
+  .ks-road-node{width:5.6cqw!important;height:5.6cqw!important;min-width:56px!important;min-height:56px!important;background:#fff!important;
+    box-shadow:0 0 0 1px rgba(184,149,95,.45),0 14px 26px -14px rgba(78,52,25,.45)!important;color:#14301F!important}
+  .ks-road-chev{display:none!important}
+  .ks-road-step .ks-road-text{left:0!important;width:30cqw!important;text-align:center!important;transform:translateX(-50%)!important}
+  .ks-road-step.s1 .ks-road-text,.ks-road-step.s2 .ks-road-text{top:auto!important;bottom:calc(max(2.8cqw,28px) + 18px)!important}
+  .ks-road-step.s3 .ks-road-text,.ks-road-step.s4 .ks-road-text{bottom:auto!important;top:calc(max(2.8cqw,28px) + 18px)!important}
+}
+@media(min-width:1001px){.ks-road-step .ks-road-text{width:25cqw!important;max-width:300px}}
+@media(max-width:1000px){.ks-road:before{background:linear-gradient(180deg,#E6D5B5 0 85%,rgba(230,213,181,0))!important}}
