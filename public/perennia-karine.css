@@ -1398,3 +1398,19 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
   .ks-road-text h3{font-size:clamp(18px,5.2cqw,22px)!important;margin:0 0 .35em!important}
   .ks-road-text p{font-size:clamp(14.5px,4.1cqw,17px)!important;line-height:1.45!important}
 }
+
+/* ---------- Fechamento: selo com o P da logo (igual ao do Como funciona), centralizado ---------- */
+#agendar .ks-seal{display:grid!important;place-items:center!important;margin-left:auto!important;margin-right:auto!important;
+  background:radial-gradient(circle at 35% 30%,#1B3A26 0%,#06200F 70%)!important}
+#agendar .ks-seal text{fill:#F3EBDA!important;stroke:none!important;font-weight:600!important}
+#agendar .ks-closing-p{--h:46px!important;position:relative;z-index:1}
+#agendar .ks-closing-p img{mix-blend-mode:lighten}
+#agendar .ks-seal .ks-seal-ring{z-index:2}
+
+/* ---------- Rodapé centralizado ---------- */
+#contatos .ks-footer-top{justify-items:center!important;text-align:center!important}
+#contatos .ks-footer-brand,#contatos .ks-footer-nav,#contatos .ks-footer-contact{text-align:center!important;align-items:center!important;justify-content:center!important;margin-left:auto!important;margin-right:auto!important}
+#contatos .ks-footer-brand img,#contatos .ks-footer-brand a{margin-left:auto!important;margin-right:auto!important;display:block}
+#contatos .ks-footer-nav ul,#contatos .ks-footer-nav ol{align-items:center!important;justify-content:center!important;padding:0!important}
+#contatos .ks-footer-contact .ks-btn{margin-left:auto!important;margin-right:auto!important}
+#contatos .ks-footer-bottom{justify-content:center!important;text-align:center!important;flex-wrap:wrap;gap:10px 28px!important}
