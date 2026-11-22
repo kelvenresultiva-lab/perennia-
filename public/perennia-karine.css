@@ -1210,3 +1210,14 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 @media(max-width:700px){.ks-leaf-1{width:52px!important}.ks-leaf-2{width:46px!important}.ks-leaf-4{width:40px!important}}
 #sintomas{overflow:clip!important}
 @media(max-width:700px){#sintomas .diagnostico-card{padding-bottom:calc(26vw + 24px)!important}.ks-360-giant{font-size:42vw!important;right:auto!important;left:50%!important;bottom:-10vw!important;top:auto!important;transform:translateX(-50%)!important}}
+
+/* ---------- 360°: diagrama limpo — sem 360° gigante, sem quadriculado, sem anel pontilhado/arco, sem raios.
+   Fica só o círculo central + uma linha fina dourada passando pelos 6 ícones ---------- */
+.ks-360-giant{display:none!important}
+#sintomas .diagnostico-card::before,#sintomas .diagnostico-card::after{display:none!important}
+#sintomas .ks-360-spokes{display:none!important}
+#sintomas .diagnostico-orbit svg{display:none!important}
+#sintomas .diagnostico-orbit{inset:18px!important;border:1px solid rgba(140,107,60,.32)!important;border-radius:50%!important;background:none!important;box-shadow:none!important;animation:none!important}
+#sintomas .diagnostico-orbit::before,#sintomas .diagnostico-orbit::after{display:none!important}
+#sintomas .diagnostico-card{padding-bottom:clamp(40px,5vw,72px)!important}
+@media(max-width:700px){#sintomas .diagnostico-orbit{display:none!important}#sintomas .diagnostico-card{padding-bottom:40px!important}}
