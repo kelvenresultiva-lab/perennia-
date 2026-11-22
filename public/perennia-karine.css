@@ -1714,3 +1714,7 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
   #servicos .ks-svc-ico{margin:0 22px 16px}
   #servicos .ks-svc-cards .ks-svc-body{padding:0 22px 26px!important}
 }
+/* serviços: fotos SEM a tonalidade verde (cor natural); só o escurecimento neutro embaixo para o texto */
+#servicos .ks-svc-photo:before{display:none!important}
+#servicos .ks-svc-photo img{filter:saturate(.92) contrast(1.03) brightness(.94)!important}
+#servicos .ks-svc-cards .ks-svc-photo:after{background:linear-gradient(180deg,rgba(10,12,11,.05) 0%,rgba(10,12,11,.12) 35%,rgba(10,14,12,.74) 62%,rgba(8,12,10,.94) 100%)!important}
