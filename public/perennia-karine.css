@@ -1417,3 +1417,14 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 /* P da logo: recorte simétrico (x 2–59) + ajuste óptico, a barriga do P pesa à direita */
 .ks-road-p{width:calc(var(--h) * 57 / 74)!important;left:calc(var(--h) * -3 / 74)}
 .ks-road-p img{left:calc(var(--h) * -2 / 74)!important}
+
+/* ---------- 360° otimizado: número gigante vira marca-d'água contida no cartão; núcleo com o P da logo (sem repetir "360") ---------- */
+#sintomas .diagnostico-card{overflow:clip!important}
+.ks-360-giant{z-index:0!important;opacity:.5!important;filter:none!important}
+@media(min-width:701px){
+  .ks-360-giant{font-size:clamp(150px,19vw,290px)!important;right:-1.5%!important;top:auto!important;bottom:-.14em!important;transform:none!important}
+}
+#sintomas .diagnostico-core{gap:6px}
+#sintomas .ks-core-p{--h:54px!important;margin:0 auto 4px}
+#sintomas .ks-core-p img{mix-blend-mode:lighten}
+@media(max-width:700px){#sintomas .ks-core-p{--h:44px!important}}
