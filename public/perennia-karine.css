@@ -2148,3 +2148,17 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 .ks-flogo-p,.ks-flogo-t{display:block;margin:0 auto;background:url("assets/perennia-logo.webp") no-repeat;background-size:calc(var(--s) * 202) auto}
 .ks-flogo-p{width:calc(var(--s) * 57);height:calc(var(--s) * 72);background-position:calc(var(--s) * -2) calc(var(--s) * -4)}
 .ks-flogo-t{width:calc(var(--s) * 198);height:calc(var(--s) * 42);background-position:0 calc(var(--s) * -84)}
+
+/* Serviços (22/11): fotos das sócias mais presentes no fundo — mais opacas/claras, sombra menor e halo dourado atrás */
+#servicos .ks-svc-duo{opacity:.95!important}
+#servicos .ks-svc-duo .ks-socia-1 img,#servicos .ks-svc-bgm .ks-socia-1 img{filter:saturate(.95) brightness(.98) contrast(1.04)!important}
+#servicos .ks-svc-duo .ks-socia-2 img,#servicos .ks-svc-bgm .ks-socia-2 img{filter:saturate(.95) brightness(.86) contrast(1.08)!important}
+#servicos .ks-svc-duo .ks-socia:after,#servicos .ks-svc-bgm .ks-socia:after{background:radial-gradient(ellipse 70% 70% at 50% 40%,transparent 55%,rgba(15,46,31,.45) 100%)!important}
+#servicos .ks-svc-duo .ks-socia,#servicos .ks-svc-bgm .ks-socia{-webkit-mask:radial-gradient(ellipse 54% 58% at 50% 46%,#000 55%,rgba(0,0,0,.7) 75%,transparent 100%)!important;mask:radial-gradient(ellipse 54% 58% at 50% 46%,#000 55%,rgba(0,0,0,.7) 75%,transparent 100%)!important}
+#servicos .ks-svc-duo:before,#servicos .ks-svc-bgm:before{content:'';position:absolute;z-index:-1;left:50%;top:34%;width:120%;aspect-ratio:1;transform:translate(-50%,-50%);border-radius:50%;pointer-events:none;
+  background:radial-gradient(circle,rgba(216,190,142,.30) 0%,rgba(216,190,142,.12) 38%,transparent 68%)}
+#servicos .ks-svc-duo,#servicos .ks-svc-bgm{isolation:isolate}
+@media(max-width:900px){#servicos .ks-svc-bgm{opacity:.85!important}}
+#servicos .ks-svc-duo .ks-socia-2,#servicos .ks-svc-bgm .ks-socia-2{-webkit-mask:radial-gradient(ellipse 46% 54% at 44% 48%,#000 50%,rgba(0,0,0,.55) 72%,transparent 92%)!important;mask:radial-gradient(ellipse 46% 54% at 44% 48%,#000 50%,rgba(0,0,0,.55) 72%,transparent 92%)!important}
+#servicos .ks-svc-duo .ks-socia-2:after,#servicos .ks-svc-bgm .ks-socia-2:after{background:radial-gradient(ellipse 50% 58% at 44% 44%,transparent 42%,rgba(15,46,31,.8) 92%)!important}
+#servicos .ks-svc-duo:before,#servicos .ks-svc-bgm:before{content:none!important}

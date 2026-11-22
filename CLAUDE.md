@@ -81,3 +81,5 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - Selo do fechamento (22/11): o P da logo estava ~2px à esquerda; #agendar .ks-seal .ks-closing-p{left:0} deixa o centro do símbolo (bbox x4–57, y5–75 no perennia-logo.webp) exatamente no centro do selo (medido no desktop e no celular).
 
 - 22/11: logo do rodapé montada em 2 recortes (.ks-flogo-p / .ks-flogo-t) para o P ficar centralizado sobre PERENNIA.
+
+- 22/11: Serviços — fotos das sócias mais visíveis no fundo (opacidade ~.95, menos escurecidas, bordas da 2ª foto esfumadas); no celular .ks-svc-bgm .85.
