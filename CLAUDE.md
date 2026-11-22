@@ -36,4 +36,4 @@ Como funciona (21/11): no desktop (>1000px) é um caminho em "U" dourado→marro
 Como funciona (22/11): etapas em círculos verdes com ícones dourados (documento+lupa, alvo+seta, camadas, gráfico subindo), letras maiores, fundo BRANCO #FFFFFF (pedido 22/11; antes areia #ECE6D8) no padrão Karine (ela usa fundo liso num tom claro da marca, texto todo num só tom escuro da marca, título ~50px e texto 20px). Sem foto e sem degradê — o usuário recusou os dois.
 
 - Selo do fechamento (#agendar) usa o P da logo (igual ao selo do Como funciona), centralizado. Rodapé todo centralizado.
-- 360°: número gigante é marca-d'água (opacidade .5) contida no cartão (overflow clip), no canto inferior direito; o círculo central mostra o P da logo + PERENNIA + "Visão completa do seu negócio" (sem repetir "360").
+- 360°: número gigante é marca-d'água (opacidade .28) contida no cartão (overflow clip), no canto inferior direito; o círculo central mostra o P da logo + PERENNIA + "Visão completa do seu negócio" (sem repetir "360").
