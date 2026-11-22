@@ -1304,3 +1304,17 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 .ks-road-p{--h:4.6cqw;position:relative;z-index:1;display:block;width:calc(var(--h) * 51 / 74);height:var(--h);overflow:hidden}
 .ks-road-p img{position:absolute;max-width:none!important;width:calc(var(--h) * 202 / 74)!important;height:auto!important;left:calc(var(--h) * -8 / 74);top:calc(var(--h) * -3 / 74)}
 @media(max-width:1000px){.ks-road-p{--h:42px}}
+
+/* selo do Como funciona igual ao da hero (verde, texto claro em volta, aro interno fino), com o P da logo no centro */
+.ks-road .ks-road-seal{background:radial-gradient(circle at 35% 30%,#1B3A26 0%,#06200F 70%)!important;
+  box-shadow:0 0 0 1px rgba(243,223,177,.35),0 0 0 6px rgba(4,33,11,.35),0 24px 50px -16px rgba(0,0,0,.55)!important}
+.ks-road .ks-road-seal text{fill:#F3EBDA!important;font-size:12.5px!important;font-weight:600!important;letter-spacing:2.3px!important}
+@media(max-width:1000px){.ks-road .ks-road-seal{box-shadow:0 0 0 1px rgba(243,223,177,.35),0 0 0 6px rgba(4,33,11,.25),0 18px 36px -14px rgba(0,0,0,.5)!important}}
+.ks-road-p img{mix-blend-mode:lighten}
+.ks-road-p{isolation:auto}
+.ks-road .ks-road-seal text{stroke:none!important;paint-order:normal}
+.ks-road-p{z-index:auto!important;position:relative}
+.ks-road .ks-road-seal .ks-seal-ring{z-index:2}
+@media(min-width:1001px){.ks-road .ks-road-seal{width:12cqw!important}.ks-road-p{--h:4.4cqw}}
+@media(max-width:1000px){.ks-road .ks-road-seal{width:118px!important;left:59px!important}.ks-road-p{--h:40px}}
+.ks-road .ks-road-seal{box-shadow:0 0 0 1px rgba(243,223,177,.35),0 0 0 5px #F8F5EE,0 0 0 6px rgba(184,149,95,.65),0 22px 44px -16px rgba(0,0,0,.45)!important}
