@@ -59,3 +59,19 @@ $$('[data-perennia-video]').forEach(b=>b.addEventListener('click',()=>openDialog
     cards.forEach(c=>{const d=Math.abs(c.offsetLeft-pl-el.scrollLeft);if(d<bd){bd=d;best=c.offsetLeft-pl;}});el.scrollTo({left:best,behavior:'smooth'});}});
   el.addEventListener('click',e=>{if(moved){e.preventDefault();e.stopPropagation();moved=false;}},true);
 })();
+
+/* serviços: card coberto pelo próximo vai encolhendo e apagando */
+(function(){
+  var list=document.querySelector('#servicos .ks-svc-cards');if(!list)return;
+  var cards=[].slice.call(list.children).slice(2);if(cards.length<2)return;
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches,tick=false;
+  function upd(){tick=false;
+    for(var i=0;i<cards.length-1;i++){
+      var a=cards[i].getBoundingClientRect(),b=cards[i+1].getBoundingClientRect();
+      var p=Math.min(1,Math.max(0,(a.bottom-b.top)/a.height));
+      cards[i].style.opacity=String(1-p*.9);
+      cards[i].style.transform=reduce?'':'scale('+(1-p*.06)+')';
+    }}
+  function req(){if(!tick){tick=true;requestAnimationFrame(upd)}}
+  window.addEventListener('scroll',req,{passive:true});window.addEventListener('resize',req);upd();
+})();

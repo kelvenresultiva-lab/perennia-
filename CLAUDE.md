@@ -58,3 +58,4 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
   - Card de serviço = peça única (só :after com contorno fino), recorte do ícone feito por box-shadow do .ks-svc-ico (anel 8px na cor do fundo #0E2B1D + 1px dourado). Título peso 300, número peso 200. No celular a grade precisa de minmax(0,1fr) senão o card estoura a largura.
 
 - Cards de serviço (#servicos): recorte real no canto superior esquerdo feito com máscara `--ks-notch` (7 camadas, sobrepostas 1px para não deixar emenda). `:before` desenha o contorno e `:after` o miolo (inset 1px). O ícone creme fica dentro do recorte, fora do card. Medidas: `--W/--H` 74/66 no desktop e 66/60 no celular.
+- Cards de serviço empilhando: do card 3 em diante são `position:sticky` (top `max(24px, 50vh - 150px)`). O próximo sobe por cima e o card coberto encolhe e apaga via JS no fim do `script.js` (opacidade até .1, para não aparecer pelo recorte do canto).

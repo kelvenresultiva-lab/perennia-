@@ -1889,3 +1889,7 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
     linear-gradient(#000,#000) var(--W) calc(var(--R) - 1px) / calc(var(--R) + 1px) calc(var(--H) - var(--R) + 2px),
     radial-gradient(circle at 100% 100%,#000 calc(var(--R) - .5px),transparent var(--R)) var(--W) 0 / var(--R) var(--R),
     radial-gradient(circle at 0 0,transparent calc(var(--C) - .5px),#000 var(--C)) calc(var(--W) - var(--C)) calc(var(--H) - var(--C)) / calc(var(--C) + 1px) calc(var(--C) + 1px)}
+
+/* ---------- cards de serviço empilhando: do card 3 em diante cada um gruda e o próximo sobe por cima ---------- */
+#servicos .ks-svc-cards .specialist-item:nth-child(n+3){position:sticky!important;top:max(24px,calc(50vh - 150px));transform-origin:50% 0;will-change:transform,opacity}
+@media(prefers-reduced-motion:reduce){#servicos .ks-svc-cards .specialist-item{transform:none!important}}
