@@ -1236,3 +1236,25 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 #sintomas .diagnostico-orbit{border-color:rgba(184,149,95,.55)!important}
 @media(max-width:700px){#sintomas .diagnostico-card{padding-bottom:calc(26vw + 24px)!important}
   #sintomas .diagnostico-areas li span{background:none!important;border:0!important;box-shadow:none!important;padding:0!important;margin:0}}
+
+/* ---------- Fechamento → Rodapé: calombo central (o rodapé sobe no meio) com seta de voltar ao topo ---------- */
+#agendar{
+  -webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 110' preserveAspectRatio='none'%3E%3Cpath d='M0 18H1080C1150 18 1170 110 1240 110H1440V110H0Z'/%3E%3C/svg%3E") top left/100% var(--cv) no-repeat,
+    linear-gradient(#000,#000) left calc(var(--cv) - 2px)/100% calc(100% - var(--cv) * 2 + 4px) no-repeat,
+    linear-gradient(#000,#000) left bottom/calc(50% - var(--bw) / 2 + 1px) var(--cv) no-repeat,
+    linear-gradient(#000,#000) right bottom/calc(50% - var(--bw) / 2 + 1px) var(--cv) no-repeat,
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 110' preserveAspectRatio='none'%3E%3Cpath d='M0 0H240V110H206C172 110 162 40 120 40C78 40 68 110 34 110H0Z'/%3E%3C/svg%3E") center bottom/var(--bw) var(--cv) no-repeat!important;
+  mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 110' preserveAspectRatio='none'%3E%3Cpath d='M0 18H1080C1150 18 1170 110 1240 110H1440V110H0Z'/%3E%3C/svg%3E") top left/100% var(--cv) no-repeat,
+    linear-gradient(#000,#000) left calc(var(--cv) - 2px)/100% calc(100% - var(--cv) * 2 + 4px) no-repeat,
+    linear-gradient(#000,#000) left bottom/calc(50% - var(--bw) / 2 + 1px) var(--cv) no-repeat,
+    linear-gradient(#000,#000) right bottom/calc(50% - var(--bw) / 2 + 1px) var(--cv) no-repeat,
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 110' preserveAspectRatio='none'%3E%3Cpath d='M0 0H240V110H206C172 110 162 40 120 40C78 40 68 110 34 110H0Z'/%3E%3C/svg%3E") center bottom/var(--bw) var(--cv) no-repeat!important;
+  --bw:240px}
+/* rodapé um tom mais fundo, para o calombo aparecer */
+#contatos{--pv-rod:#06170D;background:#06170D!important;border-top-color:#06170D!important;position:relative}
+.ks-to-top{position:absolute;z-index:5;left:50%;top:calc(98px * .62);transform:translate(-50%,-50%);width:40px;height:40px;display:grid;place-items:center;border-radius:50%;color:#D8BE8E;transition:color .2s,transform .2s}
+.ks-to-top svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.ks-to-top:hover{color:#F4F0E7;transform:translate(-50%,-62%)}
+@media(max-width:700px){#agendar{--bw:180px}.ks-to-top{top:calc(54px * .64);width:34px;height:34px}.ks-to-top svg{width:18px;height:18px}}
+.ks-to-top{top:calc(98px * -.30)!important}
+@media(max-width:700px){.ks-to-top{top:calc(54px * -.30)!important}}
