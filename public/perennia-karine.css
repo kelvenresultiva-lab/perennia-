@@ -1718,3 +1718,17 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 #servicos .ks-svc-photo:before{display:none!important}
 #servicos .ks-svc-photo img{filter:saturate(.92) contrast(1.03) brightness(.94)!important}
 #servicos .ks-svc-cards .ks-svc-photo:after{background:linear-gradient(180deg,rgba(10,12,11,.05) 0%,rgba(10,12,11,.12) 35%,rgba(10,14,12,.74) 62%,rgba(8,12,10,.94) 100%)!important}
+
+/* ---------- Nossas Soluções: fundo BRANCO (inclui a faixa da curva) ---------- */
+#solucoes{background-color:#FFFFFF!important;background-image:none!important;border-color:#FFFFFF!important}
+/* Legacy (marfim) → Soluções (branco): mesma curva das outras trocas de seção */
+#tratamentos{border-bottom:98px solid var(--pm)!important}
+#solucoes{--cv:98px;position:relative;z-index:2;border-top:var(--cv) solid transparent!important;margin-top:calc(var(--cv) * -1)!important;
+  background-origin:border-box!important;background-clip:border-box!important;
+  -webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 110' preserveAspectRatio='none'%3E%3Cpath d='M0 18H1080C1150 18 1170 110 1240 110H1440V110H0Z'/%3E%3C/svg%3E") top left/100% var(--cv) no-repeat,
+    linear-gradient(#000,#000) left calc(var(--cv) - 2px)/100% calc(100% - var(--cv) + 2px) no-repeat;
+  mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 110' preserveAspectRatio='none'%3E%3Cpath d='M0 18H1080C1150 18 1170 110 1240 110H1440V110H0Z'/%3E%3C/svg%3E") top left/100% var(--cv) no-repeat,
+    linear-gradient(#000,#000) left calc(var(--cv) - 2px)/100% calc(100% - var(--cv) + 2px) no-repeat}
+@media(max-width:700px){#tratamentos{border-bottom-width:54px!important}#solucoes{--cv:54px}}
+#solucoes .solution-card h3{color:#F3EFE6!important;-webkit-text-fill-color:#F3EFE6!important;background:none!important}
+#solucoes .solution-featured h3{color:#FFFFFF!important;-webkit-text-fill-color:#FFFFFF!important}
