@@ -66,3 +66,4 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
   - Celular: aparecem e ficam centralizadas abaixo do botão; o bloco tem `min-height: 720px`.
 - O empilhamento dos cards de serviço agora começa no 1º card também no desktop (antes começava no 3º).
 - Desktop: as fotos-fundo começam logo abaixo do botão (absolute com `top/bottom:auto`, posição estática), com `margin-top:-70px`, `scale(1.12)` e origem no topo. Assim o título e o texto nunca ficam sobre os rostos (o usuário reclamou do texto "muito em cima do fundo").
+- 360° (22/11): card mais largo para os lados — max-width 1440px (antes 1180) acima de 740px; no celular nada muda.
