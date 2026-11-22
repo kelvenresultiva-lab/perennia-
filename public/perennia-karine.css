@@ -1921,3 +1921,5 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 }
 @media(min-width:901px){#servicos .ks-svc-duo{bottom:-80px}}
 @media(max-width:900px){#servicos .ks-svc-head{min-height:720px}#servicos .ks-svc-duo{bottom:-20px;opacity:.5}}
+/* desktop também empilha desde o 1º card */
+#servicos .ks-svc-cards .specialist-item{position:sticky!important;top:max(24px,calc(50vh - 150px));transform-origin:50% 0;will-change:transform,opacity}

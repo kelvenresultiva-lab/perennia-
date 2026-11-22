@@ -64,3 +64,4 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - As fotos das sócias (`.ks-svc-duo`) agora são fundo da coluna do título. São `position:absolute` atrás do texto, dessaturadas e com opacidade .5.
   - Desktop: coladas na borda da tela (`left: calc(540px - 50vw + 10px)`), `scale(1.5)`, e o bloco tem `min-height: 100vh - 48px`.
   - Celular: aparecem e ficam centralizadas abaixo do botão; o bloco tem `min-height: 720px`.
+- O empilhamento dos cards de serviço agora começa no 1º card também no desktop (antes começava no 3º).
