@@ -1462,3 +1462,33 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
   #sintomas .diagnostico-areas li span{font-size:14px!important}
   .ks-360-giant{bottom:-12vw!important}
 }
+
+/* ---------- 360° no celular no formato Karine: fundo chapado, lista numerada com linhas finas, selo do P + botão ---------- */
+.ks-360-seal{display:none!important}
+@media(max-width:700px){
+  #sintomas .diagnostico-card{display:flex!important;flex-direction:column!important;align-items:center!important;background:#F6F1E7!important;padding:40px 22px 34px!important}
+  #sintomas .diagnostico-copy,#sintomas .diagnostico-map{display:contents!important}
+  #sintomas .diagnostico-core,#sintomas .ks-360-giant,#sintomas .diagnostico-orbit{display:none!important}
+  #sintomas .diagnostico-kicker{order:1}
+  #sintomas .diagnostico-copy h2{order:2}
+  #sintomas .diagnostico-description{order:3}
+  #sintomas .diagnostico-areas{order:4}
+  #sintomas .ks-360-seal{order:5}
+  #sintomas .ks-360-cta{order:6}
+  /* lista numerada */
+  #sintomas .diagnostico-areas{display:block!important;width:100%!important;margin:26px 0 34px!important;padding:0!important;list-style:none!important;counter-reset:area;border-top:1px solid rgba(140,107,60,.35)}
+  #sintomas .diagnostico-areas li{counter-increment:area;display:flex!important;flex-direction:row!important;align-items:baseline!important;justify-content:flex-start!important;gap:18px!important;
+    position:static!important;transform:none!important;width:auto!important;min-height:0!important;background:none!important;border:0!important;border-bottom:1px solid rgba(140,107,60,.35)!important;
+    border-radius:0!important;box-shadow:none!important;padding:17px 4px!important;text-align:left!important}
+  #sintomas .diagnostico-areas li::before{content:counter(area,decimal-leading-zero);font:500 13px/1 var(--sans,inherit);letter-spacing:.12em;color:#8C6B3C;min-width:24px}
+  #sintomas .diagnostico-areas li svg{display:none!important}
+  #sintomas .diagnostico-areas li span{background:none!important;border:0!important;box-shadow:none!important;padding:0!important;margin:0!important;
+    text-align:left!important;font-size:19px!important;line-height:1.25!important;color:#14301F!important;font-family:var(--serif,inherit)!important}
+  #sintomas .diagnostico-areas li span br{display:none!important}
+  /* selo do P */
+  #sintomas .ks-360-seal{display:grid!important;place-items:center;position:relative!important;left:auto!important;right:auto!important;top:auto!important;width:96px!important;margin:0 auto 24px!important;
+    background:radial-gradient(circle at 35% 30%,#1B3A26 0%,#06200F 70%)!important}
+  #sintomas .ks-360-seal text{fill:#F3EBDA!important;stroke:none!important;font-weight:600!important}
+  #sintomas .ks-360-seal-p{--h:34px!important}
+  #sintomas .ks-360-seal-p img{mix-blend-mode:lighten}
+}
