@@ -1318,3 +1318,17 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 @media(min-width:1001px){.ks-road .ks-road-seal{width:12cqw!important}.ks-road-p{--h:4.4cqw}}
 @media(max-width:1000px){.ks-road .ks-road-seal{width:118px!important;left:59px!important}.ks-road-p{--h:40px}}
 .ks-road .ks-road-seal{box-shadow:0 0 0 1px rgba(243,223,177,.35),0 0 0 5px #F8F5EE,0 0 0 6px rgba(184,149,95,.65),0 22px 44px -16px rgba(0,0,0,.45)!important}
+
+/* ---------- Como funciona: ícones refeitos (verde + dourado), letras maiores, foto de fundo suave ---------- */
+.ks-road-node{background:radial-gradient(circle at 35% 30%,#1B3A26 0%,#06200F 75%)!important;color:#E2C894!important;
+  box-shadow:0 0 0 4px #F8F5EE,0 0 0 5.5px rgba(184,149,95,.75),0 16px 30px -14px rgba(20,30,20,.6)!important}
+.ks-road-node svg{width:46%!important;height:46%!important;stroke-width:1.45!important;fill:none}
+.ks-road-step:hover .ks-road-node{color:#F3E2BC!important}
+@media(min-width:1001px){.ks-road-node{width:6.2cqw!important;height:6.2cqw!important;min-width:62px!important;min-height:62px!important}
+  .ks-road-step.s1 .ks-road-text,.ks-road-step.s2 .ks-road-text{bottom:calc(max(3.1cqw,31px) + 20px)!important}
+  .ks-road-step.s3 .ks-road-text,.ks-road-step.s4 .ks-road-text{top:calc(max(3.1cqw,31px) + 20px)!important}}
+.ks-road-text h3{font-size:clamp(18px,1.85cqw,23px)!important}
+.ks-road-text p{font-size:clamp(14.5px,1.35cqw,16.5px)!important;line-height:1.6!important}
+@media(max-width:1000px){.ks-road-text h3{font-size:19.5px!important}.ks-road-text p{font-size:15.5px!important}.ks-road-node svg{width:28px!important;height:28px!important}}
+#como-funciona{background:linear-gradient(rgba(248,245,238,.88),rgba(248,245,238,.93)),url('assets/office-main.webp') center/cover no-repeat!important;
+  background-origin:border-box!important;border-color:transparent!important}
