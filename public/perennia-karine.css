@@ -1367,3 +1367,8 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 @media(max-width:1000px){.ks-road-text h3{font-size:23px!important}.ks-road-text p{font-size:18px!important}}
 /* o vizinho de cima (Serviços) e o de baixo (fechamento) recortam as curvas sobre esta cor */
 #servicos+#como-funciona,#como-funciona{border-top-color:#ECE6D8!important;border-bottom-color:#ECE6D8!important}
+
+/* Como funciona: fundo branco (pedido 22/11) */
+#como-funciona,#servicos+#como-funciona{background:#FFFFFF!important;background-image:none!important;border-color:#FFFFFF!important}
+.ks-road-node{box-shadow:0 0 0 4px #FFFFFF,0 0 0 5.5px rgba(140,107,60,.7),0 16px 30px -14px rgba(20,30,20,.5)!important}
+.ks-road .ks-road-seal{box-shadow:0 0 0 1px rgba(243,223,177,.35),0 0 0 5px #FFFFFF,0 0 0 6px rgba(140,107,60,.7),0 22px 44px -16px rgba(0,0,0,.4)!important}
