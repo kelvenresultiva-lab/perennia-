@@ -1693,3 +1693,24 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
   #servicos .ks-svc-cards .specialist-item{flex:0 0 82%;scroll-snap-align:start}
 }
 @media(min-width:701px){#servicos .ks-svc-cards .specialist-item{flex:0 0 clamp(260px,21vw,300px)!important}}
+
+/* ---------- Serviços: card no formato da referência — foto de fundo no card inteiro, escurecida embaixo; ícone num quadradinho + título + descrição por cima ---------- */
+#servicos .ks-svc-cards .specialist-item{flex:0 0 clamp(340px,29vw,430px)!important;min-height:420px;padding:0!important;overflow:hidden;justify-content:flex-end;
+  background:#0F2E1F!important;border:1px solid rgba(216,190,142,.18)!important;border-radius:16px!important}
+#servicos .ks-svc-cards .ks-svc-photo{position:absolute!important;inset:0;margin:0!important;aspect-ratio:auto!important;border-radius:0!important;z-index:0}
+#servicos .ks-svc-cards .ks-svc-photo:after{background:linear-gradient(180deg,rgba(6,32,15,.10) 0%,rgba(6,32,15,.18) 35%,rgba(6,32,15,.78) 62%,rgba(6,32,15,.96) 100%)!important}
+#servicos .ks-svc-cards .ks-svc-num,#servicos .ks-svc-cards .ks-svc-tag{display:none!important}
+#servicos .ks-svc-ico{position:relative;z-index:2;display:grid;place-items:center;width:44px;height:44px;margin:0 28px 18px;border-radius:9px;
+  background:linear-gradient(145deg,#1F5236,#123A24);border:1px solid rgba(216,190,142,.45);box-shadow:0 10px 22px -10px rgba(0,0,0,.6)}
+#servicos .ks-svc-ico svg{width:22px;height:22px;fill:none;stroke:#E2C894;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+#servicos .ks-svc-cards .ks-svc-body{position:relative;z-index:2;padding:0 28px 30px!important}
+#servicos .ks-svc-cards .specialist-item h3{font:600 clamp(20px,1.6vw,23px)/1.2 var(--sans)!important;color:#FFFFFF!important}
+#servicos .ks-svc-cards .ks-svc-desc>p{margin-top:12px!important;font-size:15px!important;line-height:1.6!important;color:#C8D2CB!important}
+/* a seta some e o card inteiro vira o link */
+#servicos .ks-svc-cards .ks-svc-arrow{position:absolute!important;inset:0!important;width:auto!important;height:auto!important;border-radius:0!important;background:none!important;opacity:0;z-index:3}
+#servicos .ks-svc-cards .specialist-item:is(:hover,:focus-within) .ks-svc-ico{border-color:rgba(226,200,148,.8)}
+@media(max-width:700px){
+  #servicos .ks-svc-cards .specialist-item{flex:0 0 84%!important;min-height:400px}
+  #servicos .ks-svc-ico{margin:0 22px 16px}
+  #servicos .ks-svc-cards .ks-svc-body{padding:0 22px 26px!important}
+}
