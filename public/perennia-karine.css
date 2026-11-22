@@ -1582,3 +1582,45 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 #sintomas .diagnostico-core>strong{background:linear-gradient(180deg,#F6E3B8 0%,#E2C58F 50%,#C9A266 100%)!important;-webkit-background-clip:text!important;background-clip:text!important;font-weight:500!important}
 #sintomas .diagnostico-core>strong sup{-webkit-text-fill-color:#E2C58F!important}
 #sintomas .diagnostico-core>strong{-webkit-text-fill-color:transparent!important}
+
+/* ---------- 360°: ícones exatamente sobre a seta e textos DENTRO da órbita, ao lado do ícone (nunca cruzando a linha) ---------- */
+#sintomas .diagnostico-areas li{width:auto!important;height:auto!important;margin:0!important;padding:0!important;display:block!important;transform:translate(-50%,-50%)!important;bottom:auto!important;right:auto!important}
+#sintomas .diagnostico-areas li svg{display:block!important;margin:0!important}
+#sintomas .diagnostico-areas li span{position:absolute!important;margin:0!important;white-space:nowrap!important;text-shadow:none!important;top:50%;transform:translateY(-50%)}
+/* direita: texto à esquerda do ícone; esquerda: à direita do ícone */
+#sintomas .diagnostico-areas li.area-2 span,#sintomas .diagnostico-areas li.area-3 span{right:calc(100% + 12px);text-align:right!important}
+#sintomas .diagnostico-areas li.area-5 span,#sintomas .diagnostico-areas li.area-6 span{left:calc(100% + 12px);text-align:left!important}
+/* cima: abaixo do ícone; baixo: acima do ícone (ambos para dentro) */
+#sintomas .diagnostico-areas li.area-1 span{top:calc(100% + 10px);left:50%;transform:translateX(-50%)}
+#sintomas .diagnostico-areas li.area-4 span{top:auto;bottom:calc(100% + 10px);left:50%;transform:translateX(-50%)}
+#sintomas .diagnostico-areas li.area-1 span br,#sintomas .diagnostico-areas li.area-4 span br{display:inline!important}
+/* desktop: seta com raio 45,8% do mapa */
+@media(min-width:701px){
+  #sintomas .diagnostico-areas li.area-1{left:50%!important;top:4.2%!important}
+  #sintomas .diagnostico-areas li.area-2{left:89.7%!important;top:27.1%!important}
+  #sintomas .diagnostico-areas li.area-3{left:89.7%!important;top:72.9%!important}
+  #sintomas .diagnostico-areas li.area-4{left:50%!important;top:95.8%!important}
+  #sintomas .diagnostico-areas li.area-5{left:10.3%!important;top:72.9%!important}
+  #sintomas .diagnostico-areas li.area-6{left:10.3%!important;top:27.1%!important}
+}
+/* celular: órbita 300px, centro a 215px */
+@media(max-width:700px){
+  #sintomas .diagnostico-areas li.area-1{left:50%!important;top:65px!important}
+  #sintomas .diagnostico-areas li.area-2{left:calc(50% + 130px)!important;top:140px!important}
+  #sintomas .diagnostico-areas li.area-3{left:calc(50% + 130px)!important;top:290px!important}
+  #sintomas .diagnostico-areas li.area-4{left:50%!important;top:365px!important}
+  #sintomas .diagnostico-areas li.area-5{left:calc(50% - 130px)!important;top:290px!important}
+  #sintomas .diagnostico-areas li.area-6{left:calc(50% - 130px)!important;top:140px!important}
+  #sintomas .diagnostico-areas li span{font-size:12.5px!important}
+  #sintomas .diagnostico-map{height:410px!important}
+}
+@media(max-width:380px){
+  #sintomas .diagnostico-areas li.area-1{top:80px!important}
+  #sintomas .diagnostico-areas li.area-2{left:calc(50% + 117px)!important;top:147px!important}
+  #sintomas .diagnostico-areas li.area-3{left:calc(50% + 117px)!important;top:283px!important}
+  #sintomas .diagnostico-areas li.area-4{top:350px!important}
+  #sintomas .diagnostico-areas li.area-5{left:calc(50% - 117px)!important;top:283px!important}
+  #sintomas .diagnostico-areas li.area-6{left:calc(50% - 117px)!important;top:147px!important}
+  #sintomas .diagnostico-areas li span{font-size:11.5px!important}
+}
+@media(max-width:700px){#sintomas .diagnostico-core{width:100px!important;height:100px!important}#sintomas .diagnostico-core>strong{font-size:30px!important}}
