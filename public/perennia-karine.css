@@ -1573,3 +1573,12 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 @media(min-width:701px){#sintomas .diagnostico-areas li span{font-size:15px!important;line-height:1.3!important}}
 @media(max-width:700px){#sintomas .diagnostico-areas li span{font-size:13px!important;line-height:1.28!important;padding:2px 4px!important}}
 #sintomas .diagnostico-areas li span{background:none!important;text-shadow:0 0 3px #F3ECDF,0 0 6px #F3ECDF,0 0 10px #F3ECDF,0 0 14px #F3ECDF!important}
+
+/* ---------- 360°: no centro do círculo o "360°" em dourado (no lugar do P) ---------- */
+#sintomas .diagnostico-core>strong{display:block!important;margin:0!important;line-height:1!important;font-size:clamp(46px,4.6vw,66px)!important;
+  background:linear-gradient(180deg,#EBD3A2 0%,#D2B07A 45%,#A9824C 100%);-webkit-background-clip:text;background-clip:text;color:transparent!important;-webkit-text-fill-color:transparent}
+#sintomas .diagnostico-core>strong sup{font-size:.45em;vertical-align:.95em;-webkit-text-fill-color:#D2B07A}
+@media(max-width:700px){#sintomas .diagnostico-core>strong{font-size:36px!important}}
+#sintomas .diagnostico-core>strong{background:linear-gradient(180deg,#F6E3B8 0%,#E2C58F 50%,#C9A266 100%)!important;-webkit-background-clip:text!important;background-clip:text!important;font-weight:500!important}
+#sintomas .diagnostico-core>strong sup{-webkit-text-fill-color:#E2C58F!important}
+#sintomas .diagnostico-core>strong{-webkit-text-fill-color:transparent!important}
