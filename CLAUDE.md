@@ -44,3 +44,4 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
   - Ajuste: no celular o círculo (núcleo verde + seta girando) voltou, entre o texto e a lista; o selo pequeno .ks-360-seal fica escondido.
   - ATUAL (substitui lista/mini-cards): no celular o 360° é igual ao desktop — órbita de 300px (270px ≤380px) com o círculo+seta no centro e as 6 áreas em volta (ícone na linha + etiqueta pílula), posições fixas por .area-N; botão antes do diagrama.
 - 360° (desktop e celular): dentro do círculo central só o P da logo (sem textos); a seta .ks-360-arrow fica dentro de .diagnostico-orbit e corre na linha da órbita, entre os tópicos (borda da órbita transparente), girando 40s.
+- 360°: etiquetas das áreas SEM caixa (o usuário não gostou da pílula) — só texto verde-escuro peso 500 (15px desktop/13px celular) com halo text-shadow na cor do card para a seta não cruzar as letras.

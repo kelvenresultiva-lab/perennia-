@@ -1566,3 +1566,10 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
   #sintomas .ks-core-p{--h:50px!important}
 }
 #sintomas .diagnostico-orbit .ks-360-arrow{inset:-4.35%!important;width:108.7%!important;height:108.7%!important}
+
+/* ---------- 360°: etiquetas sem caixa — só texto; fundo na cor do card apenas para "recortar" a linha da seta ---------- */
+#sintomas .diagnostico-areas li span{background:#F2EBDD!important;border:0!important;box-shadow:none!important;border-radius:6px!important;
+  padding:2px 6px!important;color:#14301F!important;font-weight:500!important;letter-spacing:-.005em}
+@media(min-width:701px){#sintomas .diagnostico-areas li span{font-size:15px!important;line-height:1.3!important}}
+@media(max-width:700px){#sintomas .diagnostico-areas li span{font-size:13px!important;line-height:1.28!important;padding:2px 4px!important}}
+#sintomas .diagnostico-areas li span{background:none!important;text-shadow:0 0 3px #F3ECDF,0 0 6px #F3ECDF,0 0 10px #F3ECDF,0 0 14px #F3ECDF!important}
