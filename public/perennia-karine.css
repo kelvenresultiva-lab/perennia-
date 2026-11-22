@@ -1221,3 +1221,18 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 #sintomas .diagnostico-orbit::before,#sintomas .diagnostico-orbit::after{display:none!important}
 #sintomas .diagnostico-card{padding-bottom:clamp(40px,5vw,72px)!important}
 @media(max-width:700px){#sintomas .diagnostico-orbit{display:none!important}#sintomas .diagnostico-card{padding-bottom:40px!important}}
+
+/* ---------- 360° gigante de volta, em marrom + dourado, com contraste ---------- */
+.ks-360-giant{display:block!important;opacity:1!important;
+  background:linear-gradient(180deg,#D9B77A 0%,#B08A52 22%,#7A5630 55%,#4E3419 100%)!important;
+  -webkit-background-clip:text!important;background-clip:text!important;-webkit-text-fill-color:transparent!important;
+  filter:drop-shadow(0 18px 26px rgba(78,52,25,.28))}
+/* nomes das áreas em etiquetas marfim, legíveis por cima do número */
+#sintomas .diagnostico-areas li span{display:inline-block;background:rgba(250,247,240,.94)!important;color:#14301F!important;
+  padding:5px 11px!important;border-radius:999px!important;border:1px solid rgba(184,149,95,.5)!important;
+  box-shadow:0 6px 14px -8px rgba(78,52,25,.45);line-height:1.25!important;margin-top:6px}
+/* círculo central separado do marrom por um aro dourado */
+#sintomas .diagnostico-core{box-shadow:0 0 0 4px #F4EEE2,0 0 0 5px rgba(184,149,95,.85),0 24px 50px -18px rgba(20,30,20,.6)!important}
+#sintomas .diagnostico-orbit{border-color:rgba(184,149,95,.55)!important}
+@media(max-width:700px){#sintomas .diagnostico-card{padding-bottom:calc(26vw + 24px)!important}
+  #sintomas .diagnostico-areas li span{background:none!important;border:0!important;box-shadow:none!important;padding:0!important;margin:0}}
