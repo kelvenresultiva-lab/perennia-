@@ -2138,3 +2138,6 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
     color:rgba(243,223,177,.13)!important;-webkit-text-fill-color:rgba(243,223,177,.13)!important;clip-path:inset(0 0 38% 0);pointer-events:none}
   #agendar .ks-closing-card{padding-bottom:calc(12vw + 40px)!important}
 }
+
+/* selo do fechamento: P da logo exatamente no centro do selo (antes ~2px à esquerda) */
+#agendar .ks-seal .ks-closing-p{left:0!important}
