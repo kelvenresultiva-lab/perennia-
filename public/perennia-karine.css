@@ -2141,3 +2141,10 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 
 /* selo do fechamento: P da logo exatamente no centro do selo (antes ~2px à esquerda) */
 #agendar .ks-seal .ks-closing-p{left:0!important}
+
+/* Logo do rodapé (22/11): o P da imagem fica à esquerda; aqui a logo é montada em 2 recortes (símbolo e texto) para o P ficar centralizado sobre PERENNIA.
+   Medidas no perennia-logo.webp (202x127): símbolo x4–57 y5–75 (centro x30,5) · texto x4–194 y88–122 (centro x99) */
+.ks-flogo{--s:calc(160px / 202);display:block;width:calc(var(--s) * 198);margin:0 auto;filter:contrast(1.32);mix-blend-mode:lighten}
+.ks-flogo-p,.ks-flogo-t{display:block;margin:0 auto;background:url("assets/perennia-logo.webp") no-repeat;background-size:calc(var(--s) * 202) auto}
+.ks-flogo-p{width:calc(var(--s) * 57);height:calc(var(--s) * 72);background-position:calc(var(--s) * -2) calc(var(--s) * -4)}
+.ks-flogo-t{width:calc(var(--s) * 198);height:calc(var(--s) * 42);background-position:0 calc(var(--s) * -84)}
