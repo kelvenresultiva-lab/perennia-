@@ -1492,3 +1492,12 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
   #sintomas .ks-360-seal-p{--h:34px!important}
   #sintomas .ks-360-seal-p img{mix-blend-mode:lighten}
 }
+
+/* ---------- 360° no celular: mantém o círculo (núcleo + seta) entre o texto e a lista; sem o selo pequeno ---------- */
+@media(max-width:700px){
+  #sintomas .ks-360-seal{display:none!important}
+  #sintomas .diagnostico-core{display:flex!important;order:4;position:relative!important;inset:auto!important;left:auto!important;top:auto!important;transform:none!important;
+    width:172px!important;height:172px!important;margin:46px auto 40px!important;flex:none}
+  #sintomas .diagnostico-areas{order:5;margin-top:4px!important}
+  #sintomas .ks-360-cta{margin-top:0!important}
+}

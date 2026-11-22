@@ -41,3 +41,4 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 360° no celular: card com margem lateral de 10px (seção sem padding lateral), textos/botão centralizados, áreas em 2 colunas com ícone em cima e nome centralizado em 2 linhas.
 - 360° no celular: as 6 áreas viram mini-cards marfim (borda dourada, ícone em cima alinhado, nome centralizado), grade 2x3 com gap 10px; sem espaço reservado pro 360 gigante (fica atrás dos cards).
 - 360° no celular = formato Karine (substitui os mini-cards): fundo marfim chapado, sem diagrama/núcleo/360 gigante; áreas viram lista numerada 01–06 com linhas finas douradas; selo pequeno do P girando (.ks-360-seal, só no celular) acima do botão. Desktop mantém o diagrama.
+  - Ajuste: no celular o círculo (núcleo verde + seta girando) voltou, entre o texto e a lista; o selo pequeno .ks-360-seal fica escondido.
