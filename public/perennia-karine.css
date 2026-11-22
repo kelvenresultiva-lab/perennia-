@@ -1420,7 +1420,7 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 
 /* ---------- 360° otimizado: número gigante vira marca-d'água contida no cartão; núcleo com o P da logo (sem repetir "360") ---------- */
 #sintomas .diagnostico-card{overflow:clip!important}
-.ks-360-giant{z-index:0!important;opacity:.28!important;filter:none!important}
+.ks-360-giant{z-index:0!important;opacity:.14!important;filter:none!important}
 @media(min-width:701px){
   .ks-360-giant{font-size:clamp(150px,19vw,290px)!important;right:-1.5%!important;top:auto!important;bottom:-.14em!important;transform:none!important}
 }
