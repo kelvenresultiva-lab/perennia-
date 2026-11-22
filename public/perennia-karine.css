@@ -2104,3 +2104,11 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
   .ks-closing-glass{width:110px;height:66px;left:-8px;bottom:-24px;border-radius:10px}
   #agendar .ks-closing-card .perennia-cta{min-width:0}
 }
+/* fechamento, refinamento (22/11): sem o cartão de vidro; ondas com bordas esfumadas (sem corte reto), contorno fino e brilho suave no centro */
+.ks-closing-glass{display:none!important}
+#agendar .ks-closing-card{background:radial-gradient(ellipse 55% 60% at 50% 42%,rgba(216,190,142,.09),transparent 70%),linear-gradient(180deg,#163D2B 0%,#0F2E1F 100%)!important;
+  box-shadow:inset 0 0 0 1px rgba(243,223,177,.10),0 40px 80px -40px rgba(0,0,0,.65)!important}
+.ks-wave{-webkit-mask:radial-gradient(closest-side,#000 55%,transparent 100%);mask:radial-gradient(closest-side,#000 55%,transparent 100%)}
+.ks-wave-1{width:min(760px,62%);aspect-ratio:auto;height:125%;top:-12%;right:-14%;background-size:cover;background-position:30% 40%}
+.ks-wave-2{width:min(460px,40%);bottom:-22%;left:-12%}
+@media(max-width:700px){.ks-wave-1{width:95%;height:80%;top:-8%;right:-40%}.ks-wave-2{width:80%;bottom:-18%;left:-34%}}
