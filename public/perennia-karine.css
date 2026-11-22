@@ -1931,3 +1931,36 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 
 /* 360°: card mais largo para os lados (22/11) */
 @media(min-width:741px){#sintomas .diagnostico-card{max-width:1440px!important}}
+
+/* Método Legacy (22/11): etapas numeradas 01–04 + "LEGACY" gigante de marca-d'água */
+#tratamentos{position:relative}
+#tratamentos .ks-lg-giant{position:absolute;inset:0;overflow:hidden;pointer-events:none;user-select:none;z-index:0}
+#tratamentos .ks-lg-giant span{position:absolute;left:50%;bottom:-.3em;transform:translateX(-50%);white-space:nowrap;
+  font:300 clamp(150px,21vw,380px)/1 var(--serif);letter-spacing:.04em;opacity:.13;
+  background:linear-gradient(180deg,#D9B77A 0%,#B08A52 35%,#8C6B3C 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+#tratamentos .large-wrap{position:relative;z-index:1}
+#tratamentos .paired-section-wave{z-index:2}
+#tratamentos .process-grid{position:relative;grid-auto-rows:1fr}
+/* filete dourado: da borda esquerda para um traço fino no topo */
+#tratamentos .ks-lg-step:before{top:0!important;left:34px!important;width:72px!important;height:2px!important;border-radius:0 0 2px 2px!important;background:linear-gradient(90deg,#F3DFB1,#A67F50)!important}
+/* número grande, fino e dourado; ícone pequeno no canto */
+#tratamentos .ks-lg-num{display:block;margin:0 0 14px;font:200 clamp(64px,5.2vw,84px)/.9 var(--serif);letter-spacing:-.04em;
+  background:linear-gradient(180deg,#E6CC98 0%,#B8955F 60%,#8C6B3C 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+#tratamentos .ks-lg-step .lg-ico{position:absolute!important;top:34px!important;right:30px!important;left:auto!important;margin:0!important;width:38px!important;height:38px!important}
+#tratamentos .ks-lg-step .lg-ico svg{width:17px!important;height:17px!important}
+#tratamentos .ks-lg-step h3{font-size:24px!important;margin-top:0!important}
+#tratamentos .legacy-card-points li{font-size:15px!important;color:#D3DDD6!important}
+/* ligação 01→02 e 03→04: setinha dourada no vão entre os cards */
+@media(min-width:741px){
+  #tratamentos .process-grid:before,#tratamentos .process-grid:after{content:"";position:absolute;z-index:2;left:50%;width:34px;height:34px;margin:-17px 0 0 -17px;border-radius:50%;
+    background:#F8F5EE url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%238C6B3C' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12h14M13 6l6 6-6 6'/%3E%3C/svg%3E") center/16px no-repeat;
+    box-shadow:0 0 0 1px #B8955F,0 6px 16px -8px rgba(15,46,31,.5)}
+  #tratamentos .process-grid:before{top:calc(25% - 10px)}
+  #tratamentos .process-grid:after{top:calc(75% + 10px)}
+}
+@media(max-width:740px){
+  #tratamentos .process-grid{grid-auto-rows:auto}
+  #tratamentos .ks-lg-num{font-size:58px}
+  #tratamentos .ks-lg-step .lg-ico{top:28px!important;right:22px!important}
+  #tratamentos .ks-lg-giant span{font-size:22vw;bottom:-.22em}
+}
