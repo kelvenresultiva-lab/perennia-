@@ -1793,3 +1793,22 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 #servicos .ks-svc-cards .ks-svc-desc>p{max-width:265px}
 #servicos .ks-svc-cards .specialist-item{padding-bottom:38px!important}
 @media(max-width:700px){#servicos .ks-svc-cards .ks-svc-desc>p{max-width:none;padding-right:84px}}
+/* foto da sócia no canto da coluna esquerda, sumindo no verde */
+#servicos .ks-svc-head{top:90px!important}
+#servicos .ks-svc-socias{position:relative;margin:34px 0 0 -10px!important;width:300px;max-width:100%;aspect-ratio:4/5;overflow:hidden;
+  -webkit-mask:radial-gradient(ellipse 62% 70% at 50% 34%,#000 52%,transparent 100%);mask:radial-gradient(ellipse 62% 70% at 50% 34%,#000 52%,transparent 100%)}
+#servicos .ks-svc-socias img{width:100%;height:100%;object-fit:cover;object-position:50% 12%;filter:saturate(.9) brightness(.92) contrast(1.03)}
+#servicos .ks-svc-socias:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,46,31,0) 45%,rgba(15,46,31,.55));pointer-events:none}
+#servicos .ks-svc-socias{width:330px;-webkit-mask:radial-gradient(ellipse 48% 52% at 50% 44%,#000 40%,rgba(0,0,0,.55) 62%,transparent 82%)!important;mask:radial-gradient(ellipse 48% 52% at 50% 44%,#000 40%,rgba(0,0,0,.55) 62%,transparent 82%)!important}
+#servicos .ks-svc-socias img{object-position:56% 14%;filter:saturate(.85) brightness(.86) contrast(1.05)!important}
+#servicos .ks-svc-socias:after{background:radial-gradient(ellipse 60% 60% at 50% 40%,transparent 45%,rgba(15,46,31,.65) 100%)!important}
+/* foto grande como no modelo: coluna esquerda rola junto; foto alta, esfumada no topo, na direita e embaixo */
+#servicos .ks-svc-head{position:relative!important;top:auto!important}
+#servicos .ks-svc-socias{width:500px!important;max-width:none!important;aspect-ratio:898/1600!important;margin:10px 0 -120px -70px!important;overflow:visible;
+  -webkit-mask:linear-gradient(180deg,transparent 0%,#000 16%,#000 62%,transparent 96%),linear-gradient(90deg,transparent 0%,#000 14%,#000 62%,transparent 100%)!important;
+  -webkit-mask-composite:source-in;
+  mask:linear-gradient(180deg,transparent 0%,#000 16%,#000 62%,transparent 96%),linear-gradient(90deg,transparent 0%,#000 14%,#000 62%,transparent 100%)!important;
+  mask-composite:intersect}
+#servicos .ks-svc-socias img{object-position:50% 0!important;filter:saturate(.88) brightness(.8) contrast(1.06)!important;opacity:.92}
+#servicos .ks-svc-socias:after{display:none!important}
+#servicos .ks-svc-socias{-webkit-mask-composite:source-in!important;mask-composite:intersect!important}
