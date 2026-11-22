@@ -2077,3 +2077,30 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 /* fechamento sobre o branco: tira o vão branco grande acima do card */
 #agendar{margin-top:calc(var(--cv) * -1 - 120px)!important;padding-top:calc(var(--cv) + 20px)!important}
 @media(max-width:700px){#agendar{margin-top:calc(var(--cv) * -1 - 80px)!important;padding-top:calc(var(--cv) + 100px)!important}}
+
+/* Fechamento (22/11, modelo do usuário): ondas de linhas finas douradas nos cantos, selo com halo redondo (sem aba), cartão de vidro flutuando no canto, botão dourado metálico */
+#agendar .ks-closing-tab{display:none!important}
+#agendar .ks-closing-word{display:none!important}
+#agendar .ks-closing-card .ks-seal{top:0!important;transform:translate(-50%,-50%)!important;box-shadow:0 0 0 14px #163D2B,0 0 0 15px rgba(243,223,177,.10),0 18px 36px -14px rgba(0,0,0,.7)!important}
+#agendar .ks-closing-card{padding-bottom:96px!important}
+#agendar .ks-closing-card>.ks-eyebrow{margin-top:56px!important}
+.ks-closing-deco{position:absolute;inset:0;z-index:0;border-radius:inherit;overflow:hidden;pointer-events:none}
+.ks-wave{position:absolute;display:block;background:center/contain no-repeat}
+.ks-wave-1{background-image:url("assets/ks-wave-1.svg");width:min(720px,60%);aspect-ratio:8/7;top:-10%;right:-10%}
+.ks-wave-2{background-image:url("assets/ks-wave-2.svg");width:min(440px,38%);aspect-ratio:1;bottom:-14%;left:-4%}
+#agendar .ks-closing-card>:not(.ks-closing-deco):not(.ks-closing-glass):not(.ks-seal){position:relative;z-index:1}
+.ks-closing-glass{position:absolute;z-index:2;left:-26px;bottom:-38px;width:190px;height:112px;border-radius:14px;pointer-events:none;
+  background:linear-gradient(140deg,rgba(255,255,255,.10),rgba(255,255,255,.02));border:1px solid rgba(243,223,177,.16);
+  -webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);box-shadow:0 20px 40px -20px rgba(0,0,0,.6)}
+#agendar .ks-closing-card .perennia-cta{min-width:min(420px,100%);justify-content:center;gap:16px;
+  background:linear-gradient(100deg,#8E6E3E 0%,#C9AC74 30%,#E2CC9C 50%,#C9AC74 70%,#8E6E3E 100%)!important;color:#0F2E1F!important;
+  box-shadow:0 1px 0 rgba(255,255,255,.35) inset,0 16px 34px -16px rgba(0,0,0,.7)!important}
+@media(max-width:700px){
+  #agendar .ks-closing-card .ks-seal{box-shadow:0 0 0 10px #163D2B,0 0 0 11px rgba(243,223,177,.10),0 14px 30px -12px rgba(0,0,0,.7)!important}
+  #agendar .ks-closing-card{padding-bottom:64px!important}
+  #agendar .ks-closing-card>.ks-eyebrow{margin-top:44px!important}
+  .ks-wave-1{width:78%;top:-4%;right:-22%}
+  .ks-wave-2{width:62%;bottom:-8%;left:-20%}
+  .ks-closing-glass{width:110px;height:66px;left:-8px;bottom:-24px;border-radius:10px}
+  #agendar .ks-closing-card .perennia-cta{min-width:0}
+}
