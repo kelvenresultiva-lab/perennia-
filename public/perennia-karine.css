@@ -1812,3 +1812,23 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 #servicos .ks-svc-socias img{object-position:50% 0!important;filter:saturate(.88) brightness(.8) contrast(1.06)!important;opacity:.92}
 #servicos .ks-svc-socias:after{display:none!important}
 #servicos .ks-svc-socias{-webkit-mask-composite:source-in!important;mask-composite:intersect!important}
+/* duas sócias lado a lado no canto: mesmo enquadramento (rosto na mesma altura/tamanho), fundos escurecidos e esfumados no verde */
+#servicos .ks-svc-duo{display:flex!important;gap:0;width:480px!important;aspect-ratio:auto!important;height:440px;margin:24px 0 -60px -30px!important;
+  -webkit-mask:linear-gradient(180deg,#000 0%,#000 58%,transparent 98%)!important;mask:linear-gradient(180deg,#000 0%,#000 58%,transparent 98%)!important;
+  -webkit-mask-composite:source-over!important;mask-composite:add!important}
+#servicos .ks-socia{position:relative;flex:1 1 50%;height:100%;overflow:hidden;
+  -webkit-mask:radial-gradient(ellipse 62% 64% at 50% 40%,#000 55%,transparent 100%);mask:radial-gradient(ellipse 62% 64% at 50% 40%,#000 55%,transparent 100%)}
+#servicos .ks-socia+.ks-socia{margin-left:-40px}
+#servicos .ks-socia img{position:absolute;max-width:none!important;height:auto!important;opacity:1!important}
+/* Joana: foto de corpo inteiro, aproximada para meio corpo */
+#servicos .ks-socia-1 img{width:200%!important;left:-62%;top:-118px;filter:saturate(.9) brightness(.82) contrast(1.06)!important}
+/* outra sócia: foto já em meio corpo; fundo cinza claro escurecido */
+#servicos .ks-socia-2 img{width:102%!important;left:-2%;top:-36px;filter:saturate(.9) brightness(.7) contrast(1.1)!important}
+#servicos .ks-socia:after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 70% at 50% 38%,transparent 40%,rgba(15,46,31,.75) 100%);pointer-events:none}
+#servicos .ks-svc-duo{height:470px}
+#servicos .ks-socia{-webkit-mask:radial-gradient(ellipse 50% 54% at 50% 46%,#000 42%,rgba(0,0,0,.6) 70%,transparent 100%)!important;mask:radial-gradient(ellipse 50% 54% at 50% 46%,#000 42%,rgba(0,0,0,.6) 70%,transparent 100%)!important}
+#servicos .ks-socia+.ks-socia{margin-left:-70px}
+#servicos .ks-socia-1 img{top:-78px}
+#servicos .ks-socia-2 img{top:4px}
+#servicos .ks-socia-2 img{filter:saturate(.88) brightness(.64) contrast(1.16)!important}
+#servicos .ks-socia-2:after{background:radial-gradient(ellipse 52% 62% at 46% 40%,transparent 34%,rgba(15,46,31,.85) 82%)!important}
