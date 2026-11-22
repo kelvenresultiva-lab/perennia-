@@ -1732,3 +1732,64 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 @media(max-width:700px){#tratamentos{border-bottom-width:54px!important}#solucoes{--cv:54px}}
 #solucoes .solution-card h3{color:#F3EFE6!important;-webkit-text-fill-color:#F3EFE6!important;background:none!important}
 #solucoes .solution-featured h3{color:#FFFFFF!important;-webkit-text-fill-color:#FFFFFF!important}
+
+/* ================= SERVIÇOS no formato "passo a passo": coluna esquerda fixa (texto + foto das sócias no canto) e pilha de cards à direita ================= */
+#servicos{background:radial-gradient(ellipse 60% 50% at 15% 85%,rgba(46,110,72,.28),transparent 70%),linear-gradient(180deg,#0F2E1F 0%,#0B2618 100%)!important;overflow:clip!important}
+#servicos .ks-svc{display:grid!important;grid-template-columns:minmax(0,1fr) minmax(0,470px);gap:80px;max-width:1080px;margin:0 auto;align-items:start}
+#servicos .ks-svc-head{display:block!important;position:sticky!important;top:120px;align-self:start}
+#servicos .ks-svc-head>*{grid-column:auto!important;grid-row:auto!important}
+#servicos .ks-svc-head h2{margin:24px 0 0!important}
+#servicos .ks-svc-head h2:after{content:''!important;display:block;width:100%;max-width:360px;height:1px;margin:30px 0 0;background:linear-gradient(90deg,rgba(243,235,218,.55),rgba(243,235,218,0))}
+#servicos .ks-svc-head>p{margin:26px 0 30px!important;max-width:360px}
+#servicos .ks-svc-count{display:none!important}
+#servicos .ks-svc-socias{margin:46px 0 0;max-width:420px;-webkit-mask:linear-gradient(180deg,#000 55%,transparent);mask:linear-gradient(180deg,#000 55%,transparent)}
+#servicos .ks-svc-socias img{display:block;width:100%;height:auto}
+/* lista: pilha vertical, sem carrossel */
+#servicos .ks-svc-cards{display:flex!important;flex-direction:column;gap:22px;overflow:visible!important;margin:0!important;padding:0!important;cursor:auto!important;scroll-snap-type:none!important;user-select:auto}
+#servicos .ks-svc-cards .specialist-item{flex:none!important;width:100%;min-height:0!important;padding:96px 34px 30px!important;margin:0!important;
+  background:none!important;border:0!important;border-radius:0!important;box-shadow:none!important;overflow:visible!important;justify-content:flex-start!important;isolation:isolate}
+#servicos .ks-svc-cards .specialist-item:is(:hover,:focus-within){transform:translateY(-3px)}
+/* forma do card com o "encaixe" do ícone: aba superior à direita do ícone + corpo que começa logo abaixo */
+#servicos .ks-svc-cards .specialist-item:before,#servicos .ks-svc-cards .specialist-item:after{content:''!important;display:block!important;position:absolute;z-index:-1;
+  background:linear-gradient(170deg,#0C2417 0%,#133A27 100%);border:1px solid rgba(216,190,142,.20)}
+#servicos .ks-svc-cards .specialist-item:before{top:0;left:72px;right:0;height:90px;border-radius:14px 14px 0 0;border-bottom:0}
+#servicos .ks-svc-cards .specialist-item:after{top:70px;left:0;right:0;bottom:0;border-radius:14px 0 14px 14px;border-top-color:transparent;
+  background:linear-gradient(180deg,#133A27 0%,#0F3020 55%,#174731 100%)}
+#servicos .ks-svc-cards .ks-svc-photo,#servicos .ks-svc-cards .ks-svc-tag{display:none!important}
+/* ícone no quadradinho claro, encaixado no canto */
+#servicos .ks-svc-ico{position:absolute!important;top:4px;left:4px;margin:0!important;width:56px!important;height:56px!important;border-radius:8px!important;
+  background:linear-gradient(145deg,#FBF6EC 0%,#E9D9B8 100%)!important;border:0!important;box-shadow:0 10px 22px -12px rgba(0,0,0,.7)}
+#servicos .ks-svc-ico svg{width:26px!important;height:26px!important;stroke:#14301F!important;stroke-width:1.5!important}
+/* seta em pílula no topo direito; o card inteiro é o link */
+#servicos .ks-svc-cards .ks-svc-arrow{position:absolute!important;inset:0!important;opacity:0!important;z-index:4;border-radius:14px!important}
+#servicos .ks-svc-cards .specialist-item .ks-svc-pill{position:absolute;top:22px;right:22px;width:62px;height:30px;border-radius:999px;border:1px solid rgba(243,235,218,.55);
+  display:grid;place-items:center;color:#F3EBDA;transition:background .35s,color .35s,border-color .35s}
+#servicos .ks-svc-pill svg{width:22px;height:14px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+#servicos .ks-svc-cards .specialist-item:is(:hover,:focus-within) .ks-svc-pill{background:linear-gradient(135deg,#DCC496,#B8955F);border-color:transparent;color:#14301F}
+/* textos */
+#servicos .ks-svc-cards .ks-svc-body{position:relative;z-index:2;padding:0!important;max-width:330px}
+#servicos .ks-svc-cards .specialist-item h3{font:400 clamp(24px,2vw,28px)/1.2 var(--sans)!important;letter-spacing:-.01em;color:#F3EFE6!important}
+#servicos .ks-svc-cards .specialist-item h3:after{content:'';display:block;width:100%;height:1px;margin:20px 0 0;background:linear-gradient(90deg,rgba(243,235,218,.45),rgba(243,235,218,.05))}
+#servicos .ks-svc-cards .ks-svc-desc>p{margin:18px 0 0!important;font:400 15px/1.55 var(--sans)!important;color:#D5DDD7!important}
+/* número grande, cortado embaixo */
+#servicos .ks-svc-cards .ks-svc-num{display:block!important;position:absolute;right:26px;bottom:0;z-index:1;margin:0!important;padding:0!important;width:auto;height:auto;border:0!important;background:none!important;
+  font:300 118px/.74 var(--sans)!important;letter-spacing:-.04em;color:transparent!important;
+  background-image:linear-gradient(180deg,rgba(216,190,142,.55) 0%,rgba(216,190,142,.18) 100%)!important;-webkit-background-clip:text!important;background-clip:text!important;-webkit-text-fill-color:transparent;
+  overflow:hidden;height:.74em;pointer-events:none}
+@media(max-width:900px){
+  #servicos .ks-svc{grid-template-columns:1fr;gap:44px}
+  #servicos .ks-svc-head{position:static!important}
+  #servicos .ks-svc-socias{display:none}
+}
+@media(max-width:700px){
+  #servicos .ks-svc-cards .specialist-item{padding:86px 24px 26px!important}
+  #servicos .ks-svc-cards .specialist-item:before{left:62px;height:82px}
+  #servicos .ks-svc-cards .specialist-item:after{top:62px}
+  #servicos .ks-svc-ico{width:50px!important;height:50px!important}
+  #servicos .ks-svc-cards .ks-svc-num{font-size:92px!important;right:18px}
+  #servicos .ks-svc-cards .ks-svc-body{max-width:none}
+  #servicos .ks-svc-cards .ks-svc-desc>p{padding-right:70px}
+}
+#servicos .ks-svc-cards .ks-svc-desc>p{max-width:265px}
+#servicos .ks-svc-cards .specialist-item{padding-bottom:38px!important}
+@media(max-width:700px){#servicos .ks-svc-cards .ks-svc-desc>p{max-width:none;padding-right:84px}}
