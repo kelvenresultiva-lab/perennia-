@@ -43,3 +43,4 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 360° no celular = formato Karine (substitui os mini-cards): fundo marfim chapado, sem diagrama/núcleo/360 gigante; áreas viram lista numerada 01–06 com linhas finas douradas; selo pequeno do P girando (.ks-360-seal, só no celular) acima do botão. Desktop mantém o diagrama.
   - Ajuste: no celular o círculo (núcleo verde + seta girando) voltou, entre o texto e a lista; o selo pequeno .ks-360-seal fica escondido.
   - ATUAL (substitui lista/mini-cards): no celular o 360° é igual ao desktop — órbita de 300px (270px ≤380px) com o círculo+seta no centro e as 6 áreas em volta (ícone na linha + etiqueta pílula), posições fixas por .area-N; botão antes do diagrama.
+- 360° (desktop e celular): dentro do círculo central só o P da logo (sem textos); a seta .ks-360-arrow fica dentro de .diagnostico-orbit e corre na linha da órbita, entre os tópicos (borda da órbita transparente), girando 40s.
