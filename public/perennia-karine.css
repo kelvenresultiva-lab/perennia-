@@ -2128,3 +2128,13 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 #agendar{-webkit-mask:none!important;mask:none!important;margin-bottom:calc(var(--cv) * -1 - 3px)!important}
 #agendar .ks-closing-card:before{top:calc(var(--cv) * -2 - 20px)!important}
 @media(max-width:700px){#agendar .ks-closing-card:before{top:calc(var(--cv) * -2 - 100px)!important}}
+
+/* Fechamento no celular (22/11): CTA menor e "Perennia" de volta, metade dentro do card e metade cortada pela borda de baixo */
+@media(max-width:700px){
+  #agendar .ks-closing-card .perennia-cta{justify-self:center!important;width:auto!important;min-width:0!important;height:48px!important;padding:0 8px 0 18px!important;font-size:11.5px!important;letter-spacing:.06em!important;gap:12px!important}
+  #agendar .ks-closing-card .perennia-cta .ks-cta-icon{width:30px!important;height:30px!important}
+  #agendar .ks-closing-card .ks-closing-word{display:block!important;position:absolute!important;z-index:0!important;left:50%!important;right:auto!important;bottom:0!important;top:auto!important;
+    transform:translate(-50%,38%)!important;font-size:24vw!important;line-height:1!important;max-width:none!important;white-space:nowrap;
+    color:rgba(243,223,177,.13)!important;-webkit-text-fill-color:rgba(243,223,177,.13)!important;clip-path:inset(0 0 38% 0);pointer-events:none}
+  #agendar .ks-closing-card{padding-bottom:calc(12vw + 40px)!important}
+}
