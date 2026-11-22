@@ -2007,3 +2007,15 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
   .ks-lg2-brand img{width:120px;align-self:flex-end;margin-top:-6px}
   .ks-lg2-quote p{font-size:17px}
 }
+
+/* Serviços no celular (22/11): as fotos das sócias ficam presas no topo da tela, de fundo, enquanto os cards sobem e empilham por cima */
+.ks-svc-bgm{display:none}
+@media(max-width:900px){
+  #servicos .ks-svc-head{min-height:0!important}
+  #servicos .ks-svc-head .ks-svc-duo{display:none!important}
+  #servicos .ks-svc-bgm{display:flex;position:sticky;top:0;z-index:0;width:480px;height:470px;margin:-24px 0 -85px calc(50% - 240px);
+    transform:scale(.82);transform-origin:50% 0;opacity:.5;pointer-events:none}
+  #servicos .ks-svc-bgm .ks-socia-1 img{filter:saturate(.7) brightness(.78) contrast(1.05)!important}
+  #servicos .ks-svc-bgm .ks-socia-2 img{filter:saturate(.7) brightness(.62) contrast(1.12)!important}
+  #servicos .ks-svc-cards{position:relative;z-index:1}
+}
