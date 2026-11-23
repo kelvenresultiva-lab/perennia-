@@ -2318,3 +2318,19 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
   #servicos .ks-svc-bgm .ks-socia-1 img{transform:scale(1.45)!important;transform-origin:50% 12%!important}
   #servicos .ks-svc-bgm .ks-socia-2 img{transform:scale(1.08)!important;transform-origin:50% 12%!important}
 }
+/* Serviços mobile (23/11) — foto "duas consultoras no estúdio verde" como fundo da seção inteira.
+   A imagem (860x1720, 1:2) ocupa a largura da tela; o topo liso fica atrás do texto e o cabelo das sócias (47,6% da altura) começa 28px abaixo do botão.
+   Sem parallax, sem fixo, sem bordas. Verde da seção = verde do topo da foto. */
+@media(max-width:900px){
+  #servicos.ks-svc-section{background:linear-gradient(180deg,#09281C 0%,#09281C 55%,#0B2618 100%)!important}
+  #servicos .ks-svc-bgm{display:block!important;position:relative!important;top:auto!important;z-index:0!important;
+    width:100vw!important;height:auto!important;aspect-ratio:860/1720;transform:none!important;opacity:1!important;
+    margin:calc(28px - 95.2vw) 0 -60px calc(50% - 50vw)!important;
+    background:url("assets/servicos-socias-mobile.jpg") center top/100% auto no-repeat!important;
+    -webkit-mask:linear-gradient(180deg,transparent 0%,#000 14%,#000 86%,transparent 100%)!important;mask:linear-gradient(180deg,transparent 0%,#000 14%,#000 86%,transparent 100%)!important;
+    -webkit-mask-composite:source-over!important;mask-composite:add!important}
+  #servicos .ks-svc-bgm .ks-socia{display:none!important}
+  #servicos .ks-svc-bgm:after,#servicos .ks-svc-bgm:before{content:none!important}
+  #servicos .ks-svc-head{position:relative!important;z-index:2!important}
+  #servicos .ks-svc-cards{position:relative;z-index:1}
+}
