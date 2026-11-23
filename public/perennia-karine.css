@@ -2330,3 +2330,8 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 @media(min-width:901px){
   #servicos.ks-svc-section{background:linear-gradient(180deg,transparent 0%,transparent 40%,rgba(5,14,9,.6) 58%,rgba(5,14,9,.92) 76%,#050E09 100%),radial-gradient(60% 50% at 15% 85%,rgba(46,110,72,.28),rgba(0,0,0,0) 70%),linear-gradient(#0F2E1F 0%,#0B2618 100%)!important;background-origin:border-box!important}
 }
+/* Serviços desktop (23/11) — menos preto sobre os rostos: faixa escura da esquerda mais fraca e estreita na altura dos rostos */
+@media(min-width:901px){
+  #servicos .ks-svc:after{background:linear-gradient(90deg,rgba(3,12,8,.7) 0%,rgba(3,12,8,.35) 35%,rgba(3,12,8,.08) 70%,transparent 100%)!important;
+    width:calc(50vw - 540px + 60px)!important}
+}
