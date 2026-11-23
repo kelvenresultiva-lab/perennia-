@@ -2360,3 +2360,6 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 @media(max-width:700px){#sintomas.perennia-360{--E:20px;--r:18px;--bw:124px}}
 #sintomas .ks-cue-legacy{z-index:5;top:auto!important;bottom:calc(var(--cv) - var(--E) - 22px)!important}
 @media(max-width:700px){#sintomas .ks-cue-legacy{bottom:calc(var(--cv) - var(--E) - 18px)!important}}
+
+/* Vídeo + 360 (23/11) — fundo branco abaixo do vídeo */
+#cuidado .ks-vid-panel,#sintomas.perennia-360{background:#FFFFFF!important}
