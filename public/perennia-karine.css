@@ -2325,7 +2325,8 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
   #servicos .ks-svc-bgm{opacity:.85!important}
   #servicos .ks-svc-bgm:after{background:radial-gradient(ellipse 70% 60% at 50% 46%,transparent 35%,rgba(5,14,9,.7) 75%,#050E09 100%)!important}
 }
-/* Serviços desktop (23/11) — mesmo fundo quase preto do mobile em toda a seção (abas do topo, laterais e rodapé) */
+/* Serviços desktop (23/11) — mais preto só na parte de baixo da seção (abaixo da foto e ao lado dos últimos cards), descendo até o rodapé.
+   Fica no próprio background para cobrir também a borda inferior (a curva do rodapé). */
 @media(min-width:901px){
-  #servicos.ks-svc-section{background:#050E09!important}
+  #servicos.ks-svc-section{background:linear-gradient(180deg,transparent 0%,transparent 40%,rgba(5,14,9,.6) 58%,rgba(5,14,9,.92) 76%,#050E09 100%),radial-gradient(60% 50% at 15% 85%,rgba(46,110,72,.28),rgba(0,0,0,0) 70%),linear-gradient(#0F2E1F 0%,#0B2618 100%)!important;background-origin:border-box!important}
 }
