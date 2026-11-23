@@ -2427,3 +2427,5 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 #solucoes .solutions-grid>.solution-card:before{background:linear-gradient(90deg,#C9A468,#E6CF9E)!important}
 #solucoes .solutions-grid>.solution-featured>div{display:contents!important}
 #solucoes .solutions-grid>.solution-card{gap:0!important}
+#solucoes .solutions-grid{grid-auto-rows:1fr!important}
+#solucoes .solutions-grid>.solution-card .solution-link{margin-top:auto!important;padding-top:24px}
