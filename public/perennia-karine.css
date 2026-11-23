@@ -2347,3 +2347,17 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 #sintomas.perennia-360{padding-top:40px!important}
 /* 360 (23/11) — card volta com cor própria sobre o bege do bloco: branco quente + borda dourada fina + sombra suave */
 #sintomas .diagnostico-card{background:linear-gradient(115deg,#FFFDF8 0%,#FAF5EB 60%,#F3EADA 100%)!important;border:1px solid rgba(201,164,104,.35)!important;border-radius:22px!important;box-shadow:0 30px 70px -40px rgba(40,30,10,.35)!important}
+/* 360 (23/11) — desktop: linhas douradas em onda deslizando devagar atrás do card */
+@media(min-width:901px){
+  #sintomas.perennia-360:before{content:''!important;position:absolute;inset:0;z-index:0;pointer-events:none;opacity:1;filter:none;
+    background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 600' preserveAspectRatio='none'%3E%3Cg fill='none' stroke='%23B8915A' stroke-width='1.6'%3E%3Cpath stroke-opacity='.7' d='M0 120C200 60 400 180 600 120S1000 60 1200 120'/%3E%3Cpath stroke-opacity='.5' d='M0 200C200 140 400 260 600 200S1000 140 1200 200'/%3E%3Cpath stroke-opacity='.65' d='M0 300C200 230 400 370 600 300S1000 230 1200 300'/%3E%3Cpath stroke-opacity='.5' d='M0 390C200 330 400 450 600 390S1000 330 1200 390'/%3E%3Cpath stroke-opacity='.65' d='M0 480C200 420 400 540 600 480S1000 420 1200 480'/%3E%3C/g%3E%3C/svg%3E") 0 50%/1200px 100% repeat-x!important;
+    -webkit-mask:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent)!important;mask:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent)!important;
+    animation:ks360-lines 48s linear infinite}
+  #sintomas .diagnostico-card{position:relative;z-index:1}
+}
+@keyframes ks360-lines{from{background-position:0 50%}to{background-position:-1200px 50%}}
+@media(prefers-reduced-motion:reduce){#sintomas.perennia-360:before{animation:none!important}}
+@media(min-width:901px){
+  #sintomas .diagnostico-card{background:linear-gradient(115deg,rgba(255,253,248,.66) 0%,rgba(250,245,235,.62) 60%,rgba(243,234,218,.7) 100%)!important;-webkit-backdrop-filter:blur(1.5px);backdrop-filter:blur(1.5px)}
+}
+@media(min-width:901px){#sintomas.perennia-360:before{filter:none!important;z-index:0!important;inset:0!important;top:0!important;left:0!important;width:auto!important;height:auto!important;opacity:1!important}}
