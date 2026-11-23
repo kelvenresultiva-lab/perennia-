@@ -2318,9 +2318,10 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
   #servicos .ks-svc-bgm .ks-socia-1 img{transform:scale(1.45)!important;transform-origin:50% 12%!important}
   #servicos .ks-svc-bgm .ks-socia-2 img{transform:scale(1.08)!important;transform-origin:50% 12%!important}
 }
-/* Serviços mobile (23/11) — fundo mais preto atrás do título/texto/botão, descendo até o topo da foto das sócias */
+/* Serviços mobile (23/11) — fundo da própria seção quase preto (inclui as abas do topo e o recorte de baixo, mesma cor);
+   a foto das sócias se dissolve nesse preto */
 @media(max-width:900px){
-  #servicos .ks-svc-head:before{content:'';position:absolute;z-index:-1;pointer-events:none;
-    left:calc(50% - 50vw);width:100vw;top:-80px;bottom:-200px;
-    background:linear-gradient(180deg,rgba(3,12,8,.55) 0%,rgba(3,12,8,.8) 30%,rgba(3,12,8,.8) 62%,rgba(3,12,8,.45) 82%,transparent 100%)}
+  #servicos.ks-svc-section{background:#050E09!important}
+  #servicos .ks-svc-bgm{opacity:.85!important}
+  #servicos .ks-svc-bgm:after{background:radial-gradient(ellipse 70% 60% at 50% 46%,transparent 35%,rgba(5,14,9,.7) 75%,#050E09 100%)!important}
 }
