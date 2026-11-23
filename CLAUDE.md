@@ -119,3 +119,4 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 23/11: card do 360° com largura máxima 1080px, centralizado.
 - 23/11: removida a seção verde do Método Legacy (#tratamentos, 4 pilares) da home por repetir "Como funciona". Seta do 360° agora vai para #solucoes; link "Método Legacy" do rodapé vai para #como-funciona. CSS de #tratamentos ficou no arquivo (sem efeito).
 - 23/11: "Como funciona" ganhou parágrafo explicando o Método Legacy (.ks-steps-lead), escrito só com frases que já existiam no site.
+- 23/11: harmonia de cores — seção do 360° (#sintomas) passou a verde escuro com topo arredondado (card branco por cima). Sequência: hero escuro → vídeo branco → 360 verde → soluções branco → serviços escuro → como funciona branco → agendar escuro.

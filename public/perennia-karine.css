@@ -2388,3 +2388,9 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 /* Como funciona (23/11) — texto sobre o Método Legacy */
 #como-funciona .ks-steps-lead{max-width:640px;margin:22px auto 0;text-align:center;font:400 17px/1.7 var(--sans);color:#5B6660;position:relative;z-index:2}
 @media(max-width:700px){#como-funciona .ks-steps-lead{font-size:15.5px;margin-top:16px;padding:0 4px}}
+
+/* Harmonia (23/11) — 360 em verde escuro: hero escuro → vídeo branco → 360 verde → soluções branco → serviços escuro → como funciona branco → agendar escuro */
+#sintomas.perennia-360{background:radial-gradient(70% 60% at 75% 40%,rgba(46,110,72,.35),rgba(0,0,0,0) 70%),linear-gradient(180deg,#0F2E1F 0%,#0B2618 100%)!important;border-radius:40px 40px 0 0!important;padding-top:80px!important;padding-bottom:calc(var(--cv) + 60px)!important}
+#sintomas .diagnostico-card{border-color:rgba(216,190,142,.5)!important;box-shadow:0 40px 80px -40px rgba(0,0,0,.6)!important}
+@media(max-width:700px){#sintomas.perennia-360{border-radius:24px 24px 0 0!important;padding-top:50px!important}}
+@media(max-width:700px){#sintomas.perennia-360{padding-left:14px!important;padding-right:14px!important}#sintomas .diagnostico-card{width:auto!important;margin-left:0!important;margin-right:0!important}}
