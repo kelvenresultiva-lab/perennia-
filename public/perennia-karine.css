@@ -2345,3 +2345,5 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 #sintomas .diagnostico-card:before{content:none!important}
 #cuidado .ks-vid-panel{padding-bottom:120px!important}
 #sintomas.perennia-360{padding-top:40px!important}
+/* 360 (23/11) — card volta com cor própria sobre o bege do bloco: branco quente + borda dourada fina + sombra suave */
+#sintomas .diagnostico-card{background:linear-gradient(115deg,#FFFDF8 0%,#FAF5EB 60%,#F3EADA 100%)!important;border:1px solid rgba(201,164,104,.35)!important;border-radius:22px!important;box-shadow:0 30px 70px -40px rgba(40,30,10,.35)!important}

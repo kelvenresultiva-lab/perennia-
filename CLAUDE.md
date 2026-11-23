@@ -108,3 +108,4 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 23/11: Serviços desktop — mais preto só na parte de baixo da seção: camada de degradê no próprio background de #servicos (transparente até 40%, #050E09 no fim), com background-origin border-box para cobrir também a curva do rodapé; topo no verde original.
 - 23/11: Serviços desktop — menos preto sobre os rostos: faixa da esquerda (.ks-svc:after) mais fraca (.7→transparente) e mais estreita (+60px).
 - 23/11: Vídeo + 360 num bloco só — "Perennia" gigante do vídeo oculto (.ks-vid-word-clip), .ks-vid-panel padding-bottom 120px; #sintomas com fundo #EFEAE0 (bege da faixa do vídeo), sem aba no topo (máscara só com a curva de baixo para a Legacy), sem foto/:before, card sem caixa, padding-top 40px.
+- 23/11: 360 — card com cor própria sobre o bege do bloco (branco quente #FFFDF8→#F3EADA, borda dourada .35, sombra suave).
