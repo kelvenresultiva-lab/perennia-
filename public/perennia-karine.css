@@ -2404,3 +2404,15 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
     -webkit-mask-composite:source-in!important;mask-composite:intersect!important}
   #servicos .ks-svc-head:after{top:1050px!important;background:linear-gradient(180deg,transparent 0%,rgba(3,12,8,.4) 40%,rgba(3,12,8,.7) 75%,transparent 100%)!important}
 }
+
+/* Vídeo mobile (23/11) — fotos das sócias esmaecidas atrás do título, mesma ideia do desktop */
+@media(max-width:1100px){
+#cuidado .ks-vid-sides{display:block;position:absolute;left:0;right:0;top:60px;height:560px;pointer-events:none;z-index:0}
+#cuidado .ks-vid-sides img{position:absolute;top:0;height:100%;width:58%;object-fit:cover;opacity:.42;filter:saturate(.85);
+ -webkit-mask:linear-gradient(180deg,transparent 0,#000 14%,#000 50%,transparent 92%),var(--hm);-webkit-mask-composite:source-in;mask:linear-gradient(180deg,transparent 0,#000 14%,#000 50%,transparent 92%),var(--hm);mask-composite:intersect}
+#cuidado .ks-vid-side-l{left:0;object-position:30% 15%;--hm:linear-gradient(90deg,#000 0,#000 40%,transparent 100%)}
+#cuidado .ks-vid-side-r{right:0;object-position:60% 12%;--hm:linear-gradient(270deg,#000 0,#000 40%,transparent 100%)}
+#cuidado .care-card{position:relative;z-index:1}
+#cuidado .ks-vid-panel,#cuidado .ks-vid-stage{background:transparent!important}
+}
+@media(max-width:1100px){#cuidado .ks-vid-sides:after{content:"";position:absolute;inset:0;background:radial-gradient(60% 38% at 50% 34%,rgba(255,255,255,.75),rgba(255,255,255,0) 100%)}}
