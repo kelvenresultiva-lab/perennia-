@@ -2339,3 +2339,8 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 #sintomas.perennia-360{background:linear-gradient(115deg,#F6F1E7 0%,#EFE7D7 55%,#E6DAC3 100%)!important;background-origin:border-box!important}
 #sintomas.perennia-360:before{content:none!important}
 #sintomas .diagnostico-card{background:none!important;box-shadow:none!important;border:0!important;border-radius:0!important;outline:0!important}
+/* 360 (23/11) — separa o topo do bege do vídeo: fio dourado + sombra suave seguindo a borda da aba (mesma curva da máscara) */
+#sintomas.perennia-360{background:
+  url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 110' preserveAspectRatio='none'%3E%3Cpath d='M0 18H1080C1150 18 1170 110 1240 110H1440' fill='none' stroke='%23000' stroke-opacity='.05' stroke-width='14' vector-effect='non-scaling-stroke'/%3E%3Cpath d='M0 18H1080C1150 18 1170 110 1240 110H1440' fill='none' stroke='%23C9A468' stroke-opacity='.75' stroke-width='3' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E") top left/100% var(--cv) no-repeat,
+  linear-gradient(180deg,rgba(0,0,0,.05) 0,transparent 140px) top left/100% 100% no-repeat,
+  linear-gradient(115deg,#F6F1E7 0%,#EFE7D7 55%,#E6DAC3 100%)!important;background-origin:border-box!important}
