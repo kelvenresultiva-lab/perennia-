@@ -2221,3 +2221,10 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 /* divisa 360° → Legacy sem emenda: as duas texturas somem no verde liso perto da divisa */
 #sintomas.perennia-360:before{-webkit-mask:linear-gradient(180deg,#000 calc(100% - 260px),transparent calc(100% - 20px))!important;mask:linear-gradient(180deg,#000 calc(100% - 260px),transparent calc(100% - 20px))!important}
 #tratamentos.legacy-section:before{-webkit-mask:linear-gradient(180deg,transparent 0,transparent var(--cv),#000 calc(var(--cv) + 320px))!important;mask:linear-gradient(180deg,transparent 0,transparent var(--cv),#000 calc(var(--cv) + 320px))!important}
+
+/* Soluções (22/11): cada cartão leva à sua seção em solucoes.html — o cartão inteiro é clicável, sem mudar o visual */
+#solucoes .solution-card{position:relative}
+#solucoes .solution-card-link{color:inherit;text-decoration:none}
+#solucoes .solution-card-link:after{content:'';position:absolute;inset:0;border-radius:inherit;z-index:1}
+#solucoes .solution-card-link:focus-visible{outline:none}
+#solucoes .solution-card:has(.solution-card-link:focus-visible){outline:2px solid #D8BE8E;outline-offset:3px}

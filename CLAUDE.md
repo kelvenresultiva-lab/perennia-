@@ -87,3 +87,12 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 22/11: Serviços no desktop sem empilhar/grudar (cards em lista, coluna esquerda sem sticky) e foto das sócias grande (scale 1.9) saindo pela borda esquerda, como no modelo; celular mantém o empilhamento.
 - 22/11: Serviços — sócias mais visíveis: verde leve (pele aparece), rostos inteiros (sem corte na borda), foto começa logo abaixo do botão (top:auto + margin-top -50px) em qualquer largura.
 - 22/11: Método Legacy com o mesmo fundo da 360° (verde #0F2E1F + office-main.webp desfocado no ::before; usar seletor #tratamentos.legacy-section, que vence o creme antigo). Textos invertidos para claro; texturas das duas seções somem perto da divisa para não marcar a curva.
+
+## Páginas internas (22/11)
+- 5 páginas: index.html (inicial), sobre.html, perennia-360.html, solucoes.html (Método LEGACY + 360° + Gestão + Compliance + Advisor + Expert, com âncoras #metodo-legacy #perennia-360 #gestao #compliance #advisor #expert #expert-ou-advisor), servicos-especializados.html (âncoras por serviço: #imposto-de-renda #conselho-consultivo #treinamentos #implantacao-erp #recuperacao-de-creditos #defesas-administrativas #auditoria-e-revisao-contabil #valuation-e-ma).
+- Estilo das internas: interna.css (não carregam o CSS da inicial); menu do celular: interna.js. Cabeçalho, rodapé e janela de aviso estão repetidos nas 4 páginas — ao mudar um, mudar nos 4.
+- Cabeçalho na cor #0C1E1C = cor do fundo do logo (mesclagem não funciona ali); logo do rodapé e do selo usam "screen" + contraste.
+- Contato: botões com data-perennia-book + data-interesse="Solução". script.js usa o data-interesse na mensagem do WhatsApp. Enquanto WHATSAPP_NUMERO estiver vazio, abre o aviso (#perennia-dialog).
+- metodo-legacy.html, como-funciona.html e servicos.html viraram redirecionamentos (noindex) para os novos destinos.
+- Inicial: só links ajustados (cartões de Soluções clicáveis via .solution-card-link; Legacy/Como funciona/fechamento → solucoes.html#metodo-legacy; serviços → servicos-especializados.html#...).
+- PENDENTE (ocultos com hidden em sobre.html, sem texto inventado): #historia (história aprovada + vídeo institucional) e #responsaveis (nome, função, formação, experiência e especialidades das duas sócias). Falta também: número de WhatsApp/contatos oficiais.

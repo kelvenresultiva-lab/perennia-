@@ -34,6 +34,6 @@ O vídeo de apresentação ainda não foi conectado: a capa abre um aviso. O bot
 
 A pasta `public/` contém o site estático completo e pode ser usada em hospedagem estática. Nenhum identificador, credencial ou configuração privada da hospedagem desta conversa foi incluído.
 
-## Páginas por assunto
+## Páginas
 
-Cada seção da home tem um link "Saiba mais" (classe `.ks-more`) para a página do assunto: `sobre.html`, `perennia-360.html`, `metodo-legacy.html`, `solucoes.html`, `servicos.html` e `como-funciona.html`. Hoje são páginas provisórias ("em construção", `noindex`, estilo em `pagina-interna.css`) com botão de agendar e volta para a seção; o conteúdo completo de cada uma ainda será escrito.
+O site tem 5 páginas: `index.html` (inicial), `sobre.html`, `perennia-360.html`, `solucoes.html` (Método LEGACY e soluções, com navegação por âncoras) e `servicos-especializados.html`. As internas usam `interna.css` e `interna.js`. Os endereços antigos `metodo-legacy.html`, `como-funciona.html` e `servicos.html` redirecionam para os novos destinos.
