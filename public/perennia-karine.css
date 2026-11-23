@@ -2361,3 +2361,16 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
   #sintomas .diagnostico-card{background:linear-gradient(115deg,rgba(255,253,248,.66) 0%,rgba(250,245,235,.62) 60%,rgba(243,234,218,.7) 100%)!important;-webkit-backdrop-filter:blur(1.5px);backdrop-filter:blur(1.5px)}
 }
 @media(min-width:901px){#sintomas.perennia-360:before{filter:none!important;z-index:0!important;inset:0!important;top:0!important;left:0!important;width:auto!important;height:auto!important;opacity:1!important}}
+/* 360 → Legacy (23/11, modelo do usuário): fim do 360 com faixa reta + recorte central descendo sobre o verde, Legacy com cantos de cima arredondados; seta de rolagem no recorte */
+#sintomas.perennia-360{--E:40px;--r:26px;--bw:160px;
+  -webkit-mask:linear-gradient(#000,#000) left top/100% calc(100% - var(--cv) + var(--E) + 1px) no-repeat,
+    radial-gradient(circle at 100% 100%,transparent calc(var(--r) - .5px),#000 var(--r)) left 0 bottom calc(var(--cv) - var(--E) - var(--r))/var(--r) var(--r) no-repeat,
+    radial-gradient(circle at 0 100%,transparent calc(var(--r) - .5px),#000 var(--r)) right 0 bottom calc(var(--cv) - var(--E) - var(--r))/var(--r) var(--r) no-repeat,
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 58' preserveAspectRatio='none'%3E%3Cpath d='M0 0C28 0 38 4 48 18C58 34 66 44 80 44C94 44 102 34 112 18C122 4 132 0 160 0Z'/%3E%3C/svg%3E") center bottom 0/var(--bw) calc(var(--cv) - var(--E)) no-repeat!important;
+  mask:linear-gradient(#000,#000) left top/100% calc(100% - var(--cv) + var(--E) + 1px) no-repeat,
+    radial-gradient(circle at 100% 100%,transparent calc(var(--r) - .5px),#000 var(--r)) left 0 bottom calc(var(--cv) - var(--E) - var(--r))/var(--r) var(--r) no-repeat,
+    radial-gradient(circle at 0 100%,transparent calc(var(--r) - .5px),#000 var(--r)) right 0 bottom calc(var(--cv) - var(--E) - var(--r))/var(--r) var(--r) no-repeat,
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 58' preserveAspectRatio='none'%3E%3Cpath d='M0 0C28 0 38 4 48 18C58 34 66 44 80 44C94 44 102 34 112 18C122 4 132 0 160 0Z'/%3E%3C/svg%3E") center bottom 0/var(--bw) calc(var(--cv) - var(--E)) no-repeat!important}
+@media(max-width:700px){#sintomas.perennia-360{--E:20px;--r:18px;--bw:124px}}
+#sintomas .ks-cue-legacy{z-index:5;top:auto!important;bottom:calc(var(--cv) - var(--E) - 22px)!important}
+@media(max-width:700px){#sintomas .ks-cue-legacy{bottom:calc(var(--cv) - var(--E) - 18px)!important}}
