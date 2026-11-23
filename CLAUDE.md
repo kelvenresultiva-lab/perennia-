@@ -124,3 +124,4 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 23/11: seção #como-funciona: etiqueta "MÉTODO LEGACY" e título "Quatro movimentos para construir o legado da sua empresa."
 - 23/11: espaço entre Soluções e Método Legacy reduzido (~430px → ~185px): sem border-bottom/top brancos, seta no meio. Título do método sem quebra forçada no mobile.
 - 23/11: Serviços (desktop): máscara da foto das sócias estendida (preto até 76%, some só no fim) e sombra de baixo (.ks-svc-head:after) mais baixa e leve, para mostrar mais do corpo delas.
+- 23/11: Serviços na home mostra só os cards 01–04; card 05 (Recuperação de Créditos) saiu e entrou no texto do "Ver todos" ("Mais 4 frentes: ...").
