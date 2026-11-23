@@ -2335,3 +2335,13 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
   #servicos .ks-svc:after{background:linear-gradient(90deg,rgba(3,12,8,.7) 0%,rgba(3,12,8,.35) 35%,rgba(3,12,8,.08) 70%,transparent 100%)!important;
     width:calc(50vw - 540px + 60px)!important}
 }
+/* Vídeo + 360 num bloco só (23/11): sem o "Perennia" gigante; 360 no mesmo bege da faixa do vídeo (#EFEAE0), sem aba no topo e sem card; embaixo mantém a curva para a Legacy */
+#cuidado .ks-vid-word-clip{display:none!important}
+#sintomas.perennia-360{background:#EFEAE0!important;padding-top:90px!important;
+  -webkit-mask:linear-gradient(#000,#000) top left/100% calc(100% - var(--cv) + 2px) no-repeat,url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 110' preserveAspectRatio='none'%3E%3Cpath d='M0 0H1440V18H360C290 18 270 110 200 110H0Z'/%3E%3C/svg%3E") bottom left/100% var(--cv) no-repeat!important;
+  mask:linear-gradient(#000,#000) top left/100% calc(100% - var(--cv) + 2px) no-repeat,url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 110' preserveAspectRatio='none'%3E%3Cpath d='M0 0H1440V18H360C290 18 270 110 200 110H0Z'/%3E%3C/svg%3E") bottom left/100% var(--cv) no-repeat!important}
+#sintomas.perennia-360:before{content:none!important}
+#sintomas .diagnostico-card{background:none!important;box-shadow:none!important;border:0!important;outline:0!important}
+#sintomas .diagnostico-card:before{content:none!important}
+#cuidado .ks-vid-panel{padding-bottom:120px!important}
+#sintomas.perennia-360{padding-top:40px!important}
