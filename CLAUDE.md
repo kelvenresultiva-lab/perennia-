@@ -117,4 +117,3 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 23/11: card do 360° branco (borda dourada e sombra suave) sobre o fundo branco.
 - 23/11: seção do vídeo com fotos das sócias esmaecidas nas laterais (.ks-vid-sides: socia-joana-branco à esquerda, socia-2-amarelo à direita, opacity .5, máscara para o branco); só desktop ≥1101px.
 - 23/11: card do 360° com largura máxima 1080px, centralizado.
-- 23/11: anéis dourados concêntricos (assets/ks-orbit-rings.svg) como fundo de #sintomas, centralizados no círculo do 360° e saindo do card (desktop/tablet); escondidos no mobile ≤700px por falta de espaço.
