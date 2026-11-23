@@ -2384,3 +2384,7 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 }
 @media(min-width:1101px){#cuidado .ks-vid-panel,#cuidado .ks-vid-stage{background:transparent!important}}
 #sintomas .diagnostico-card{max-width:1080px!important;margin-left:auto!important;margin-right:auto!important}
+
+/* Como funciona (23/11) — texto sobre o Método Legacy */
+#como-funciona .ks-steps-lead{max-width:640px;margin:22px auto 0;text-align:center;font:400 17px/1.7 var(--sans);color:#5B6660;position:relative;z-index:2}
+@media(max-width:700px){#como-funciona .ks-steps-lead{font-size:15.5px;margin-top:16px;padding:0 4px}}

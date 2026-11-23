@@ -118,3 +118,4 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 23/11: seção do vídeo com fotos das sócias esmaecidas nas laterais (.ks-vid-sides: socia-joana-branco à esquerda, socia-2-amarelo à direita, opacity .5, máscara para o branco); só desktop ≥1101px.
 - 23/11: card do 360° com largura máxima 1080px, centralizado.
 - 23/11: removida a seção verde do Método Legacy (#tratamentos, 4 pilares) da home por repetir "Como funciona". Seta do 360° agora vai para #solucoes; link "Método Legacy" do rodapé vai para #como-funciona. CSS de #tratamentos ficou no arquivo (sem efeito).
+- 23/11: "Como funciona" ganhou parágrafo explicando o Método Legacy (.ks-steps-lead), escrito só com frases que já existiam no site.
