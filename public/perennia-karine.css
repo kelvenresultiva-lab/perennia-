@@ -2199,3 +2199,25 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 #servicos .ks-svc-duo .ks-socia-2,#servicos .ks-svc-bgm .ks-socia-2{-webkit-mask:radial-gradient(ellipse 45% 70% at 54% 42%,#000 50%,rgba(0,0,0,.55) 74%,transparent 96%)!important;mask:radial-gradient(ellipse 45% 70% at 54% 42%,#000 50%,rgba(0,0,0,.55) 74%,transparent 96%)!important}
 @media(min-width:901px){#servicos .ks-svc-duo{top:auto!important;margin-top:-120px!important}}
 @media(min-width:901px){#servicos .ks-svc-duo{margin-top:-50px!important}}
+
+/* Método Legacy (22/11): mesmo fundo da seção 360° acima (verde escuro + foto do escritório desfocada); textos invertidos para claro */
+#tratamentos{background-color:#0F2E1F!important;border-top-color:#0F2E1F!important;border-bottom-color:#0F2E1F!important;overflow:clip visible}
+#tratamentos:before{content:'';position:absolute;z-index:-1;left:-20px;right:-20px;top:calc(var(--cv) * -1);bottom:calc(var(--cv) * -1);pointer-events:none;
+  background:linear-gradient(rgba(10,36,24,.8),rgba(10,36,24,.9)),url("assets/office-main.webp") center/cover no-repeat;filter:blur(6px)}
+#tratamentos .eyebrow{color:#D8BE8E!important;background:rgba(255,255,255,.05)!important;border-color:rgba(216,190,142,.3)!important}
+#tratamentos h2{color:#F3EFE6!important}
+#tratamentos h2 em{color:#D8BE8E!important}
+#tratamentos .ks-lg2-list h3{color:#F3EFE6!important}
+#tratamentos .ks-lg2-list p{color:#B9C6BE!important}
+#tratamentos .ks-lg-arrow{background:rgba(216,190,142,.12)!important;color:#D8BE8E!important;box-shadow:inset 0 0 0 1px rgba(216,190,142,.38)!important}
+#tratamentos .ks-lg2-quote p{color:#E8E1D2!important}
+#tratamentos .ks-lg2-quote{border-image:linear-gradient(#D8BE8E,rgba(216,190,142,.15)) 1!important}
+#tratamentos .ks-lg2-brand{background:radial-gradient(60% 90% at 85% 50%,rgba(216,190,142,.16),transparent 70%),linear-gradient(135deg,#1A4732,#123826)!important;box-shadow:inset 0 0 0 1px rgba(216,190,142,.22)!important}
+#tratamentos .ks-lg-giant span{color:rgba(243,223,177,.9)!important;opacity:.06!important}
+#tratamentos.legacy-section{background:#0F2E1F!important;border-top-color:#0F2E1F!important;border-bottom-color:#0F2E1F!important}
+#tratamentos.legacy-section:before{content:''!important;display:block!important;position:absolute!important;z-index:-1!important;left:-20px!important;right:-20px!important;top:calc(var(--cv) * -1)!important;bottom:calc(var(--cv) * -1)!important;width:auto!important;height:auto!important;opacity:1!important;pointer-events:none;
+  background:linear-gradient(rgba(10,36,24,.8),rgba(10,36,24,.9)),url("assets/office-main.webp") center/cover no-repeat!important;filter:blur(6px)!important;-webkit-mask:none!important;mask:none!important}
+#tratamentos.legacy-section:before{background:linear-gradient(rgba(10,36,24,.9),rgba(10,36,24,.86)),url("assets/office-main.webp") center/cover no-repeat!important}
+/* divisa 360° → Legacy sem emenda: as duas texturas somem no verde liso perto da divisa */
+#sintomas.perennia-360:before{-webkit-mask:linear-gradient(180deg,#000 calc(100% - 260px),transparent calc(100% - 20px))!important;mask:linear-gradient(180deg,#000 calc(100% - 260px),transparent calc(100% - 20px))!important}
+#tratamentos.legacy-section:before{-webkit-mask:linear-gradient(180deg,transparent 0,transparent var(--cv),#000 calc(var(--cv) + 320px))!important;mask:linear-gradient(180deg,transparent 0,transparent var(--cv),#000 calc(var(--cv) + 320px))!important}
