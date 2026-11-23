@@ -110,3 +110,5 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 23/11: Vídeo + 360 num bloco só — "Perennia" gigante do vídeo oculto (.ks-vid-word-clip), .ks-vid-panel padding-bottom 120px; #sintomas com fundo #EFEAE0 (bege da faixa do vídeo), sem aba no topo (máscara só com a curva de baixo para a Legacy), sem foto/:before, card sem caixa, padding-top 40px.
 - 23/11: 360 — card com cor própria sobre o bege do bloco (branco quente #FFFDF8→#F3EADA, borda dourada .35, sombra suave).
 - 23/11: 360 → Legacy — fim do 360 no formato do modelo: máscara do #sintomas = faixa reta (--E) + cantos fora do arredondado + calombo central (inverso do topo de Serviços); seta .ks-cue-legacy dentro do #sintomas (href #tratamentos) no calombo.
+
+- 23/11: "Nossas Soluções" (#solucoes) virou grade bento (classes sb-*): 360° grande + Compliance na 1ª linha, Gestão/Conselho/Expert na 2ª; ilustrações SVG de linha em dourado e chips das áreas no 360°. Mobile em coluna única.

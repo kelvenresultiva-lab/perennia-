@@ -2360,3 +2360,24 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 @media(max-width:700px){#sintomas.perennia-360{--E:20px;--r:18px;--bw:124px}}
 #sintomas .ks-cue-legacy{z-index:5;top:auto!important;bottom:calc(var(--cv) - var(--E) - 22px)!important}
 @media(max-width:700px){#sintomas .ks-cue-legacy{bottom:calc(var(--cv) - var(--E) - 18px)!important}}
+
+/* Nossas Soluções (23/11) — bento */
+#solucoes .sb-grid{display:grid!important;grid-template-columns:repeat(12,1fr)!important;gap:20px!important;grid-auto-flow:row dense}
+#solucoes .sb-grid>.solution-card{grid-column:span 6;min-height:0!important;display:flex!important;flex-direction:column;align-items:flex-start;padding:34px!important;border-radius:22px!important;overflow:hidden;margin:0!important;width:auto!important}
+@media(min-width:1101px){#solucoes .solutions-wrap{max-width:1160px!important}}
+#solucoes .sb-grid>.sb-360{grid-column:span 7}
+#solucoes .sb-grid>.sb-compliance{grid-column:span 5}
+#solucoes .sb-grid>.sb-gestao,#solucoes .sb-grid>.sb-conselho,#solucoes .sb-grid>.sb-expert{grid-column:span 4}
+#solucoes .sb-art{width:92px;height:92px;margin-bottom:22px;color:#D8BE8E;flex:none}
+#solucoes .sb-360 .sb-art{width:150px;height:150px;margin-bottom:28px}
+#solucoes .sb-art svg{width:100%;height:100%;display:block}
+#solucoes .sb-art .sb-fill{fill:rgba(216,190,142,.12)}
+#solucoes .sb-art .sb-dot{fill:#0B2618}
+#solucoes .sb-art text{font-family:var(--serif)}
+#solucoes .solution-card p{margin-bottom:0}
+#solucoes .sb-tags{list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 26px;padding:0}
+#solucoes .sb-tags li{font:500 12.5px/1 var(--sans);color:#E9DCC0;border:1px solid rgba(216,190,142,.35);border-radius:999px;padding:8px 13px;background:rgba(216,190,142,.06)}
+#solucoes .sb-360 .solution-link{margin-top:auto}
+#solucoes .sb-grid>.solution-card:not(.sb-360) .solution-label{margin-top:auto}
+@media(max-width:1100px) and (min-width:701px){#solucoes .sb-grid>.solution-card{grid-column:span 6!important;grid-row:auto!important}#solucoes .sb-grid>.sb-360{grid-column:1/-1!important}}
+@media(max-width:700px){#solucoes .sb-grid{grid-template-columns:1fr!important;gap:14px!important}#solucoes .sb-grid>.solution-card{grid-column:1/-1!important;grid-row:auto!important;padding:26px!important}#solucoes .sb-art{width:72px;height:72px;margin-bottom:16px}#solucoes .sb-360 .sb-art{width:110px;height:110px}}
