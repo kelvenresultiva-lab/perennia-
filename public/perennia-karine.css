@@ -2395,3 +2395,12 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 #como-funciona{border-top-width:0!important;padding-top:56px!important}
 @media(max-width:700px){#solucoes{padding-bottom:104px!important}#solucoes .ks-scroll-cue{top:auto!important;bottom:30px!important}#como-funciona{padding-top:40px!important}}
 @media(max-width:700px){#steps-title br{display:none}}
+
+/* Serviços (23/11) — mais do corpo das sócias à mostra (desktop) */
+@media(min-width:901px){
+  #servicos .ks-svc-duo{
+    -webkit-mask:linear-gradient(180deg,transparent 0%,rgba(0,0,0,.35) 12%,#000 28%,#000 76%,rgba(0,0,0,.5) 90%,transparent 100%),linear-gradient(90deg,#000 0%,#000 52%,transparent 92%)!important;
+    mask:linear-gradient(180deg,transparent 0%,rgba(0,0,0,.35) 12%,#000 28%,#000 76%,rgba(0,0,0,.5) 90%,transparent 100%),linear-gradient(90deg,#000 0%,#000 52%,transparent 92%)!important;
+    -webkit-mask-composite:source-in!important;mask-composite:intersect!important}
+  #servicos .ks-svc-head:after{top:1050px!important;background:linear-gradient(180deg,transparent 0%,rgba(3,12,8,.4) 40%,rgba(3,12,8,.7) 75%,transparent 100%)!important}
+}
