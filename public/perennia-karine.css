@@ -2259,3 +2259,10 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
     mask:linear-gradient(180deg,transparent 0%,#000 26%,#000 50%,transparent 96%),linear-gradient(90deg,#000 0%,#000 52%,transparent 92%)!important;
     -webkit-mask-composite:source-in!important;mask-composite:intersect!important}
 }
+/* Serviços (22/11) — foto maior, com degradê escuro mais longo em cima e embaixo */
+@media(min-width:901px){
+  #servicos .ks-svc-duo{transform:scale(2.25)!important;margin-top:-20px!important;left:calc(540px - 50vw - 90px)!important;
+    -webkit-mask:linear-gradient(180deg,transparent 0%,rgba(0,0,0,.35) 12%,#000 28%,#000 58%,rgba(0,0,0,.35) 80%,transparent 98%),linear-gradient(90deg,#000 0%,#000 52%,transparent 92%)!important;
+    mask:linear-gradient(180deg,transparent 0%,rgba(0,0,0,.35) 12%,#000 28%,#000 58%,rgba(0,0,0,.35) 80%,transparent 98%),linear-gradient(90deg,#000 0%,#000 52%,transparent 92%)!important;
+    -webkit-mask-composite:source-in!important;mask-composite:intersect!important}
+}

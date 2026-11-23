@@ -99,3 +99,4 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 22/11: inicial > Serviços: só 5 cards (1 a 5); os 3 restantes saíram e entrou o cartão .ks-svc-more "Ver todos os serviços" → servicos-especializados.html.
 
 - 22/11: Serviços — foto das sócias no formato do modelo "passo a passo" (grande, sem recorte oval, tom verde, dissolvida para a direita e para baixo); cards da direita intactos; mobile inalterado.
+- 23/11: Serviços — foto das sócias maior (scale 2.25) com degradê escuro mais longo em cima e embaixo; só desktop.
