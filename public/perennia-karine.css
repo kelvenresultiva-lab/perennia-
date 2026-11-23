@@ -2325,3 +2325,7 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
   #servicos .ks-svc-bgm{opacity:.85!important}
   #servicos .ks-svc-bgm:after{background:radial-gradient(ellipse 70% 60% at 50% 46%,transparent 35%,rgba(5,14,9,.7) 75%,#050E09 100%)!important}
 }
+/* Serviços desktop (23/11) — mesmo fundo quase preto do mobile em toda a seção (abas do topo, laterais e rodapé) */
+@media(min-width:901px){
+  #servicos.ks-svc-section{background:#050E09!important}
+}

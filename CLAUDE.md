@@ -105,3 +105,4 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 23/11: Serviços — mais preto embaixo da foto no desktop (.ks-svc-head:after, degradê vertical a partir de 760px).
 - 23/11: Serviços mobile — foto das sócias como imagem de fundo: .ks-svc-bgm com 100vw, sobe até o botão, máscara nas 4 bordas, vinheta escura; head com z-index acima; fotos ampliadas para os rostos ficarem do mesmo tamanho.
 - 23/11: Serviços mobile — fundo da seção inteira #050E09 (quase preto), igual nas abas do topo, atrás do texto e no recorte do rodapé; foto das sócias com opacidade .85 e vinheta no mesmo preto. (A camada .ks-svc-head:before foi descartada: deixava as abas do topo num verde diferente.)
+- 23/11: Serviços desktop — mesmo fundo #050E09 do mobile na seção inteira.
