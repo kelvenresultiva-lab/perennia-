@@ -2335,3 +2335,28 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
   #servicos .ks-svc:after{background:linear-gradient(90deg,rgba(3,12,8,.7) 0%,rgba(3,12,8,.35) 35%,rgba(3,12,8,.08) 70%,transparent 100%)!important;
     width:calc(50vw - 540px + 60px)!important}
 }
+
+/* Vídeo → 360 (23/11, modelo do usuário): fim da seção do vídeo com o mesmo rodapé de Serviços — topo do 360 com cantos arredondados e recorte central, seta de rolagem no recorte (substitui a aba à direita) */
+#sintomas{--E:40px;--r:26px;--bw:160px;
+  -webkit-mask:linear-gradient(#000,#000) left calc(var(--r) - 2px) top var(--E)/calc(50% - var(--bw) / 2 - var(--r) + 6px) calc(var(--cv) - var(--E)) no-repeat,
+    linear-gradient(#000,#000) right calc(var(--r) - 2px) top var(--E)/calc(50% - var(--bw) / 2 - var(--r) + 6px) calc(var(--cv) - var(--E)) no-repeat,
+    linear-gradient(#000,#000) left 0 top calc(var(--E) + var(--r) - 4px)/calc(var(--r) + 4px) calc(var(--cv) - var(--E) - var(--r) + 4px) no-repeat,
+    linear-gradient(#000,#000) right 0 top calc(var(--E) + var(--r) - 4px)/calc(var(--r) + 4px) calc(var(--cv) - var(--E) - var(--r) + 4px) no-repeat,
+    radial-gradient(circle at 100% 100%,#000 calc(var(--r) - .5px),transparent var(--r)) left 0 top var(--E)/var(--r) var(--r) no-repeat,
+    radial-gradient(circle at 0 100%,#000 calc(var(--r) - .5px),transparent var(--r)) right 0 top var(--E)/var(--r) var(--r) no-repeat,
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 58' preserveAspectRatio='none'%3E%3Cpath d='M0 0C28 0 38 4 48 18C58 34 66 44 80 44C94 44 102 34 112 18C122 4 132 0 160 0V58H0Z'/%3E%3C/svg%3E") center top var(--E)/var(--bw) calc(var(--cv) - var(--E)) no-repeat,
+    linear-gradient(#000,#000) left calc(var(--cv) - 2px)/100% calc(100% - var(--cv) * 2 + 4px) no-repeat,
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 110' preserveAspectRatio='none'%3E%3Cpath d='M0 0H1440V18H360C290 18 270 110 200 110H0Z'/%3E%3C/svg%3E") bottom left/100% var(--cv) no-repeat!important;
+  mask:linear-gradient(#000,#000) left calc(var(--r) - 2px) top var(--E)/calc(50% - var(--bw) / 2 - var(--r) + 6px) calc(var(--cv) - var(--E)) no-repeat,
+    linear-gradient(#000,#000) right calc(var(--r) - 2px) top var(--E)/calc(50% - var(--bw) / 2 - var(--r) + 6px) calc(var(--cv) - var(--E)) no-repeat,
+    linear-gradient(#000,#000) left 0 top calc(var(--E) + var(--r) - 4px)/calc(var(--r) + 4px) calc(var(--cv) - var(--E) - var(--r) + 4px) no-repeat,
+    linear-gradient(#000,#000) right 0 top calc(var(--E) + var(--r) - 4px)/calc(var(--r) + 4px) calc(var(--cv) - var(--E) - var(--r) + 4px) no-repeat,
+    radial-gradient(circle at 100% 100%,#000 calc(var(--r) - .5px),transparent var(--r)) left 0 top var(--E)/var(--r) var(--r) no-repeat,
+    radial-gradient(circle at 0 100%,#000 calc(var(--r) - .5px),transparent var(--r)) right 0 top var(--E)/var(--r) var(--r) no-repeat,
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 58' preserveAspectRatio='none'%3E%3Cpath d='M0 0C28 0 38 4 48 18C58 34 66 44 80 44C94 44 102 34 112 18C122 4 132 0 160 0V58H0Z'/%3E%3C/svg%3E") center top var(--E)/var(--bw) calc(var(--cv) - var(--E)) no-repeat,
+    linear-gradient(#000,#000) left calc(var(--cv) - 2px)/100% calc(100% - var(--cv) * 2 + 4px) no-repeat,
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 110' preserveAspectRatio='none'%3E%3Cpath d='M0 0H1440V18H360C290 18 270 110 200 110H0Z'/%3E%3C/svg%3E") bottom left/100% var(--cv) no-repeat!important}
+#cuidado{overflow:clip visible!important;z-index:auto!important}
+#cuidado .ks-scroll-cue{z-index:5;top:calc(100% - 62px)!important}
+@media(max-width:700px){#cuidado .ks-scroll-cue{top:calc(100% - 48px)!important}}
+@media(max-width:700px){#sintomas{--E:20px;--r:18px;--bw:124px}}
