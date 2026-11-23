@@ -2175,3 +2175,13 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 #servicos .ks-svc-duo .ks-socia:after,#servicos .ks-svc-bgm .ks-socia:after{background:linear-gradient(180deg,#4E8D70 0%,#326C51 55%,#1A4330 100%)!important}
 @media(min-width:901px){#servicos .ks-svc-duo{left:-130px!important}}
 #servicos .ks-svc-duo .ks-socia-2,#servicos .ks-svc-bgm .ks-socia-2{-webkit-mask:radial-gradient(ellipse 50% 68% at 52% 42%,#000 46%,rgba(0,0,0,.55) 72%,transparent 98%)!important;mask:radial-gradient(ellipse 50% 68% at 52% 42%,#000 46%,rgba(0,0,0,.55) 72%,transparent 98%)!important}
+
+/* Serviços no desktop (22/11): sem empilhar/grudar — cards em lista como no modelo do passo a passo; foto grande de fundo na coluna esquerda */
+@media(min-width:901px){
+  #servicos .ks-svc{position:relative}
+  #servicos .ks-svc-head{position:static!important;min-height:0!important}
+  #servicos .ks-svc-cards .specialist-item{position:relative!important;top:auto!important}
+  #servicos .ks-svc-cards{display:flex!important;flex-direction:column;gap:22px!important}
+  #servicos .ks-svc-duo{top:300px!important;bottom:auto!important;left:calc(540px - 50vw - 140px)!important;transform:scale(1.9)!important;transform-origin:0 0!important;
+    -webkit-mask:linear-gradient(180deg,transparent 0%,#000 16%,#000 52%,transparent 92%)!important;mask:linear-gradient(180deg,transparent 0%,#000 16%,#000 52%,transparent 92%)!important}
+}
