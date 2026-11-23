@@ -2284,3 +2284,11 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
   #servicos .ks-svc-bgm .ks-socia img{filter:grayscale(.6) brightness(1) contrast(1.06)!important}
   #servicos .ks-svc-bgm .ks-socia:after{background:linear-gradient(180deg,#86B89D 0%,#3F7A5E 55%,#1A4330 100%)!important;opacity:.85!important;mix-blend-mode:multiply}
 }
+/* Serviços (23/11) — mais preto no lado esquerdo (desktop), por cima da borda da foto; texto e botão ficam acima */
+@media(min-width:901px){
+  #servicos .ks-svc:after{content:'';position:absolute;z-index:0;pointer-events:none;
+    left:calc(540px - 50vw);top:0;bottom:0;width:calc(50vw - 540px + 120px);
+    background:linear-gradient(90deg,rgba(3,12,8,.92) 0%,rgba(3,12,8,.6) 45%,rgba(3,12,8,.2) 78%,transparent 100%);
+    -webkit-mask:linear-gradient(180deg,transparent 0%,#000 12%,#000 88%,transparent 100%);mask:linear-gradient(180deg,transparent 0%,#000 12%,#000 88%,transparent 100%)}
+  #servicos .ks-svc-head > *:not(.ks-svc-duo){position:relative;z-index:1}
+}
