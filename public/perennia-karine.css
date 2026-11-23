@@ -2388,3 +2388,10 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 /* Como funciona (23/11) — texto sobre o Método Legacy */
 #como-funciona .ks-steps-lead{max-width:640px;margin:22px auto 0;text-align:center;font:400 17px/1.7 var(--sans);color:#5B6660;position:relative;z-index:2}
 @media(max-width:700px){#como-funciona .ks-steps-lead{font-size:15.5px;margin-top:16px;padding:0 4px}}
+
+/* Soluções → Método Legacy (23/11) — menos espaço entre as duas seções brancas */
+#solucoes{border-bottom-width:0!important;padding-bottom:130px!important}
+#solucoes .ks-scroll-cue{top:auto!important;bottom:40px!important;z-index:3}
+#como-funciona{border-top-width:0!important;padding-top:56px!important}
+@media(max-width:700px){#solucoes{padding-bottom:104px!important}#solucoes .ks-scroll-cue{top:auto!important;bottom:30px!important}#como-funciona{padding-top:40px!important}}
+@media(max-width:700px){#steps-title br{display:none}}

@@ -122,3 +122,4 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 23/11: ordem da home mudou: vídeo → 360 → Serviços especializados → Nossas Soluções → Como funciona → Agendar. Setas: 360→#servicos, Soluções→#como-funciona.
 - 23/11: texto do Método Legacy (.ks-steps-lead) encurtado para uma frase.
 - 23/11: seção #como-funciona: etiqueta "MÉTODO LEGACY" e título "Quatro movimentos para construir o legado da sua empresa."
+- 23/11: espaço entre Soluções e Método Legacy reduzido (~430px → ~185px): sem border-bottom/top brancos, seta no meio. Título do método sem quebra forçada no mobile.
