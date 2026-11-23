@@ -2228,3 +2228,16 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 #solucoes .solution-card-link:after{content:'';position:absolute;inset:0;border-radius:inherit;z-index:1}
 #solucoes .solution-card-link:focus-visible{outline:none}
 #solucoes .solution-card:has(.solution-card-link:focus-visible){outline:2px solid #D8BE8E;outline-offset:3px}
+
+/* Serviços na inicial (22/11): só 5 cards + chamada para a página com todos os serviços */
+#servicos .ks-svc-more{grid-column:2;display:flex;align-items:center;justify-content:space-between;gap:20px;margin-top:22px;padding:26px 28px;border-radius:18px;text-decoration:none;
+  position:relative;z-index:2;background:linear-gradient(135deg,rgba(216,190,142,.16),rgba(216,190,142,.05));box-shadow:inset 0 0 0 1px rgba(216,190,142,.4);transition:background .3s,transform .3s}
+#servicos .ks-svc-more:hover{background:linear-gradient(135deg,rgba(216,190,142,.26),rgba(216,190,142,.08));transform:translateY(-2px)}
+#servicos .ks-svc-more-txt{display:grid;gap:6px}
+#servicos .ks-svc-more strong{font-size:20px;font-weight:500;color:#F3DFB1}
+#servicos .ks-svc-more-txt>span{font-size:14px;line-height:1.5;color:#B9C6BE}
+#servicos .ks-svc-more-ic{flex:none;display:grid;place-items:center;width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg,#DCC496,#B8955F);color:#14301F}
+#servicos .ks-svc-more-ic svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+@media(max-width:900px){#servicos .ks-svc-more{grid-column:1;margin-top:18px;padding:22px}#servicos .ks-svc-more strong{font-size:18px}}
+#servicos .ks-svc-more{margin-top:-58px}
+@media(max-width:900px){#servicos .ks-svc-more{margin-top:-24px}}
