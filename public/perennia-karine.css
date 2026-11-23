@@ -2266,3 +2266,21 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
     mask:linear-gradient(180deg,transparent 0%,rgba(0,0,0,.35) 12%,#000 28%,#000 58%,rgba(0,0,0,.35) 80%,transparent 98%),linear-gradient(90deg,#000 0%,#000 52%,transparent 92%)!important;
     -webkit-mask-composite:source-in!important;mask-composite:intersect!important}
 }
+/* Serviços (23/11) — sombra escura atrás do texto e do botão, descendo até a foto das sócias */
+@media(min-width:901px){
+  #servicos .ks-svc:before{content:'';position:absolute;z-index:0;pointer-events:none;
+    left:calc(540px - 50vw);top:120px;width:calc(50vw + 260px);height:720px;
+    background:radial-gradient(ellipse 62% 58% at 42% 55%,rgba(3,12,8,.88) 0%,rgba(3,12,8,.7) 38%,rgba(3,12,8,.3) 68%,transparent 100%)}
+}
+/* Serviços mobile (23/11) — foto das sócias como fundo, dissolvida em cima, embaixo e nas laterais (mesmo formato do desktop) */
+@media(max-width:900px){
+  #servicos .ks-svc-bgm{
+    -webkit-mask:linear-gradient(180deg,transparent 0%,rgba(0,0,0,.35) 10%,#000 26%,#000 60%,rgba(0,0,0,.35) 82%,transparent 100%),linear-gradient(90deg,transparent 0%,#000 10%,#000 90%,transparent 100%)!important;
+    mask:linear-gradient(180deg,transparent 0%,rgba(0,0,0,.35) 10%,#000 26%,#000 60%,rgba(0,0,0,.35) 82%,transparent 100%),linear-gradient(90deg,transparent 0%,#000 10%,#000 90%,transparent 100%)!important;
+    -webkit-mask-composite:source-in!important;mask-composite:intersect!important}
+  #servicos .ks-svc-bgm .ks-socia{-webkit-mask:none!important;mask:none!important}
+  #servicos .ks-svc-bgm .ks-socia-1{-webkit-mask:linear-gradient(90deg,#000 62%,transparent 98%)!important;mask:linear-gradient(90deg,#000 62%,transparent 98%)!important}
+  #servicos .ks-svc-bgm .ks-socia-2{-webkit-mask:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.4) 22%,#000 50%)!important;mask:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.4) 22%,#000 50%)!important}
+  #servicos .ks-svc-bgm .ks-socia img{filter:grayscale(.6) brightness(1) contrast(1.06)!important}
+  #servicos .ks-svc-bgm .ks-socia:after{background:linear-gradient(180deg,#86B89D 0%,#3F7A5E 55%,#1A4330 100%)!important;opacity:.85!important;mix-blend-mode:multiply}
+}
