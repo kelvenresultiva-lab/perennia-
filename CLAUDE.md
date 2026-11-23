@@ -125,3 +125,4 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 23/11: espaço entre Soluções e Método Legacy reduzido (~430px → ~185px): sem border-bottom/top brancos, seta no meio. Título do método sem quebra forçada no mobile.
 - 23/11: Serviços (desktop): máscara da foto das sócias estendida (preto até 76%, some só no fim) e sombra de baixo (.ks-svc-head:after) mais baixa e leve, para mostrar mais do corpo delas.
 - 23/11: Serviços na home mostra só os cards 01–04; card 05 (Recuperação de Créditos) saiu e entrou no texto do "Ver todos" ("Mais 4 frentes: ...").
+- 23/11: Nossas Soluções em 3 cards em cima + 2 centralizados embaixo (grid 6 col), visual do print de referência: card verde escuro, borda dourada fina, traço dourado no topo, ícone de linha (.sl-ico), título em maiúsculas, label dourada abaixo. Tablet 2 col (360 inteiro), mobile 1 col.

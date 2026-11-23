@@ -2404,3 +2404,26 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
     -webkit-mask-composite:source-in!important;mask-composite:intersect!important}
   #servicos .ks-svc-head:after{top:1050px!important;background:linear-gradient(180deg,transparent 0%,rgba(3,12,8,.4) 40%,rgba(3,12,8,.7) 75%,transparent 100%)!important}
 }
+
+/* Nossas Soluções (23/11) — 3 cards em cima, 2 embaixo, visual de card escuro com traço claro no topo */
+#solucoes .solutions-grid{display:grid!important;grid-template-columns:repeat(6,1fr)!important;gap:22px!important;max-width:1180px;margin-left:auto;margin-right:auto}
+#solucoes .solutions-grid>.solution-card{grid-column:span 2!important;grid-row:auto!important;position:relative!important;overflow:visible!important;display:flex!important;flex-direction:column;align-items:flex-start;min-height:0!important;margin:0!important;width:auto!important;
+  padding:44px 32px 34px!important;border-radius:16px!important;
+  background:linear-gradient(140deg,#16402A 0%,#0C2A1B 55%,#06180F 100%)!important;border:1px solid rgba(216,190,142,.28)!important;box-shadow:0 26px 50px -34px rgba(4,33,11,.55)!important;transform:none}
+#solucoes .solutions-grid>.solution-card:nth-child(4){grid-column:2/span 2!important}
+#solucoes .solutions-grid>.solution-card:nth-child(5){grid-column:4/span 2!important}
+#solucoes .solutions-grid>.solution-card:before{content:''!important;position:absolute!important;top:-2px!important;left:32px!important;width:96px!important;height:4px!important;border-radius:3px!important;background:linear-gradient(90deg,#F3E6C8,#D8BE8E)!important;inset:auto auto auto 32px;opacity:1!important;z-index:2}
+#solucoes .solutions-grid>.solution-card:after{display:none!important}
+#solucoes .solution-card-link:after{display:block!important}
+#solucoes .solutions-grid>.solution-card:hover{transform:translateY(-4px)!important;border-color:rgba(216,190,142,.5)!important}
+#solucoes .sl-ico{order:0;display:block;width:34px;height:34px;color:#D8BE8E;margin-bottom:20px}
+#solucoes .sl-ico svg{width:100%;height:100%;display:block}
+#solucoes .solutions-grid>.solution-card h3{order:1;margin:0 0 8px!important;font:500 19px/1.25 var(--sans)!important;letter-spacing:.04em!important;text-transform:uppercase;color:#F3EFE6!important;-webkit-text-fill-color:#F3EFE6!important;background:none!important}
+#solucoes .solutions-grid>.solution-card .solution-label{order:2;margin:0 0 16px!important;font:600 10.5px/1.3 var(--sans)!important;letter-spacing:.16em!important;color:#C9A468!important}
+#solucoes .solutions-grid>.solution-card p{order:3;margin:0!important;font-size:15.5px!important;line-height:1.6!important;color:#D1DAD4!important}
+#solucoes .solutions-grid>.solution-card .solution-link{order:4;margin-top:22px!important;color:#F3DFB1!important}
+@media(max-width:1000px){#solucoes .solutions-grid{grid-template-columns:1fr 1fr!important}#solucoes .solutions-grid>.solution-card,#solucoes .solutions-grid>.solution-card:nth-child(4),#solucoes .solutions-grid>.solution-card:nth-child(5){grid-column:auto!important}#solucoes .solutions-grid>.solution-card:first-child{grid-column:1/-1!important}}
+@media(max-width:700px){#solucoes .solutions-grid{grid-template-columns:1fr!important;gap:18px!important}#solucoes .solutions-grid>.solution-card{padding:38px 24px 28px!important}#solucoes .solutions-grid>.solution-card:first-child{grid-column:auto!important}}
+#solucoes .solutions-grid>.solution-card:before{background:linear-gradient(90deg,#C9A468,#E6CF9E)!important}
+#solucoes .solutions-grid>.solution-featured>div{display:contents!important}
+#solucoes .solutions-grid>.solution-card{gap:0!important}
