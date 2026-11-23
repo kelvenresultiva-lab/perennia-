@@ -2371,3 +2371,15 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 .ks-seal .ks-hero-p img{mix-blend-mode:lighten}
 @media(max-width:700px){.ks-seal .ks-hero-p{--h:30px!important}}
 #sintomas .diagnostico-card{background:#FFFFFF!important;border-color:rgba(176,138,74,.4)!important;box-shadow:0 30px 70px -36px rgba(40,30,10,.32)!important}
+
+/* Vídeo (23/11) — fotos das sócias nas laterais */
+.ks-vid-sides{display:none}
+@media(min-width:1101px){
+#cuidado .ks-vid-sides{display:block;position:absolute;left:0;right:0;top:140px;height:880px;pointer-events:none;z-index:0}
+#cuidado .ks-vid-sides img{position:absolute;top:0;height:100%;width:min(36vw,620px);object-fit:cover;opacity:.5;filter:saturate(.85);
+ -webkit-mask:linear-gradient(180deg,transparent 0,#000 18%,#000 62%,transparent 96%),var(--hm);-webkit-mask-composite:source-in;mask:linear-gradient(180deg,transparent 0,#000 18%,#000 62%,transparent 96%),var(--hm);mask-composite:intersect}
+#cuidado .ks-vid-side-l{left:0;object-position:30% 20%;--hm:linear-gradient(90deg,#000 0,#000 35%,transparent 92%)}
+#cuidado .ks-vid-side-r{right:0;object-position:60% 15%;--hm:linear-gradient(270deg,#000 0,#000 35%,transparent 92%)}
+#cuidado .care-card{position:relative;z-index:1}
+}
+@media(min-width:1101px){#cuidado .ks-vid-panel,#cuidado .ks-vid-stage{background:transparent!important}}

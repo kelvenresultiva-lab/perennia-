@@ -115,3 +115,4 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 23/11: card do 360° escurecido (bege areia #F2EADB→#DFCFB0, borda e sombra mais fortes) para contrastar com o fundo branco.
 - 23/11: selo do hero usa o P da logo (assets/perennia-logo.webp recortado via .ks-road-p .ks-hero-p, --h 40px; mobile 30px) no lugar da letra P em texto.
 - 23/11: card do 360° branco (borda dourada e sombra suave) sobre o fundo branco.
+- 23/11: seção do vídeo com fotos das sócias esmaecidas nas laterais (.ks-vid-sides: socia-joana-branco à esquerda, socia-2-amarelo à direita, opacity .5, máscara para o branco); só desktop ≥1101px.
