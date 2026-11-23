@@ -97,3 +97,5 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - Inicial: só links ajustados (cartões de Soluções clicáveis via .solution-card-link; Legacy/Como funciona/fechamento → solucoes.html#metodo-legacy; serviços → servicos-especializados.html#...).
 - PENDENTE (ocultos com hidden em sobre.html, sem texto inventado): #historia (história aprovada + vídeo institucional) e #responsaveis (nome, função, formação, experiência e especialidades das duas sócias). Falta também: número de WhatsApp/contatos oficiais.
 - 22/11: inicial > Serviços: só 5 cards (1 a 5); os 3 restantes saíram e entrou o cartão .ks-svc-more "Ver todos os serviços" → servicos-especializados.html.
+
+- 22/11: Serviços — foto das sócias no formato do modelo "passo a passo" (grande, sem recorte oval, tom verde, dissolvida para a direita e para baixo); cards da direita intactos; mobile inalterado.

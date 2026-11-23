@@ -2241,3 +2241,21 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 @media(max-width:900px){#servicos .ks-svc-more{grid-column:1;margin-top:18px;padding:22px}#servicos .ks-svc-more strong{font-size:18px}}
 #servicos .ks-svc-more{margin-top:-58px}
 @media(max-width:900px){#servicos .ks-svc-more{margin-top:-24px}}
+
+/* Serviços (22/11) — foto no formato do modelo (passo a passo): grande, sem recorte oval, dissolvida no fundo para a direita e para baixo */
+@media(min-width:901px){
+  #servicos .ks-svc-duo{transform:scale(2.05)!important;margin-top:-70px!important;left:calc(540px - 50vw - 60px)!important;
+    -webkit-mask:linear-gradient(180deg,transparent 0%,#000 14%,#000 50%,transparent 96%),linear-gradient(90deg,#000 0%,#000 52%,transparent 92%)!important;
+    mask:linear-gradient(180deg,transparent 0%,#000 14%,#000 50%,transparent 96%),linear-gradient(90deg,#000 0%,#000 52%,transparent 92%)!important;
+    -webkit-mask-composite:source-in!important;mask-composite:intersect!important}
+  #servicos .ks-svc-duo .ks-socia{-webkit-mask:none!important;mask:none!important}
+  #servicos .ks-svc-duo .ks-socia-2{-webkit-mask:linear-gradient(90deg,transparent 0%,#000 26%)!important;mask:linear-gradient(90deg,transparent 0%,#000 26%)!important}
+  #servicos .ks-svc-duo .ks-socia img{filter:grayscale(.6) brightness(1) contrast(1.06)!important}
+  #servicos .ks-svc-duo .ks-socia:after{background:linear-gradient(180deg,#86B89D 0%,#3F7A5E 55%,#1A4330 100%)!important;opacity:.85!important;mix-blend-mode:multiply}
+}
+@media(min-width:901px){
+  #servicos .ks-svc-duo .ks-socia-1{-webkit-mask:linear-gradient(90deg,#000 62%,transparent 98%)!important;mask:linear-gradient(90deg,#000 62%,transparent 98%)!important}
+  #servicos .ks-svc-duo{-webkit-mask:linear-gradient(180deg,transparent 0%,#000 26%,#000 50%,transparent 96%),linear-gradient(90deg,#000 0%,#000 52%,transparent 92%)!important;
+    mask:linear-gradient(180deg,transparent 0%,#000 26%,#000 50%,transparent 96%),linear-gradient(90deg,#000 0%,#000 52%,transparent 92%)!important;
+    -webkit-mask-composite:source-in!important;mask-composite:intersect!important}
+}
