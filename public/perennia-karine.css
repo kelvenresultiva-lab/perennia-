@@ -2335,5 +2335,3 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
   #servicos .ks-svc:after{background:linear-gradient(90deg,rgba(3,12,8,.7) 0%,rgba(3,12,8,.35) 35%,rgba(3,12,8,.08) 70%,transparent 100%)!important;
     width:calc(50vw - 540px + 60px)!important}
 }
-/* 360 (23/11) — card bege com a mesma folga lateral em qualquer largura de tela (modelo: ~32px de cada lado) */
-@media(min-width:901px){#sintomas.perennia-360{padding-left:32px!important;padding-right:32px!important}#sintomas .diagnostico-card{max-width:none!important;width:auto!important;margin-left:0!important;margin-right:0!important}}
