@@ -109,5 +109,4 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 23/11: Serviços desktop — menos preto sobre os rostos: faixa da esquerda (.ks-svc:after) mais fraca (.7→transparente) e mais estreita (+60px).
 - 23/11: Vídeo + 360 num bloco só — "Perennia" gigante do vídeo oculto (.ks-vid-word-clip), .ks-vid-panel padding-bottom 120px; #sintomas com fundo #EFEAE0 (bege da faixa do vídeo), sem aba no topo (máscara só com a curva de baixo para a Legacy), sem foto/:before, card sem caixa, padding-top 40px.
 - 23/11: 360 — card com cor própria sobre o bege do bloco (branco quente #FFFDF8→#F3EADA, borda dourada .35, sombra suave).
-- 23/11: 360 — desktop: linhas douradas em onda (#sintomas:before, SVG repeat-x 1200px) deslizando em 48s atrás do card (card translúcido ~.66 + blur 1.5px; linhas #B8915A 1.6px; anula filter blur/z-index -1 antigos do :before); para com prefers-reduced-motion.
 - 23/11: 360 → Legacy — fim do 360 no formato do modelo: máscara do #sintomas = faixa reta (--E) + cantos fora do arredondado + calombo central (inverso do topo de Serviços); seta .ks-cue-legacy dentro do #sintomas (href #tratamentos) no calombo.
