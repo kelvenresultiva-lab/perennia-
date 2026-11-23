@@ -2364,3 +2364,4 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 /* Vídeo + 360 (23/11) — fundo branco abaixo do vídeo */
 #cuidado .ks-vid-panel,#sintomas.perennia-360{background:#FFFFFF!important}
 #cuidado{background:#FFFFFF!important}
+#sintomas .diagnostico-card{background:linear-gradient(115deg,#F2EADB 0%,#E9DDC6 55%,#DFCFB0 100%)!important;border-color:rgba(176,138,74,.45)!important;box-shadow:0 34px 70px -38px rgba(60,42,12,.45)!important}
