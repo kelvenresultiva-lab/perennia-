@@ -83,3 +83,4 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 22/11: logo do rodapé montada em 2 recortes (.ks-flogo-p / .ks-flogo-t) para o P ficar centralizado sobre PERENNIA.
 
 - 22/11: Serviços — fotos das sócias mais visíveis no fundo (opacidade ~.95, menos escurecidas, bordas da 2ª foto esfumadas); no celular .ks-svc-bgm .85.
+- 22/11: Serviços — fotos no estilo do passo a passo do exemplo (Behance, advogado trabalhista): grandes, na coluna esquerda, em P&B tingido de verde (multiply); no celular .ks-svc-bgm com o mesmo tom.
