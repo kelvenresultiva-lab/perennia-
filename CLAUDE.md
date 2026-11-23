@@ -112,3 +112,4 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 23/11: 360 → Legacy — fim do 360 no formato do modelo: máscara do #sintomas = faixa reta (--E) + cantos fora do arredondado + calombo central (inverso do topo de Serviços); seta .ks-cue-legacy dentro do #sintomas (href #tratamentos) no calombo.
 
 - 23/11: "Nossas Soluções" (#solucoes) virou grade bento (classes sb-*): 360° grande + Compliance na 1ª linha, Gestão/Conselho/Expert na 2ª; ilustrações SVG de linha em dourado e chips das áreas no 360°. Mobile em coluna única.
+- 23/11: bento das Soluções deixado sóbrio (site sério): ícones menores só de traço fino, áreas do 360° como lista em versalete com filetes em vez de chips.
