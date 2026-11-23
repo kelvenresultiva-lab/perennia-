@@ -103,3 +103,4 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 23/11: Serviços — sombra escura (.ks-svc:before) atrás do texto/botão ligando com a foto (desktop); no mobile a foto (.ks-svc-bgm) agora se dissolve no fundo em cima, embaixo e nas laterais.
 - 23/11: Serviços — mais preto no lado esquerdo do desktop (.ks-svc:after, degradê da borda da tela até perto do texto); texto/botão com z-index acima.
 - 23/11: Serviços — mais preto embaixo da foto no desktop (.ks-svc-head:after, degradê vertical a partir de 760px).
+- 23/11: Serviços mobile — foto das sócias como imagem de fundo: .ks-svc-bgm com 100vw, sobe até o botão, máscara nas 4 bordas, vinheta escura; head com z-index acima; fotos ampliadas para os rostos ficarem do mesmo tamanho.

@@ -2299,3 +2299,22 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
     background:linear-gradient(180deg,transparent 0%,rgba(3,12,8,.45) 30%,rgba(3,12,8,.85) 60%,rgba(3,12,8,.85) 80%,transparent 100%);
     -webkit-mask:linear-gradient(90deg,#000 0%,#000 75%,transparent 100%);mask:linear-gradient(90deg,#000 0%,#000 75%,transparent 100%)}
 }
+/* Serviços mobile (23/11) — foto como imagem de fundo: largura da tela, sobe por trás do botão, vinheta escura nas bordas */
+@media(max-width:900px){
+  #servicos .ks-svc-bgm{width:100vw!important;height:600px!important;transform:none!important;
+    margin:-150px 0 -170px calc(50% - 50vw)!important;opacity:.9!important;
+    -webkit-mask:linear-gradient(180deg,transparent 0%,rgba(0,0,0,.3) 14%,#000 34%,#000 58%,rgba(0,0,0,.35) 80%,transparent 100%),linear-gradient(90deg,transparent 0%,#000 16%,#000 84%,transparent 100%)!important;
+    mask:linear-gradient(180deg,transparent 0%,rgba(0,0,0,.3) 14%,#000 34%,#000 58%,rgba(0,0,0,.35) 80%,transparent 100%),linear-gradient(90deg,transparent 0%,#000 16%,#000 84%,transparent 100%)!important;
+    -webkit-mask-composite:source-in!important;mask-composite:intersect!important}
+  #servicos .ks-svc-bgm .ks-socia{flex:1 1 50%!important;width:auto!important;height:100%!important}
+  #servicos .ks-svc-bgm .ks-socia img{position:absolute!important;inset:0!important;left:0!important;top:0!important;transform:none!important;width:100%!important;height:100%!important;max-width:none!important;object-fit:cover!important;object-position:50% 18%!important}
+  #servicos .ks-svc-bgm .ks-socia-2{margin-left:-40px!important}
+  #servicos .ks-svc-bgm:after{content:'';position:absolute;inset:0;z-index:2;pointer-events:none;
+    background:radial-gradient(ellipse 70% 60% at 50% 46%,transparent 40%,rgba(3,12,8,.55) 80%,rgba(3,12,8,.85) 100%)}
+  #servicos .ks-svc-head > *:not(.ks-svc-bgm):not(.ks-svc-duo){position:relative;z-index:1}
+}
+@media(max-width:900px){
+  #servicos .ks-svc-head{position:relative!important;z-index:2!important}
+  #servicos .ks-svc-bgm .ks-socia-1 img{transform:scale(1.45)!important;transform-origin:50% 12%!important}
+  #servicos .ks-svc-bgm .ks-socia-2 img{transform:scale(1.08)!important;transform-origin:50% 12%!important}
+}
