@@ -2335,3 +2335,17 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
   #servicos .ks-svc:after{background:linear-gradient(90deg,rgba(3,12,8,.7) 0%,rgba(3,12,8,.35) 35%,rgba(3,12,8,.08) 70%,transparent 100%)!important;
     width:calc(50vw - 540px + 60px)!important}
 }
+/* 360 (23/11) — sem o card bege solto: conteúdo direto no fundo verde (peça única, estilo Karine); texto claro + dourado como a Legacy */
+#sintomas .diagnostico-card{background:none!important;border:0!important;box-shadow:none!important;border-radius:0!important;outline:0!important}
+#sintomas .diagnostico-card:before,#sintomas .diagnostico-card:after{content:none!important}
+#sintomas .diagnostico-kicker{color:#E7CF9E!important;border-color:rgba(231,207,158,.4)!important;background:rgba(255,255,255,.03)!important}
+#sintomas .diagnostico-copy h2{color:#F3EFE6!important}
+#sintomas .diagnostico-copy h2 em{background:linear-gradient(90deg,#E7CF9E,#C9A468)!important;-webkit-background-clip:text!important;background-clip:text!important;color:transparent!important}
+#sintomas .diagnostico-description p{color:rgba(243,239,230,.72)!important}
+#sintomas .diagnostico-description p:first-child{color:#F3EFE6!important}
+#sintomas .diagnostico-copy h2:after,#sintomas .diagnostico-copy hr{opacity:.5}
+#sintomas .ks-360-giant{color:rgba(243,239,230,.035)!important;-webkit-text-stroke:0!important;background:none!important;-webkit-text-fill-color:rgba(243,239,230,.035)!important}
+#sintomas .diagnostico-areas span{color:rgba(243,239,230,.85)!important}
+#sintomas .diagnostico-areas li svg,#sintomas .diagnostico-areas li:before{box-shadow:0 0 0 1px rgba(231,207,158,.45)!important}
+#sintomas .diagnostico-core{box-shadow:0 0 0 1px rgba(231,207,158,.5),0 24px 60px -20px rgba(0,0,0,.6)!important}
+#sintomas.perennia-360 .diagnostico-map .diagnostico-areas li span{color:rgba(243,239,230,.86)!important;-webkit-text-fill-color:rgba(243,239,230,.86)!important}
