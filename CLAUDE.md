@@ -111,3 +111,4 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 23/11: 360 — card com cor própria sobre o bege do bloco (branco quente #FFFDF8→#F3EADA, borda dourada .35, sombra suave).
 - 23/11: 360 → Legacy — fim do 360 no formato do modelo: máscara do #sintomas = faixa reta (--E) + cantos fora do arredondado + calombo central (inverso do topo de Serviços); seta .ks-cue-legacy dentro do #sintomas (href #tratamentos) no calombo.
 - 23/11: fundo abaixo do vídeo (.ks-vid-panel e #sintomas) passou de bege para branco.
+- 23/11: seção do vídeo (#cuidado) também com fundo branco.
