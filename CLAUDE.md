@@ -100,3 +100,4 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 
 - 22/11: Serviços — foto das sócias no formato do modelo "passo a passo" (grande, sem recorte oval, tom verde, dissolvida para a direita e para baixo); cards da direita intactos; mobile inalterado.
 - 23/11: Serviços — foto das sócias maior (scale 2.25) com degradê escuro mais longo em cima e embaixo; só desktop.
+- 23/11: Serviços — topo da foto das sócias com degradê escuro mais longo (some no fundo, sem borda visível); emenda entre as duas mais suave.

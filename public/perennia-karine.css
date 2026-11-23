@@ -2266,3 +2266,11 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
     mask:linear-gradient(180deg,transparent 0%,rgba(0,0,0,.35) 12%,#000 28%,#000 58%,rgba(0,0,0,.35) 80%,transparent 98%),linear-gradient(90deg,#000 0%,#000 52%,transparent 92%)!important;
     -webkit-mask-composite:source-in!important;mask-composite:intersect!important}
 }
+/* Serviços (23/11) — topo da foto mais escuro: some no fundo antes de mostrar a borda da imagem */
+@media(min-width:901px){
+  #servicos .ks-svc-duo{
+    -webkit-mask:linear-gradient(180deg,transparent 0%,transparent 14%,rgba(0,0,0,.12) 22%,rgba(0,0,0,.45) 30%,#000 40%,#000 58%,rgba(0,0,0,.35) 80%,transparent 98%),linear-gradient(90deg,#000 0%,#000 52%,transparent 92%)!important;
+    mask:linear-gradient(180deg,transparent 0%,transparent 14%,rgba(0,0,0,.12) 22%,rgba(0,0,0,.45) 30%,#000 40%,#000 58%,rgba(0,0,0,.35) 80%,transparent 98%),linear-gradient(90deg,#000 0%,#000 52%,transparent 92%)!important;
+    -webkit-mask-composite:source-in!important;mask-composite:intersect!important}
+  #servicos .ks-svc-duo .ks-socia-2{-webkit-mask:linear-gradient(90deg,transparent 0%,#000 40%)!important;mask:linear-gradient(90deg,transparent 0%,#000 40%)!important}
+}
