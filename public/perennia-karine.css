@@ -2266,7 +2266,3 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
     mask:linear-gradient(180deg,transparent 0%,rgba(0,0,0,.35) 12%,#000 28%,#000 58%,rgba(0,0,0,.35) 80%,transparent 98%),linear-gradient(90deg,#000 0%,#000 52%,transparent 92%)!important;
     -webkit-mask-composite:source-in!important;mask-composite:intersect!important}
 }
-/* Serviços (23/11) — preto sobe pela foto: tom verde começa quase preto no topo e clareia nos rostos */
-@media(min-width:901px){
-  #servicos .ks-svc-duo .ks-socia:after{background:linear-gradient(180deg,#06140D 0%,#0B2117 22%,#2A5A43 50%,#3F7A5E 62%,#1A4330 100%)!important;opacity:.92!important}
-}
