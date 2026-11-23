@@ -2432,16 +2432,3 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 
 /* 360 mobile (23/11) — card bem visível: margem lateral, borda dourada, sombra e leve tom creme */
 @media(max-width:700px){#sintomas.perennia-360{padding-left:16px!important;padding-right:16px!important}#sintomas .diagnostico-card{width:auto!important;margin-left:0!important;margin-right:0!important;border:1px solid rgba(176,138,74,.5)!important;border-radius:22px!important;background:linear-gradient(180deg,#FFFDF8 0%,#F7F0E3 100%)!important;box-shadow:0 24px 48px -26px rgba(40,30,10,.4),0 2px 8px rgba(40,30,10,.06)!important}}
-
-/* Botões (23/11) — dourado metálico mais vivo + texto verde profundo conectado ao ícone */
-:root{--btn-gold:linear-gradient(110deg,#B5843A 0%,#E4C278 26%,#F7E6B2 46%,#E0BB69 64%,#A8792F 100%)}
-.ks-btn,.perennia-cta,#solucoes .cta,#servicos .cta,#tratamentos .cta,a.cta{
-  background:var(--btn-gold)!important;background-size:200% 100%!important;background-position:0 0!important;
-  color:#0B3A22!important;font-weight:700!important;text-shadow:0 1px 0 rgba(255,244,214,.55);
-  border:1px solid rgba(150,105,40,.55)!important;
-  box-shadow:inset 0 1px 0 rgba(255,255,255,.6),inset 0 -1px 0 rgba(110,72,18,.35),0 12px 26px -14px rgba(150,105,35,.75)!important;
-  transition:background-position .6s ease,transform .3s ease,box-shadow .3s ease!important}
-.ks-btn:hover,.perennia-cta:hover,#solucoes .cta:hover,#servicos .cta:hover,a.cta:hover{background-position:100% 0!important;transform:translateY(-2px);box-shadow:inset 0 1px 0 rgba(255,255,255,.6),inset 0 -1px 0 rgba(110,72,18,.35),0 18px 30px -14px rgba(150,105,35,.85)!important}
-.ks-btn .ks-cta-icon,.perennia-cta .ks-cta-icon{background:#0F3A24!important;color:#F3DFB1!important;box-shadow:0 0 0 1px rgba(255,240,200,.35)}
-.ks-btn .ks-cta-icon svg,.perennia-cta .ks-cta-icon svg{color:#F3DFB1!important;stroke:#F3DFB1}
-#solucoes .cta svg,#servicos .cta svg,a.cta svg{background:#0F3A24!important;fill:#F3DFB1!important;color:#F3DFB1!important}
