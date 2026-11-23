@@ -2370,3 +2370,4 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 .ks-seal .ks-hero-p{--h:40px!important;position:relative!important;margin:0 auto}
 .ks-seal .ks-hero-p img{mix-blend-mode:lighten}
 @media(max-width:700px){.ks-seal .ks-hero-p{--h:30px!important}}
+.ks-seal .ks-hero-p img{filter:grayscale(1) brightness(1.9) contrast(1.15)}
