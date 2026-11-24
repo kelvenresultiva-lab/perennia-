@@ -157,3 +157,4 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 24/11: home — vão entre o botão "Entenda como funciona" e o selo do card final caiu de 164px para 74px (>700px): #agendar padding-top 28px e a faixa branca do card (:before) acompanha (top -2cv+70px), senão ela cobre o botão. Celular sem mudança.
 - 24/11: o mesmo no celular (≤700px): vão botão→selo de 173px para 63px (#agendar padding-top 44px, faixa branca top -2cv+10px).
 - 24/11: home — CTAs "Conheça as sócias" (#cuidado) e "Entenda como funciona" (#como-funciona) sem a sombra escura embaixo (fica só o brilho interno de 1px).
+- 24/11: servicos-especializados #como-contratar — os 3 passos viraram cards no visual dos cards de Soluções da home (.cc-cards/.cc-card: verde em degradê, filete dourado no topo, ícone de linha, título maiúsculo, etiqueta ETAPA 0N dourada, frase do guia p. 19). 3 colunas; 1 coluna ≤900px.
