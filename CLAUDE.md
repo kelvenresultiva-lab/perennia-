@@ -133,3 +133,4 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 23/11: todas as etiquetas de seção da home (hero, 360°, Serviços, Soluções, Método Legacy, fechamento) com fundo verde escuro do site, texto creme e borda dourada.
 
 - 24/11: P do selo da hero agora é assets/perennia-p.webp (PNG/WebP com fundo transparente), sem mix-blend-mode — corrigia caixa preta no iPhone.
+- 24/11: todos os CTAs (.ks-btn, .perennia-cta, .cta) usam o gradiente dourado metálico do botão do #agendar (regra no fim do CSS).

@@ -2446,3 +2446,6 @@ html body .hero span.ks-kicker,html body #sintomas span.diagnostico-kicker,html 
 /* Hero (24/11) — P transparente (sem blend, corrige caixa escura no iOS) */
 .ks-seal .ks-hero-pimg{height:40px!important;width:auto!important;display:block!important;margin:0 auto!important;position:relative!important;mix-blend-mode:normal!important;background:none!important}
 @media(max-width:700px){.ks-seal .ks-hero-pimg{height:30px!important}}
+
+/* CTAs (24/11) — todos com o dourado metálico do botão do card final */
+html body .ks-btn,html body .perennia-cta,html body a.cta,html body button.cta{background:linear-gradient(100deg,#8E6E3E 0%,#C9AC74 30%,#E2CC9C 50%,#C9AC74 70%,#8E6E3E 100%)!important;color:#0F2E1F!important;-webkit-text-fill-color:#0F2E1F!important;box-shadow:0 1px 0 rgba(255,255,255,.35) inset,0 16px 34px -16px rgba(0,0,0,.7)!important}
