@@ -165,3 +165,32 @@ html body .in-close-card h2{margin:22px auto 0!important}
 .sv-cards .sv-actions{margin-top:26px!important;padding-top:0!important}
 .sv-cards .in-btn{min-width:0!important}
 @media(max-width:800px){.sv-cards .in-btn{width:100%;justify-content:space-between}}
+
+/* 24/11: Serviços especializados — cards no modelo "Nossos diferenciais" (substitui o formato .ps-card/.sv-cards) */
+.sv-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:22px;max-width:1180px;margin:60px auto 0}
+.sv-item{grid-column:span 2;position:relative;display:flex;flex-direction:column;align-items:center;text-align:center;padding:62px 30px 34px;border-radius:16px;background:#FBFAF6;border:1px solid rgba(216,190,142,.35);box-shadow:0 26px 50px -40px rgba(15,46,31,.35);scroll-margin-top:110px;transition:transform .3s,box-shadow .3s}
+.sv-item:nth-child(7){grid-column:2/span 2}
+.sv-item:hover{transform:translateY(-4px);box-shadow:0 34px 60px -38px rgba(15,46,31,.45)}
+.sv-item:before{content:"";position:absolute;top:-1px;left:50%;width:150px;height:13px;transform:translateX(-50%);border-radius:0 0 14px 14px;background:#14382A}
+.sv-item.is-dark{background:linear-gradient(150deg,#1A4632 0%,#0F2E1F 100%);border-color:rgba(216,190,142,.3)}
+.sv-item.is-dark:before{background:#E9E2D2}
+.sv-ico{position:relative;width:62px;height:62px;margin-bottom:26px}
+.sv-ico:before{content:"";position:absolute;left:12px;top:12px;width:62px;height:62px;border-radius:6px;background:rgba(184,149,95,.28)}
+.sv-ico svg{position:relative;display:block;width:62px;height:62px;padding:16px;border-radius:6px;background:#14382A;fill:none;stroke:#D8BE8E;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;box-sizing:border-box}
+.sv-item.is-dark .sv-ico:before{background:rgba(255,255,255,.16)}
+.sv-item.is-dark .sv-ico svg{background:#F6F4EE;stroke:#14382A}
+.sv-n{font-size:10.5px;letter-spacing:.24em;font-weight:600;color:#8C6B3C;margin-bottom:10px}
+.sv-item h3{margin:0 0 14px;font-size:clamp(20px,1.7vw,24px);line-height:1.25;font-weight:600;color:#14382A}
+.sv-item>p{margin:0;font-size:15px;line-height:1.65;color:#3A4D41}
+.sv-item .sv-obs{margin-top:14px;font-size:13px;line-height:1.55;color:#6B7A70}
+.sv-obs a{color:inherit;text-decoration:underline}
+.sv-go{margin-top:auto;padding-top:24px;display:inline-flex;align-items:center;gap:10px;background:none;border:0;cursor:pointer;font:inherit;font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:#14382A}
+.sv-go span{display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:linear-gradient(135deg,#E6D3A3,#B8955F)}
+.sv-go svg{width:14px;height:14px;fill:none;stroke:#14382A;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.sv-item.is-dark .sv-n{color:#D8BE8E}
+.sv-item.is-dark h3{color:#F3EFE6}
+.sv-item.is-dark>p{color:rgba(243,239,230,.82)}
+.sv-item.is-dark .sv-obs{color:rgba(243,239,230,.6)}
+.sv-item.is-dark .sv-go{color:#F3EFE6}
+@media(max-width:1000px){.sv-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.sv-item,.sv-item:nth-child(7){grid-column:auto}}
+@media(max-width:640px){.sv-grid{grid-template-columns:1fr;gap:18px;margin-top:40px}.sv-item{padding:54px 22px 28px}}
