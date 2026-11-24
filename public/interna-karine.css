@@ -100,3 +100,10 @@ html body .in-nav .in-btn{min-width:0!important;height:52px!important;min-height
 .ps-seal:before{content:"";position:absolute;inset:27%;border-radius:50%;border:1px solid rgba(216,190,142,.55)}
 .ps-seal text{fill:#E9DCC0!important;font-weight:700}
 .ps-seal img{filter:none!important;height:34%!important}
+/* Selo das sócias — proporção corrigida: P pequeno dentro do aro, folga até o texto */
+.ps-seal:before{inset:31%!important}
+.ps-seal img{height:28px!important;width:auto!important}
+.ps-seal svg{inset:7px!important;width:calc(100% - 14px)!important;height:calc(100% - 14px)!important}
+.ps-seal text{font-size:12px!important;letter-spacing:.2em!important}
+@media(min-width:801px) and (max-width:1180px){.ps-seal img{height:24px!important}}
+@media(max-width:800px){.ps-seal img{height:21px!important}}

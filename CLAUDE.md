@@ -141,3 +141,4 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 24/11: #responsaveis VISÍVEL a pedido do usuário, com textos tirados da atuação da Perennia (sem nome, formação ou anos de experiência — nada inventado). h3 "Sócia da Perennia". Trocar quando chegarem os dados reais das sócias.
 - 24/11: cards das sócias v2 no modelo do advogado (foto alta, selo do P na borda da foto, aba verde grande na lateral, ícone documento+escudo, lista maior), nas cores da logo (verde #14382A + dourado). Sem botão de WhatsApp.
 - 24/11: selo dos cards das sócias igual ao da hero (verde-escuro, P dourado, aro fino dourado, texto creme).
+- 24/11: selo das sócias com proporção corrigida (P 28px dentro do aro inset 31%, texto 12px com folga).
