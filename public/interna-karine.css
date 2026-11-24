@@ -1,0 +1,28 @@
+/* Páginas internas (24/11) — mesmo visual da home (perennia-karine.css) */
+body{background:#FFFFFF!important}
+.in-sec:not(.is-dark),.in-close{background:#FFFFFF!important}
+
+/* Selos de seção: verde-escuro igual à home */
+html body .in-eyebrow,html body .in-kicker{display:inline-flex!important;align-items:center;width:auto;padding:10px 18px 10px 20px!important;border-radius:7px!important;font-size:10.5px!important;letter-spacing:.22em!important;font-weight:600!important;
+  background:linear-gradient(135deg,#14382A 0%,#0B2618 100%)!important;color:#E9DCC0!important;-webkit-text-fill-color:#E9DCC0!important;border:1px solid rgba(216,190,142,.45)!important;box-shadow:0 10px 22px -14px rgba(4,33,11,.6)!important}
+
+/* Botões: dourado metálico e tamanho do botão do card final da home */
+html body .in-btn,html body a.cta,html body button.cta{display:inline-flex!important;align-items:center!important;justify-content:center!important;gap:16px!important;
+  min-width:min(420px,100%)!important;height:60px!important;min-height:60px!important;padding:0 14px 0 30px!important;border:0!important;border-radius:10px!important;
+  font-size:13.5px!important;font-weight:600!important;letter-spacing:.05em!important;text-transform:uppercase!important;
+  background:linear-gradient(100deg,#8E6E3E 0%,#C9AC74 30%,#E2CC9C 50%,#C9AC74 70%,#8E6E3E 100%)!important;color:#0F2E1F!important;-webkit-text-fill-color:#0F2E1F!important;
+  box-shadow:0 1px 0 rgba(255,255,255,.35) inset,0 16px 34px -16px rgba(0,0,0,.7)!important}
+html body .in-btn .in-ic{width:34px!important;height:34px!important;flex:0 0 34px;border-radius:50%!important;background:#F8F5EE!important;color:#1D2A1F!important}
+html body .in-btn.in-btn-sm{min-width:0!important}
+@media(max-width:700px){
+  html body .in-btn,html body a.cta,html body button.cta{min-width:min(270px,100%)!important;font-size:11.5px!important;letter-spacing:.06em!important;gap:12px!important;padding:0 8px 0 18px!important}
+  html body .in-btn .in-ic{width:30px!important;height:30px!important;flex-basis:30px}
+}
+
+/* Cards claros sobre fundo branco: borda dourada e sombra, como o card do 360 */
+.in-sec:not(.is-dark) .in-card:not(.is-dk){border:1px solid rgba(216,190,142,.55)!important;box-shadow:0 22px 44px -30px rgba(15,46,31,.35)!important}
+/* Cards escuros: borda dourada e barrinha no topo, como os cards de Soluções */
+.in-card.is-dk{position:relative;border:1px solid rgba(216,190,142,.45)!important}
+.in-card.is-dk:before{content:"";position:absolute;top:0;left:32px;width:44px;height:3px;border-radius:0 0 3px 3px;background:linear-gradient(90deg,#C9AC74,#E2CC9C)}
+/* Botão do menu mantém o tamanho próprio */
+html body .in-nav .in-btn{min-width:0!important;height:52px!important;min-height:52px!important;font-size:11.5px!important}
