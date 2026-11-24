@@ -156,3 +156,4 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 24/11: hero das internas também BRANCO (sem foto desfocada do escritório nem brilho), título #14382A com destaque #8C6B3C, texto e breadcrumb escuros. Foto das sócias, mosaico e card verde do 360° no hero mantidos. Cabeçalho continua escuro.
 - 24/11: home — vão entre o botão "Entenda como funciona" e o selo do card final caiu de 164px para 74px (>700px): #agendar padding-top 28px e a faixa branca do card (:before) acompanha (top -2cv+70px), senão ela cobre o botão. Celular sem mudança.
 - 24/11: o mesmo no celular (≤700px): vão botão→selo de 173px para 63px (#agendar padding-top 44px, faixa branca top -2cv+10px).
+- 24/11: home — CTAs "Conheça as sócias" (#cuidado) e "Entenda como funciona" (#como-funciona) sem a sombra escura embaixo (fica só o brilho interno de 1px).
