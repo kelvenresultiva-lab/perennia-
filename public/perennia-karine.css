@@ -2438,3 +2438,13 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 
 /* Método Legacy (23/11) — títulos 1 e 2 na mesma linha (descrições de cima com a mesma altura) */
 @media(min-width:1001px){#como-funciona .ks-road-step.s1 .ks-road-text p,#como-funciona .ks-road-step.s2 .ks-road-text p,#como-funciona .ks-road-step.s3 .ks-road-text p,#como-funciona .ks-road-step.s4 .ks-road-text p{min-height:calc(4 * 1.7em);min-height:4lh}}
+
+/* Soluções → Método Legacy (23/11) — divisor: faixa dourada fina com aba central */
+#como-funciona{position:relative}
+#como-funciona .ks-divider{--g:linear-gradient(90deg,#8E6B36 0%,#B8955A 35%,#D6BC8A 65%,#F0E2C0 100%);position:absolute;left:0;right:0;top:0;height:12px;background:var(--g);z-index:3;pointer-events:none}
+#como-funciona .ks-divider span{position:absolute;left:50%;top:100%;width:150px;height:11px;transform:translateX(-50%);border-radius:0 0 14px 14px;background:var(--g);background-size:100vw 100%;background-position:center}
+#como-funciona .ks-divider span:before,#como-funciona .ks-divider span:after{content:'';position:absolute;top:0;width:12px;height:12px}
+#como-funciona .ks-divider span:before{right:100%;background:radial-gradient(circle at 0 100%,transparent 11.5px,#C7A976 12px)}
+#como-funciona .ks-divider span:after{left:100%;background:radial-gradient(circle at 100% 100%,transparent 11.5px,#CBAE7C 12px)}
+#como-funciona{padding-top:84px!important}
+@media(max-width:700px){#como-funciona .ks-divider{height:8px}#como-funciona .ks-divider span{width:96px;height:8px;border-radius:0 0 10px 10px}#como-funciona .ks-divider span:before,#como-funciona .ks-divider span:after{width:9px;height:9px}#como-funciona .ks-divider span:before{background:radial-gradient(circle at 0 100%,transparent 8.5px,#C7A976 9px)}#como-funciona .ks-divider span:after{background:radial-gradient(circle at 100% 100%,transparent 8.5px,#CBAE7C 9px)}#como-funciona{padding-top:60px!important}}

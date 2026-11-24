@@ -130,3 +130,4 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 23/11: card do 360° no mobile com margem lateral 16px, borda dourada mais forte, sombra e leve tom creme, para ficar claro que é um card.
 - 23/11: trilha do Método Legacy (desktop) equilibrada: cauda de baixo encurtada (path M250 440H90, fade 90→250) e .ks-road deslocada clamp(20px,2.8vw,44px) para a direita.
 - 23/11: Método Legacy (desktop): descrições das etapas com altura mínima de 4 linhas, para os títulos 1/2 (e 3/4) ficarem alinhados.
+- 23/11: divisor entre Soluções e Método Legacy (.ks-divider no topo de #como-funciona): faixa dourada em degradê de 12px (8px no mobile) com aba central arredondada e cantos côncavos, baseado no print de referência.
