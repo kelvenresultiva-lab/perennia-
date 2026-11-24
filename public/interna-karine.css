@@ -66,3 +66,32 @@ html body .in-nav .in-btn{min-width:0!important;height:52px!important;min-height
 .ps-card{grid-template-columns:minmax(0,380px) minmax(0,1fr)}
 .ps-card.is-rev{grid-template-columns:minmax(0,1fr) minmax(0,380px)}
 @media(max-width:800px){.ps-card,.ps-card.is-rev{grid-template-columns:1fr}}
+
+/* Sobre — sócias v2 (24/11): mais perto do modelo (foto alta, selo na borda da foto, aba verde grande, lista maior), cores da logo */
+.ps-cards{max-width:1040px;gap:56px}
+.ps-card,.ps-card.is-rev{grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;gap:56px;padding:22px 48px 22px 22px;background:#FBFAF6;border:1px solid rgba(216,190,142,.35);box-shadow:0 34px 70px -40px rgba(15,46,31,.32)}
+.ps-card.is-rev{padding:22px 22px 22px 48px}
+.ps-photo>img{aspect-ratio:5/6.2!important;object-position:50% 30%;border-radius:12px}
+.ps-tab{top:0;left:-16px;width:16px;height:150px;border-radius:12px 0 0 12px;background:linear-gradient(180deg,#1A4632,#0B2618)}
+.ps-card.is-rev .ps-tab{left:auto;right:-16px;border-radius:0 12px 12px 0}
+.ps-seal{top:52%;right:auto;left:-62px;width:118px;height:118px;box-shadow:0 0 0 7px #FBFAF6,0 16px 34px -16px rgba(15,46,31,.5)}
+.ps-card.is-rev .ps-seal{left:auto;right:-62px}
+.ps-seal text{font-size:12.5px;fill:#14382A}
+.ps-seal img{height:38px;filter:none}
+.ps-role{padding:9px 18px;font-size:11px;letter-spacing:.26em;color:#14382A;border-color:rgba(216,190,142,.7);background:#fff}
+.ps-body h3{margin:22px 0 26px;font-size:clamp(26px,2.6vw,34px);font-weight:600;color:#14382A}
+.ps-list{gap:22px}
+.ps-list li{gap:18px;font-size:17px;line-height:1.55;color:#24382C}
+.ps-list svg{flex:0 0 30px;width:30px;height:30px;margin-top:-2px;stroke:#14382A;stroke-width:1.4}
+.ps-list svg .sh{stroke:#B8955F}
+@media(max-width:800px){
+  .ps-card,.ps-card.is-rev{grid-template-columns:1fr!important;gap:30px;padding:14px 14px 28px}
+  .ps-tab{display:none}
+  .ps-seal,.ps-card.is-rev .ps-seal{left:auto;right:14px;top:auto;bottom:-34px;width:88px;height:88px}
+  .ps-seal img{height:28px}
+  .ps-list li{font-size:15.5px}
+  .ps-body{padding:0 8px}
+}
+.ps-seal img{filter:brightness(0) invert(17%) sepia(32%) saturate(900%) hue-rotate(105deg) brightness(.85)!important}
+.ps-seal text{font-weight:700;fill:#14382A}
+@media(min-width:801px) and (max-width:1180px){.ps-seal{left:-36px;width:100px;height:100px}.ps-card.is-rev .ps-seal{left:auto;right:-36px}}
