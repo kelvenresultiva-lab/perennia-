@@ -280,3 +280,20 @@ html body .in-close-card>.in-seal{box-shadow:0 0 0 8px #FFFFFF,0 14px 30px -12px
   .sb-hero-wrap{padding-top:80px;padding-bottom:96px;min-height:calc(min(50vw,640px) * 887 / 1030 + 120px);display:flex;align-items:center}
   .sb-hero-copy{max-width:min(46%,540px)}
 }
+/* 24/11: hero da Sobre — SEM moldura (o usuário não gostou): a foto é o FUNDO da seção.
+   A imagem tem 2:1 e o texto da home gravado nos primeiros ~37% da largura; uma camada de degradê do mesmo tamanho/posição da foto cobre 0–38% na cor do fundo da própria foto (#091D1F) e some em 41,5%, onde começa a sócia de blazer. */
+@media(min-width:1181px){
+  .in-hero.sb-hero{height:var(--sbh);min-height:0;background:#091D1F!important}
+  .sb-hero-photo{inset:0!important;top:0!important;right:0!important;bottom:0!important;left:0!important;width:auto!important;height:auto!important;transform:none!important;aspect-ratio:auto!important;border-radius:0!important;box-shadow:none!important;-webkit-mask-image:none!important;mask-image:none!important;
+    background:linear-gradient(90deg,#091D1F 0%,#091D1F 38%,rgba(9,29,31,0) 41.5%) right top/calc(var(--sbh) * 2) var(--sbh) no-repeat,url("assets/sobre-hero-desktop.webp") right top/calc(var(--sbh) * 2) var(--sbh) no-repeat,#091D1F!important}
+  .sb-hero-photo:after{background:linear-gradient(0deg,rgba(9,29,31,.55),transparent 20%)!important}
+  .sb-hero-wrap{min-height:0!important;padding-top:40px!important;padding-bottom:40px!important}
+  .sb-hero-copy{max-width:500px!important}
+}
+@media(min-width:901px) and (max-width:1180px){
+  .in-hero.sb-hero{padding-top:0!important;background:#091D1F!important}
+  .sb-hero-photo{width:100%!important;margin:0!important;border-radius:0!important;box-shadow:none!important;aspect-ratio:auto!important;height:clamp(460px,56vw,600px)!important;background:#091D1F url("assets/sobre-hero-desktop.webp") right top/calc(100% / .58) auto no-repeat!important}
+  .sb-hero-photo:after{background:linear-gradient(0deg,#091D1F 0%,rgba(9,29,31,0) 35%)!important}
+  .sb-hero-wrap{margin-top:-40px!important}
+}
+@media(min-width:1181px) and (max-width:1400px){.sb-hero-copy{max-width:440px!important}.in-hero.sb-hero h1{font-size:clamp(36px,3.4vw,46px)!important}.in-hero.sb-hero .in-lead{font-size:16.5px!important}}
