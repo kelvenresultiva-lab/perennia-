@@ -226,3 +226,28 @@ html body .in-close-card>.in-seal{box-shadow:0 0 0 8px #FFFFFF,0 14px 30px -12px
 .cc-lbl{margin-bottom:18px;font-size:11px;letter-spacing:.2em;font-weight:600;color:#C9A468}
 .cc-card p{margin:0!important;font-size:15.5px!important;line-height:1.6!important;color:#D1DAD4!important}
 @media(max-width:900px){.cc-cards{grid-template-columns:1fr;max-width:560px;gap:18px}.cc-card{padding:38px 24px 30px}}
+
+/* 24/11: hero da Sobre com a foto nova das sócias (blazer preto + amarelo). Desktop: assets/sobre-hero-desktop.webp (tem o texto da home gravado à esquerda — a área da foto é limitada a 1,15× a altura para esse trecho nunca aparecer). Celular: sobre-hero-mobile.webp em cima, texto embaixo no verde. */
+.in-hero.sb-hero{--sbh:clamp(600px,46vw,760px);position:relative;overflow:hidden;min-height:var(--sbh);padding:0!important;display:flex;align-items:center;color:#F3EFE6!important;background:radial-gradient(70% 90% at 0% 100%,rgba(184,149,95,.10),transparent 60%),linear-gradient(90deg,#0B2219 0%,#0A201C 45%,#091D1E 100%)!important}
+.sb-hero-photo{position:absolute;top:0;right:0;bottom:0;width:min(60%,calc(var(--sbh) * 1.15));background:#091D1E url("assets/sobre-hero-desktop.webp") right center/auto 100% no-repeat;-webkit-mask-image:linear-gradient(90deg,transparent 0%,#000 26%);mask-image:linear-gradient(90deg,transparent 0%,#000 26%)}
+.sb-hero-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(9,29,30,.55),transparent 22%)}
+.sb-hero-wrap{position:relative;z-index:1;padding-top:72px;padding-bottom:96px}
+.sb-hero-copy{max-width:560px}
+.in-hero.sb-hero .in-crumb{color:rgba(243,239,230,.55)!important}
+.in-hero.sb-hero .in-crumb a{color:#E8E1D2!important}
+.in-hero.sb-hero .in-crumb a:hover{color:#D8BE8E!important}
+.in-hero.sb-hero .in-eyebrow{background:rgba(216,190,142,.08)!important;border:1px solid rgba(216,190,142,.45)!important;color:#E6CF9E!important}
+.in-hero.sb-hero h1{margin-top:24px;font-size:clamp(38px,3.9vw,58px)!important;line-height:1.06!important;letter-spacing:-.025em!important;font-weight:500!important;color:#F7F3EA!important;-webkit-text-fill-color:#F7F3EA!important}
+.in-hero.sb-hero h1 em{display:block;color:#D8BE8E!important;-webkit-text-fill-color:#D8BE8E!important}
+.in-hero.sb-hero .in-lead{margin-top:22px;max-width:500px;font-size:17.5px!important;line-height:1.65!important;color:rgba(232,225,210,.82)!important}
+.in-hero.sb-hero .in-btn{margin-top:34px}
+@media(max-width:900px){
+  .in-hero.sb-hero{display:block;min-height:0;background:linear-gradient(180deg,#002123 0%,#03231F 55%,#0A2419 100%)!important}
+  .sb-hero-photo{position:relative;width:100%;height:auto;aspect-ratio:941/1120;background:#002123 url("assets/sobre-hero-mobile.webp") center top/100% auto no-repeat;-webkit-mask-image:none;mask-image:none}
+  .sb-hero-photo:after{display:none}
+  .sb-hero-wrap{margin-top:-28px;padding-top:0;padding-bottom:64px}
+  .sb-hero-copy{max-width:600px}
+  .in-hero.sb-hero .in-crumb{display:none}
+  .in-hero.sb-hero h1{font-size:clamp(32px,8.6vw,46px)!important}
+  .in-hero.sb-hero .in-lead{font-size:16.5px!important}
+}
