@@ -300,3 +300,50 @@ html body .in-close-card>.in-seal{box-shadow:0 0 0 8px #FFFFFF,0 14px 30px -12px
 
 /* 24/11: cabeçalho removido de todas as páginas a pedido do usuário (HTML mantido com hidden; para voltar, tirar o hidden e esta regra) */
 .in-head{display:none!important}
+
+/* 24/11: Sobre > Nossa história (texto real) — texto à esquerda; marcos 1995 / +30 anos / 2025, citação e assinatura à direita */
+.hs-split{align-items:start!important}
+.hs-text{margin-top:24px}
+.hs-text p+p{margin-top:16px}
+.hs-marcos{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.hs-marcos li{display:grid;grid-template-columns:118px 1fr;gap:18px;align-items:center;padding:20px 24px;border-radius:16px;background:#FBFAF6;box-shadow:inset 0 0 0 1px rgba(216,190,142,.55),0 18px 36px -30px rgba(15,46,31,.35)}
+.hs-ano{font-size:30px;line-height:1;font-weight:300;letter-spacing:-.03em;background:linear-gradient(180deg,#B8955F,#8C6B3C);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent}
+.hs-marcos li:nth-child(2) .hs-ano{font-size:24px}
+.hs-txt{font-size:15.5px;line-height:1.5;color:#24382C}
+.hs-quote{margin-top:30px!important}
+.hs-side .hs-text{margin-top:22px}
+.hs-sign{margin-top:28px;padding-top:20px;border-top:1px solid rgba(216,190,142,.5);display:flex;flex-direction:column;gap:4px}
+.hs-sign strong{font-size:14px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:#14382A}
+.hs-sign span{font-size:15px;color:#3A4D41}
+.hs-sign em{font-style:normal;color:#8C6B3C}
+@media(max-width:700px){.hs-marcos li{grid-template-columns:1fr;gap:8px;padding:18px 20px}}
+
+/* 24/11: Sobre > Linha do tempo (#trajetoria): linha dourada no centro com cards alternando lados (desktop); no celular linha à esquerda */
+#trajetoria{padding-top:40px!important}
+.tl-head{text-align:center;margin:0 auto 56px;max-width:760px}
+.tl-list{position:relative;list-style:none;margin:0 auto;padding:0;max-width:1040px}
+.tl-list:before{content:"";position:absolute;top:8px;bottom:8px;left:50%;width:2px;transform:translateX(-50%);background:linear-gradient(180deg,rgba(184,149,95,0),#B8955F 6%,#B8955F 94%,rgba(184,149,95,0))}
+.tl-item{position:relative;width:50%;padding:0 48px 34px 0}
+.tl-item:nth-child(even){margin-left:50%;padding:0 0 34px 48px}
+.tl-dot{position:absolute;top:26px;right:-9px;width:18px;height:18px;border-radius:50%;background:#14382A;box-shadow:0 0 0 4px #fff,0 0 0 5px rgba(184,149,95,.7)}
+.tl-item:nth-child(even) .tl-dot{right:auto;left:-9px}
+.tl-item.no-year .tl-dot{width:12px;height:12px;top:29px;right:-6px;background:#B8955F}
+.tl-item.no-year:nth-child(even) .tl-dot{left:-6px}
+.tl-card{position:relative;padding:26px 28px 24px;border-radius:16px;background:#FBFAF6;box-shadow:inset 0 0 0 1px rgba(216,190,142,.55),0 22px 44px -34px rgba(15,46,31,.4)}
+.tl-year{display:inline-block;margin-right:12px;font-size:34px;line-height:1;font-weight:300;letter-spacing:-.03em;background:linear-gradient(180deg,#B8955F,#8C6B3C);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;vertical-align:middle}
+.tl-tag{display:inline-block;padding:6px 12px;border-radius:999px;font-size:10px;letter-spacing:.2em;text-transform:uppercase;font-weight:600;color:#E9DCC0;background:#14382A;vertical-align:middle}
+.tl-card h3{margin:14px 0 8px;font-size:19px;line-height:1.3;font-weight:600;color:#14382A}
+.tl-item.no-year .tl-card h3{margin-top:0}
+.tl-card p{margin:0;font-size:15px;line-height:1.62;color:#3A4D41}
+.tl-close{margin:26px auto 0;text-align:center;font-size:clamp(20px,2vw,26px);line-height:1.35;color:#14382A;max-width:720px}
+.tl-close em{font-style:normal;color:#8C6B3C}
+@media(max-width:800px){
+  .tl-list:before{left:9px;transform:none}
+  .tl-item,.tl-item:nth-child(even){width:auto;margin-left:0;padding:0 0 22px 38px}
+  .tl-dot,.tl-item:nth-child(even) .tl-dot{left:1px;right:auto}
+  .tl-item.no-year .tl-dot,.tl-item.no-year:nth-child(even) .tl-dot{left:4px;right:auto}
+  .tl-card{padding:22px 20px 20px}
+  .tl-year{font-size:28px}
+}
+.hs-side{position:sticky;top:40px}@media(max-width:900px){.hs-side{position:static}}
+@media(min-width:801px){.tl-item+.tl-item{margin-top:-78px}}
