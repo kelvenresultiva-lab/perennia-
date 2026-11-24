@@ -2455,3 +2455,17 @@ html body .ks-btn,html body .perennia-cta,html body a.cta{min-width:min(420px,10
 @media(max-width:700px){html body .ks-btn,html body .perennia-cta,html body a.cta{width:auto!important;min-width:0!important;height:48px!important;padding:0 8px 0 18px!important;font-size:11.5px!important;letter-spacing:.06em!important;gap:12px!important}html body .ks-btn .ks-cta-icon,html body .perennia-cta .ks-cta-icon,html body a.cta .ks-cta-icon{width:30px!important;height:30px!important}}
 @media(max-width:700px){html body .ks-btn,html body .perennia-cta,html body a.cta{height:60px!important;min-height:60px!important;min-width:min(270px,100%)!important}}
 @media(max-width:700px){#agendar .ks-closing-card .perennia-cta{min-width:min(270px,100%)!important;height:60px!important}}
+
+/* ===== Cabeçalho (24/11) — logo + links para as páginas; sem botão de contato (WhatsApp só na hero) ===== */
+.ks-nav{display:flex!important;align-items:center;min-height:68px}
+.ks-nav-links{display:flex;gap:30px;margin:0 0 0 auto!important}
+.ks-menu-t,.ks-burger{display:none}
+@media(max-width:1100px){
+  .ks-nav{min-height:60px}
+  .ks-burger{display:flex;flex-direction:column;justify-content:center;gap:5px;width:42px;height:42px;margin-left:auto;padding:0 10px;border:1px solid rgba(243,223,177,.35);border-radius:9px;cursor:pointer}
+  .ks-burger span{display:block;height:1.5px;background:#E9DCC0;border-radius:2px}
+  .ks-nav-links{display:none!important;position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:0;padding:8px 20px 18px;background:#0B2618;border-bottom:1px solid rgba(243,223,177,.18)}
+  .ks-menu-t:checked~.ks-nav-links{display:flex!important}
+  .ks-nav-links a{padding:14px 0!important;font-size:15px!important;border-bottom:1px solid rgba(243,223,177,.10)}
+  .ks-nav-links a:last-child{border-bottom:0}
+}

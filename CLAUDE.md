@@ -136,3 +136,4 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 24/11: todos os CTAs (.ks-btn, .perennia-cta, .cta) usam o gradiente dourado metálico do botão do #agendar (regra no fim do CSS).
 - 24/11: todos os CTAs com o tamanho do botão do #agendar (desktop min-width 420px/60px; mobile 48px, fonte 11.5px).
 - 24/11: páginas internas (soluções, 360, serviços, sobre) carregam interna-karine.css = visual da home (selos verde-escuros, CTAs dourado metálico 420x60, fundo branco, cards com borda dourada). Em solucoes.html o bloco #perennia-360 virou só resumo + botão (tirados os 2 cards repetidos).
+- 24/11: cabeçalho de volta na home (logo + Sobre, Perennia 360°, Soluções, Método Legacy, Serviços especializados → páginas internas). Sem botão de contato (regra do WhatsApp só na hero). No celular/tablet vira menu com 3 tracinhos (checkbox, sem JS).
