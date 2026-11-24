@@ -2506,3 +2506,19 @@ html body #perguntas .ks-eyebrow{background:linear-gradient(135deg,#14382A 0%,#0
 @media(min-width:1101px){.ks-faq{padding-bottom:200px}}
 .ks-faq{position:relative;z-index:auto}
 .ks-faq-wrap{position:relative;z-index:4}
+
+/* ===== Card final #agendar (24/11) — modelo "Ainda está com dúvidas": fundo claro contínuo ao FAQ, card verde centralizado, selo no topo ===== */
+html body #agendar{margin-top:0!important;border-top:0!important;background:#F6F4EE!important;padding:96px 24px 120px!important}
+html body #agendar .ks-closing-card:before,html body #agendar .ks-closing-card:after{display:none!important}
+html body #agendar .ks-closing-tab,html body #agendar .ks-closing-deco,html body #agendar .ks-closing-word,html body #agendar .ks-closing-glass{display:none!important}
+html body #agendar .ks-closing-card{max-width:880px!important;margin:0 auto!important;padding:92px 56px 64px!important;border-radius:22px!important;overflow:visible!important;
+  background:linear-gradient(160deg,#1A4632 0%,#123927 55%,#0F2E1F 100%)!important;border:1px solid rgba(216,190,142,.28)!important;box-shadow:0 40px 80px -46px rgba(4,33,11,.75)!important;text-align:center}
+html body #agendar .ks-closing-card>.ks-seal{position:absolute!important;top:0!important;left:50%!important;transform:translate(-50%,-50%)!important;margin:0!important;box-shadow:0 0 0 8px #F6F4EE,0 14px 30px -12px rgba(4,33,11,.6)!important}
+html body #agendar .ks-closing-card>.ks-eyebrow{margin-top:0!important;background:rgba(255,255,255,.06)!important;border:1px solid rgba(233,220,192,.28)!important;box-shadow:none!important}
+html body #agendar .ks-closing-card h2{margin-top:22px!important}
+.ks-faq{padding-bottom:24px!important}
+@media(max-width:700px){
+  html body #agendar{padding:72px 16px 88px!important}
+  html body #agendar .ks-closing-card{padding:76px 22px 44px!important;border-radius:18px!important}
+}
+html body #agendar .ks-closing-card .ks-closing-word{display:none!important}
