@@ -95,3 +95,8 @@ html body .in-nav .in-btn{min-width:0!important;height:52px!important;min-height
 .ps-seal img{filter:brightness(0) invert(17%) sepia(32%) saturate(900%) hue-rotate(105deg) brightness(.85)!important}
 .ps-seal text{font-weight:700;fill:#14382A}
 @media(min-width:801px) and (max-width:1180px){.ps-seal{left:-36px;width:100px;height:100px}.ps-card.is-rev .ps-seal{left:auto;right:-36px}}
+/* Selo das sócias igual ao selo da hero: verde-escuro, P dourado, aro fino dourado, texto creme */
+.ps-seal{background:radial-gradient(circle at 50% 40%,#1A4632 0%,#0F2E1F 60%,#0B2618 100%)!important;box-shadow:0 0 0 1px rgba(216,190,142,.55) inset,0 0 0 7px #FBFAF6,0 16px 34px -16px rgba(4,33,11,.7)!important}
+.ps-seal:before{content:"";position:absolute;inset:27%;border-radius:50%;border:1px solid rgba(216,190,142,.55)}
+.ps-seal text{fill:#E9DCC0!important;font-weight:700}
+.ps-seal img{filter:none!important;height:34%!important}
