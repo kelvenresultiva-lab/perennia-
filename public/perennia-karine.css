@@ -2432,3 +2432,6 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 
 /* 360 mobile (23/11) — card bem visível: margem lateral, borda dourada, sombra e leve tom creme */
 @media(max-width:700px){#sintomas.perennia-360{padding-left:16px!important;padding-right:16px!important}#sintomas .diagnostico-card{width:auto!important;margin-left:0!important;margin-right:0!important;border:1px solid rgba(176,138,74,.5)!important;border-radius:22px!important;background:linear-gradient(180deg,#FFFDF8 0%,#F7F0E3 100%)!important;box-shadow:0 24px 48px -26px rgba(40,30,10,.4),0 2px 8px rgba(40,30,10,.06)!important}}
+
+/* Método Legacy (23/11) — equilíbrio óptico da trilha: cauda curta e trilha um pouco à direita */
+@media(min-width:1001px){#como-funciona .ks-road{transform:translateX(clamp(20px,2.8vw,44px))}}
