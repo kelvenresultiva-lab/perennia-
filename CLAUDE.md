@@ -134,3 +134,4 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 
 - 24/11: P do selo da hero agora é assets/perennia-p.webp (PNG/WebP com fundo transparente), sem mix-blend-mode — corrigia caixa preta no iPhone.
 - 24/11: todos os CTAs (.ks-btn, .perennia-cta, .cta) usam o gradiente dourado metálico do botão do #agendar (regra no fim do CSS).
+- 24/11: todos os CTAs com o tamanho do botão do #agendar (desktop min-width 420px/60px; mobile 48px, fonte 11.5px).

@@ -2449,3 +2449,9 @@ html body .hero span.ks-kicker,html body #sintomas span.diagnostico-kicker,html 
 
 /* CTAs (24/11) — todos com o dourado metálico do botão do card final */
 html body .ks-btn,html body .perennia-cta,html body a.cta,html body button.cta{background:linear-gradient(100deg,#8E6E3E 0%,#C9AC74 30%,#E2CC9C 50%,#C9AC74 70%,#8E6E3E 100%)!important;color:#0F2E1F!important;-webkit-text-fill-color:#0F2E1F!important;box-shadow:0 1px 0 rgba(255,255,255,.35) inset,0 16px 34px -16px rgba(0,0,0,.7)!important}
+
+/* CTAs (24/11) — mesmo tamanho do botão do card final */
+html body .ks-btn,html body .perennia-cta,html body a.cta{min-width:min(420px,100%)!important;height:60px!important;padding:0 14px 0 30px!important;justify-content:center!important;gap:16px!important;font-size:13.5px!important;letter-spacing:.05em!important}
+@media(max-width:700px){html body .ks-btn,html body .perennia-cta,html body a.cta{width:auto!important;min-width:0!important;height:48px!important;padding:0 8px 0 18px!important;font-size:11.5px!important;letter-spacing:.06em!important;gap:12px!important}html body .ks-btn .ks-cta-icon,html body .perennia-cta .ks-cta-icon,html body a.cta .ks-cta-icon{width:30px!important;height:30px!important}}
+@media(max-width:700px){html body .ks-btn,html body .perennia-cta,html body a.cta{height:60px!important;min-height:60px!important;min-width:min(270px,100%)!important}}
+@media(max-width:700px){#agendar .ks-closing-card .perennia-cta{min-width:min(270px,100%)!important;height:60px!important}}
