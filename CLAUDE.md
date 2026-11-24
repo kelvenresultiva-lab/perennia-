@@ -142,3 +142,5 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 24/11: cards das sócias v2 no modelo do advogado (foto alta, selo do P na borda da foto, aba verde grande na lateral, ícone documento+escudo, lista maior), nas cores da logo (verde #14382A + dourado). Sem botão de WhatsApp.
 - 24/11: selo dos cards das sócias igual ao da hero (verde-escuro, P dourado, aro fino dourado, texto creme).
 - 24/11: selo das sócias com proporção corrigida (P 28px dentro do aro inset 31%, texto 12px com folga).
+- 24/11: FAQ na home (#perguntas, entre #como-funciona e #agendar), modelo enviado: fundo #F6F4EE, cards brancos <details> com botão redondo verde (+/−, dourado aberto), 1ª aberta. 7 perguntas: 5 do FAQ aprovado do 360 + Método Legacy e serviço pontual montadas com frases do site.
+- 24/11: FAQ — #agendar sobe 218px por cima da seção anterior (margin-top negativo + faixa ::before do card). Por isso: faixa do card na cor do FAQ (#F6F4EE), .ks-faq-wrap com z-index 4 (perguntas por cima da faixa) e padding-bottom 200/140/60px (desktop/tablet/celular).
