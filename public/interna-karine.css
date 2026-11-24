@@ -202,3 +202,15 @@ html body .in-close-card h2{margin:22px auto 0!important}
 .in-orbit .in-card:not(.is-dk) .in-tag,.in-vs-or{color:#8C6B3C!important}
 html body .in-close{background:#FFFFFF!important}
 html body .in-close-card>.in-seal{box-shadow:0 0 0 8px #FFFFFF,0 14px 30px -12px rgba(4,33,11,.6)!important}
+
+/* 24/11: abertura (hero) das internas também branca — texto escuro; foto, mosaico e card verde do hero mantidos */
+.in-hero{background:#FFFFFF!important;color:#14382A!important}
+.in-hero:before,.in-hero:after{display:none!important}
+.in-hero h1{color:#14382A!important}
+.in-hero h1 em{color:#8C6B3C!important;-webkit-text-fill-color:#8C6B3C!important}
+.in-hero .in-lead{color:#3A4D41!important}
+.in-crumb{color:#6B7A70!important}
+.in-crumb a{color:#14382A!important}
+.in-crumb a:hover{color:#8C6B3C!important}
+.in-hero-photo{box-shadow:0 30px 60px -36px rgba(15,46,31,.45)}
+.in-mosaic img{box-shadow:0 20px 40px -30px rgba(15,46,31,.4)!important}
