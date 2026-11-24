@@ -2438,16 +2438,3 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 
 /* Método Legacy (23/11) — títulos 1 e 2 na mesma linha (descrições de cima com a mesma altura) */
 @media(min-width:1001px){#como-funciona .ks-road-step.s1 .ks-road-text p,#como-funciona .ks-road-step.s2 .ks-road-text p,#como-funciona .ks-road-step.s3 .ks-road-text p,#como-funciona .ks-road-step.s4 .ks-road-text p{min-height:calc(4 * 1.7em);min-height:4lh}}
-
-
-/* Soluções → Método Legacy (23/11) — formato do encaixe (cantos arredondados + curva central com a seta) desenhado como contorno dourado, ambas as seções brancas */
-#como-funciona{position:relative;padding-top:96px!important}
-#como-funciona .ks-divider{--E:0px;--r:26px;--bw:160px;--lc:rgba(184,149,90,.7);position:absolute;left:0;right:0;top:0;height:60px;pointer-events:none;z-index:1}
-#como-funciona .ks-divider i{position:absolute;top:0;height:60px;width:calc(50% - var(--bw) / 2 + 1px);border-top:1.5px solid var(--lc);
-  -webkit-mask:linear-gradient(180deg,#000 30%,transparent 100%);mask:linear-gradient(180deg,#000 30%,transparent 100%)}
-#como-funciona .ks-divider i.l{left:0;border-left:1.5px solid var(--lc);border-top-left-radius:var(--r)}
-#como-funciona .ks-divider i.r{right:0;border-right:1.5px solid var(--lc);border-top-right-radius:var(--r)}
-#como-funciona .ks-divider svg{position:absolute;left:50%;top:0;width:var(--bw);height:48px;transform:translateX(-50%);overflow:visible;fill:none;stroke:var(--lc);stroke-width:1.5}
-@media(max-width:700px){#como-funciona{padding-top:72px!important}#como-funciona .ks-divider{--r:18px;--bw:124px}#como-funciona .ks-divider svg{height:38px}}
-#como-funciona .ks-divider .ks-cue-div{top:-10px!important;bottom:auto!important;pointer-events:auto}
-@media(max-width:700px){#como-funciona .ks-divider .ks-cue-div{top:-8px!important}}
