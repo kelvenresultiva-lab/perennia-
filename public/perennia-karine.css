@@ -2439,35 +2439,12 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 /* Método Legacy (23/11) — títulos 1 e 2 na mesma linha (descrições de cima com a mesma altura) */
 @media(min-width:1001px){#como-funciona .ks-road-step.s1 .ks-road-text p,#como-funciona .ks-road-step.s2 .ks-road-text p,#como-funciona .ks-road-step.s3 .ks-road-text p,#como-funciona .ks-road-step.s4 .ks-road-text p{min-height:calc(4 * 1.7em);min-height:4lh}}
 
-/* Método Legacy (23/11) — fundo verde escuro com o mesmo encaixe de Serviços no topo (cantos arredondados + curva central com a seta) */
-section#como-funciona{--cv:98px;--E:40px;--r:26px;--bw:160px;position:relative;z-index:2;
-  margin-top:calc(var(--cv) * -1)!important;border-top:var(--cv) solid transparent!important;border-bottom-color:transparent!important;padding-top:70px!important;
-  background:radial-gradient(60% 45% at 80% 30%,rgba(46,110,72,.28),rgba(0,0,0,0) 70%),linear-gradient(180deg,#0F2E1F 0%,#0B2618 100%)!important;background-origin:border-box!important;
-  -webkit-mask:linear-gradient(#000,#000) left calc(var(--r) - 2px) top var(--E)/calc(50% - var(--bw) / 2 - var(--r) + 6px) calc(var(--cv) - var(--E)) no-repeat,
-    linear-gradient(#000,#000) right calc(var(--r) - 2px) top var(--E)/calc(50% - var(--bw) / 2 - var(--r) + 6px) calc(var(--cv) - var(--E)) no-repeat,
-    linear-gradient(#000,#000) left 0 top calc(var(--E) + var(--r) - 4px)/calc(var(--r) + 4px) calc(var(--cv) - var(--E) - var(--r) + 4px) no-repeat,
-    linear-gradient(#000,#000) right 0 top calc(var(--E) + var(--r) - 4px)/calc(var(--r) + 4px) calc(var(--cv) - var(--E) - var(--r) + 4px) no-repeat,
-    radial-gradient(circle at 100% 100%,#000 calc(var(--r) - .5px),transparent var(--r)) left 0 top var(--E)/var(--r) var(--r) no-repeat,
-    radial-gradient(circle at 0 100%,#000 calc(var(--r) - .5px),transparent var(--r)) right 0 top var(--E)/var(--r) var(--r) no-repeat,
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 58' preserveAspectRatio='none'%3E%3Cpath d='M0 0C28 0 38 4 48 18C58 34 66 44 80 44C94 44 102 34 112 18C122 4 132 0 160 0V58H0Z'/%3E%3C/svg%3E") center top var(--E)/var(--bw) calc(var(--cv) - var(--E)) no-repeat,
-    linear-gradient(#000,#000) left 0 top calc(var(--cv) - 2px)/100% calc(100% - var(--cv) + 2px) no-repeat!important;
-  mask:linear-gradient(#000,#000) left calc(var(--r) - 2px) top var(--E)/calc(50% - var(--bw) / 2 - var(--r) + 6px) calc(var(--cv) - var(--E)) no-repeat,
-    linear-gradient(#000,#000) right calc(var(--r) - 2px) top var(--E)/calc(50% - var(--bw) / 2 - var(--r) + 6px) calc(var(--cv) - var(--E)) no-repeat,
-    linear-gradient(#000,#000) left 0 top calc(var(--E) + var(--r) - 4px)/calc(var(--r) + 4px) calc(var(--cv) - var(--E) - var(--r) + 4px) no-repeat,
-    linear-gradient(#000,#000) right 0 top calc(var(--E) + var(--r) - 4px)/calc(var(--r) + 4px) calc(var(--cv) - var(--E) - var(--r) + 4px) no-repeat,
-    radial-gradient(circle at 100% 100%,#000 calc(var(--r) - .5px),transparent var(--r)) left 0 top var(--E)/var(--r) var(--r) no-repeat,
-    radial-gradient(circle at 0 100%,#000 calc(var(--r) - .5px),transparent var(--r)) right 0 top var(--E)/var(--r) var(--r) no-repeat,
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 58' preserveAspectRatio='none'%3E%3Cpath d='M0 0C28 0 38 4 48 18C58 34 66 44 80 44C94 44 102 34 112 18C122 4 132 0 160 0V58H0Z'/%3E%3C/svg%3E") center top var(--E)/var(--bw) calc(var(--cv) - var(--E)) no-repeat,
-    linear-gradient(#000,#000) left 0 top calc(var(--cv) - 2px)/100% calc(100% - var(--cv) + 2px) no-repeat!important}
-@media(max-width:700px){section#como-funciona{--cv:54px;--E:20px;--r:18px;--bw:124px;padding-top:44px!important}#solucoes .ks-scroll-cue{bottom:18px!important}}
-#solucoes .ks-scroll-cue{bottom:40px!important}
-section#como-funciona h2,section#como-funciona #steps-title{color:#F3EFE6!important;-webkit-text-fill-color:#F3EFE6!important}
-section#como-funciona h2 em{color:#D8BE8E!important;-webkit-text-fill-color:#D8BE8E!important}
-section#como-funciona .ks-eyebrow{color:#E9DCC0!important;border-color:rgba(216,190,142,.4)!important;background:rgba(216,190,142,.06)!important}
-section#como-funciona .ks-steps-lead{color:#C8D2CB!important}
-section#como-funciona .ks-road-text h3{color:#F3EFE6!important}
-section#como-funciona .ks-road-text h3 span,section#como-funciona .ks-road-text h3 b,section#como-funciona .ks-road-num{color:#D8BE8E!important}
-section#como-funciona .ks-road-text p{color:#C8D2CB!important}
-@media(max-width:700px){#solucoes .ks-scroll-cue{bottom:16px!important}}
-section#como-funciona{background-clip:border-box!important}
-#agendar .ks-closing-card:before{background:#0B2618!important}
+/* Soluções → Método Legacy (23/11) — divisor: faixa dourada fina com aba central */
+#como-funciona{position:relative}
+#como-funciona .ks-divider{--g:linear-gradient(90deg,#8E6B36 0%,#B8955A 35%,#D6BC8A 65%,#F0E2C0 100%);position:absolute;left:0;right:0;top:0;height:12px;background:var(--g);z-index:3;pointer-events:none}
+#como-funciona .ks-divider span{position:absolute;left:50%;top:100%;width:150px;height:11px;transform:translateX(-50%);border-radius:0 0 14px 14px;background:var(--g);background-size:100vw 100%;background-position:center}
+#como-funciona .ks-divider span:before,#como-funciona .ks-divider span:after{content:'';position:absolute;top:0;width:12px;height:12px}
+#como-funciona .ks-divider span:before{right:100%;background:radial-gradient(circle at 0 100%,transparent 11.5px,#C7A976 12px)}
+#como-funciona .ks-divider span:after{left:100%;background:radial-gradient(circle at 100% 100%,transparent 11.5px,#CBAE7C 12px)}
+#como-funciona{padding-top:84px!important}
+@media(max-width:700px){#como-funciona .ks-divider{height:8px}#como-funciona .ks-divider span{width:96px;height:8px;border-radius:0 0 10px 10px}#como-funciona .ks-divider span:before,#como-funciona .ks-divider span:after{width:9px;height:9px}#como-funciona .ks-divider span:before{background:radial-gradient(circle at 0 100%,transparent 8.5px,#C7A976 9px)}#como-funciona .ks-divider span:after{background:radial-gradient(circle at 100% 100%,transparent 8.5px,#CBAE7C 9px)}#como-funciona{padding-top:60px!important}}
