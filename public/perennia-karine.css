@@ -2438,3 +2438,6 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 
 /* Método Legacy (23/11) — títulos 1 e 2 na mesma linha (descrições de cima com a mesma altura) */
 @media(min-width:1001px){#como-funciona .ks-road-step.s1 .ks-road-text p,#como-funciona .ks-road-step.s2 .ks-road-text p,#como-funciona .ks-road-step.s3 .ks-road-text p,#como-funciona .ks-road-step.s4 .ks-road-text p{min-height:calc(4 * 1.7em);min-height:4lh}}
+
+/* Método Legacy (23/11) — etiqueta em verde escuro do site */
+#como-funciona .ks-eyebrow{background:linear-gradient(135deg,#14382A 0%,#0B2618 100%)!important;color:#E9DCC0!important;-webkit-text-fill-color:#E9DCC0!important;border:1px solid rgba(216,190,142,.45)!important;box-shadow:0 10px 22px -14px rgba(4,33,11,.6)!important}
