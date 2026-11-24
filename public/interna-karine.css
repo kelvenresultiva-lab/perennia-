@@ -26,3 +26,43 @@ html body .in-btn.in-btn-sm{min-width:0!important}
 .in-card.is-dk:before{content:"";position:absolute;top:0;left:32px;width:44px;height:3px;border-radius:0 0 3px 3px;background:linear-gradient(90deg,#C9AC74,#E2CC9C)}
 /* Botão do menu mantém o tamanho próprio */
 html body .in-nav .in-btn{min-width:0!important;height:52px!important;min-height:52px!important;font-size:11.5px!important}
+
+/* Sobre — sócias (24/11), modelo de cards com foto + selo + lista */
+.ps-sec{padding:96px 0!important}
+.ps-head{text-align:center;display:flex;flex-direction:column;align-items:center;gap:14px;margin-bottom:56px}
+.ps-head-ic{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;background:#fff;border:1px solid rgba(216,190,142,.6);box-shadow:0 8px 20px -12px rgba(15,46,31,.4)}
+.ps-head-ic img{height:24px;width:auto;filter:brightness(.55) sepia(.4)}
+.ps-head .in-h2{margin:6px 0 0;text-align:center}
+.ps-cards{display:flex;flex-direction:column;gap:48px;max-width:980px;margin:0 auto}
+.ps-card{position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:44px;align-items:center;padding:28px;border-radius:20px;background:linear-gradient(160deg,#FFFFFF 0%,#F6F4EE 100%);border:1px solid rgba(216,190,142,.45);box-shadow:0 30px 60px -36px rgba(15,46,31,.35)}
+.ps-card.is-rev .ps-photo{order:2}
+.ps-tab{position:absolute;top:28px;left:-6px;width:6px;height:72px;border-radius:6px 0 0 6px;background:linear-gradient(180deg,#14382A,#0B2618)}
+.ps-card.is-rev .ps-tab{left:auto;right:-6px;border-radius:0 6px 6px 0}
+.ps-photo{position:relative;margin:0}
+.ps-photo>img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 38%;border-radius:14px}
+.ps-seal{position:absolute;top:56%;right:-38px;width:96px;height:96px;border-radius:50%;background:#FFFFFF;display:grid;place-items:center;box-shadow:0 0 0 6px rgba(255,255,255,.6),0 14px 30px -14px rgba(15,46,31,.5)}
+.ps-card.is-rev .ps-seal{right:auto;left:-38px}
+.ps-seal svg{position:absolute;inset:4px;width:calc(100% - 8px);height:calc(100% - 8px);animation:ps-spin 28s linear infinite}
+.ps-seal text{font:600 13px/1 'Rethink Sans',Arial,sans-serif;letter-spacing:.18em;fill:#8C6B3C}
+.ps-seal img{position:relative;height:30px;width:auto;filter:brightness(.5) sepia(.35)}
+@keyframes ps-spin{to{transform:rotate(360deg)}}
+@media(prefers-reduced-motion:reduce){.ps-seal svg{animation:none}}
+.ps-body{display:flex;flex-direction:column;align-items:flex-start}
+.ps-role{display:inline-block;padding:7px 14px;border-radius:999px;border:1px solid rgba(216,190,142,.6);font-size:10px;letter-spacing:.24em;font-weight:600;color:#8C6B3C;background:#fff}
+.ps-body h3{margin:16px 0 22px;font-size:clamp(24px,2.4vw,30px);font-weight:500;color:#14301F;letter-spacing:-.01em}
+.ps-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:16px}
+.ps-list li{display:flex;gap:14px;align-items:flex-start;font-size:15.5px;line-height:1.5;color:#33463A}
+.ps-list svg{flex:0 0 22px;width:22px;height:22px;margin-top:1px;fill:none;stroke:#B8955F;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+@media(max-width:800px){
+  .ps-card{grid-template-columns:1fr;gap:26px;padding:16px 16px 26px}
+  .ps-card.is-rev .ps-photo{order:0}
+  .ps-seal{top:auto;bottom:-30px;right:18px;width:80px;height:80px}
+  .ps-card.is-rev .ps-seal{left:auto;right:18px}
+  .ps-seal img{height:24px}
+  .ps-tab{display:none}
+  .ps-body{padding:0 6px}
+}
+.ps-photo>img{height:auto!important;aspect-ratio:4/5!important;max-width:none}
+.ps-card{grid-template-columns:minmax(0,380px) minmax(0,1fr)}
+.ps-card.is-rev{grid-template-columns:minmax(0,1fr) minmax(0,380px)}
+@media(max-width:800px){.ps-card,.ps-card.is-rev{grid-template-columns:1fr}}
