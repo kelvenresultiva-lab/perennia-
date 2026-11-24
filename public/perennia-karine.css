@@ -2435,3 +2435,6 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 
 /* Método Legacy (23/11) — equilíbrio óptico da trilha: cauda curta e trilha um pouco à direita */
 @media(min-width:1001px){#como-funciona .ks-road{transform:translateX(clamp(20px,2.8vw,44px))}}
+
+/* Método Legacy (23/11) — títulos 1 e 2 na mesma linha (descrições de cima com a mesma altura) */
+@media(min-width:1001px){#como-funciona .ks-road-step.s1 .ks-road-text p,#como-funciona .ks-road-step.s2 .ks-road-text p,#como-funciona .ks-road-step.s3 .ks-road-text p,#como-funciona .ks-road-step.s4 .ks-road-text p{min-height:calc(4 * 1.7em);min-height:4lh}}

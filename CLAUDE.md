@@ -129,3 +129,4 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 23/11: cards de Soluções todos com a mesma altura (grid-auto-rows 1fr) e "Conhecer solução" no rodapé de cada um (no 360 é o link; nos outros, span .sl-more, o card inteiro já é clicável).
 - 23/11: card do 360° no mobile com margem lateral 16px, borda dourada mais forte, sombra e leve tom creme, para ficar claro que é um card.
 - 23/11: trilha do Método Legacy (desktop) equilibrada: cauda de baixo encurtada (path M250 440H90, fade 90→250) e .ks-road deslocada clamp(20px,2.8vw,44px) para a direita.
+- 23/11: Método Legacy (desktop): descrições das etapas com altura mínima de 4 linhas, para os títulos 1/2 (e 3/4) ficarem alinhados.
