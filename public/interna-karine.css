@@ -347,3 +347,24 @@ html body .in-close-card>.in-seal{box-shadow:0 0 0 8px #FFFFFF,0 14px 30px -12px
 }
 .hs-side{position:sticky;top:40px}@media(max-width:900px){.hs-side{position:static}}
 @media(min-width:801px){.tl-item+.tl-item{margin-top:-78px}}
+
+/* 24/11: FIM DE CADA SEÇÃO igual à home — cápsula com seta animada no centro, embaixo, levando à próxima seção (.ks-scroll-cue, mesmo desenho da home). Sobre: a hero escura termina na mesma curva da home (.ks-hero-curve) com o círculo de seta (.in-hero-cue). */
+.in-sec,.in-hero,.ks-faq{position:relative}
+.ks-scroll-cue{position:absolute;z-index:5;left:50%;bottom:30px;width:26px;height:40px;transform:translateX(-50%);display:block;color:#8C6B3C}
+.ks-scroll-cue svg{width:100%;height:100%;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.ks-scroll-arrow{animation:ks-cue 2.2s ease-in-out infinite}
+@keyframes ks-cue{0%,100%{transform:translateY(-2px);opacity:.6}50%{transform:translateY(3px);opacity:1}}
+@media(prefers-reduced-motion:reduce){.ks-scroll-arrow{animation:none}}
+.sb2-hero+.in-sec{padding-top:170px!important}
+.sb2-hero+.in-sec>.ks-hero-curve{position:absolute;top:-2px;left:0;z-index:2;display:block;width:100%;height:98px;pointer-events:none}
+.sb2-hero+.in-sec>.ks-hero-curve path{fill:#04210b}
+.in-hero-cue{position:absolute;z-index:3;left:50%;top:92px;transform:translateX(-50%);width:36px;height:36px;border-radius:50%;display:grid;place-items:center;border:1px solid rgba(16,46,32,.18);background:#F8F5EE;color:#a67f50}
+.in-hero-cue svg{width:15px;height:15px;fill:none;stroke:#a67f50;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+@media(max-width:700px){
+  .ks-scroll-cue{bottom:18px;width:22px;height:34px}
+  .sb2-hero+.in-sec{padding-top:120px!important}
+  .sb2-hero+.in-sec>.ks-hero-curve{height:54px}
+  .in-hero-cue{top:62px}
+}
+.ks-faq:has(> .ks-scroll-cue){padding-bottom:104px!important}
+@media(max-width:700px){.ks-faq:has(> .ks-scroll-cue){padding-bottom:72px!important}}
