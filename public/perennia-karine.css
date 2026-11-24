@@ -1337,7 +1337,7 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 #como-funciona{background:radial-gradient(70% 60% at 50% 45%,#F6EFE2 0%,#ECE0C8 70%,#E4D5B8 100%)!important;background-origin:border-box!important;border-color:transparent!important}
 #como-funciona h2{font-size:clamp(34px,4.2vw,58px)!important}
 #como-funciona .ks-steps-intro{font-size:clamp(16px,1.35vw,19px)!important;color:#3F4D45!important}
-#como-funciona .ks-eyebrow{background:#FBF8F2!important}
+.ks-kicker,.ks-eyebrow,.eyebrow,.diagnostico-kicker,#como-funciona .ks-eyebrow{background:#FBF8F2!important}
 .ks-road-text h3{font-size:clamp(21px,2.2cqw,27px)!important;color:#14301F!important}
 .ks-road-text p{font-size:clamp(16px,1.55cqw,18.5px)!important;color:#33413A!important}
 @media(min-width:1001px){
@@ -2439,5 +2439,6 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 /* Método Legacy (23/11) — títulos 1 e 2 na mesma linha (descrições de cima com a mesma altura) */
 @media(min-width:1001px){#como-funciona .ks-road-step.s1 .ks-road-text p,#como-funciona .ks-road-step.s2 .ks-road-text p,#como-funciona .ks-road-step.s3 .ks-road-text p,#como-funciona .ks-road-step.s4 .ks-road-text p{min-height:calc(4 * 1.7em);min-height:4lh}}
 
-/* Método Legacy (23/11) — etiqueta em verde escuro do site */
+/* Etiquetas das seções (23/11) — fundo verde escuro do site, texto creme, borda dourada */
 #como-funciona .ks-eyebrow{background:linear-gradient(135deg,#14382A 0%,#0B2618 100%)!important;color:#E9DCC0!important;-webkit-text-fill-color:#E9DCC0!important;border:1px solid rgba(216,190,142,.45)!important;box-shadow:0 10px 22px -14px rgba(4,33,11,.6)!important}
+html body .hero span.ks-kicker,html body #sintomas span.diagnostico-kicker,html body #servicos span.eyebrow,html body #solucoes span.eyebrow,html body #agendar span.ks-eyebrow{background:linear-gradient(135deg,#14382A 0%,#0B2618 100%)!important;color:#E9DCC0!important;-webkit-text-fill-color:#E9DCC0!important;border:1px solid rgba(216,190,142,.45)!important;box-shadow:0 10px 22px -14px rgba(4,33,11,.6)!important}
