@@ -297,3 +297,6 @@ html body .in-close-card>.in-seal{box-shadow:0 0 0 8px #FFFFFF,0 14px 30px -12px
   .sb-hero-wrap{margin-top:-40px!important}
 }
 @media(min-width:1181px) and (max-width:1400px){.sb-hero-copy{max-width:440px!important}.in-hero.sb-hero h1{font-size:clamp(36px,3.4vw,46px)!important}.in-hero.sb-hero .in-lead{font-size:16.5px!important}}
+
+/* 24/11: cabeçalho removido de todas as páginas a pedido do usuário (HTML mantido com hidden; para voltar, tirar o hidden e esta regra) */
+.in-head{display:none!important}
