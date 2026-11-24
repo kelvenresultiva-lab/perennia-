@@ -2469,3 +2469,6 @@ html body .ks-btn,html body .perennia-cta,html body a.cta{min-width:min(420px,10
   .ks-nav-links a{padding:14px 0!important;font-size:15px!important;border-bottom:1px solid rgba(243,223,177,.10)}
   .ks-nav-links a:last-child{border-bottom:0}
 }
+
+/* 24/11: menos espaço entre o botão do Método Legacy e o card final (#agendar) */
+@media(min-width:701px){#agendar{padding-top:28px!important}#agendar .ks-closing-card:before{top:calc(var(--cv) * -2 + 70px)!important}}
