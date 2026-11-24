@@ -2442,3 +2442,7 @@ h1 em,h2 em,h3 em{font-style:normal!important;font-size:1em;font-weight:400}
 /* Etiquetas das seções (23/11) — fundo verde escuro do site, texto creme, borda dourada */
 #como-funciona .ks-eyebrow{background:linear-gradient(135deg,#14382A 0%,#0B2618 100%)!important;color:#E9DCC0!important;-webkit-text-fill-color:#E9DCC0!important;border:1px solid rgba(216,190,142,.45)!important;box-shadow:0 10px 22px -14px rgba(4,33,11,.6)!important}
 html body .hero span.ks-kicker,html body #sintomas span.diagnostico-kicker,html body #servicos span.eyebrow,html body #solucoes span.eyebrow,html body #agendar span.ks-eyebrow{background:linear-gradient(135deg,#14382A 0%,#0B2618 100%)!important;color:#E9DCC0!important;-webkit-text-fill-color:#E9DCC0!important;border:1px solid rgba(216,190,142,.45)!important;box-shadow:0 10px 22px -14px rgba(4,33,11,.6)!important}
+
+/* Hero (24/11) — P transparente (sem blend, corrige caixa escura no iOS) */
+.ks-seal .ks-hero-pimg{height:40px!important;width:auto!important;display:block!important;margin:0 auto!important;position:relative!important;mix-blend-mode:normal!important;background:none!important}
+@media(max-width:700px){.ks-seal .ks-hero-pimg{height:30px!important}}

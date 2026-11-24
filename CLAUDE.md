@@ -131,3 +131,5 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 23/11: trilha do Método Legacy (desktop) equilibrada: cauda de baixo encurtada (path M250 440H90, fade 90→250) e .ks-road deslocada clamp(20px,2.8vw,44px) para a direita.
 - 23/11: Método Legacy (desktop): descrições das etapas com altura mínima de 4 linhas, para os títulos 1/2 (e 3/4) ficarem alinhados.
 - 23/11: todas as etiquetas de seção da home (hero, 360°, Serviços, Soluções, Método Legacy, fechamento) com fundo verde escuro do site, texto creme e borda dourada.
+
+- 24/11: P do selo da hero agora é assets/perennia-p.webp (PNG/WebP com fundo transparente), sem mix-blend-mode — corrigia caixa preta no iPhone.
