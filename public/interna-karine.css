@@ -605,3 +605,24 @@ html body #trajetoria{background:radial-gradient(ellipse 60% 45% at 12% 88%,rgba
 #dimensoes .in-note strong,#dimensoes .in-note a{color:#D8BE8E!important}
 #dimensoes .in-card{box-shadow:0 26px 50px -30px rgba(0,0,0,.6)!important}
 #dimensoes>.ks-scroll-cue{color:#D8BE8E!important}
+/* 26/11 Perennia 360°: FINAL no formato da referência do usuário — perguntas em fundo verde escuro, botão de contato logo abaixo das perguntas (card de fechamento removido) e rodapé com "ombro" central elevado (.ft-notch) segurando o selo da logo */
+#perguntas.fq-dark{background:linear-gradient(180deg,#0F2E1F 0%,#0A2216 70%,#072014 100%)!important;padding-top:110px!important;padding-bottom:170px!important}
+#perguntas.fq-dark .in-eyebrow{background:rgba(216,190,142,.08)!important;border:1px solid rgba(216,190,142,.45)!important;color:#E6CF9E!important;box-shadow:none!important}
+#perguntas.fq-dark .in-h2{color:#F3EFE6!important}
+#perguntas.fq-dark .in-h2 em{color:#D8BE8E!important}
+#perguntas.fq-dark .in-faq details{box-shadow:0 18px 40px -26px rgba(0,0,0,.6)!important}
+.fq-cta{display:flex;justify-content:center;margin-top:44px}
+.ks-footer.has-notch{position:relative;overflow:visible!important;border-top:0!important}
+.ks-footer.has-notch>.ks-to-top{display:none!important}
+.ft-notch{position:absolute;left:50%;top:0;width:440px;height:60px;transform:translate(-50%,-59px);pointer-events:none;z-index:4}
+.ft-notch-shape{position:absolute;inset:0;width:100%;height:100%}
+.ft-notch-shape path{fill:#04210b}
+.ft-notch .in-seal.ft-seal{position:absolute!important;left:50%!important;top:-16px!important;transform:translate(-50%,-50%)!important;width:116px!important;height:116px!important;margin:0!important;box-shadow:0 0 0 1px rgba(216,190,142,.5),0 0 0 9px #04210b,0 20px 40px -12px rgba(0,0,0,.6)!important}
+@media(max-width:600px){.ft-notch{width:300px;height:46px;transform:translate(-50%,-45px)}.ft-notch .in-seal.ft-seal{width:96px!important;height:96px!important;top:-10px!important}#perguntas.fq-dark{padding-bottom:140px!important}}
+#perguntas.fq-dark{background:linear-gradient(180deg,#0F2E1F 0%,#0E2C1E 100%)!important}
+.ks-footer.has-notch{margin-top:-1px;border-top:1px solid rgba(216,190,142,.28)!important}
+.ft-notch{height:62px;transform:translate(-50%,-60px)}
+.ft-notch-shape path{fill:#06170D;stroke:rgba(216,190,142,.38);stroke-width:1.2;vector-effect:non-scaling-stroke}
+.ft-notch .in-seal.ft-seal{box-shadow:0 0 0 1px rgba(216,190,142,.5),0 0 0 9px #06170D,0 20px 40px -12px rgba(0,0,0,.6)!important}
+.ft-notch:after{content:"";position:absolute;left:1px;right:1px;bottom:0;height:3px;background:#06170D}
+@media(max-width:600px){.ft-notch{height:48px;transform:translate(-50%,-46px)}}
