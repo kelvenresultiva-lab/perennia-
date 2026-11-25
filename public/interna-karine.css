@@ -761,3 +761,10 @@ radial-gradient(80% 30% at 90% 96%,rgba(92,150,108,.28) 0%,rgba(92,150,108,0) 70
 .r360-band{fill:none;stroke:url(#r360-m);stroke-width:18;filter:drop-shadow(0 10px 18px rgba(0,0,0,.35))}
 .r360-shine{fill:none;stroke:url(#r360-hl);stroke-width:1.2;opacity:.7}
 .r360-txt{font-size:9.5px!important;font-weight:700!important;letter-spacing:.32em!important;fill:#0F2E1F!important;fill-opacity:.75;dominant-baseline:central}
+/* 26/11: cards das Seis dimensões na cor do fundo, mais escuros (vidro verde-escuro, como no modelo) */
+#dimensoes .in-orbit .in-card{background:linear-gradient(160deg,rgba(6,26,16,.78) 0%,rgba(4,18,11,.88) 100%)!important;border:1px solid rgba(216,190,142,.18)!important;box-shadow:0 20px 40px -24px rgba(0,0,0,.7),inset 0 1px 0 rgba(255,255,255,.04)!important;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+#dimensoes .in-orbit .in-card h3{color:#F3EFE6!important}
+#dimensoes .in-orbit .in-card p{color:rgba(243,239,230,.7)!important}
+#dimensoes .in-orbit .in-card .in-tag{color:#D8BE8E!important}
+#dimensoes .in-orbit .in-card .in-ico{background:linear-gradient(145deg,#F6F1E6,#DCCFB2)!important;color:#0F2E1F!important;box-shadow:none!important;border:0!important}
+#dimensoes .in-orbit .in-card .in-ico svg{stroke:#0F2E1F!important}
