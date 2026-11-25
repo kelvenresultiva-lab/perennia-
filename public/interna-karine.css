@@ -480,3 +480,15 @@ html body #trajetoria{background:radial-gradient(ellipse 60% 50% at 15% 85%,rgba
 #trajetoria .tl-close em{color:#D8BE8E!important}
 #trajetoria .ks-scroll-cue{color:#D8BE8E}
 @media(max-width:700px){html body #trajetoria{border-radius:28px;margin:0 8px;padding-top:72px!important}}
+
+/* 25/11: cards da linha do tempo no MESMO design dos cards de Serviços (.sv-item): aba no topo, ícone em quadrado com sombra deslocada, rótulo (ano · marco), texto centralizado, alternando claro/verde. No fundo verde da seção o card verde ganha um verde mais claro e borda dourada para destacar */
+#trajetoria .tl-card.sv-item{display:flex;flex-direction:column;align-items:center;text-align:center;padding:58px 28px 30px!important;border-radius:16px!important;background:#FBFAF6!important;border:1px solid rgba(216,190,142,.45)!important;box-shadow:0 26px 50px -34px rgba(0,0,0,.55)!important}
+#trajetoria .tl-card.sv-item.is-dark{background:linear-gradient(150deg,#245C41 0%,#163F2D 100%)!important;border-color:rgba(216,190,142,.45)!important}
+#trajetoria .tl-card.sv-item .sv-ico{margin-bottom:22px}
+#trajetoria .tl-card.sv-item .sv-n{margin-bottom:10px}
+#trajetoria .tl-card.sv-item h3{margin:0 0 10px!important;font-size:20px!important}
+#trajetoria .tl-card.sv-item.is-dark h3{color:#F3EFE6!important}
+#trajetoria .tl-card.sv-item.is-dark p{color:rgba(243,239,230,.82)!important}
+#trajetoria .tl-card.sv-item:hover{transform:translateY(-4px)}
+@media(min-width:801px){#trajetoria .tl-dot{top:44px!important}}
+@media(max-width:800px){#trajetoria .tl-card.sv-item{padding:52px 20px 26px!important}#trajetoria .tl-dot{top:40px!important}}
