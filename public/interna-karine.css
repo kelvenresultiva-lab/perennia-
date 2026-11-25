@@ -586,3 +586,11 @@ html body #trajetoria{background:radial-gradient(ellipse 60% 45% at 12% 88%,rgba
 #trajetoria{overflow:clip!important}
 #trajetoria:before{background:linear-gradient(180deg,rgba(6,23,13,.9) 0%,rgba(8,28,18,.42) 30%,rgba(8,28,18,.5) 72%,rgba(6,23,13,.94) 100%),radial-gradient(ellipse 75% 65% at 50% 45%,rgba(10,34,22,0),rgba(6,23,13,.5) 100%),linear-gradient(rgba(14,52,32,.35),rgba(14,52,32,.35)),url("assets/office-main.webp") center 40%/cover no-repeat}
 #trajetoria:before{background:linear-gradient(180deg,rgba(6,23,13,.55) 0%,rgba(8,28,18,.25) 22%,rgba(8,28,18,.45) 60%,rgba(6,23,13,.92) 100%),radial-gradient(ellipse 80% 70% at 50% 40%,rgba(10,34,22,0),rgba(6,23,13,.45) 100%),linear-gradient(rgba(14,52,32,.3),rgba(14,52,32,.3)),url("assets/office-main.webp") center 35%/cover no-repeat}
+/* 26/11 linha dourada conectando os 8 cards da trajetória: SVG .tl-line desenhado por JS (sobre.html) atrás dos cards — corre na altura dos ícones, desce pela direita no fim da 1ª linha, cruza o vão e entra pela esquerda na 2ª; pontos dourados nos vãos. 1 coluna: linha vertical no centro */
+#trajetoria .tl-grid{position:relative!important}
+.tl-line{position:absolute;left:0;top:0;z-index:0;overflow:visible;pointer-events:none}
+.tl-line path{fill:none;stroke-linecap:round;stroke-linejoin:round}
+.tl-line-glow{stroke:rgba(216,190,142,.18);stroke-width:6}
+.tl-line-path{stroke:#C9A468;stroke-width:1.6;stroke-dasharray:1 0}
+.tl-line-dot{fill:#0B2618;stroke:#E6CF9E;stroke-width:1.6}
+#trajetoria .tl-grid .tl-item{position:relative;z-index:1}
