@@ -685,3 +685,16 @@ radial-gradient(70% 30% at 90% 95%,rgba(92,150,108,.20) 0%,rgba(92,150,108,0) 70
 @media(max-width:600px){.at-sede{padding:8px 14px 8px 8px}.at-sede-tx strong{font-size:14px}}
 .at-sede{right:calc(25.7% + 7.5%)!important}
 @media(max-width:600px){.at-green .at-card{padding-left:4px!important;padding-right:4px!important}.at-green .at-body{padding:0 12px}}
+/* 26/11: mais luzes no fundo do Atendimento */
+.at-sec.at-green:before{background:
+radial-gradient(42% 60% at 27% 55%,rgba(216,190,142,.42) 0%,rgba(216,190,142,.18) 36%,rgba(216,190,142,0) 72%),
+radial-gradient(26% 40% at 72% 30%,rgba(230,207,158,.20) 0%,rgba(230,207,158,0) 70%),
+radial-gradient(30% 45% at 92% 88%,rgba(216,190,142,.18) 0%,rgba(216,190,142,0) 70%),
+radial-gradient(36% 55% at 85% 95%,rgba(92,150,108,.28) 0%,rgba(92,150,108,0) 70%),
+radial-gradient(30% 45% at 4% 20%,rgba(92,150,108,.24) 0%,rgba(92,150,108,0) 70%),
+radial-gradient(24% 35% at 8% 92%,rgba(216,190,142,.14) 0%,rgba(216,190,142,0) 70%)!important}
+@media(max-width:900px){.at-sec.at-green:before{background:
+radial-gradient(80% 32% at 50% 22%,rgba(216,190,142,.40) 0%,rgba(216,190,142,.15) 40%,rgba(216,190,142,0) 75%),
+radial-gradient(70% 25% at 85% 62%,rgba(230,207,158,.16) 0%,rgba(230,207,158,0) 70%),
+radial-gradient(70% 28% at 10% 50%,rgba(92,150,108,.24) 0%,rgba(92,150,108,0) 70%),
+radial-gradient(80% 30% at 90% 96%,rgba(92,150,108,.28) 0%,rgba(92,150,108,0) 70%)!important}}
