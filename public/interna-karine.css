@@ -555,3 +555,15 @@ html body #trajetoria{background:radial-gradient(ellipse 60% 45% at 12% 88%,rgba
 .ps-body{padding:0 8px!important}
 }
 @media(min-width:801px){.ps-bg{opacity:.4;width:52%;filter:grayscale(.2) brightness(1.1)}.ps-card .ps-photo{max-width:340px;justify-self:center;width:100%}}
+/* 25/11 Sócias SEM card: faixa verde escura de ponta a ponta, cada sócia uma linha (texto + foto) com a foto esmaecida encostada na borda da tela */
+#responsaveis{padding-bottom:0!important;overflow:hidden}
+#responsaveis .ps-cards{max-width:none!important;margin:0 calc(50% - 50vw)!important;gap:0!important;background:radial-gradient(90% 70% at 20% 0%,#14402C 0%,#0B2618 50%,#06170D 100%)}
+#responsaveis .ps-card,#responsaveis .ps-card.is-rev{border:0!important;border-radius:0!important;box-shadow:none!important;background:none!important;max-width:none!important;padding:110px max(24px,calc((100% - 1100px)/2))!important}
+#responsaveis .ps-card+.ps-card{border-top:1px solid rgba(216,190,142,.18)!important}
+#responsaveis .ps-tab{display:none!important}
+#responsaveis .ps-bg{border-radius:0!important;width:48%!important;opacity:.32!important}
+#responsaveis>.ks-scroll-cue{color:#D8BE8E}
+@media(max-width:800px){#responsaveis .ps-card,#responsaveis .ps-card.is-rev{padding:56px 20px 64px!important}#responsaveis .ps-bg{width:auto!important;opacity:.16!important}}
+#responsaveis{position:relative}
+#responsaveis>.ks-scroll-cue{z-index:6;bottom:8px!important;color:#8C6B3C!important}
+@media(max-width:700px){#responsaveis>.ks-scroll-cue{bottom:6px!important}}
