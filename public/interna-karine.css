@@ -460,3 +460,5 @@ html body #contatos.ks-footer-cream{background:#F4F1EA!important;color:#3A4D41;b
   #portfolio .in-chips::-webkit-scrollbar{display:none}
   #portfolio .in-chips li{flex:0 0 auto;scroll-snap-align:start;white-space:nowrap}
 }
+#portfolio .in-head2 .in-lead{text-align:center;margin-left:auto;margin-right:auto;max-width:680px;text-wrap:balance}
+@media(max-width:700px){#portfolio .in-head2 .in-lead{font-size:16px;margin-top:16px}}
