@@ -464,3 +464,6 @@ html body #contatos.ks-footer-cream{background:#F4F1EA!important;color:#3A4D41;b
 @media(max-width:700px){#portfolio .in-head2 .in-lead{font-size:16px;margin-top:16px}}
 /* 24/11: no celular os botões dos serviços saem (pedido do usuário); os cards já mostram os 8 serviços */
 @media(max-width:700px){#portfolio .in-chips{display:none!important}}
+
+/* 24/11: P do selo do card final sem o quadrado escuro: usa a assets/perennia-p.webp (fundo transparente, a mesma do selo da hero) em vez do recorte da logo com mix-blend */
+.in-seal .in-seal-p{background:url("assets/perennia-p.webp") center/contain no-repeat!important;mix-blend-mode:normal!important;filter:none!important}
