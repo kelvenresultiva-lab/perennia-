@@ -594,3 +594,5 @@ html body #trajetoria{background:radial-gradient(ellipse 60% 45% at 12% 88%,rgba
 .tl-line-path{stroke:#C9A468;stroke-width:1.6;stroke-dasharray:1 0}
 .tl-line-dot{fill:#0B2618;stroke:#E6CF9E;stroke-width:1.6}
 #trajetoria .tl-grid .tl-item{position:relative;z-index:1}
+/* 26/11 aba verde na lateral dos cards das sócias REMOVIDA (pedido: não ficou legal) */
+.ps-tab{display:none!important}
