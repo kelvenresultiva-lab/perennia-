@@ -378,3 +378,7 @@ html body .in-close-card>.in-seal{box-shadow:0 0 0 8px #FFFFFF,0 14px 30px -12px
 /* 24/11: palavra maior (pedido do usuário) */
 .sv-ghost{font-size:clamp(60px,10vw,210px)}#portfolio{padding-bottom:clamp(170px,16vw,290px)!important}
 @media(max-width:700px){.sv-ghost{font-size:16.4vw}#portfolio{padding-bottom:170px!important}}
+/* 24/11: título da seção #portfolio centralizado (pedido do usuário) */
+#portfolio .in-head2{display:flex!important;flex-direction:column;align-items:center;text-align:center!important;max-width:860px;margin-left:auto!important;margin-right:auto!important}
+#portfolio .in-head2 .in-h2{text-align:center!important;margin-left:auto;margin-right:auto}
+#portfolio .in-chips{justify-content:center!important}
