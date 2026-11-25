@@ -398,3 +398,9 @@ html body .sv-close .in-close-card:after{display:none!important}
 html body .sv-close .in-close-card h2{margin:0 auto!important}
 @media(max-width:700px){html body .sv-close{padding-top:48px!important}html body .sv-close .in-close-card{padding:54px 22px 40px!important}}
 html body .sv-close .in-close-card h2{max-width:720px!important}
+/* 24/11: o usuário quer o SELO por cima como antes: volta o .in-seal, sai a aba e o ícone */
+html body .sv-close{padding-top:110px!important}
+html body .sv-close .in-close-card:before{display:none!important}
+html body .sv-close .in-close-card{padding-top:96px!important}
+html body .sv-close .in-close-card h2{margin-top:0!important}
+@media(max-width:700px){html body .sv-close{padding-top:80px!important}html body .sv-close .in-close-card{padding-top:78px!important}}
