@@ -254,3 +254,5 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 26/11: FAQ: primeira pergunta sempre aberta ao carregar (<details open>) no Sobre (já estava) e no Perennia 360°.
 
 - 26/11: Perennia 360: mais respiro no fim do FAQ (botão a 52px da última pergunta e ~108px do selo do rodapé; padding-bottom 230/180). CSS ?v=2611zp.
+
+- 26/11: Seis dimensões (perennia-360): mesmas luzes douradas do Atendimento do Sobre (#dimensoes:before brilho dourado atrás da sócia + pontos dourados e reflexos verdes nos cantos; :after vinheta). CSS ?v=2611zq.
