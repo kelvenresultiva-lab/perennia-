@@ -716,3 +716,11 @@ radial-gradient(80% 30% at 90% 96%,rgba(92,150,108,.28) 0%,rgba(92,150,108,0) 70
 @media(max-width:900px){.at-cta{justify-content:center}}
 @media(min-width:901px){.at-wa{width:auto!important;max-width:320px!important}}
 @media(min-width:901px){html body .at-cta .at-wa{min-width:0!important;width:auto!important;padding-left:26px!important}}
+/* 26/11: Quem somos (seção abaixo da hero do Sobre) centralizada no celular/tablet */
+@media(max-width:900px){
+#quem-somos.hs-merged .hs-split,#quem-somos.hs-merged .hs-split *{text-align:center!important}
+#quem-somos.hs-merged .in-eyebrow{margin-left:auto!important;margin-right:auto!important}
+#quem-somos.hs-merged .in-h2{margin-left:auto!important;margin-right:auto!important}
+#quem-somos.hs-merged .hs-quote{border-left:0!important;padding:22px 6px!important;border-top:1px solid rgba(216,190,142,.55)!important;border-bottom:1px solid rgba(216,190,142,.55)!important}
+#quem-somos.hs-merged .hs-sign{align-items:center!important;justify-content:center!important;flex-direction:column}
+}

@@ -236,3 +236,5 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 26/11: Atendimento: textos centralizados no celular/tablet (<=900px): selo, título, linha (gradiente dos dois lados) e parágrafos. CSS ?v=2611zb.
 
 - 26/11: A PEDIDO DO USUÁRIO, exceção à regra "WhatsApp só na hero": botão "Falar no WhatsApp" (.at-cta > button.in-btn.at-wa, data-perennia-book, data-interesse="Atendimento (presencial ou online)") no fim do texto da seção Atendimento (sobre.html). Número ainda vazio: abre o aviso #perennia-dialog até preencher WHATSAPP_NUMERO no script.js. CSS ?v=2611ze (botão com largura do texto no desktop).
+
+- 26/11: sobre.html #quem-somos (abaixo da hero) centralizado no celular/tablet (<=900px): textos, selo, título; citação sem barra lateral (linhas douradas em cima/embaixo); assinatura em coluna centralizada. CSS ?v=2611zf.
