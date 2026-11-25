@@ -698,3 +698,12 @@ radial-gradient(80% 32% at 50% 22%,rgba(216,190,142,.40) 0%,rgba(216,190,142,.15
 radial-gradient(70% 25% at 85% 62%,rgba(230,207,158,.16) 0%,rgba(230,207,158,0) 70%),
 radial-gradient(70% 28% at 10% 50%,rgba(92,150,108,.24) 0%,rgba(92,150,108,0) 70%),
 radial-gradient(80% 30% at 90% 96%,rgba(92,150,108,.28) 0%,rgba(92,150,108,0) 70%)!important}}
+/* 26/11: encaixe com logo também no fim do Atendimento (espelhado, verde descendo sobre o branco) */
+.at-notch.at-notch-b{top:auto!important;bottom:0!important;transform:translate(-50%,59px)!important}
+.at-notch-b .at-notch-shape .ft-fill{fill:#0A2216!important}
+.at-notch-b .in-seal.at-seal{top:auto!important;bottom:-6px!important;transform:translate(-50%,50%)!important}
+.at-sec.at-green{margin-bottom:60px!important}
+#atendimento .ks-scroll-cue{display:none!important}
+@media(max-width:600px){.at-notch.at-notch-b{transform:translate(-50%,45px)!important}.at-notch-b .in-seal.at-seal{bottom:-4px!important}.at-sec.at-green{margin-bottom:50px!important}}
+.at-sec.at-green:before,.at-sec.at-green:after{-webkit-mask-image:linear-gradient(180deg,transparent 0,#000 140px,#000 calc(100% - 140px),transparent 100%)!important;mask-image:linear-gradient(180deg,transparent 0,#000 140px,#000 calc(100% - 140px),transparent 100%)!important}
+.at-sec.at-green{z-index:3!important;margin-bottom:110px!important}@media(max-width:600px){.at-sec.at-green{margin-bottom:90px!important}}

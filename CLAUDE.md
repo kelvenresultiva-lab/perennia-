@@ -228,3 +228,5 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 26/11: Atendimento: card do mapa agora só "Contagem – MG"; endereço completo foi para o parágrafo "Prefere olho no olho?" (na nossa sede: ...). Mapa maior (desktop coluna 1.2fr, até 600px; celular ~335px). CSS ?v=2611v.
 
 - 26/11: Atendimento: luzes do fundo reforçadas (brilho dourado atrás do mapa mais forte + novos pontos dourados à direita/cantos e reflexos verdes maiores). CSS ?v=2611w.
+
+- 26/11: Atendimento: encaixe com logo também no FIM da seção (.at-notch.at-notch-b, curva espelhada descendo sobre o branco, fill #0A2216); seta de rolagem da seção escondida; seção z-index 3 para o selo ficar por cima do FAQ; luzes com mask também nos 140px de baixo. Backup scratchpad/sobre-antes-notch-b.html. CSS ?v=2611y.
