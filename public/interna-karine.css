@@ -724,3 +724,4 @@ radial-gradient(80% 30% at 90% 96%,rgba(92,150,108,.28) 0%,rgba(92,150,108,0) 70
 #quem-somos.hs-merged .hs-quote{border-left:0!important;padding:22px 6px!important;border-top:1px solid rgba(216,190,142,.55)!important;border-bottom:1px solid rgba(216,190,142,.55)!important}
 #quem-somos.hs-merged .hs-sign{align-items:center!important;justify-content:center!important;flex-direction:column}
 }
+/* 26/11: sem linha na emenda das curvas da seta (Nossa trajetória) */ .tl-notch-top{top:-4px!important;height:64px!important}.tl-notch-bot{bottom:-4px!important;height:64px!important}@media(max-width:900px){.tl-notch-top,.tl-notch-bot{height:50px!important}}
