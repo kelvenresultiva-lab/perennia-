@@ -558,92 +558,54 @@ html body #trajetoria{background:radial-gradient(ellipse 60% 45% at 12% 88%,rgba
 .at-pulse{fill:rgba(216,190,142,.25);stroke:rgba(216,190,142,.7);stroke-width:1;transform-origin:0 0;transform-box:fill-box;animation:at-pulse 2.6s ease-out infinite}
 @keyframes at-pulse{0%{transform:scale(.9);opacity:.9}100%{transform:scale(2.1);opacity:0}}
 @media(prefers-reduced-motion:reduce){.at-pulse{animation:none;opacity:.5}}
-/* 25/11 Trajetória como ESTRADA serpenteando (ref. do usuário): 4 marcos na 1ª linha (esq→dir), curva à direita, 4 na 2ª (dir→esq); selo P no início e no fim. <1100px: estrada vertical à esquerda */
+/* 25/11 Trajetória no MODELO DA HOME (estrada dourada do Método Legacy): faixa dourada com chevrons brancos, curva em U à direita, selo da logo no início e no fim, marcos verde-escuros com anel dourado; 1ª linha (1–4) texto acima, 2ª linha (5–8, dir→esq) texto abaixo. JS no sobre.html mede a altura dos textos (--tt/--tb). <=1000px: lista vertical como na home */
 #trajetoria .tl-road:before{display:none!important}
 #trajetoria .tl-road .tl-dot{display:none!important}
-#trajetoria .tl-road .tl-item{position:relative!important;width:auto!important;margin:0!important;padding:0!important}
-#trajetoria .tl-road .tl-card.sv-item,#trajetoria .tl-road .tl-card.sv-item.is-dark{position:relative;z-index:1;display:flex!important;flex-direction:column;align-items:center;text-align:center;padding:0!important;background:none!important;border:0!important;box-shadow:none!important;border-radius:0!important}
+#trajetoria .tl-road .tl-card.sv-item,#trajetoria .tl-road .tl-card.sv-item.is-dark{background:none!important;border:0!important;box-shadow:none!important;border-radius:0!important;padding:0!important}
 #trajetoria .tl-road .tl-card:before,#trajetoria .tl-road .tl-card:after{display:none!important}
-#trajetoria .tl-road .sv-ico{width:70px!important;height:70px!important;margin:0 0 22px!important;flex:0 0 auto}
+#trajetoria .tl-road .sv-ico{margin:0!important;width:76px!important;height:76px!important}
 #trajetoria .tl-road .sv-ico:before{display:none!important}
-#trajetoria .tl-road .sv-ico svg{width:70px!important;height:70px!important;padding:20px!important;border-radius:50%!important;background:radial-gradient(circle at 35% 30%,#FFFFFF,#E9E2D2)!important;stroke:#14382A!important;box-shadow:0 0 0 6px rgba(216,190,142,.22),0 14px 26px -10px rgba(0,0,0,.6)}
-#trajetoria .tl-road .sv-n{color:#D8BE8E!important;margin-bottom:10px!important}
-#trajetoria .tl-road .tl-card h3{color:#F4F1EA!important;font-size:18px!important;margin:0 0 10px!important}
-#trajetoria .tl-road .tl-card p{color:rgba(244,241,234,.74)!important;font-size:14px!important;line-height:1.6!important}
-.tl-seal{position:absolute;z-index:2;width:84px;height:84px;border-radius:50%;display:grid;place-items:center;background:#0B2618;box-shadow:0 0 0 2px #D8BE8E,0 0 0 8px rgba(216,190,142,.16),0 16px 30px -12px rgba(0,0,0,.7)}
-.tl-seal img{height:38px;width:auto}
-#trajetoria .tl-road .tl-item:before{content:"";position:absolute;z-index:0;background:rgba(244,241,234,.09);box-shadow:inset 0 0 0 1px rgba(216,190,142,.14)}
-@media(max-width:1279px){
-#trajetoria .tl-road{display:block!important;max-width:640px!important;margin:0 auto!important;padding:0 0 0 4px!important}
-#trajetoria .tl-road .tl-item{padding:0 0 44px 98px!important}
-#trajetoria .tl-road .tl-item:last-child{padding-bottom:0!important}
-#trajetoria .tl-road .tl-item:before{left:20px;width:30px;top:0;bottom:0}
-#trajetoria .tl-road .tl-item:first-child:before{top:35px;border-radius:0}
-#trajetoria .tl-road .tl-item:last-child:before{bottom:auto;height:35px}
-#trajetoria .tl-road .tl-card.sv-item,#trajetoria .tl-road .tl-card.sv-item.is-dark{align-items:flex-start;text-align:left;padding-top:6px!important}
-#trajetoria .tl-road .sv-ico{position:absolute!important;left:-98px;top:0;margin:0!important}
-.tl-seal{display:none}
-}
-#trajetoria .tl-road .tl-item:before{background:linear-gradient(180deg,rgba(244,241,234,.16),rgba(244,241,234,.10))!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.08),inset 0 -1px 0 rgba(0,0,0,.25)!important}
-#trajetoria .tl-road .tl-card p{font-size:14.5px!important}
-@media(max-width:600px){#trajetoria .tl-road .tl-item{padding-left:78px!important}#trajetoria .tl-road .sv-ico{left:-78px;width:58px!important;height:58px!important}#trajetoria .tl-road .sv-ico svg{width:58px!important;height:58px!important;padding:16px!important}#trajetoria .tl-road .tl-item:before{left:15px;width:28px}#trajetoria .tl-road .tl-item:first-child:before{top:29px}#trajetoria .tl-road .tl-item:last-child:before{height:29px}}
-/* 25/11 Trajetória v2 (ref. detalhada): texto ACIMA dos marcos, curvas com o marco no ápice e texto por fora, estrada SVG desenhada por JS (sobre.html) passando pelos centros, selo com a logo (anel de texto + P) no início e no fim. ≥1200px; abaixo mantém a estrada vertical */
-.tl-seal{width:124px!important;height:124px!important;border-radius:50%!important;background:radial-gradient(circle at 35% 30%,#FFFFFF,#EAE3D3)!important;box-shadow:0 0 0 1px rgba(216,190,142,.6),0 0 0 10px rgba(244,241,234,.06),0 20px 40px -16px rgba(0,0,0,.7)!important;display:block!important}
+#trajetoria .tl-road .sv-ico svg{width:76px!important;height:76px!important;padding:23px!important;border-radius:50%!important;background:radial-gradient(circle at 35% 30%,#1B3A26 0%,#06200F 75%)!important;stroke:#F3EBDA!important;box-shadow:0 0 0 2px #B8955F,0 16px 28px -14px rgba(0,0,0,.6)!important}
+#trajetoria .tl-road .sv-n{color:#D8BE8E!important;margin-bottom:8px!important}
+#trajetoria .tl-road .tl-txt h3{color:#F4F1EA!important;font-size:18px!important;line-height:1.3!important;margin:0 0 8px!important}
+#trajetoria .tl-road .tl-txt p{color:rgba(244,241,234,.76)!important;font-size:14px!important;line-height:1.58!important;margin:0!important}
+.tl-seal{display:grid;place-items:center;border-radius:50%;background:#0C1E1C;box-shadow:0 0 0 1px rgba(243,223,177,.45),0 0 0 8px rgba(216,190,142,.10),0 18px 36px -14px rgba(0,0,0,.6)}
 .tl-seal svg{position:absolute;inset:0;width:100%;height:100%}
-.tl-seal text{font:700 13px/1 'Rethink Sans',Arial,sans-serif;letter-spacing:.2em;fill:#14382A}
-.tl-seal-core{position:absolute;inset:27px;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 35% 30%,#1F543B,#0B2618);box-shadow:inset 0 0 0 1px rgba(216,190,142,.5)}
-.tl-seal-core img{height:36px!important;width:auto}
-@media(min-width:1280px){
-#trajetoria .tl-road{position:relative!important;display:grid!important;grid-template-columns:150px repeat(3,minmax(0,1fr)) 150px 250px;grid-template-rows:auto 84px auto 84px auto 84px;max-width:1260px!important;margin:0 auto!important;padding:20px 20px 40px!important;column-gap:0}
-#trajetoria .tl-road .tl-item,#trajetoria .tl-road .tl-card.sv-item,#trajetoria .tl-road .tl-card.sv-item.is-dark{display:contents!important}
-#trajetoria .tl-road .tl-item:before,#trajetoria .tl-road .tl-item:after{content:none!important;display:none!important}
-.tl-road-svg{position:absolute;left:0;top:0;width:100%;height:100%;overflow:visible;pointer-events:none;z-index:0}
-.tl-road-svg path{fill:none;stroke-linecap:round;stroke-linejoin:round}
-.tl-road-svg .r-base{stroke:rgba(244,241,234,.10);stroke-width:42}
-.tl-road-svg .r-line{stroke:rgba(216,190,142,.6);stroke-width:1.5;stroke-dasharray:2 12;animation:tl-flow 1.6s linear infinite}
-@keyframes tl-flow{to{stroke-dashoffset:-14}}
-@media(prefers-reduced-motion:reduce){.tl-road-svg .r-line{animation:none}}
-#trajetoria .tl-road .sv-ico{position:relative!important;left:auto!important;z-index:1;justify-self:center;align-self:center;margin:0!important;width:78px!important;height:78px!important}
-#trajetoria .tl-road .sv-ico svg{width:78px!important;height:78px!important;padding:23px!important;box-shadow:0 0 0 1px rgba(216,190,142,.55),0 0 0 9px rgba(11,38,24,.85),0 18px 32px -12px rgba(0,0,0,.7)!important}
-#trajetoria .tl-road .tl-txt{position:relative;z-index:1;justify-self:center;align-self:end;max-width:260px;padding:0 10px 22px;text-align:center;display:flex;flex-direction:column;align-items:center}
-#trajetoria .tl-road .tl-txt:after{content:"";width:8px;height:8px;margin-top:14px;border-right:1.5px solid #D8BE8E;border-bottom:1.5px solid #D8BE8E;transform:rotate(45deg);opacity:.8}
-#trajetoria .tl-road .tl-seal{position:relative!important;z-index:2;top:auto!important;left:auto!important;justify-self:center;align-self:center}
-#trajetoria .tl-road .tl-seal-start{grid-column:1;grid-row:2}
-#trajetoria .tl-road .tl-seal-end{grid-column:4;grid-row:6}
-#trajetoria .tl-road .tl-item:nth-of-type(1) .tl-txt,#trajetoria .tl-road .tl-item:nth-of-type(1) .sv-ico{grid-column:2}
-#trajetoria .tl-road .tl-item:nth-of-type(2) .tl-txt,#trajetoria .tl-road .tl-item:nth-of-type(2) .sv-ico{grid-column:3}
-#trajetoria .tl-road .tl-item:nth-of-type(3) .tl-txt,#trajetoria .tl-road .tl-item:nth-of-type(3) .sv-ico{grid-column:4}
-#trajetoria .tl-road .tl-item:nth-of-type(-n+3) .tl-txt{grid-row:1}
-#trajetoria .tl-road .tl-item:nth-of-type(-n+3) .sv-ico{grid-row:2}
-#trajetoria .tl-road .tl-item:nth-of-type(5) .tl-txt,#trajetoria .tl-road .tl-item:nth-of-type(5) .sv-ico{grid-column:4}
-#trajetoria .tl-road .tl-item:nth-of-type(6) .tl-txt,#trajetoria .tl-road .tl-item:nth-of-type(6) .sv-ico{grid-column:3}
-#trajetoria .tl-road .tl-item:nth-of-type(7) .tl-txt,#trajetoria .tl-road .tl-item:nth-of-type(7) .sv-ico{grid-column:2}
-#trajetoria .tl-road .tl-item:nth-of-type(n+5):nth-of-type(-n+7) .tl-txt{grid-row:3;padding-top:52px}
-#trajetoria .tl-road .tl-item:nth-of-type(n+5):nth-of-type(-n+7) .sv-ico{grid-row:4}
-#trajetoria .tl-road .tl-item:nth-of-type(4) .sv-ico{grid-column:5;grid-row:2/5}
-#trajetoria .tl-road .tl-item:nth-of-type(4) .tl-txt{grid-column:6;grid-row:2/5;align-self:center;justify-self:start;text-align:left;align-items:flex-start;padding:0 0 0 30px}
-#trajetoria .tl-road .tl-item:nth-of-type(8) .sv-ico{grid-column:1;grid-row:4/7}
-#trajetoria .tl-road .tl-item:nth-of-type(8) .tl-txt{grid-column:2/4;grid-row:5;align-self:center;justify-self:start;text-align:left;align-items:flex-start;max-width:440px;padding:56px 0 56px 6px}
-#trajetoria .tl-road .tl-item:nth-of-type(4) .tl-txt:after,#trajetoria .tl-road .tl-item:nth-of-type(8) .tl-txt:after{display:none}
-#trajetoria .tl-road .tl-item:nth-of-type(4) .tl-txt:before,#trajetoria .tl-road .tl-item:nth-of-type(8) .tl-txt:before{content:"";position:absolute;left:8px;top:50%;width:8px;height:8px;border-left:1.5px solid #D8BE8E;border-bottom:1.5px solid #D8BE8E;transform:translateY(-50%) rotate(45deg);opacity:.8}
-#trajetoria .tl-road .tl-item:nth-of-type(8) .tl-txt:before{left:-14px}
-#trajetoria .tl-road .tl-txt .sv-n{margin-bottom:8px!important}
-#trajetoria .tl-road .tl-txt h3{font-size:18px!important;line-height:1.3!important}
-#trajetoria .tl-road .tl-txt p{font-size:14px!important;line-height:1.6!important}
+.tl-seal text{fill:#D4AF6A;font:700 16px/1 'Rethink Sans',Arial,sans-serif;letter-spacing:1.2px}
+.tl-seal img{position:relative;height:34%;width:auto}
+.tl-band{fill:none;stroke:url(#tl-road-g);stroke-width:40}
+.tl-seps path{fill:none;stroke:#FBF8F2;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round;opacity:.95}
+@media(min-width:1001px){
+#trajetoria .tl-road{position:relative!important;container-type:inline-size;width:100%!important;max-width:1180px!important;aspect-ratio:1200/320;margin:calc(var(--tt,300px) + 30px) auto calc(var(--tb,300px) + 40px)!important;padding:0!important;list-style:none}
+.tl-road-svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+#trajetoria .tl-road .tl-item{position:absolute!important;width:0!important;height:0!important;margin:0!important;padding:0!important;z-index:2}
+#trajetoria .tl-road .tl-item:nth-of-type(1){left:22.5%;top:18.75%}
+#trajetoria .tl-road .tl-item:nth-of-type(2){left:41.67%;top:18.75%}
+#trajetoria .tl-road .tl-item:nth-of-type(3){left:60.83%;top:18.75%}
+#trajetoria .tl-road .tl-item:nth-of-type(4){left:80%;top:18.75%}
+#trajetoria .tl-road .tl-item:nth-of-type(5){left:80%;top:81.25%}
+#trajetoria .tl-road .tl-item:nth-of-type(6){left:60.83%;top:81.25%}
+#trajetoria .tl-road .tl-item:nth-of-type(7){left:41.67%;top:81.25%}
+#trajetoria .tl-road .tl-item:nth-of-type(8){left:22.5%;top:81.25%}
+#trajetoria .tl-road .sv-ico{position:absolute!important;left:0;top:0;transform:translate(-50%,-50%)}
+#trajetoria .tl-road .tl-txt{position:absolute;left:0;transform:translateX(-50%);width:min(17cqw,215px);text-align:center}
+#trajetoria .tl-road .tl-item:nth-of-type(-n+4) .tl-txt{bottom:58px}
+#trajetoria .tl-road .tl-item:nth-of-type(n+5) .tl-txt{top:58px}
+#trajetoria .tl-road .tl-seal{position:absolute;left:-15cqw;top:0;width:10.5cqw;height:10.5cqw;transform:translate(-50%,-50%);z-index:3}
 }
-@media(max-width:1279px){#trajetoria .tl-road .tl-seal{display:none!important}}
-@media(min-width:1280px){#trajetoria .tl-road{grid-template-columns:120px repeat(3,minmax(0,1fr)) 130px 240px!important;max-width:none!important;width:min(1320px,calc(100vw - 64px))!important;margin:0 calc((100% - min(1320px,calc(100vw - 64px)))/2)!important}#trajetoria .tl-road .tl-txt{max-width:290px}}
-/* 25/11 selos da logo também na estrada vertical (<1280px): início acima do 1º marco e fim abaixo do último */
-@media(max-width:1279px){
-#trajetoria .tl-road{padding-top:118px!important;padding-bottom:118px!important}
-#trajetoria .tl-road .tl-seal{display:block!important;position:absolute!important;z-index:2;left:-12px!important;width:94px!important;height:94px!important}
-#trajetoria .tl-road .tl-seal-start{top:-118px!important}
-#trajetoria .tl-road .tl-seal-end{top:auto!important;bottom:-118px!important}
-#trajetoria .tl-road .tl-seal-core{inset:20px}
-#trajetoria .tl-road .tl-seal-core img{height:26px!important}
-#trajetoria .tl-road .tl-seal text{font-size:14px}
-#trajetoria .tl-road .tl-item:first-child:before{top:-70px!important}
-#trajetoria .tl-road .tl-item:last-child:before{height:auto!important;bottom:-70px!important}
-#trajetoria .tl-road .tl-item:last-child{padding-bottom:0!important}
+@media(max-width:1000px){
+#trajetoria .tl-road .tl-road-svg{display:none}
+#trajetoria .tl-road{position:relative!important;max-width:560px!important;margin:0 auto!important;padding:0!important;list-style:none}
+#trajetoria .tl-road:after{content:"";position:absolute;left:46px;top:46px;bottom:30px;width:6px;transform:translateX(-50%);border-radius:6px;background:linear-gradient(180deg,#C9A46C 0,#8C6B3C 90%,rgba(140,107,60,0))}
+#trajetoria .tl-road .tl-item{position:relative!important;width:auto!important;margin:0 0 34px!important;padding:0 0 0 104px!important;min-height:76px}
+#trajetoria .tl-road .tl-card.sv-item,#trajetoria .tl-road .tl-card.sv-item.is-dark{position:static!important;display:block!important;text-align:left!important}
+#trajetoria .tl-road .sv-ico{position:absolute!important;left:8px;top:0;z-index:1}
+#trajetoria .tl-road .tl-txt{padding-top:6px}
+#trajetoria .tl-road .tl-seal{position:relative;display:grid;width:92px;height:92px;margin:0 0 34px -104px;z-index:1}
+#trajetoria .tl-road .tl-seal-end{margin:34px 0 0 -104px}
+#trajetoria .tl-road .tl-item:nth-of-type(8){display:flex;flex-direction:column}
+#trajetoria .tl-road .tl-item:nth-of-type(8) .tl-seal-end{order:2}
 }
-@media(max-width:600px){#trajetoria .tl-road .tl-seal{left:-11px!important;width:80px!important;height:80px!important}#trajetoria .tl-road .tl-seal-start{top:-108px!important}#trajetoria .tl-road .tl-seal-end{bottom:-108px!important}#trajetoria .tl-road{padding-top:108px!important;padding-bottom:108px!important}#trajetoria .tl-road .tl-seal-core{inset:17px}#trajetoria .tl-road .tl-seal-core img{height:22px!important}}
+@media(max-width:600px){#trajetoria .tl-road .tl-item{padding-left:88px!important}#trajetoria .tl-road .tl-seal{margin-left:-88px;width:84px;height:84px}#trajetoria .tl-road .tl-seal-end{margin:30px 0 0 -88px}#trajetoria .tl-road:after{left:42px}#trajetoria .tl-road .sv-ico{left:4px}}
+@media(max-width:1000px){#trajetoria .tl-road .tl-item:nth-of-type(1) .sv-ico{top:126px}}
+@media(max-width:600px){#trajetoria .tl-road .tl-item:nth-of-type(1) .sv-ico{top:118px}}
