@@ -404,3 +404,5 @@ html body .sv-close .in-close-card:before{display:none!important}
 html body .sv-close .in-close-card{padding-top:96px!important}
 html body .sv-close .in-close-card h2{margin-top:0!important}
 @media(max-width:700px){html body .sv-close{padding-top:80px!important}html body .sv-close .in-close-card{padding-top:78px!important}}
+/* 24/11: Serviços especializados sem hero: o bloco branco não sobe mais sobre a hero */
+html body .sv-sheet{margin-top:0!important;border-radius:0!important}
