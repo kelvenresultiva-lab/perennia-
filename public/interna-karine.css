@@ -738,3 +738,22 @@ radial-gradient(80% 30% at 90% 96%,rgba(92,150,108,.28) 0%,rgba(92,150,108,0) 70
 @media(max-width:1100px){.in-ring.r360{margin:120px auto 24px!important}}
 @media(max-width:600px){.in-ring.r360{width:280px!important;margin-top:100px!important}.r360-txt{font-size:15px}}
 .r360-img{width:94%!important;aspect-ratio:240/370!important;bottom:32px!important;-webkit-mask-image:linear-gradient(180deg,#000 82%,transparent 99%)!important;mask-image:linear-gradient(180deg,#000 82%,transparent 99%)!important}.r360-txt{font-size:18px!important;letter-spacing:.2em!important}.in-ring.r360{margin-top:200px!important}@media(max-width:1100px){.in-ring.r360{margin:210px auto 24px!important}}@media(max-width:600px){.in-ring.r360{margin-top:170px!important}}
+/* 26/11 v2: modelo do advogado — aro fino ATRÁS dela (sem disco), foto grande na frente, cards menores */
+@media(min-width:1101px){
+#dimensoes .in-orbit{grid-template-columns:minmax(0,330px) 440px minmax(0,330px)!important;justify-content:center!important;gap:24px!important;align-items:center!important}
+#dimensoes .in-orbit-col{gap:14px!important;grid-template-rows:none!important}
+}
+#dimensoes .in-orbit .in-card{padding:18px 20px 20px!important;border-radius:16px!important}
+#dimensoes .in-orbit .in-card h3{font-size:16px!important;margin-bottom:6px!important;padding-right:30px!important}
+#dimensoes .in-orbit .in-card p{font-size:13px!important;line-height:1.5!important}
+#dimensoes .in-orbit .in-card .in-ico{width:34px!important;height:34px!important;margin-bottom:10px!important}
+#dimensoes .in-orbit .in-card .in-tag{top:16px!important;right:18px!important;font-size:11px!important}
+.in-ring.r360{width:440px!important;height:560px!important;aspect-ratio:auto!important;margin:0 auto!important}
+.r360-arc{inset:auto!important;left:50%!important;top:30px!important;width:380px!important;height:380px!important;transform:translateX(-50%)}
+.r360-disc{fill:rgba(255,255,255,.025)!important}
+.r360-line2{display:none}
+.r360-line{stroke-width:2.5!important}
+.r360-img{width:400px!important;aspect-ratio:240/330!important;bottom:0!important;-webkit-mask-image:linear-gradient(180deg,#000 80%,transparent 100%)!important;mask-image:linear-gradient(180deg,#000 80%,transparent 100%)!important}
+@media(max-width:1100px){.in-ring.r360{margin:0 auto 24px!important}}
+@media(max-width:600px){.in-ring.r360{width:100%!important;max-width:340px;height:440px!important;margin:0 auto 20px!important}.r360-arc{width:300px!important;height:300px!important;top:24px!important}.r360-img{width:310px!important}}
+.r360-arc{top:95px!important}@media(max-width:600px){.r360-arc{top:78px!important}}

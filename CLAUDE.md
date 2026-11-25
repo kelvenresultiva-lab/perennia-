@@ -242,3 +242,5 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 26/11: Nossa trajetória (sobre.html): curvas brancas da seta (.tl-notch-top/.tl-notch-bot) agora sobrepõem 4px a borda da seção (antes 1px), some a linha cinza que cruzava a curva no celular. CSS ?v=2611zg.
 
 - 26/11: perennia-360.html, Seis dimensões: centro (antes anel "360° PERENNIA") virou foto da sócia de terninho dourado (assets/socia-360.webp, PNG sem fundo enviado pelo usuário; original com fundo em assets/socia-dourado-original.jpg) saindo do aro, com "360° ✦ PERENNIA" escrito em volta do aro (.in-ring.r360, SVG textPath). Nome da sócia NÃO informado (alt genérico). Backup scratchpad/p360-antes-foto360.html. CSS ?v=2611zj.
+
+- 26/11: Seis dimensões v2 (modelo do advogado): aro fino ATRÁS dela (sem disco, sem 2º círculo), cabeça passa por cima do aro, foto 400px na frente; coluna central 440px; cards menores (padding 18/20, título 16px, texto 13px, ícone 34px). CSS ?v=2611zl.
