@@ -224,3 +224,5 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 26/11: Atendimento: luzes no fundo (.at-green:before brilho dourado atrás do mapa + reflexos verdes nos cantos; :after vinheta), com mask que apaga as luzes nos 140px do topo para não marcar a emenda com o encaixe. CSS ?v=2611r.
 
 - 26/11: Atendimento: card da sede à esquerda do pino do mapa (.at-mapwrap > .at-sede): "Sede em Contagem-MG" + Av. Olímpio Garcia, nº 430, 3º andar, Bairro Eldorado – Contagem/MG, CEP 32315-140 (endereço passado pelo usuário). Backup scratchpad/sobre-antes-sede.html. CSS ?v=2611s.
+
+- 26/11: Atendimento: card do mapa agora só "Contagem – MG"; endereço completo foi para o parágrafo "Prefere olho no olho?" (na nossa sede: ...). Mapa maior (desktop coluna 1.2fr, até 600px; celular ~335px). CSS ?v=2611v.
