@@ -715,3 +715,4 @@ radial-gradient(80% 30% at 90% 96%,rgba(92,150,108,.28) 0%,rgba(92,150,108,0) 70
 .at-wa .in-ic svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linejoin:round}
 @media(max-width:900px){.at-cta{justify-content:center}}
 @media(min-width:901px){.at-wa{width:auto!important;max-width:320px!important}}
+@media(min-width:901px){html body .at-cta .at-wa{min-width:0!important;width:auto!important;padding-left:26px!important}}
