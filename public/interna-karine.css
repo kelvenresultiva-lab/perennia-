@@ -406,3 +406,21 @@ html body .sv-close .in-close-card h2{margin-top:0!important}
 @media(max-width:700px){html body .sv-close{padding-top:80px!important}html body .sv-close .in-close-card{padding-top:78px!important}}
 /* 24/11: Serviços especializados sem hero: o bloco branco não sobe mais sobre a hero */
 html body .sv-sheet{margin-top:0!important;border-radius:0!important}
+
+/* 24/11: Serviços especializados — fim do #portfolio igual à home: a seção seguinte (#como-contratar) é VERDE, com cantos arredondados e o encaixe (.cc-notch) no meio do topo onde fica a seta; a palavra gigante .sv-ghost saiu */
+#portfolio{overflow:visible!important;padding-bottom:110px!important}
+#portfolio>.ks-scroll-cue{z-index:6;bottom:-30px!important}
+html body .in-sec.cc-dark{background:radial-gradient(ellipse 60% 50% at 15% 85%,rgba(46,110,72,.28),transparent 70%),linear-gradient(180deg,#0F2E1F 0%,#0B2618 100%)!important;padding-top:130px!important}
+.cc-notch{position:absolute;top:-1px;left:50%;transform:translateX(-50%);width:220px;height:60px;z-index:2;pointer-events:none}
+.cc-notch path{fill:#FFFFFF}
+.cc-dark .in-eyebrow{background:rgba(216,190,142,.08)!important;border:1px solid rgba(216,190,142,.45)!important;color:#E6CF9E!important;box-shadow:none!important}
+.cc-dark .in-h2{color:#F3EFE6!important}
+.cc-dark .in-h2 em{color:#D8BE8E!important}
+.cc-dark .sv-item.is-dark{background:linear-gradient(150deg,#21573D 0%,#14382A 100%)}
+.cc-dark .ks-scroll-cue{color:#D8BE8E}
+@media(max-width:700px){
+  #portfolio{padding-bottom:80px!important}
+  #portfolio>.ks-scroll-cue{bottom:-17px!important}
+  html body .in-sec.cc-dark{padding-top:100px!important}
+  .cc-notch{width:160px;height:46px}
+}
