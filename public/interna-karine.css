@@ -544,3 +544,17 @@ html body #trajetoria{background:radial-gradient(ellipse 60% 45% at 12% 88%,rgba
 .at-body strong{color:#D8BE8E;font-weight:600}
 @media(max-width:900px){.at-card{grid-template-columns:1fr;gap:36px;padding:84px 26px 44px}.at-map{max-width:360px}}
 @media(max-width:700px){.at-sec{padding:90px 16px 90px!important}.at-card>.in-seal{width:104px!important;height:104px!important}.at-body p{font-size:15.5px}}
+/* 25/11 mapa do Atendimento v2: relevo (feDiffuseLighting), espessura 3D, sombra, linhas finas e marcador quadrado com pino */
+.at-shadow{fill:rgba(0,0,0,.55)!important;filter:url(#at-blur)}
+.at-ext path{fill:#A9A190}
+.at-ext path:first-child{fill:#7E7766}
+.at-land{fill:url(#at-g)!important;stroke:none!important}
+.at-edge{fill:none;stroke:rgba(255,255,255,.9);stroke-width:.8;stroke-linejoin:round}
+.at-lines path{stroke:#5E6A62!important;stroke-width:.9!important;stroke-opacity:.6!important}
+.at-dots circle{r:3.2;fill:#0F2E1F!important;stroke:#FFFFFF!important;stroke-width:1.6!important}
+.at-pin rect{fill:#0F2E1F;stroke:#D8BE8E;stroke-width:1.4}
+.at-pin>path{fill:none;stroke:#F4F1EA;stroke-width:1.6;stroke-linejoin:round}
+.at-pin-dot{fill:#D8BE8E}
+.at-pulse{fill:rgba(216,190,142,.25);stroke:rgba(216,190,142,.7);stroke-width:1;transform-origin:0 0;transform-box:fill-box;animation:at-pulse 2.6s ease-out infinite}
+@keyframes at-pulse{0%{transform:scale(.9);opacity:.9}100%{transform:scale(2.1);opacity:0}}
+@media(prefers-reduced-motion:reduce){.at-pulse{animation:none;opacity:.5}}
