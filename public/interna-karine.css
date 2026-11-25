@@ -387,3 +387,14 @@ html body .in-close-card>.in-seal{box-shadow:0 0 0 8px #FFFFFF,0 14px 30px -12px
 #portfolio .in-head2,#como-contratar .in-head2{display:flex!important;flex-direction:column;align-items:center;text-align:center!important;max-width:860px;margin-left:auto!important;margin-right:auto!important}
 #como-contratar .in-head2 .in-h2{text-align:center!important;margin-left:auto;margin-right:auto}
 @media(min-width:701px) and (max-width:1000px){.cc-grid .sv-item:nth-child(3){grid-column:1/-1;max-width:calc(50% - 11px);justify-self:center;width:100%}}
+
+/* 24/11: Serviços especializados > card final (.sv-close) sem o selo e no design dos cards .sv-item verdes: aba clara no topo, ícone em quadrado com sombra deslocada, cantos 16px */
+html body .sv-close{padding-top:70px!important}
+html body .sv-close .in-close-card{position:relative!important;max-width:1180px!important;margin:0 auto;display:flex!important;flex-direction:column;align-items:center;text-align:center;padding:66px 30px 52px!important;border-radius:16px!important;background:linear-gradient(150deg,#1A4632 0%,#0F2E1F 100%)!important;border:1px solid rgba(216,190,142,.3)!important;box-shadow:0 26px 50px -40px rgba(15,46,31,.45)!important;overflow:visible}
+html body .sv-close .in-close-card:before{content:""!important;position:absolute!important;top:-1px!important;left:50%!important;right:auto!important;bottom:auto!important;width:150px!important;height:13px!important;transform:translateX(-50%)!important;border-radius:0 0 14px 14px!important;background:#E9E2D2!important;opacity:1!important}
+html body .sv-close .in-close-card:after{display:none!important}
+.sv-close .sv-ico:before{background:rgba(255,255,255,.16)}
+.sv-close .sv-ico svg{background:#F6F4EE;stroke:#14382A}
+html body .sv-close .in-close-card h2{margin:0 auto!important}
+@media(max-width:700px){html body .sv-close{padding-top:48px!important}html body .sv-close .in-close-card{padding:54px 22px 40px!important}}
+html body .sv-close .in-close-card h2{max-width:720px!important}

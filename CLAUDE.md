@@ -173,3 +173,4 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 24/11: .sv-ghost maior (pedido do usuário): desktop clamp(60px,10vw,210px) ocupando quase toda a largura; celular 16.4vw em 2 linhas. CSS ?v=2411g.
 - 24/11: Serviços especializados > #portfolio: selo PORTFÓLIO, título e chips dos serviços centralizados (fim do interna-karine.css, ?v=2411h).
 - 24/11: Serviços especializados > #como-contratar: os 3 passos agora usam o MESMO card dos serviços (<ol class="sv-grid cc-grid"> com <li class="sv-item">, o do meio .is-dark), sem botão; título centralizado. As regras .cc-cards/.cc-card ficaram sem uso. CSS ?v=2411i.
+- 24/11: Serviços especializados > card final: selo/logo REMOVIDO e card no design dos .sv-item verdes (section.in-close.sv-close: aba clara no topo, ícone .sv-ico de conversa, cantos 16px, largura 1180px). Só nessa página; as outras internas mantêm o card com selo. CSS ?v=2411k.
