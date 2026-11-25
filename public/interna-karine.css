@@ -768,3 +768,14 @@ radial-gradient(80% 30% at 90% 96%,rgba(92,150,108,.28) 0%,rgba(92,150,108,0) 70
 #dimensoes .in-orbit .in-card .in-tag{color:#D8BE8E!important}
 #dimensoes .in-orbit .in-card .in-ico{background:linear-gradient(145deg,#F6F1E6,#DCCFB2)!important;color:#0F2E1F!important;box-shadow:none!important;border:0!important}
 #dimensoes .in-orbit .in-card .in-ico svg{stroke:#0F2E1F!important}
+/* 26/11: FAQ com contraste (modelo enviado): pergunta em barra verde-escura, ícone seta em círculo, resposta em painel branco colado. Vale para .ks-faq-item (sobre) e .in-faq (perennia-360) */
+.ks-faq-item,.in-faq details{background:#fff!important;border:0!important;border-radius:14px!important;overflow:hidden;box-shadow:0 16px 34px -24px rgba(6,23,13,.55)!important}
+.ks-faq-item summary,.in-faq summary{background:linear-gradient(120deg,#17402F 0%,#0F2E1F 55%,#0A2216 100%)!important;color:#F3EFE6!important;border-radius:14px!important;padding:22px 26px!important;font-weight:500!important;transition:border-radius .2s}
+.ks-faq-item summary span{color:#F3EFE6!important}
+.ks-faq-item[open] summary,.in-faq details[open] summary{border-radius:14px 14px 0 0!important}
+.ks-faq-item summary i,.in-faq summary:after{content:''!important;position:relative;display:block;flex:0 0 30px!important;width:30px!important;height:30px!important;border-radius:50%!important;background:transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23F3EFE6' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 6.5v11M7.5 13 12 17.5 16.5 13'/%3E%3C/svg%3E") center/16px 16px no-repeat!important;box-shadow:inset 0 0 0 1.5px rgba(243,239,230,.85)!important;transition:transform .3s!important;transform:none!important}
+.ks-faq-item summary i:before,.ks-faq-item summary i:after{display:none!important}
+.ks-faq-item[open] summary i,.in-faq details[open] summary:after{transform:rotate(180deg)!important;background-color:transparent!important;box-shadow:inset 0 0 0 1.5px #D8BE8E!important}
+.ks-faq-item p,.in-faq details p{margin:0!important;padding:22px 26px 24px!important;max-width:none!important;color:#2F3A33!important;background:#fff}
+.ks-faq-item summary:focus-visible,.in-faq summary:focus-visible{outline:2px solid #D8BE8E;outline-offset:2px}
+@media(max-width:600px){.ks-faq-item summary,.in-faq summary{padding:18px 18px!important;font-size:15.5px!important}.ks-faq-item p,.in-faq details p{padding:18px 18px 20px!important;font-size:15px!important}}

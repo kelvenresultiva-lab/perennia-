@@ -248,3 +248,5 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 26/11: Seis dimensões v3: aro trocado pelo do modelo do advogado — faixa grossa metálica (stroke 18, gradiente dourado claro→escuro que some embaixo à esquerda, brilho fino) atrás dela; "360° ✦ PERENNIA" gravado em verde-escuro dentro da faixa. CSS ?v=2611zm.
 
 - 26/11: Seis dimensões: cards em verde mais escuro que o fundo (vidro verde-escuro, borda dourada sutil), título claro, texto 70%, número dourado, ícone em quadrado claro. CSS ?v=2611zn.
+
+- 26/11: FAQ com contraste (modelo enviado) em todas as páginas com perguntas (sobre .ks-faq-item e perennia-360 .in-faq): pergunta em barra verde-escura com gradiente, ícone seta num círculo (gira ao abrir, contorno dourado), resposta em painel branco colado embaixo. Index e demais páginas não têm FAQ. CSS ?v=2611zo.
