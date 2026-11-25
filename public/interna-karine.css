@@ -453,3 +453,10 @@ html body #contatos.ks-footer-cream{background:#F4F1EA!important;color:#3A4D41;b
 .ks-footer-cream .ks-flogo-p,.ks-footer-cream .ks-flogo-t{-webkit-mask:none!important;mask:none!important;background:url("assets/perennia-logo-claro.webp") no-repeat!important;background-size:calc(var(--s) * 202) auto!important}
 .ks-footer-cream .ks-flogo-p{background-position:calc(var(--s) * -2) calc(var(--s) * -4)!important}
 .ks-footer-cream .ks-flogo-t{background-position:0 calc(var(--s) * -84)!important}
+
+/* 24/11: Serviços especializados no celular — os 8 botões de serviço viram uma faixa deslizante (uma linha, arrasta para o lado), com fade nas bordas */
+@media(max-width:700px){
+  #portfolio .in-chips{display:flex!important;flex-wrap:nowrap!important;justify-content:flex-start!important;gap:8px!important;overflow-x:auto;scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch;scrollbar-width:none;margin-left:-20px!important;margin-right:-20px!important;padding:4px 20px 6px!important;width:calc(100% + 40px);max-width:none!important;-webkit-mask:linear-gradient(90deg,transparent 0,#000 18px,#000 calc(100% - 28px),transparent);mask:linear-gradient(90deg,transparent 0,#000 18px,#000 calc(100% - 28px),transparent)}
+  #portfolio .in-chips::-webkit-scrollbar{display:none}
+  #portfolio .in-chips li{flex:0 0 auto;scroll-snap-align:start;white-space:nowrap}
+}
