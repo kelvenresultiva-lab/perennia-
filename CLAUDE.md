@@ -222,3 +222,5 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 26/11: Atendimento: selo sem halo escuro (só fio dourado + sombra leve), encaixe sobrepõe 2px a seção e box-shadow -1px na seção para sumir a fresta clara. CSS ?v=2611p.
 
 - 26/11: Atendimento: luzes no fundo (.at-green:before brilho dourado atrás do mapa + reflexos verdes nos cantos; :after vinheta), com mask que apaga as luzes nos 140px do topo para não marcar a emenda com o encaixe. CSS ?v=2611r.
+
+- 26/11: Atendimento: card da sede à esquerda do pino do mapa (.at-mapwrap > .at-sede): "Sede em Contagem-MG" + Av. Olímpio Garcia, nº 430, 3º andar, Bairro Eldorado – Contagem/MG, CEP 32315-140 (endereço passado pelo usuário). Backup scratchpad/sobre-antes-sede.html. CSS ?v=2611s.
