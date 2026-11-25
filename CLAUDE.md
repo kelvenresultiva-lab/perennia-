@@ -214,3 +214,5 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 26/11: Perennia 360° — FINAL no formato da referência do usuário: #perguntas.fq-dark (verde escuro), botão 'Falar sobre o Perennia 360°' (.fq-cta#fale-conosco) logo abaixo das perguntas; card de fechamento in-close REMOVIDO; rodapé ganhou .has-notch: 'ombro' central elevado (.ft-notch, SVG 440x60, mesma cor #06170D do rodapé com contorno dourado fino) segurando o selo da logo (.in-seal.ft-seal); seta ks-to-top escondida nesse rodapé (o 'Voltar ao topo' do rodapé continua). Só nesta página. Gerado por scratchpad/final360.js; backup p360-antes-final.html. CSS ?v=2611j.
 
 - 26/11: Perennia 360°: encaixe do rodapé otimizado (SVG 560x61 com ft-fill + ft-edge contínuo com a borda dourada, sem emendas; selo 112px com halo) e FAQ (#perguntas) voltou a fundo branco (classe fq-light). CSS ?v=2611m.
+
+- 26/11: sobre.html, seção Atendimento: fundo verde em toda a seção (classe at-green), card sem caixa; logo num encaixe curvo no topo (.at-notch, mesmo desenho do rodapé do Perennia 360). Backup em scratchpad/sobre-antes-at-verde.html. CSS ?v=2611n.

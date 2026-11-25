@@ -637,3 +637,12 @@ html body #trajetoria{background:radial-gradient(ellipse 60% 45% at 12% 88%,rgba
 @media(max-width:600px){.ft-notch{width:340px!important;height:47px!important;transform:translate(-50%,-46px)!important}.ft-notch .in-seal.ft-seal{width:92px!important;height:92px!important;top:-4px!important}}
 .ft-notch{transform:translate(-50%,-61px)!important}@media(max-width:600px){.ft-notch{transform:translate(-50%,-47px)!important}}
 #perguntas.fq-light{background:#fff!important;padding-top:110px!important;padding-bottom:140px!important}
+/* 26/11: Atendimento com fundo verde em toda a seção + encaixe com logo por cima (mesmo desenho do rodapé do Perennia 360) */
+.at-sec.at-green{background:linear-gradient(180deg,#0F2E1F 0%,#0C2719 60%,#0A2216 100%)!important;border-top:1px solid rgba(216,190,142,.34)!important;margin-top:90px!important;overflow:visible!important}
+.at-green .at-card{background:transparent!important;border:0!important;box-shadow:none!important;padding-top:40px!important}
+.at-notch{position:absolute;left:50%;top:0;width:560px;height:61px;transform:translate(-50%,-61px);pointer-events:none;z-index:4}
+.at-notch-shape{position:absolute;inset:0;width:100%;height:100%}
+.at-notch-shape .ft-fill{fill:#0F2E1F!important;stroke:none!important}
+.at-notch-shape .ft-edge{fill:none!important;stroke:rgba(216,190,142,.34)!important;stroke-width:1!important;vector-effect:non-scaling-stroke}
+.at-notch .in-seal.at-seal{position:absolute!important;left:50%!important;top:-6px!important;transform:translate(-50%,-50%)!important;width:112px!important;height:112px!important;margin:0!important;box-shadow:0 0 0 1px rgba(216,190,142,.55),0 0 0 8px #0F2E1F,0 0 0 9px rgba(216,190,142,.18),0 22px 40px -14px rgba(0,0,0,.45)!important}
+@media(max-width:600px){.at-notch{width:340px;height:47px;transform:translate(-50%,-47px)}.at-notch .in-seal.at-seal{width:92px!important;height:92px!important;top:-4px!important}.at-sec.at-green{margin-top:70px!important}.at-green .at-card{padding-top:30px!important}}
