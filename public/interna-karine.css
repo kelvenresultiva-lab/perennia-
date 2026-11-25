@@ -647,3 +647,8 @@ html body #trajetoria{background:radial-gradient(ellipse 60% 45% at 12% 88%,rgba
 .at-notch .in-seal.at-seal{position:absolute!important;left:50%!important;top:-6px!important;transform:translate(-50%,-50%)!important;width:112px!important;height:112px!important;margin:0!important;box-shadow:0 0 0 1px rgba(216,190,142,.55),0 0 0 8px #0F2E1F,0 0 0 9px rgba(216,190,142,.18),0 22px 40px -14px rgba(0,0,0,.45)!important}
 @media(max-width:600px){.at-notch{width:340px;height:47px;transform:translate(-50%,-47px)}.at-notch .in-seal.at-seal{width:92px!important;height:92px!important;top:-4px!important}.at-sec.at-green{margin-top:70px!important}.at-green .at-card{padding-top:30px!important}}
 .ks-scroll-cue[href="#atendimento"]{display:none!important}.at-sec.at-green{border-top:0!important;margin-top:60px!important}.at-notch-shape .ft-edge{display:none!important}
+/* 26/11: sem halo escuro atrás do selo do Atendimento e sem fresta clara na emenda */
+.at-notch .in-seal.at-seal{box-shadow:0 0 0 1px rgba(216,190,142,.6),0 16px 30px -16px rgba(0,0,0,.35)!important}
+.at-notch{transform:translate(-50%,-59px)!important}
+.at-sec.at-green{box-shadow:0 -1px 0 0 #0F2E1F!important;background:#0F2E1F linear-gradient(180deg,#0F2E1F 0%,#0C2719 60%,#0A2216 100%)!important}
+@media(max-width:600px){.at-notch{transform:translate(-50%,-45px)!important}}
