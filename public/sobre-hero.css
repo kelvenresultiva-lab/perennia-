@@ -206,3 +206,6 @@ html body .ks-btn .ks-cta-icon,html body .perennia-cta .ks-cta-icon,html body a.
 .sb2-hero h1{font-weight:400!important;letter-spacing:-.025em!important}
 .sb2-hero h1 em{font-style:normal!important}
 .sb2-hero .ks-cta-icon svg{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+
+/* 25/11: na foto da Sobre o selo (top 20%) cobria o rosto da sócia de amarelo: no computador ele desce para a parte de baixo da foto */
+@media(min-width:701px){.sb2-hero .ks-seal{top:auto!important;bottom:12%!important}}
