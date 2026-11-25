@@ -492,3 +492,20 @@ html body #trajetoria{background:radial-gradient(ellipse 60% 50% at 15% 85%,rgba
 #trajetoria .tl-card.sv-item:hover{transform:translateY(-4px)}
 @media(min-width:801px){#trajetoria .tl-dot{top:44px!important}}
 @media(max-width:800px){#trajetoria .tl-card.sv-item{padding:52px 20px 26px!important}#trajetoria .tl-dot{top:40px!important}}
+
+/* 25/11: #trajetoria SEM cara de card (pedido do usuário): verde mais escuro de ponta a ponta, sem cantos nem margem; encaixe com a seta no TOPO (seta do #historia) e na BASE (seta da própria seção), marcando início e fim, como as transições da home */
+html body #trajetoria{background:radial-gradient(ellipse 60% 45% at 12% 88%,rgba(46,110,72,.18),transparent 70%),linear-gradient(180deg,#0A2216 0%,#06170D 100%)!important;border-radius:0!important;margin:0!important;padding-top:130px!important;padding-bottom:150px!important;overflow:visible}
+.tl-notch{position:absolute;left:50%;transform:translateX(-50%);width:220px;height:60px;z-index:2;pointer-events:none}
+.tl-notch path{fill:#FFFFFF}
+.tl-notch-top{top:-1px}
+.tl-notch-bot{bottom:-1px}
+#historia{overflow:visible!important}
+#historia>.ks-scroll-cue{z-index:6;bottom:-30px!important;color:#8C6B3C}
+#trajetoria>.ks-scroll-cue{z-index:6;bottom:-30px!important;color:#8C6B3C}
+@media(max-width:700px){
+  html body #trajetoria{padding-top:100px!important;padding-bottom:120px!important}
+  .tl-notch{width:160px;height:46px}
+  #historia>.ks-scroll-cue,#trajetoria>.ks-scroll-cue{bottom:-17px!important}
+}
+#trajetoria>.ks-scroll-cue{bottom:8px!important}
+@media(max-width:700px){#trajetoria>.ks-scroll-cue{bottom:6px!important}}
