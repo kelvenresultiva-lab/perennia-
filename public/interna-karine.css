@@ -652,3 +652,17 @@ html body #trajetoria{background:radial-gradient(ellipse 60% 45% at 12% 88%,rgba
 .at-notch{transform:translate(-50%,-59px)!important}
 .at-sec.at-green{box-shadow:0 -1px 0 0 #0F2E1F!important;background:#0F2E1F linear-gradient(180deg,#0F2E1F 0%,#0C2719 60%,#0A2216 100%)!important}
 @media(max-width:600px){.at-notch{transform:translate(-50%,-45px)!important}}
+/* 26/11: luzes no fundo do Atendimento (brilho dourado atrás do mapa, luz suave no topo e reflexo no canto, como no modelo) */
+.at-sec.at-green{isolation:isolate}
+.at-sec.at-green:before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:
+radial-gradient(38% 55% at 27% 56%,rgba(216,190,142,.30) 0%,rgba(216,190,142,.12) 38%,rgba(216,190,142,0) 72%),
+radial-gradient(30% 34% at 50% 0%,rgba(230,207,158,.16) 0%,rgba(230,207,158,0) 70%),
+radial-gradient(34% 50% at 88% 92%,rgba(92,150,108,.20) 0%,rgba(92,150,108,0) 70%),
+radial-gradient(28% 40% at 4% 8%,rgba(92,150,108,.14) 0%,rgba(92,150,108,0) 70%)}
+.at-sec.at-green:after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(120% 90% at 50% 50%,rgba(0,0,0,0) 55%,rgba(0,0,0,.28) 100%)}
+.at-green .at-card{position:relative;z-index:1}
+@media(max-width:900px){.at-sec.at-green:before{background:
+radial-gradient(70% 30% at 50% 22%,rgba(216,190,142,.28) 0%,rgba(216,190,142,.10) 40%,rgba(216,190,142,0) 75%),
+radial-gradient(60% 18% at 50% 0%,rgba(230,207,158,.14) 0%,rgba(230,207,158,0) 70%),
+radial-gradient(70% 30% at 90% 95%,rgba(92,150,108,.20) 0%,rgba(92,150,108,0) 70%)}}
+.at-sec.at-green:before,.at-sec.at-green:after{-webkit-mask-image:linear-gradient(180deg,transparent 0,#000 140px);mask-image:linear-gradient(180deg,transparent 0,#000 140px)}

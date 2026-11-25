@@ -220,3 +220,5 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 26/11: Atendimento (sobre.html): seta de rolagem que ficava sobre o selo escondida (.ks-scroll-cue[href="#atendimento"]), tirada a borda/linha dourada do encaixe. CSS ?v=2611o.
 
 - 26/11: Atendimento: selo sem halo escuro (só fio dourado + sombra leve), encaixe sobrepõe 2px a seção e box-shadow -1px na seção para sumir a fresta clara. CSS ?v=2611p.
+
+- 26/11: Atendimento: luzes no fundo (.at-green:before brilho dourado atrás do mapa + reflexos verdes nos cantos; :after vinheta), com mask que apaga as luzes nos 140px do topo para não marcar a emenda com o encaixe. CSS ?v=2611r.
