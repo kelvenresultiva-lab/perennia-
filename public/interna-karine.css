@@ -710,3 +710,8 @@ radial-gradient(80% 30% at 90% 96%,rgba(92,150,108,.28) 0%,rgba(92,150,108,0) 70
 /* 26/11: encaixe de baixo sem logo */ .at-notch-b .at-seal{display:none!important}.at-sec.at-green{margin-bottom:70px!important}@media(max-width:600px){.at-sec.at-green{margin-bottom:56px!important}}
 /* 26/11: Atendimento centralizado no celular */ @media(max-width:900px){.at-green .at-body{text-align:center!important}.at-green .at-body .in-eyebrow{margin-left:auto!important;margin-right:auto!important}.at-green .at-body .at-rule{margin-left:auto!important;margin-right:auto!important}}
 @media(max-width:900px){.at-green .at-body .in-h2{text-align:center!important}.at-green .at-body .at-rule{background:linear-gradient(90deg,rgba(216,190,142,0),rgba(216,190,142,.6),rgba(216,190,142,0))!important}}
+/* 26/11: botão de WhatsApp na seção Atendimento (a pedido; abre o aviso enquanto WHATSAPP_NUMERO estiver vazio) */
+.at-cta{margin-top:30px;display:flex}
+.at-wa .in-ic svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linejoin:round}
+@media(max-width:900px){.at-cta{justify-content:center}}
+@media(min-width:901px){.at-wa{width:auto!important;max-width:320px!important}}
