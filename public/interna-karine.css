@@ -424,3 +424,10 @@ html body .in-sec.cc-dark{background:radial-gradient(ellipse 60% 50% at 15% 85%,
   html body .in-sec.cc-dark{padding-top:100px!important}
   .cc-notch{width:160px;height:46px}
 }
+/* 24/11: usuário não quis o verde: #como-contratar em tom quase branco (creme), mantendo cantos e o encaixe da seta; título e cards voltam às cores normais */
+html body .in-sec.cc-dark{background:#F4F1EA!important}
+.cc-dark .in-eyebrow{background:#14382A!important;border:0!important;color:#E9DCC0!important}
+.cc-dark .in-h2{color:#14301F!important}
+.cc-dark .in-h2 em{color:#8C6B3C!important}
+.cc-dark .sv-item.is-dark{background:linear-gradient(150deg,#1A4632 0%,#0F2E1F 100%)}
+.cc-dark .ks-scroll-cue{color:#8C6B3C}
