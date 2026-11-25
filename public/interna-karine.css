@@ -518,3 +518,8 @@ html body #trajetoria{background:radial-gradient(ellipse 60% 45% at 12% 88%,rgba
 #quem-somos .qs-card.is-dark .in-chips li{background:rgba(255,255,255,.06)!important;border-color:rgba(216,190,142,.4)!important;color:#F3EFE6!important}
 #quem-somos .qs-card{grid-column:auto!important}
 #quem-somos .qs-card .sv-n{text-transform:uppercase}
+
+/* 25/11: Quem somos + Nossa história numa seção só (#quem-somos.hs-merged); a seta dela entra no encaixe do topo da #trajetoria */
+#quem-somos{overflow:visible!important}
+#quem-somos>.ks-scroll-cue{z-index:6;bottom:-30px!important;color:#8C6B3C}
+@media(max-width:700px){#quem-somos>.ks-scroll-cue{bottom:-17px!important}}
