@@ -230,3 +230,5 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 26/11: Atendimento: luzes do fundo reforçadas (brilho dourado atrás do mapa mais forte + novos pontos dourados à direita/cantos e reflexos verdes maiores). CSS ?v=2611w.
 
 - 26/11: Atendimento: encaixe com logo também no FIM da seção (.at-notch.at-notch-b, curva espelhada descendo sobre o branco, fill #0A2216); seta de rolagem da seção escondida; seção z-index 3 para o selo ficar por cima do FAQ; luzes com mask também nos 140px de baixo. Backup scratchpad/sobre-antes-notch-b.html. CSS ?v=2611y.
+
+- 26/11: encaixe do fim do Atendimento SEM logo (selo .at-notch-b escondido a pedido), margem abaixo 70px. CSS ?v=2611z.
