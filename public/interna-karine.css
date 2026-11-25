@@ -369,3 +369,9 @@ html body .in-close-card>.in-seal{box-shadow:0 0 0 8px #FFFFFF,0 14px 30px -12px
 .ks-faq:has(> .ks-scroll-cue){padding-bottom:104px!important}
 @media(max-width:700px){.ks-faq:has(> .ks-scroll-cue){padding-bottom:72px!important}}
 .sb2-hero~.in-sheet{margin-top:0!important;border-radius:0!important}
+
+/* 24/11: Serviços especializados > #portfolio — palavra gigante esmaecida embaixo dos cards (referência "Diferenciais" enviada pelo usuário), cortada pela base da seção */
+#portfolio{overflow:hidden;padding-bottom:clamp(150px,13vw,230px)!important}
+#portfolio>.in-wrap{position:relative;z-index:1}
+.sv-ghost{position:absolute;z-index:0;left:50%;bottom:-.2em;transform:translateX(-50%);white-space:nowrap;font-size:clamp(44px,7.6vw,150px);line-height:1;font-weight:700;letter-spacing:-.04em;color:rgba(20,56,42,.055);pointer-events:none;user-select:none}
+@media(max-width:700px){#portfolio{padding-bottom:150px!important}.sv-ghost{white-space:normal;width:100%;text-align:center;font-size:16vw;line-height:.92;bottom:-.12em}}
