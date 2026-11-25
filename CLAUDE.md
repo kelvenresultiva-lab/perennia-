@@ -216,3 +216,5 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 26/11: Perennia 360°: encaixe do rodapé otimizado (SVG 560x61 com ft-fill + ft-edge contínuo com a borda dourada, sem emendas; selo 112px com halo) e FAQ (#perguntas) voltou a fundo branco (classe fq-light). CSS ?v=2611m.
 
 - 26/11: sobre.html, seção Atendimento: fundo verde em toda a seção (classe at-green), card sem caixa; logo num encaixe curvo no topo (.at-notch, mesmo desenho do rodapé do Perennia 360). Backup em scratchpad/sobre-antes-at-verde.html. CSS ?v=2611n.
+
+- 26/11: Atendimento (sobre.html): seta de rolagem que ficava sobre o selo escondida (.ks-scroll-cue[href="#atendimento"]), tirada a borda/linha dourada do encaixe. CSS ?v=2611o.
