@@ -795,3 +795,6 @@ radial-gradient(80% 22% at 50% 24%,rgba(216,190,142,.38) 0%,rgba(216,190,142,.14
 radial-gradient(70% 18% at 85% 55%,rgba(230,207,158,.14) 0%,rgba(230,207,158,0) 70%),
 radial-gradient(70% 20% at 10% 75%,rgba(92,150,108,.24) 0%,rgba(92,150,108,0) 70%),
 radial-gradient(80% 20% at 90% 96%,rgba(216,190,142,.16) 0%,rgba(216,190,142,0) 70%)}}
+/* 26/11: "Nossa jornada de valor" juntou-se ao "O que é o Perennia 360°" (mesma seção, separada por fio dourado) */
+#o-que-e .oq-jornada{margin-top:72px!important;padding-top:64px!important;border-top:1px solid rgba(216,190,142,.4)}
+@media(max-width:600px){#o-que-e .oq-jornada{margin-top:48px!important;padding-top:44px!important}}
