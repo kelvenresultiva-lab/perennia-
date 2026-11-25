@@ -240,3 +240,5 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 26/11: sobre.html #quem-somos (abaixo da hero) centralizado no celular/tablet (<=900px): textos, selo, título; citação sem barra lateral (linhas douradas em cima/embaixo); assinatura em coluna centralizada. CSS ?v=2611zf.
 
 - 26/11: Nossa trajetória (sobre.html): curvas brancas da seta (.tl-notch-top/.tl-notch-bot) agora sobrepõem 4px a borda da seção (antes 1px), some a linha cinza que cruzava a curva no celular. CSS ?v=2611zg.
+
+- 26/11: perennia-360.html, Seis dimensões: centro (antes anel "360° PERENNIA") virou foto da sócia de terninho dourado (assets/socia-360.webp, PNG sem fundo enviado pelo usuário; original com fundo em assets/socia-dourado-original.jpg) saindo do aro, com "360° ✦ PERENNIA" escrito em volta do aro (.in-ring.r360, SVG textPath). Nome da sócia NÃO informado (alt genérico). Backup scratchpad/p360-antes-foto360.html. CSS ?v=2611zj.
