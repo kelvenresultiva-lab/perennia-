@@ -633,3 +633,17 @@ html body #trajetoria{background:radial-gradient(ellipse 60% 45% at 12% 88%,rgba
 }
 @media(max-width:1279px){#trajetoria .tl-road .tl-seal{display:none!important}}
 @media(min-width:1280px){#trajetoria .tl-road{grid-template-columns:120px repeat(3,minmax(0,1fr)) 130px 240px!important;max-width:none!important;width:min(1320px,calc(100vw - 64px))!important;margin:0 calc((100% - min(1320px,calc(100vw - 64px)))/2)!important}#trajetoria .tl-road .tl-txt{max-width:290px}}
+/* 25/11 selos da logo também na estrada vertical (<1280px): início acima do 1º marco e fim abaixo do último */
+@media(max-width:1279px){
+#trajetoria .tl-road{padding-top:118px!important;padding-bottom:118px!important}
+#trajetoria .tl-road .tl-seal{display:block!important;position:absolute!important;z-index:2;left:-12px!important;width:94px!important;height:94px!important}
+#trajetoria .tl-road .tl-seal-start{top:-118px!important}
+#trajetoria .tl-road .tl-seal-end{top:auto!important;bottom:-118px!important}
+#trajetoria .tl-road .tl-seal-core{inset:20px}
+#trajetoria .tl-road .tl-seal-core img{height:26px!important}
+#trajetoria .tl-road .tl-seal text{font-size:14px}
+#trajetoria .tl-road .tl-item:first-child:before{top:-70px!important}
+#trajetoria .tl-road .tl-item:last-child:before{height:auto!important;bottom:-70px!important}
+#trajetoria .tl-road .tl-item:last-child{padding-bottom:0!important}
+}
+@media(max-width:600px){#trajetoria .tl-road .tl-seal{left:-11px!important;width:80px!important;height:80px!important}#trajetoria .tl-road .tl-seal-start{top:-108px!important}#trajetoria .tl-road .tl-seal-end{bottom:-108px!important}#trajetoria .tl-road{padding-top:108px!important;padding-bottom:108px!important}#trajetoria .tl-road .tl-seal-core{inset:17px}#trajetoria .tl-road .tl-seal-core img{height:22px!important}}
