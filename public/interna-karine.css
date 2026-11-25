@@ -596,11 +596,12 @@ html body #trajetoria{background:radial-gradient(ellipse 60% 45% at 12% 88%,rgba
 #trajetoria .tl-grid .tl-item{position:relative;z-index:1}
 /* 26/11 aba verde na lateral dos cards das sócias REMOVIDA (pedido: não ficou legal) */
 .ps-tab{display:none!important}
-/* 26/11 Perennia 360°: seção #o-que-e (1ª da página, após tirar a hero) em VERDE ESCURO (pedido), mesmo verde da trajetória; textos claros, selo/eyebrow e citação em dourado */
-#o-que-e{background:radial-gradient(ellipse 60% 55% at 12% 90%,rgba(46,110,72,.2),transparent 70%),linear-gradient(180deg,#0F2E1F 0%,#0A2216 100%)!important;padding-top:110px!important;padding-bottom:110px!important}
-#o-que-e .in-eyebrow{background:rgba(216,190,142,.08)!important;border:1px solid rgba(216,190,142,.45)!important;color:#E6CF9E!important;box-shadow:none!important}
-#o-que-e .in-h2{color:#F3EFE6!important}
-#o-que-e .in-h2 em{color:#D8BE8E!important}
-#o-que-e .in-text p{color:rgba(243,239,230,.82)!important}
-#o-que-e .in-quote{color:#F3EFE6!important;border-color:#B8955F!important;background:rgba(255,255,255,.04)!important}
-#o-que-e>.ks-scroll-cue{color:#D8BE8E!important}
+/* 26/11 Perennia 360°: seção #dimensoes (Seis dimensões de análise) em VERDE ESCURO (pedido; o verde posto por engano em #o-que-e foi desfeito). Cards continuam claros; título/nota/anel em claro e dourado */
+#dimensoes{background:radial-gradient(ellipse 55% 45% at 50% 60%,rgba(46,110,72,.22),transparent 70%),linear-gradient(180deg,#0F2E1F 0%,#0A2216 100%)!important;padding-top:110px!important;padding-bottom:120px!important}
+#dimensoes .in-eyebrow{background:rgba(216,190,142,.08)!important;border:1px solid rgba(216,190,142,.45)!important;color:#E6CF9E!important;box-shadow:none!important}
+#dimensoes .in-h2{color:#F3EFE6!important}
+#dimensoes .in-h2 em{color:#D8BE8E!important}
+#dimensoes .in-note{background:rgba(216,190,142,.06)!important;box-shadow:inset 0 0 0 1px rgba(216,190,142,.22)!important;color:#E8E1D2!important}
+#dimensoes .in-note strong,#dimensoes .in-note a{color:#D8BE8E!important}
+#dimensoes .in-card{box-shadow:0 26px 50px -30px rgba(0,0,0,.6)!important}
+#dimensoes>.ks-scroll-cue{color:#D8BE8E!important}
