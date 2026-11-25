@@ -757,3 +757,7 @@ radial-gradient(80% 30% at 90% 96%,rgba(92,150,108,.28) 0%,rgba(92,150,108,0) 70
 @media(max-width:1100px){.in-ring.r360{margin:0 auto 24px!important}}
 @media(max-width:600px){.in-ring.r360{width:100%!important;max-width:340px;height:440px!important;margin:0 auto 20px!important}.r360-arc{width:300px!important;height:300px!important;top:24px!important}.r360-img{width:310px!important}}
 .r360-arc{top:95px!important}@media(max-width:600px){.r360-arc{top:78px!important}}
+/* 26/11 v3: aro do modelo — faixa grossa metálica (dourada) que some embaixo à esquerda, 360° gravado na faixa */
+.r360-band{fill:none;stroke:url(#r360-m);stroke-width:18;filter:drop-shadow(0 10px 18px rgba(0,0,0,.35))}
+.r360-shine{fill:none;stroke:url(#r360-hl);stroke-width:1.2;opacity:.7}
+.r360-txt{font-size:9.5px!important;font-weight:700!important;letter-spacing:.32em!important;fill:#0F2E1F!important;fill-opacity:.75;dominant-baseline:central}
