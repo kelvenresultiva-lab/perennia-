@@ -431,3 +431,25 @@ html body .in-sec.cc-dark{background:#F4F1EA!important}
 .cc-dark .in-h2 em{color:#8C6B3C!important}
 .cc-dark .sv-item.is-dark{background:linear-gradient(150deg,#1A4632 0%,#0F2E1F 100%)}
 .cc-dark .ks-scroll-cue{color:#8C6B3C}
+
+/* 24/11: Serviços especializados — creme (#F4F1EA) do Como contratar até o fim da página, INCLUSIVE o rodapé (pedido do usuário; só nesta página) */
+html body .sv-close{background:#F4F1EA!important}
+html body .sv-close .in-close-card>.in-seal{box-shadow:0 0 0 8px #F4F1EA,0 14px 30px -12px rgba(4,33,11,.6)!important}
+html body #contatos.ks-footer-cream{background:#F4F1EA!important;color:#3A4D41;border-top:1px solid rgba(140,107,60,.18)}
+.ks-footer-cream .ks-flogo{filter:invert(1) hue-rotate(180deg) contrast(1.2)!important;mix-blend-mode:multiply!important}
+.ks-footer-cream .ks-footer-brand p{color:#14301F!important}
+.ks-footer-cream .ks-footer-brand em{background:linear-gradient(100deg,#8C6B3C,#B8955F)!important;-webkit-background-clip:text!important;background-clip:text!important;color:transparent!important}
+.ks-footer-cream h3{color:#8C6B3C!important}
+.ks-footer-cream .ks-footer-nav a,.ks-footer-cream .ks-footer-bottom a,.ks-footer-cream .ks-footer-contact p{color:#3A4D41!important}
+.ks-footer-cream .ks-footer-nav a:hover,.ks-footer-cream .ks-footer-bottom a:hover{color:#8C6B3C!important}
+.ks-footer-cream .ks-footer-bottom{color:#6B7A70!important;border-top-color:rgba(140,107,60,.2)!important}
+.ks-footer-cream .ks-to-top{color:#8C6B3C!important}
+/* logo no rodapé creme: a imagem tem fundo escuro; usamos ela como máscara (luminância) e pintamos a marca em verde Perennia */
+.ks-footer-cream .ks-flogo{filter:none!important;mix-blend-mode:normal!important}
+.ks-footer-cream .ks-flogo-p,.ks-footer-cream .ks-flogo-t{background:#14382A!important;-webkit-mask-image:url("assets/perennia-logo.webp");mask-image:url("assets/perennia-logo.webp");-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-size:calc(var(--s) * 202) auto;mask-size:calc(var(--s) * 202) auto;mask-mode:luminance}
+.ks-footer-cream .ks-flogo-p{-webkit-mask-position:calc(var(--s) * -2) calc(var(--s) * -4);mask-position:calc(var(--s) * -2) calc(var(--s) * -4);background:linear-gradient(180deg,#B8955F,#8C6B3C)!important}
+.ks-footer-cream .ks-flogo-t{-webkit-mask-position:0 calc(var(--s) * -84);mask-position:0 calc(var(--s) * -84)}
+/* logo do rodapé creme = assets/perennia-logo-claro.webp (mesma logo com fundo transparente, texto verde e P dourado, gerada a partir da perennia-logo.webp) */
+.ks-footer-cream .ks-flogo-p,.ks-footer-cream .ks-flogo-t{-webkit-mask:none!important;mask:none!important;background:url("assets/perennia-logo-claro.webp") no-repeat!important;background-size:calc(var(--s) * 202) auto!important}
+.ks-footer-cream .ks-flogo-p{background-position:calc(var(--s) * -2) calc(var(--s) * -4)!important}
+.ks-footer-cream .ks-flogo-t{background-position:0 calc(var(--s) * -84)!important}
