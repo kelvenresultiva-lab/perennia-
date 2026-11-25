@@ -252,3 +252,5 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 26/11: FAQ com contraste (modelo enviado) em todas as páginas com perguntas (sobre .ks-faq-item e perennia-360 .in-faq): pergunta em barra verde-escura com gradiente, ícone seta num círculo (gira ao abrir, contorno dourado), resposta em painel branco colado embaixo. Index e demais páginas não têm FAQ. CSS ?v=2611zo.
 
 - 26/11: FAQ: primeira pergunta sempre aberta ao carregar (<details open>) no Sobre (já estava) e no Perennia 360°.
+
+- 26/11: Perennia 360: mais respiro no fim do FAQ (botão a 52px da última pergunta e ~108px do selo do rodapé; padding-bottom 230/180). CSS ?v=2611zp.

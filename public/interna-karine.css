@@ -779,3 +779,4 @@ radial-gradient(80% 30% at 90% 96%,rgba(92,150,108,.28) 0%,rgba(92,150,108,0) 70
 .ks-faq-item p,.in-faq details p{margin:0!important;padding:22px 26px 24px!important;max-width:none!important;color:#2F3A33!important;background:#fff}
 .ks-faq-item summary:focus-visible,.in-faq summary:focus-visible{outline:2px solid #D8BE8E;outline-offset:2px}
 @media(max-width:600px){.ks-faq-item summary,.in-faq summary{padding:18px 18px!important;font-size:15.5px!important}.ks-faq-item p,.in-faq details p{padding:18px 18px 20px!important;font-size:15px!important}}
+/* 26/11: mais respiro entre o botão do FAQ e o selo do rodapé (Perennia 360) */ #perguntas.fq-light{padding-bottom:230px!important}#perguntas .fq-cta{margin-top:52px!important}@media(max-width:600px){#perguntas.fq-light{padding-bottom:180px!important}}
