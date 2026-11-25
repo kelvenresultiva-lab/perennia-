@@ -209,3 +209,4 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 26/11: Sócias: 'Ver perfil completo' (details.ps-more com formação/trajetória/contribuição) REMOVIDO dos dois cards (pedido). Backup: scratchpad/sobre-antes-tirar-perfil.html.
 - 26/11: aba verde (.ps-tab) na lateral dos cards das sócias escondida (pedido). CSS ?v=2611f.
 - 26/11: Perennia 360°: HERO REMOVIDA (pedido: 'não está legal'), igual feito em Serviços: página abre em #o-que-e; título 'Um diagnóstico técnico e multidisciplinar.' virou h1 (class in-h2); in-sheet ganhou sv-sheet (sem margem/curva). As 6 dimensões continuam na seção #dimensoes. Backup: scratchpad/p360-antes-tirar-hero.html.
+- 26/11: Perennia 360°: seção #o-que-e (primeira da página) em VERDE ESCURO (mesmo verde da trajetória), textos claros, eyebrow/citação/seta em dourado, padding 110px. CSS ?v=2611g.
