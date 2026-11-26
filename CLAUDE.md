@@ -289,3 +289,4 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 26/11: Compliance: fundo voltou ao verde #0F2E1F→#0A2216 com as MESMAS luzes douradas/verdes do Atendimento (sobre.html), um pouco mais fortes, + vinheta; painel mais transparente e sem blur p/ as luzes aparecerem. Metade de baixo da Gestão voltou a #0F2E1F. CSS v=2611zzh.
 - 26/11: palavra GESTÃO do card (.gs-word) descida: height .98em + line-height 1.32 — o til aparece inteiro, só a base das letras fica cortada. CSS v=2611zzi.
 - 26/11: .gs-card padding-bottom = calc(clamp(90px,15vw,210px)*.98 + 36px) — a palavra GESTÃO fica toda abaixo do botão e do texto de Entregas em qualquer largura. CSS v=2611zzj.
+- 26/11: painel do Compliance (.cp-panel) mais escuro: rgba(6,23,13,.82)→rgba(4,16,9,.9). CSS v=2611zzk.
