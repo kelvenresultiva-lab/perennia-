@@ -1218,3 +1218,12 @@ html body .gs-ic{background:#0F2E1F!important;box-shadow:0 0 0 1px rgba(201,168,
 html body .gs-deliv{color:#3D5547!important;border-top-color:rgba(201,168,106,.35)!important}
 html body .gs-deliv strong{color:#A9844B!important}
 html body .gs-word{background:linear-gradient(180deg,rgba(15,46,31,.16),rgba(15,46,31,0) 80%)!important;-webkit-background-clip:text!important;background-clip:text!important}
+
+/* 26/11: cards da Perennia Expert brancos (texto escuro, números e linhas dourados) */
+html body #expert .ex-grid>.in-card,html body #expert .ex-grid>.in-card.is-dk{background:linear-gradient(180deg,#FFFFFF 0%,#F7F5EF 100%)!important;box-shadow:0 0 0 1px rgba(201,168,106,.35),0 30px 60px -36px rgba(0,0,0,.55)!important;color:#2F4438!important}
+html body #expert .ex-grid>.in-card:after{background:linear-gradient(100deg,#9C7740 0%,#C9A86A 45%,#A9844B 100%);-webkit-background-clip:text;background-clip:text;opacity:1}
+html body #expert .ex-grid>.in-card .in-label{color:#A9844B!important}
+html body #expert .ex-grid>.in-card>.in-label:first-child{background:linear-gradient(90deg,#A9844B,#D8BE8E 40%,transparent) left bottom/100% 1px no-repeat}
+html body #expert .ex-grid .in-dash li,html body #expert .ex-grid .in-check li{color:#2F4438!important}
+html body #expert .ex-grid .in-chips li{background:#0F2E1F!important;color:#E6CF9E!important;border-color:rgba(201,168,106,.5)!important}
+html body #expert .ex-grid .in-link{color:#0F2E1F!important;border-color:#A9844B!important}

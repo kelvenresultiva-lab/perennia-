@@ -302,3 +302,4 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 26/11: carrossel do LEGACY sem card cortado: ≥1200px mostra 3 cards inteiros (coluna dos cards 1.28fr), 1001–1199px e 601–1000px mostram 2 inteiros; celular 80% (o seguinte aparece de propósito p/ indicar arraste). CSS v=2611zzu.
 - 26/11: LEGACY voltou ao layout anterior (cards ao lado do texto) e o carrossel agora sai pela borda direita da tela, mostrando os cards para o lado (CSS v=2611zzv).
 - 26/11: card da Perennia Gestão agora com fundo branco (textos escuros, ícones verdes, detalhes dourados) (CSS v=2611zzw).
+- 26/11: cards da Perennia Expert agora brancos (texto escuro, números/linhas dourados, áreas em selos verdes) (CSS v=2611zzx).
