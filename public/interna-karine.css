@@ -1005,3 +1005,7 @@ html body .in-sec#compliance.cp-sec{padding-top:110px!important;padding-bottom:1
 .cp-list li{padding:14px 16px;gap:12px;font-size:14px}
 html body .in-sec#compliance.cp-sec{padding-bottom:120px!important}}
 /* 26/11: foto definitiva do Compliance (retrato) */ .cp-photo{aspect-ratio:4/4.3!important}.cp-photo img{object-position:50% 42%!important}@media(max-width:900px){.cp-photo{aspect-ratio:4/4.2!important}}
+/* 26/11: Compliance — foto da sócia de fundo atrás do painel, escurecida em verde */
+html body .in-sec#compliance.cp-sec{background:linear-gradient(180deg,#0F2E1F 0%,rgba(15,46,31,.80) 22%,rgba(10,34,22,.78) 70%,#0A2216 100%),url("assets/socia-compliance.jpg") 50% 35%/cover no-repeat,#0F2E1F!important}
+html body .in-sec#compliance.cp-sec:before{opacity:.7}
+@media(max-width:600px){html body .in-sec#compliance.cp-sec{background:linear-gradient(180deg,#0F2E1F 0%,rgba(15,46,31,.86) 15%,rgba(10,34,22,.86) 80%,#0A2216 100%),url("assets/socia-compliance.jpg") 40% 30%/cover no-repeat,#0F2E1F!important}}
