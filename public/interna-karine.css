@@ -1291,3 +1291,8 @@ html body #expert .ex-grid .in-dash li:before,html body #expert .ex-grid .in-che
 html body #expert .ex-grid .in-chips li{font-size:14.5px!important}
 html body #expert .ex-grid .in-link{font-size:15px!important}
 html body #expert .ex-grid>.in-card .in-label:not(:first-child){font-size:13px!important}}
+/* 26/11: rodapé (faixa arredondada + gota + seta) de volta no fim do Expert, com a faixa na cor do rodapé do site */
+html body section#expert .cp-endcap{display:block!important;background:#06170D!important}
+html body section#expert .cp-dip{display:block!important}
+html body section#expert .cp-dip path{fill:#0A2216!important}
+html body section#expert.lg-green .ks-scroll-cue{display:block!important;bottom:4px!important;color:#D8BE8E!important;z-index:6!important}
