@@ -325,3 +325,4 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 26/11: Serviços — fim do #portfolio com faixa branca arredondada + gota (#04130A) + seta dourada; #como-contratar agora em fundo branco de ponta a ponta (sem notch), títulos escuros (CSS v=2611zzc1).
 - 26/11: Serviços — seção Fale conosco (#fale-conosco) em fundo branco; rodapé sem mudança (CSS v=2611zzc2).
 - 26/11: Como contratar — cards no mesmo design dos cards de serviço (filete dourado, ícone solto, título caixa alta, etapa dourada, à esquerda), mantendo cores: 01 e 03 claros, 02 verde (CSS v=2611zzc3).
+- 26/11: Como contratar — cada card ganhou lista curta (.cc-list, 3 itens) para ficar mais preenchido; textos sugeridos, sem dados novos (CSS v=2611zzc4).

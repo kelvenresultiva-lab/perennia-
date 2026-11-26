@@ -1435,3 +1435,9 @@ html body #como-contratar .sv-item.is-dark .sv-n{color:#C9A86A!important}
 html body #como-contratar .sv-item p{order:3;margin:0!important;font-size:16px!important;line-height:1.65!important;color:#3D5547!important;text-align:left!important}
 html body #como-contratar .sv-item.is-dark p{color:rgba(237,230,214,.86)!important}
 @media(max-width:600px){html body #como-contratar .sv-item{padding:38px 22px 28px!important}html body #como-contratar .sv-item:before{left:22px!important}html body #como-contratar .sv-item h3{font-size:19px!important}}
+/* 26/11: Como contratar — lista curta em cada card para preencher */
+html body #como-contratar .cc-list{order:4;list-style:none;margin:22px 0 0!important;padding:20px 0 0!important;border-top:1px solid rgba(201,168,106,.35);display:flex;flex-direction:column;gap:12px;width:100%}
+html body #como-contratar .cc-list li{position:relative;padding-left:22px;font-size:15px;line-height:1.5;color:#2F4438;text-align:left}
+html body #como-contratar .cc-list li:before{content:"";position:absolute;left:0;top:.45em;width:8px;height:8px;border-radius:50%;background:#C9A86A;box-shadow:0 0 0 3px rgba(201,168,106,.18)}
+html body #como-contratar .sv-item.is-dark .cc-list{border-top-color:rgba(216,190,142,.3)}
+html body #como-contratar .sv-item.is-dark .cc-list li{color:#E9E3D4}
