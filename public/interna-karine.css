@@ -1336,3 +1336,6 @@ html body .in-sec.dm-sec{background:#061A10 linear-gradient(180deg,#08200F 0%,#0
 .dm-h2{text-align:center!important}
 .dm-lead{max-width:640px}
 html body section#dimensoes.dm-sec{background:#061A10 linear-gradient(180deg,#08200F 0%,#04130A 100%)!important}
+/* 26/11: Seis dimensões vira fundo inteiro (sem margens nem cantos arredondados de card) */
+html body section#dimensoes.dm-sec{margin-left:0!important;margin-right:0!important;border-radius:0!important;width:auto!important;max-width:none!important}
+html body section#dimensoes.dm-sec .dm-photo{border-radius:0!important}
