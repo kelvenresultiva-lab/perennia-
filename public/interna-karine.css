@@ -1305,3 +1305,27 @@ html body .in-sec#o-que-e{overflow-x:clip!important}
 .oq-jornada.lg-wrap{margin-top:110px!important;padding-top:0!important}
 .oq-jornada .lg-h1{font-size:clamp(32px,3.4vw,48px)}
 @media(max-width:600px){.oq-jornada.lg-wrap{margin-top:70px!important}}
+/* 26/11: 360 — Seis dimensões no formato "passo a passo": fundo escuro com a foto da sócia à esquerda, título + texto no topo, linha dourada, 6 cards translúcidos com número grande e CTA */
+html body .in-sec.dm-sec{position:relative;isolation:isolate;overflow:hidden;background:#0A2216 linear-gradient(180deg,#0F2E1F 0%,#0A2216 100%)!important;color:#EDE6D6;padding:110px 0 130px!important}
+.dm-photo{position:absolute;left:0;top:0;bottom:0;width:48%;z-index:-1;pointer-events:none;background:url(assets/socia-360.webp) left bottom/cover no-repeat;opacity:.38;filter:grayscale(.2);-webkit-mask-image:linear-gradient(90deg,#000 30%,transparent 100%);mask-image:linear-gradient(90deg,#000 30%,transparent 100%)}
+.dm-sec:before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(30% 40% at 85% 25%,rgba(216,190,142,.16),transparent 70%),radial-gradient(35% 45% at 70% 90%,rgba(92,150,108,.22),transparent 70%)}
+.dm-wrap{max-width:1060px!important;position:relative}
+.dm-head{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:end;padding-bottom:36px;margin-bottom:56px;background:linear-gradient(90deg,transparent,rgba(216,190,142,.7) 30%,rgba(216,190,142,.7) 70%,transparent) left bottom/100% 1px no-repeat}
+.dm-pill{display:inline-block;padding:8px 14px;border-radius:6px;background:rgba(255,255,255,.06);box-shadow:inset 0 0 0 1px rgba(216,190,142,.3);font-size:11px;letter-spacing:.2em;color:#D8BE8E;margin-bottom:22px}
+.dm-h2{margin:0;font-weight:400;font-size:clamp(30px,3.2vw,44px);line-height:1.12;color:#F6F1E6;text-align:left!important}
+.dm-h2 em{display:block;font-style:italic;color:#E6CF9E}
+.dm-lead{margin:0;font-size:15px;line-height:1.7;color:rgba(237,230,214,.8)}
+.dm-lead strong{color:#E6CF9E}
+.dm-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.dm-card{position:relative;padding:34px 30px 30px;border-radius:12px;background:linear-gradient(150deg,rgba(255,255,255,.10),rgba(255,255,255,.03));box-shadow:inset 0 0 0 1px rgba(216,190,142,.18),0 30px 50px -34px rgba(0,0,0,.7);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px)}
+.dm-card:before{content:"";position:absolute;top:0;left:24px;width:64px;height:4px;border-radius:0 0 4px 4px;background:linear-gradient(90deg,#C9A86A,#F3DFB1,#C9A86A)}
+.dm-card .in-ico{display:grid!important;place-items:center;width:44px!important;height:44px!important;border-radius:8px!important;margin:18px 0 18px!important;background:linear-gradient(160deg,#FFFFFF,#E7E9E4)!important;box-shadow:0 6px 14px -6px rgba(0,0,0,.5)!important}
+.dm-card .in-ico svg{width:22px!important;height:22px!important;fill:none!important;stroke:#0F2E1F!important;stroke-width:1.6!important}
+.dm-n{position:absolute;top:18px;right:26px;font:300 64px/1 "Rethink Sans",Arial,sans-serif;letter-spacing:-.03em;color:#F1EADB;opacity:.9}
+.dm-card h3{margin:0 0 10px;font-size:19px;font-weight:500;color:#F6F1E6;padding-right:70px}
+.dm-card p{margin:0;font-size:14.5px;line-height:1.6;color:rgba(237,230,214,.75)}
+.dm-cta{display:flex;justify-content:center;margin-top:44px}
+.dm-btn{margin:0!important;background:linear-gradient(135deg,#E6CF9E,#C9A86A)!important;color:#0F2E1F!important}
+#dimensoes.dm-sec .ks-scroll-cue{color:#D8BE8E!important}
+@media(max-width:800px){.dm-head{grid-template-columns:1fr;gap:20px}.dm-grid{grid-template-columns:1fr}.dm-photo{width:100%;height:55%;bottom:auto;opacity:.22;-webkit-mask-image:linear-gradient(180deg,#000 30%,transparent 100%);mask-image:linear-gradient(180deg,#000 30%,transparent 100%)}}
+@media(max-width:600px){html body .in-sec.dm-sec{padding:80px 0 110px!important}.dm-card{padding:28px 20px 24px}.dm-n{font-size:52px;right:18px}}
