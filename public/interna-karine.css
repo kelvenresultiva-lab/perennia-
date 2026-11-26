@@ -1080,3 +1080,15 @@ html body .in-sec#expert{z-index:2}
 #expert .ks-scroll-cue{bottom:4px!important;color:#D8BE8E!important;z-index:6!important}
 @media(max-width:600px){#expert .ks-scroll-cue{bottom:2px!important}}
 html body #expert.lg-green .ks-scroll-cue,html body #compliance.lg-green .ks-scroll-cue{color:#D8BE8E!important}
+/* 26/11: cards do "Expert ou Advisor?" no design dos cards verdes (como o card Perennia 360° da home) */
+#expert-ou-advisor .in-vs .in-card{position:relative;overflow:hidden;border-radius:16px!important;padding:40px 36px 36px!important;background:linear-gradient(160deg,#1A4A33 0%,#0F2E1F 55%,#08200F 100%)!important;border:0!important;box-shadow:0 0 0 1px rgba(216,190,142,.22),0 30px 60px -30px rgba(6,26,16,.55)!important;color:#EDE6D6;text-align:left}
+#expert-ou-advisor .in-vs .in-card:before{content:"";position:absolute;top:0;left:36px;width:120px;height:4px;border-radius:0 0 4px 4px;background:linear-gradient(90deg,#C9A86A,#E6CF9E,#C9A86A)}
+#expert-ou-advisor .in-vs .in-ico{background:transparent!important;box-shadow:none!important;width:auto!important;height:auto!important;margin-bottom:24px!important;justify-content:flex-start!important}
+#expert-ou-advisor .in-vs .in-ico svg{width:34px!important;height:34px!important;stroke:#E6CF9E!important;fill:none!important;stroke-width:1.5!important}
+#expert-ou-advisor .in-vs .in-label{display:block;font-size:24px!important;letter-spacing:.02em!important;text-transform:uppercase;color:#F6F1E6!important;font-weight:500!important;margin:0 0 8px!important}
+#expert-ou-advisor .in-vs .in-card h3{font-size:12.5px!important;letter-spacing:.22em!important;text-transform:uppercase;color:#D8BE8E!important;font-weight:600!important;margin:0 0 18px!important;line-height:1.5!important}
+#expert-ou-advisor .in-vs .in-card p{color:rgba(237,230,214,.88)!important;font-size:16.5px!important;line-height:1.65!important;margin:0!important}
+#expert-ou-advisor .in-vs .in-link{display:inline-flex!important;align-items:center;gap:14px;margin-top:28px!important;border:0!important;padding:0!important;text-transform:none!important;letter-spacing:0!important;font-size:16px!important;font-weight:600!important;color:#E6CF9E!important;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:6px}
+#expert-ou-advisor .in-vs .in-link:after{content:"";flex:none;width:36px;height:36px;border-radius:50%;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230F2E1F' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12h14m-5-5 5 5-5 5'/%3E%3C/svg%3E") center/18px no-repeat,linear-gradient(135deg,#E6CF9E,#C9A86A);transition:transform .25s}
+#expert-ou-advisor .in-vs .in-link:hover:after{transform:translateX(3px)}
+#expert-ou-advisor .in-vs-or{background:#0F2E1F!important;color:#E6CF9E!important;box-shadow:0 0 0 1px rgba(216,190,142,.5),0 0 0 6px #FFFFFF!important}
