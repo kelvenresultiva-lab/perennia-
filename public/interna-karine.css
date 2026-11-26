@@ -1198,3 +1198,9 @@ html body .in-sec.lg-sec:before{display:none!important}
 .lg-card{flex:0 0 calc((100% - 18px)/2)!important;padding-left:22px!important;padding-right:22px!important}}
 @media(min-width:1200px){.lg-card{flex:0 0 calc((100% - 36px)/3)!important}}
 @media(min-width:601px) and (max-width:1000px){.lg-card{flex:0 0 calc((100% - 18px)/2)!important}}
+
+/* 26/11: LEGACY volta ao layout anterior (texto à esquerda, cards ao lado) e o carrossel passa a sair pela borda direita da tela */
+@media(min-width:1001px){html body .lg-wrap{grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr)!important;gap:56px!important}html body .lg-card{flex:0 0 max(240px,calc((100% - 36px)/2.3))!important;padding-left:26px!important;padding-right:26px!important}}
+@media(min-width:601px) and (max-width:1000px){html body .lg-card{flex:0 0 calc((100% - 18px)/1.6)!important}}
+html body .in-sec.lg-sec{overflow-x:clip!important}
+html body .lg-track{margin-right:calc(-1 * max(24px,(100vw - 1240px)/2))!important;padding-right:24px!important;scroll-padding-left:2px}
