@@ -311,3 +311,4 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 26/11: letra maior nos cards da Perennia Expert (título 26px, itens 17px) (CSS v=2611zza4).
 - 26/11: no desktop (>1000px) letra ainda maior nos cards do Expert (título 30px, itens 19px) (CSS v=2611zza5).
 - 26/11: fim do Expert ganhou de volta o rodapé (faixa com cantos arredondados na cor do rodapé #06170D + gota + seta dourada) (CSS v=2611zza6).
+- 26/11: palavra EXPERT grande e esmaecida no fundo do card 1 (Para quem) do Expert, mesmo efeito do GESTÃO (span.ex-word) (CSS v=2611zza7).
