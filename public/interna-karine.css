@@ -820,3 +820,36 @@ radial-gradient(80% 20% at 90% 96%,rgba(216,190,142,.16) 0%,rgba(216,190,142,0) 
 @media(max-width:1100px){.in-ring.h360{margin:10px auto 40px!important}}
 @media(max-width:600px){.in-ring.h360{width:250px!important;height:250px!important}.h360-arrow{inset:-18px;width:calc(100% + 36px);height:calc(100% + 36px)}.h360-orbit{inset:12px}.h360-core strong{font-size:44px}#dimensoes .dim-bg-photo{width:70%;height:40%;opacity:.16}}
 .h360-arrow{animation:none!important}.h360-arrow path{transform-origin:50px 50px;transform-box:view-box;animation:h360-spin 40s linear infinite}@media(prefers-reduced-motion:reduce){.h360-arrow path{animation:none}}
+/* 26/11: Perennia Gestão — card escuro entre fundo verde (cima) e branco (baixo) */
+html body .in-sec.gs-sec{background:linear-gradient(180deg,#0F2E1F 0%,#0C2719 52%,#FFFFFF 52%,#FFFFFF 100%)!important;padding:120px 20px 90px!important;position:relative;overflow:hidden}
+.gs-sec:before{content:"";position:absolute;inset:0 0 48% 0;pointer-events:none;background:radial-gradient(35% 80% at 10% 30%,rgba(216,190,142,.16),transparent 70%),radial-gradient(35% 80% at 90% 70%,rgba(216,190,142,.12),transparent 70%)}
+.gs-card{position:relative;max-width:1120px;margin:0 auto;border-radius:22px;padding:96px 64px 150px;background:linear-gradient(160deg,#16402C 0%,#0E2C1E 55%,#0A2216 100%);box-shadow:0 0 0 1px rgba(216,190,142,.22),0 40px 80px -30px rgba(6,26,16,.55);overflow:hidden;color:#EDE6D6}
+.gs-card:before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(60% 50% at 80% 0%,rgba(216,190,142,.14),transparent 70%)}
+html body .gs-card .in-seal.gs-seal{position:absolute!important;top:0!important;left:50%!important;transform:translate(-50%,-50%)!important;width:112px!important;height:112px!important;z-index:3;box-shadow:0 0 0 1px rgba(216,190,142,.55),0 0 0 8px #0F2E1F,0 0 0 9px rgba(216,190,142,.2),0 20px 40px -14px rgba(0,0,0,.5)!important}
+.gs-card{overflow:visible}
+.gs-grid{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:64px;align-items:start}
+.gs-kicker{display:inline-block;font-size:11.5px;letter-spacing:.28em;color:#D8BE8E;margin-bottom:18px}
+.gs-h2{margin:0;font-weight:400;line-height:1.02;color:#F6F1E6;text-align:left!important}
+.gs-h2 em{display:block;font-style:italic;font-size:clamp(24px,2.4vw,32px);color:#E6CF9E;margin-bottom:10px;font-weight:400}
+.gs-h2 span{display:inline-block;font-size:clamp(40px,4.6vw,62px);letter-spacing:-.02em;padding-bottom:8px;background:linear-gradient(90deg,#E6CF9E,#C9A86A) left bottom/100% 2px no-repeat}
+.gs-lead{margin:26px 0 30px;font-size:15.5px;line-height:1.7;color:rgba(237,230,214,.82);max-width:440px}
+.gs-btn{background:linear-gradient(135deg,#E6CF9E,#C9A86A)!important;color:#0F2E1F!important}
+.gs-intro{margin:6px 0 22px;font-size:20px;color:#F6F1E6;font-weight:500}
+.gs-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:20px 28px}
+.gs-list li{display:flex;align-items:center;gap:14px;font-size:15px;line-height:1.35;color:#EDE6D6}
+.gs-ic{flex:none;width:42px;height:42px;border-radius:10px;display:grid;place-items:center;background:rgba(255,255,255,.06);box-shadow:inset 0 0 0 1px rgba(216,190,142,.35)}
+.gs-ic svg{width:20px;height:20px;fill:none;stroke:#E6CF9E;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.gs-deliv{margin:30px 0 0;padding-top:22px;border-top:1px solid rgba(216,190,142,.22);font-size:14.5px;line-height:1.65;color:rgba(237,230,214,.78)}
+.gs-deliv strong{color:#E6CF9E;font-weight:600}
+.gs-word{position:absolute;left:0;right:0;bottom:-0.18em;text-align:center;font-size:clamp(90px,15vw,210px);font-weight:500;letter-spacing:.04em;line-height:1;color:transparent;background:linear-gradient(180deg,rgba(216,190,142,.30),rgba(216,190,142,0) 80%);-webkit-background-clip:text;background-clip:text;pointer-events:none;z-index:1;overflow:hidden;border-radius:0 0 22px 22px}
+.gs-sec .ks-scroll-cue{z-index:2}
+@media(max-width:900px){.gs-card{padding:84px 28px 110px}
+.gs-grid{grid-template-columns:1fr;gap:40px}}
+@media(max-width:600px){html body .in-sec.gs-sec{padding:90px 14px 70px!important;background:linear-gradient(180deg,#0F2E1F 0%,#0C2719 32%,#FFFFFF 32%)!important}
+.gs-card{padding:72px 22px 90px;text-align:center}
+.gs-h2{text-align:center!important}
+.gs-lead{margin-left:auto;margin-right:auto}
+.gs-list{grid-template-columns:1fr;gap:14px;text-align:left}
+html body .gs-card .in-seal.gs-seal{width:92px!important;height:92px!important}}
+.gs-word{bottom:0!important;height:.66em!important;line-height:.9!important}
+html body .in-sec.gs-sec{overflow:visible!important}
