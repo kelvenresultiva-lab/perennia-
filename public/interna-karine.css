@@ -1272,3 +1272,7 @@ radial-gradient(36% 30% at 15% 96%,rgba(92,150,108,.30) 0%,rgba(92,150,108,0) 70
 radial-gradient(90% 22% at 50% 35%,rgba(216,190,142,.50) 0%,rgba(216,190,142,0) 75%),
 radial-gradient(90% 22% at 50% 70%,rgba(230,207,158,.36) 0%,rgba(230,207,158,0) 75%),
 radial-gradient(80% 20% at 20% 96%,rgba(92,150,108,.30) 0%,rgba(92,150,108,0) 70%)!important}}
+/* 26/11: luz da Gestão some antes do fim da seção, p/ o verde emendar sem corte com o da Compliance */
+html body .in-sec.gs-sec:before{-webkit-mask-image:linear-gradient(180deg,#000 0%,#000 35%,transparent 100%)!important;mask-image:linear-gradient(180deg,#000 0%,#000 35%,transparent 100%)!important;background:
+radial-gradient(34% 70% at 12% 40%,rgba(216,190,142,.42) 0%,rgba(216,190,142,.15) 40%,rgba(216,190,142,0) 72%),
+radial-gradient(30% 60% at 90% 35%,rgba(230,207,158,.26) 0%,rgba(230,207,158,0) 70%)!important}
