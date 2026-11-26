@@ -799,3 +799,6 @@ radial-gradient(80% 20% at 90% 96%,rgba(216,190,142,.16) 0%,rgba(216,190,142,0) 
 #o-que-e .oq-jornada{margin-top:72px!important;padding-top:64px!important;border-top:1px solid rgba(216,190,142,.4)}
 @media(max-width:600px){#o-que-e .oq-jornada{margin-top:48px!important;padding-top:44px!important}}
 /* 26/11: aro sem escrita (liso, como no modelo) */ .r360-txt{display:none!important}.r360-band{stroke-width:14!important}.r360-shine{display:none!important}
+/* 26/11: "360°" grande seguindo o arco, por fora, no alto à esquerda */ .r360-num{font-size:44px;font-weight:300;letter-spacing:.04em;fill:url(#r360-m);filter:drop-shadow(0 6px 14px rgba(0,0,0,.35))}
+.r360-num{fill:#E6CF9E!important;font-weight:400!important}
+@media(max-width:600px){.r360-num{font-size:30px!important}}
