@@ -272,3 +272,4 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 26/11: solucoes.html: barra de chips virou cabeçalho verde (.sv-head) com luzes douradas, título 'Soluções Perennia', chips dourados em várias linhas e encaixe de baixo com o selo/logo (.sv-notch); deixou de ser sticky. CSS v=2611zz2. Backup scratchpad/solucoes-antes-cabecalho-chips.html.
 - 26/11: cabeçalho verde (.sv-head) da Soluções DESFEITO a pedido (usuário não quer cabeçalho); página volta a abrir só com a barra de chips. CSS v=2611zz3.
 - 26/11: solucoes.html: seção #perennia-360 e chip 'Perennia 360°' removidos (seta do LEGACY aponta p/ #gestao; meta description sem 360). Link do menu para perennia-360.html mantido. Backup scratchpad/solucoes-antes-tirar-360.html.
+- 26/11: solucoes.html: barra de chips (.in-anchors) removida a pedido; a página abre direto no Método LEGACY (só ela tinha essa barra). Backup scratchpad/solucoes-antes-tirar-chips.html.
