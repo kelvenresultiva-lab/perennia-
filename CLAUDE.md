@@ -262,3 +262,5 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 26/11: aro das Seis dimensões agora LISO, sem escrita (texto "360° PERENNIA" escondido a pedido), faixa metálica dourada 14px que some embaixo à esquerda. CSS ?v=2611zs.
 
 - 26/11: "360°" grande (44px, 30px no celular) escrito por fora do aro, no alto à esquerda, seguindo a curva (textPath #r360-t, arco r178 de 205° a 105°), cor #E6CF9E. CSS ?v=2611zv.
+
+- 26/11: 360° do aro reposicionado: mais colado ao aro (r164) e mais à direita (arco 172°→88°, perto da cabeça), 36px em todas as telas (escala junto com o aro). CSS ?v=2611zw.
