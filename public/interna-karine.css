@@ -1193,3 +1193,8 @@ html body .in-sec.lg-sec:before{display:none!important}
 .lg-dot.is-on{background:linear-gradient(90deg,#C9A86A,#A9844B)!important}
 .lg-note{color:#5B6B62!important}
 .lg-note strong{color:#0F2E1F!important}
+/* 26/11: carrossel do LEGACY mostra cards inteiros (3 no desktop largo, 2 no médio) — sem card cortado */
+@media(min-width:1001px){.lg-wrap{grid-template-columns:minmax(0,.72fr) minmax(0,1.28fr)!important;gap:48px!important}
+.lg-card{flex:0 0 calc((100% - 18px)/2)!important;padding-left:22px!important;padding-right:22px!important}}
+@media(min-width:1200px){.lg-card{flex:0 0 calc((100% - 36px)/3)!important}}
+@media(min-width:601px) and (max-width:1000px){.lg-card{flex:0 0 calc((100% - 18px)/2)!important}}
