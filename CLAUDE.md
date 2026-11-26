@@ -264,3 +264,5 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 26/11: "360°" grande (44px, 30px no celular) escrito por fora do aro, no alto à esquerda, seguindo a curva (textPath #r360-t, arco r178 de 205° a 105°), cor #E6CF9E. CSS ?v=2611zv.
 
 - 26/11: 360° do aro reposicionado: mais colado ao aro (r164) e mais à direita (arco 172°→88°, perto da cabeça), 36px em todas as telas (escala junto com o aro). CSS ?v=2611zw.
+
+- 26/11: 360° mais deitado no topo do aro (arco r166 de 172° a 84°, centro ~128°), sem encostar no cabelo; letter-spacing .02em. CSS ?v=2611zx.

@@ -803,3 +803,4 @@ radial-gradient(80% 20% at 90% 96%,rgba(216,190,142,.16) 0%,rgba(216,190,142,0) 
 .r360-num{fill:#E6CF9E!important;font-weight:400!important}
 @media(max-width:600px){.r360-num{font-size:30px!important}}
 /* 26/11 v2: 360° mais colado ao aro e mais à direita (centro ~130°), escala junto com o aro em qualquer tela */ .r360-num{font-size:36px!important;letter-spacing:.06em!important}@media(max-width:600px){.r360-num{font-size:36px!important}}
+.r360-num{letter-spacing:.02em!important}
