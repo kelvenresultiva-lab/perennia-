@@ -967,3 +967,4 @@ html body .in-sec#expert.lg-green:before{-webkit-mask-image:none!important;mask-
 #advisor .ks-scroll-cue{color:#D8BE8E!important}
 html body .in-sec#advisor{position:relative;padding-bottom:120px!important}
 @media(max-width:600px){.sx-notch{width:340px;height:47px}}
+/* 26/11: título e subtítulo acima dos cards do Advisor */ .av-head{margin-bottom:20px!important}
