@@ -1074,3 +1074,9 @@ html body .in-sec#advisor{position:relative}
 #compliance .ks-scroll-cue{bottom:4px!important}
 @media(max-width:600px){.cp-dip{bottom:-19px!important}
 #compliance .ks-scroll-cue{bottom:2px!important}}
+/* 26/11: mesmo rodapé (cantos arredondados + gota) no fim do Expert */
+#expert .sx-notch{display:none!important}
+html body .in-sec#expert{z-index:2}
+#expert .ks-scroll-cue{bottom:4px!important;color:#D8BE8E!important;z-index:6!important}
+@media(max-width:600px){#expert .ks-scroll-cue{bottom:2px!important}}
+html body #expert.lg-green .ks-scroll-cue,html body #compliance.lg-green .ks-scroll-cue{color:#D8BE8E!important}
