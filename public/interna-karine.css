@@ -853,3 +853,25 @@ html body .gs-card .in-seal.gs-seal{position:absolute!important;top:0!important;
 html body .gs-card .in-seal.gs-seal{width:92px!important;height:92px!important}}
 .gs-word{bottom:0!important;height:.66em!important;line-height:.9!important}
 html body .in-sec.gs-sec{overflow:visible!important}
+/* 26/11: Soluções — Método LEGACY em verde com luzes, emendando no card da Gestão */
+html body .in-sec.lg-green{background:#0F2E1F linear-gradient(180deg,#0A2216 0%,#0F2E1F 100%)!important;position:relative;isolation:isolate;overflow:visible!important;padding-bottom:60px!important}
+html body .in-sec.lg-green:before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(38% 45% at 8% 18%,rgba(216,190,142,.20),transparent 70%),radial-gradient(34% 40% at 92% 40%,rgba(216,190,142,.16),transparent 70%),radial-gradient(40% 40% at 30% 85%,rgba(243,223,177,.10),transparent 70%),radial-gradient(30% 35% at 75% 95%,rgba(216,190,142,.12),transparent 70%)}
+html body .in-sec.gs-sec{padding-top:110px!important}
+.lg-green .in-eyebrow{background:rgba(216,190,142,.12)!important;color:#E6CF9E!important;box-shadow:inset 0 0 0 1px rgba(216,190,142,.4)!important}
+.lg-green .in-h2,.lg-green h1{color:#F6F1E6!important}
+.lg-green .in-h2 em{color:#E6CF9E!important}
+.lg-green .in-text p{color:rgba(237,230,214,.82)!important}
+.lg-green .in-card{background:linear-gradient(160deg,rgba(22,64,44,.85),rgba(10,34,22,.9))!important;box-shadow:0 0 0 1px rgba(216,190,142,.22),0 24px 50px -28px rgba(0,0,0,.6)!important;border:0!important}
+.lg-green .in-card h3{color:#F6F1E6!important}
+.lg-green .in-card p{color:rgba(237,230,214,.75)!important}
+.lg-green .in-card .in-label{color:#D8BE8E!important}
+.lg-green .in-ico{background:rgba(216,190,142,.12)!important;box-shadow:inset 0 0 0 1px rgba(216,190,142,.35)!important}
+.lg-green .in-ico svg{stroke:#E6CF9E!important}
+.lg-green .in-note{background:rgba(255,255,255,.04)!important;border-color:rgba(216,190,142,.3)!important;color:rgba(237,230,214,.8)!important;box-shadow:inset 0 0 0 1px rgba(216,190,142,.28)!important}
+.lg-green .in-note strong{color:#E6CF9E!important}
+.lg-green .ks-scroll-cue{display:none!important}
+html body .in-sec.lg-green{box-shadow:none!important;border:0!important;margin-bottom:0!important}
+html body .in-sec.lg-green:before{-webkit-mask-image:linear-gradient(180deg,#000 75%,transparent 100%);mask-image:linear-gradient(180deg,#000 75%,transparent 100%)}
+html body .in-sec.gs-sec{margin-top:0!important;border:0!important;box-shadow:0 -1px 0 #0F2E1F!important;background:linear-gradient(180deg,#0F2E1F 0%,#0D2A1C 52%,#FFFFFF 52%,#FFFFFF 100%)!important}
+.gs-sec:before{-webkit-mask-image:linear-gradient(180deg,transparent 0,#000 160px);mask-image:linear-gradient(180deg,transparent 0,#000 160px)}
+@media(max-width:600px){html body .in-sec.gs-sec{background:linear-gradient(180deg,#0F2E1F 0%,#0D2A1C 32%,#FFFFFF 32%)!important}}
