@@ -1179,3 +1179,17 @@ html body .in-sec.gs-sec{padding-top:120px!important}
 .lg-card{flex:0 0 max(240px,calc((100% - 36px)/2.3))!important;min-height:0!important;padding-bottom:92px!important}
 .lg-card:after{font-size:110px!important;bottom:-.32em!important}
 @media(max-width:600px){.lg-card{flex-basis:80%!important;padding-bottom:84px!important}.lg-card:after{font-size:96px!important}}
+/* 26/11: Método LEGACY com fundo BRANCO (mantém o layout de carrossel) */
+html body .in-sec.lg-sec{background:#FFFFFF!important;color:#1F3A2C;padding-bottom:90px!important}
+html body .in-sec.lg-sec:before{display:none!important}
+#metodo-legacy .cp-endcap,#metodo-legacy .cp-dip{display:none!important}
+#metodo-legacy .ks-scroll-cue{bottom:-30px!important;color:#8C6B3C!important}
+.lg-pill{background:#0F2E1F!important;color:#E6CF9E!important;box-shadow:none!important}
+.lg-h1{color:#0F2E1F!important}
+.lg-h1 em{color:#A9844B!important}
+.lg-left p{color:#4A5C52!important}
+.lg-card{background:#FFFFFF!important;box-shadow:0 0 0 1px rgba(15,46,31,.10),0 24px 44px -28px rgba(15,46,31,.35)!important}
+.lg-dot{background:rgba(15,46,31,.2)!important}
+.lg-dot.is-on{background:linear-gradient(90deg,#C9A86A,#A9844B)!important}
+.lg-note{color:#5B6B62!important}
+.lg-note strong{color:#0F2E1F!important}
