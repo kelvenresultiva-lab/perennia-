@@ -316,3 +316,4 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 26/11: perennia-360 — Seis dimensões (#dimensoes) no formato 'passo a passo': fundo verde escuro com foto da sócia (socia-360.webp) à esquerda, título + nota no topo, linha dourada, 6 cards translúcidos (.dm-card) com número grande e CTA; o anel 360° saiu (CSS v=2611zza9).
 - 26/11: Seis dimensões (360) com verde mais escuro (#08200F→#04130A) e cabeçalho centralizado (pill, título e nota) (CSS v=2611zzb1).
 - 26/11: Seis dimensões (360) agora é fundo verde-escuro de ponta a ponta (sem margem lateral nem cantos de card) (CSS v=2611zzb2).
+- 26/11: cards das Seis dimensões (360) sólidos, verde #163B29→#0E2A1C, sem transparência/blur (CSS v=2611zzb3).
