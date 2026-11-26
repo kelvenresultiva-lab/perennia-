@@ -947,3 +947,13 @@ html body .in-sec.gs-sec{z-index:2}
 .av-dark{min-height:360px}
 .av-dark .av-badge{top:30px;left:22px}
 .av-card:before{left:22px}}
+/* 26/11: Perennia Expert em verde com luzes */
+html body .in-sec#expert.lg-green{background:#0F2E1F linear-gradient(180deg,#0F2E1F 0%,#0A2216 100%)!important;padding-top:100px!important;padding-bottom:110px!important}
+html body .in-sec#expert.lg-green:before{-webkit-mask-image:none!important;mask-image:none!important}
+.lg-green .in-sol-name{color:rgba(237,230,214,.7)!important}
+.lg-green .in-dash li{color:#EDE6D6!important}
+.lg-green .in-dash li:before{background:#C9A86A!important}
+.lg-green .in-chips li{background:rgba(255,255,255,.05)!important;color:#EDE6D6!important;box-shadow:inset 0 0 0 1px rgba(216,190,142,.35)!important;border-color:transparent!important}
+.lg-green .in-link{color:#E6CF9E!important}
+.lg-green .in-card .in-label{color:#D8BE8E!important}
+#expert.lg-green .ks-scroll-cue{display:block!important;color:#D8BE8E!important}
