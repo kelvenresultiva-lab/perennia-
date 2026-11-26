@@ -308,3 +308,4 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 26/11: luzes douradas do Atendimento aplicadas também no fundo verde do Expert (aparecendo entre e em volta dos cards) e na parte verde da Gestão (CSS v=2611zza1).
 - 26/11: luz da parte verde da Gestão some antes do fim, p/ emendar com a Compliance sem parecer outra seção (CSS v=2611zza2).
 - 26/11: removida a setinha de rolar abaixo do card da Gestão (CSS v=2611zza3).
+- 26/11: letra maior nos cards da Perennia Expert (título 26px, itens 17px) (CSS v=2611zza4).

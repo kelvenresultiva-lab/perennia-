@@ -1277,3 +1277,10 @@ html body .in-sec.gs-sec:before{-webkit-mask-image:linear-gradient(180deg,#000 0
 radial-gradient(34% 70% at 12% 40%,rgba(216,190,142,.42) 0%,rgba(216,190,142,.15) 40%,rgba(216,190,142,0) 72%),
 radial-gradient(30% 60% at 90% 35%,rgba(230,207,158,.26) 0%,rgba(230,207,158,0) 70%)!important}
 /* 26/11: sem a setinha de rolar abaixo do card da Gestão */ html body section#gestao .ks-scroll-cue{display:none!important}
+/* 26/11: letra maior nos cards da Perennia Expert */
+html body #expert .ex-grid>.in-card>.in-label:first-child{font-size:26px!important}
+html body #expert .ex-grid .in-dash li,html body #expert .ex-grid .in-check li{font-size:17px!important;line-height:1.6!important}
+html body #expert .ex-grid .in-dash li:before,html body #expert .ex-grid .in-check li:before{top:.36em}
+html body #expert .ex-grid .in-chips li{font-size:13.5px!important}
+html body #expert .ex-grid .in-link{font-size:14px!important}
+@media(max-width:600px){html body #expert .ex-grid>.in-card>.in-label:first-child{font-size:22px!important}html body #expert .ex-grid .in-dash li,html body #expert .ex-grid .in-check li{font-size:16px!important}}
