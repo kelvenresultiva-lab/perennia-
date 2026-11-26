@@ -1004,3 +1004,4 @@ html body .in-sec#compliance.cp-sec{padding-top:110px!important;padding-bottom:1
 .cp-lead{margin-left:auto;margin-right:auto}
 .cp-list li{padding:14px 16px;gap:12px;font-size:14px}
 html body .in-sec#compliance.cp-sec{padding-bottom:120px!important}}
+/* 26/11: foto definitiva do Compliance (retrato) */ .cp-photo{aspect-ratio:4/4.3!important}.cp-photo img{object-position:50% 42%!important}@media(max-width:900px){.cp-photo{aspect-ratio:4/4.2!important}}
