@@ -1237,3 +1237,8 @@ html body #expert .ex-grid .in-dash li,html body #expert .ex-grid .in-check li{p
 html body #expert .ex-grid .in-dash li:before,html body #expert .ex-grid .in-check li:before{content:""!important;position:absolute;left:0;top:.32em;width:14px!important;height:14px!important;border-radius:50%;background:#FFFFFF!important;box-shadow:inset 0 0 0 4px #0F2E1F,0 0 0 1px rgba(15,46,31,.15)!important;-webkit-mask:none!important;mask:none!important}
 html body #expert .ex-grid .in-check li:after{display:none!important}
 @media(max-width:600px){html body #expert .ex-grid>.in-card,html body #expert .ex-grid>.in-card.is-dk{padding:98px 22px 28px!important}html body #expert .ex-grid>.in-card:after{left:22px;top:26px;width:52px;height:52px;font-size:20px}html body #expert .ex-grid>.in-card>.in-label:first-child{font-size:20px!important}}
+
+/* 26/11: "Qual apoio faz sentido" removido; Expert emenda direto no rodapé (sem faixa branca/gota/seta) */
+#expert .cp-endcap,#expert .cp-dip,#expert .ks-scroll-cue{display:none!important}
+html body .in-sec#expert.lg-green{padding-bottom:120px!important}
+html body section#expert.lg-green .ks-scroll-cue{display:none!important}
