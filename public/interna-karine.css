@@ -1284,3 +1284,10 @@ html body #expert .ex-grid .in-dash li:before,html body #expert .ex-grid .in-che
 html body #expert .ex-grid .in-chips li{font-size:13.5px!important}
 html body #expert .ex-grid .in-link{font-size:14px!important}
 @media(max-width:600px){html body #expert .ex-grid>.in-card>.in-label:first-child{font-size:22px!important}html body #expert .ex-grid .in-dash li,html body #expert .ex-grid .in-check li{font-size:16px!important}}
+/* 26/11: no desktop, letra ainda maior nos cards da Perennia Expert */
+@media(min-width:1001px){html body #expert .ex-grid>.in-card>.in-label:first-child{font-size:30px!important}
+html body #expert .ex-grid .in-dash li,html body #expert .ex-grid .in-check li{font-size:19px!important;line-height:1.55!important;padding-left:32px!important}
+html body #expert .ex-grid .in-dash li:before,html body #expert .ex-grid .in-check li:before{width:15px!important;height:15px!important}
+html body #expert .ex-grid .in-chips li{font-size:14.5px!important}
+html body #expert .ex-grid .in-link{font-size:15px!important}
+html body #expert .ex-grid>.in-card .in-label:not(:first-child){font-size:13px!important}}
