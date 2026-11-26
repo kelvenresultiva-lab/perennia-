@@ -1114,3 +1114,22 @@ html body #expert.lg-green .ks-scroll-cue,html body #compliance.lg-green .ks-scr
 #expert .in-chips li{border-radius:6px!important;font-size:12px!important;letter-spacing:.06em}
 @media(max-width:600px){#metodo-legacy .in-cards.c4{gap:34px!important}
 #expert .ex-grid>.in-card{padding:36px 22px 26px!important}}
+/* 26/11: Advisor mais próximo da referência — cards claros BRANCOS e gráfico mais real (eixos, grade, área, pontos) */
+html body .av-light{background:#FFFFFF!important;box-shadow:0 0 0 1px rgba(15,46,31,.08),0 30px 60px -34px rgba(15,46,31,.28)!important}
+.av-steps i{background:#FFFFFF!important}
+.av-chart{aspect-ratio:440/268!important;overflow:visible}
+.av-grid path{stroke:rgba(15,46,31,.13);stroke-width:1;stroke-dasharray:5 6;fill:none}
+.av-axis path{stroke:rgba(15,46,31,.45);stroke-width:1.3;fill:none;stroke-linecap:round}
+.av-area{fill:url(#avfill)!important}
+.av-line{fill:none!important;stroke:url(#avline)!important;stroke-width:2.6!important;stroke-linecap:round}
+.av-drop{stroke:rgba(15,46,31,.55)!important;stroke-width:1.3!important;stroke-dasharray:none;fill:none}
+.av-dot circle{fill:#FFFFFF!important;stroke:#0F2E1F!important;stroke-width:2.4!important;filter:drop-shadow(0 0 0 rgba(0,0,0,0)) drop-shadow(0 3px 6px rgba(15,46,31,.25))}
+.av-dot circle{paint-order:stroke}
+.av-arrow{stroke:#0A2216!important;stroke-width:2.6!important;fill:none}
+.av-steps{margin-top:22px!important}
+.av-steps:before{background:linear-gradient(90deg,#EAD9B4 0%,#C9A86A 35%,#2F6B4A 70%,#0F2E1F 100%)!important;height:10px!important;top:16px!important}
+.av-steps i{box-shadow:0 0 0 1px rgba(15,46,31,.3),0 0 0 5px #FFFFFF,0 8px 16px -8px rgba(0,0,0,.35)!important}
+.av-steps span{font-size:13px!important;color:#2F4438!important;font-weight:500}
+@media(min-width:1200px){html body .av-wide{grid-template-columns:minmax(0,.95fr) minmax(0,1.1fr)!important;gap:40px!important}}
+.av-btn{white-space:nowrap}
+@media(max-width:600px){.av-btn{white-space:normal!important;width:100%;justify-content:space-between;text-align:left}}
