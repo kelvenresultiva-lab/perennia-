@@ -1341,3 +1341,10 @@ html body section#dimensoes.dm-sec{margin-left:0!important;margin-right:0!import
 html body section#dimensoes.dm-sec .dm-photo{border-radius:0!important}
 /* 26/11: cards das Seis dimensões sólidos (sem transparência) */
 html body .dm-card{background:linear-gradient(150deg,#163B29 0%,#0E2A1C 100%)!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important;box-shadow:inset 0 0 0 1px rgba(216,190,142,.22),0 30px 50px -30px rgba(0,0,0,.8)!important}
+/* 26/11: cards das Seis dimensões brancos (creme leve), texto escuro, número e ícone em verde, detalhe dourado */
+html body .dm-card{background:linear-gradient(180deg,#FFFFFF 0%,#F6F3EC 100%)!important;box-shadow:0 0 0 1px rgba(201,168,106,.35),0 30px 50px -30px rgba(0,0,0,.85)!important}
+html body .dm-card .in-ico{background:#0F2E1F!important;box-shadow:0 0 0 1px rgba(201,168,106,.6)!important}
+html body .dm-card .in-ico svg{stroke:#E6CF9E!important}
+html body .dm-n{color:#0F2E1F!important;opacity:.9}
+html body .dm-card h3{color:#0F2E1F!important}
+html body .dm-card p{color:#3D5547!important}
