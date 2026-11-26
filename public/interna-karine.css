@@ -875,3 +875,22 @@ html body .in-sec.lg-green:before{-webkit-mask-image:linear-gradient(180deg,#000
 html body .in-sec.gs-sec{margin-top:0!important;border:0!important;box-shadow:0 -1px 0 #0F2E1F!important;background:linear-gradient(180deg,#0F2E1F 0%,#0D2A1C 52%,#FFFFFF 52%,#FFFFFF 100%)!important}
 .gs-sec:before{-webkit-mask-image:linear-gradient(180deg,transparent 0,#000 160px);mask-image:linear-gradient(180deg,transparent 0,#000 160px)}
 @media(max-width:600px){html body .in-sec.gs-sec{background:linear-gradient(180deg,#0F2E1F 0%,#0D2A1C 32%,#FFFFFF 32%)!important}}
+/* 26/11: invertido — card da Gestão entre branco (cima) e verde (baixo); Compliance verde com luzes */
+html body .in-sec.gs-sec{background:linear-gradient(180deg,#FFFFFF 0%,#FFFFFF 48%,#0F2E1F 48%,#0F2E1F 100%)!important;box-shadow:none!important;padding-bottom:40px!important}
+.gs-sec:before{inset:48% 0 0 0!important;-webkit-mask-image:none!important;mask-image:none!important}
+html body .gs-card .in-seal.gs-seal{box-shadow:0 0 0 1px rgba(216,190,142,.55),0 0 0 8px #FFFFFF,0 0 0 9px rgba(216,190,142,.25),0 20px 40px -14px rgba(0,0,0,.4)!important}
+.gs-sec .ks-scroll-cue{color:#D8BE8E!important;bottom:6px!important}
+html body .in-sec#compliance.lg-green{background:#0F2E1F linear-gradient(180deg,#0F2E1F 0%,#0A2216 100%)!important;padding-top:70px!important;padding-bottom:110px!important}
+html body .in-sec#compliance.lg-green:before{-webkit-mask-image:linear-gradient(180deg,transparent 0,#000 120px)!important;mask-image:linear-gradient(180deg,transparent 0,#000 120px)!important}
+.lg-green .in-kicker{color:#D8BE8E!important}
+.lg-green .in-lead{color:rgba(237,230,214,.82)!important}
+.lg-green .in-check li{color:#EDE6D6!important}
+.lg-green .in-card[style]{background:linear-gradient(160deg,rgba(22,64,44,.85),rgba(10,34,22,.9))!important}
+.lg-green .in-card.is-dk{background:rgba(216,190,142,.10)!important}
+.lg-green .in-btn{background:linear-gradient(135deg,#E6CF9E,#C9A86A)!important;color:#0F2E1F!important}
+#compliance.lg-green .ks-scroll-cue{display:block!important;color:#D8BE8E!important}
+@media(max-width:600px){html body .in-sec.gs-sec{background:linear-gradient(180deg,#FFFFFF 0%,#FFFFFF 68%,#0F2E1F 68%)!important}
+.gs-sec:before{inset:68% 0 0 0!important}}
+.gs-sec:before{-webkit-mask-image:linear-gradient(180deg,#000 60%,transparent 100%)!important;mask-image:linear-gradient(180deg,#000 60%,transparent 100%)!important}
+html body .in-sec#compliance.lg-green{box-shadow:0 -2px 0 #0F2E1F!important;z-index:1}
+html body .in-sec.gs-sec{z-index:2}
