@@ -798,3 +798,4 @@ radial-gradient(80% 20% at 90% 96%,rgba(216,190,142,.16) 0%,rgba(216,190,142,0) 
 /* 26/11: "Nossa jornada de valor" juntou-se ao "O que é o Perennia 360°" (mesma seção, separada por fio dourado) */
 #o-que-e .oq-jornada{margin-top:72px!important;padding-top:64px!important;border-top:1px solid rgba(216,190,142,.4)}
 @media(max-width:600px){#o-que-e .oq-jornada{margin-top:48px!important;padding-top:44px!important}}
+/* 26/11: aro sem escrita (liso, como no modelo) */ .r360-txt{display:none!important}.r360-band{stroke-width:14!important}.r360-shine{display:none!important}

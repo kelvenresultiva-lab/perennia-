@@ -258,3 +258,5 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 26/11: Seis dimensões (perennia-360): mesmas luzes douradas do Atendimento do Sobre (#dimensoes:before brilho dourado atrás da sócia + pontos dourados e reflexos verdes nos cantos; :after vinheta). CSS ?v=2611zq.
 
 - 26/11: perennia-360: seção "Nossa jornada de valor" (#jornada) juntada dentro de "O que é o Perennia 360°" (#o-que-e), como bloco .oq-jornada id=jornada abaixo do texto, separado por fio dourado; seção própria removida; seta das Seis dimensões agora vai para #entregas. Ordem: O que é + Jornada → Seis dimensões → Entregas → Diagnóstico e implementação → FAQ. Backup scratchpad/p360-antes-juntar-jornada.html. CSS ?v=2611zr.
+
+- 26/11: aro das Seis dimensões agora LISO, sem escrita (texto "360° PERENNIA" escondido a pedido), faixa metálica dourada 14px que some embaixo à esquerda. CSS ?v=2611zs.
