@@ -305,3 +305,4 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 26/11: cards da Perennia Expert agora brancos (texto escuro, números/linhas dourados, áreas em selos verdes) (CSS v=2611zzx).
 - 26/11: cards da Perennia Expert no design da referência enviada: degradê claro, aba escura no topo, número em círculo escuro no canto superior esquerdo, título grande e bolinhas sem linhas internas (CSS v=2611zzy).
 - 26/11: removido o bloco final "Qual apoio faz sentido para o momento da sua empresa?" (#fale-conosco) da página Soluções; o Expert agora emenda direto no rodapé (CSS v=2611zzz).
+- 26/11: luzes douradas do Atendimento aplicadas também no fundo verde do Expert (aparecendo entre e em volta dos cards) e na parte verde da Gestão (CSS v=2611zza1).

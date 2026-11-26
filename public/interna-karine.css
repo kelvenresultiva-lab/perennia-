@@ -1242,3 +1242,33 @@ html body #expert .ex-grid .in-check li:after{display:none!important}
 #expert .cp-endcap,#expert .cp-dip,#expert .ks-scroll-cue{display:none!important}
 html body .in-sec#expert.lg-green{padding-bottom:120px!important}
 html body section#expert.lg-green .ks-scroll-cue{display:none!important}
+
+/* 26/11: luzes douradas do Atendimento também no Expert e na parte verde da Gestão */
+html body .in-sec#expert.lg-green{position:relative;isolation:isolate;background:#0F2E1F linear-gradient(180deg,#0F2E1F 0%,#0C2719 60%,#0A2216 100%)!important}
+html body .in-sec#expert.lg-green:before{display:block!important;content:""!important;position:absolute;inset:0;z-index:-1;pointer-events:none;opacity:1!important;background:
+radial-gradient(40% 50% at 20% 58%,rgba(216,190,142,.50) 0%,rgba(216,190,142,.20) 38%,rgba(216,190,142,0) 72%),
+radial-gradient(30% 40% at 80% 28%,rgba(230,207,158,.30) 0%,rgba(230,207,158,0) 70%),
+radial-gradient(34% 40% at 88% 88%,rgba(216,190,142,.24) 0%,rgba(216,190,142,0) 70%),
+radial-gradient(36% 55% at 60% 100%,rgba(92,150,108,.28) 0%,rgba(92,150,108,0) 70%),
+radial-gradient(30% 45% at 4% 12%,rgba(92,150,108,.26) 0%,rgba(92,150,108,0) 70%)!important;-webkit-mask-image:none!important;mask-image:none!important}
+html body .in-sec#expert.lg-green:after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(120% 90% at 50% 50%,rgba(0,0,0,0) 55%,rgba(0,0,0,.28) 100%)}
+html body .in-sec.gs-sec{isolation:isolate}
+html body .in-sec.gs-sec:before{display:block!important;content:""!important;position:absolute;inset:48% 0 0 0!important;z-index:-1;pointer-events:none;opacity:1!important;-webkit-mask-image:none!important;mask-image:none!important;background:
+radial-gradient(34% 80% at 14% 70%,rgba(216,190,142,.45) 0%,rgba(216,190,142,.16) 40%,rgba(216,190,142,0) 72%),
+radial-gradient(30% 70% at 88% 60%,rgba(230,207,158,.28) 0%,rgba(230,207,158,0) 70%),
+radial-gradient(40% 80% at 55% 110%,rgba(92,150,108,.26) 0%,rgba(92,150,108,0) 70%)!important}
+@media(max-width:900px){html body .in-sec#expert.lg-green:before{background:
+radial-gradient(80% 30% at 30% 30%,rgba(216,190,142,.42) 0%,rgba(216,190,142,.15) 40%,rgba(216,190,142,0) 75%),
+radial-gradient(70% 25% at 85% 65%,rgba(230,207,158,.22) 0%,rgba(230,207,158,0) 70%),
+radial-gradient(80% 30% at 20% 95%,rgba(92,150,108,.28) 0%,rgba(92,150,108,0) 70%)!important}}
+@media(max-width:600px){html body .in-sec.gs-sec:before{inset:68% 0 0 0!important}}
+html body .in-sec#expert.lg-green:before{background:
+radial-gradient(45% 38% at 50% 52%,rgba(216,190,142,.55) 0%,rgba(216,190,142,.22) 45%,rgba(216,190,142,0) 75%),
+radial-gradient(30% 30% at 8% 40%,rgba(216,190,142,.42) 0%,rgba(216,190,142,0) 72%),
+radial-gradient(28% 30% at 94% 68%,rgba(230,207,158,.38) 0%,rgba(230,207,158,0) 72%),
+radial-gradient(30% 25% at 80% 8%,rgba(230,207,158,.22) 0%,rgba(230,207,158,0) 70%),
+radial-gradient(36% 30% at 15% 96%,rgba(92,150,108,.30) 0%,rgba(92,150,108,0) 70%)!important}
+@media(max-width:900px){html body .in-sec#expert.lg-green:before{background:
+radial-gradient(90% 22% at 50% 35%,rgba(216,190,142,.50) 0%,rgba(216,190,142,0) 75%),
+radial-gradient(90% 22% at 50% 70%,rgba(230,207,158,.36) 0%,rgba(230,207,158,0) 75%),
+radial-gradient(80% 20% at 20% 96%,rgba(92,150,108,.30) 0%,rgba(92,150,108,0) 70%)!important}}
