@@ -1417,3 +1417,4 @@ html body #como-contratar .in-h2{color:#0F2E1F!important}
 html body #como-contratar .in-h2 em{color:#A9844B!important}
 html body #como-contratar .ks-scroll-cue{color:#8C6B3C!important}
 @media(max-width:600px){#portfolio .cp-dip{bottom:-18px!important}html body section#portfolio.in-sec{padding-bottom:120px!important}}
+/* 26/11: Serviços — Fale conosco também em fundo branco (rodapé continua igual) */ html body section#fale-conosco.sv-close{background:#FFFFFF!important}
