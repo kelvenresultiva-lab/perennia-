@@ -307,3 +307,4 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 26/11: removido o bloco final "Qual apoio faz sentido para o momento da sua empresa?" (#fale-conosco) da página Soluções; o Expert agora emenda direto no rodapé (CSS v=2611zzz).
 - 26/11: luzes douradas do Atendimento aplicadas também no fundo verde do Expert (aparecendo entre e em volta dos cards) e na parte verde da Gestão (CSS v=2611zza1).
 - 26/11: luz da parte verde da Gestão some antes do fim, p/ emendar com a Compliance sem parecer outra seção (CSS v=2611zza2).
+- 26/11: removida a setinha de rolar abaixo do card da Gestão (CSS v=2611zza3).
