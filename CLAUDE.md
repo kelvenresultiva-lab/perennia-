@@ -266,3 +266,5 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 26/11: 360° do aro reposicionado: mais colado ao aro (r164) e mais à direita (arco 172°→88°, perto da cabeça), 36px em todas as telas (escala junto com o aro). CSS ?v=2611zw.
 
 - 26/11: 360° mais deitado no topo do aro (arco r166 de 172° a 84°, centro ~128°), sem encostar no cabelo; letter-spacing .02em. CSS ?v=2611zx.
+
+- 26/11: Seis dimensões: foto da sócia SAIU do centro; no centro agora o desenho do 360° da página inicial (.in-ring.h360: seta dourada girando 40s, círculo fino dourado, medalhão verde "360°" com aro creme+dourado). Foto da sócia virou FUNDO no canto inferior direito da seção (.dim-bg-photo, opacidade .26, some para a esquerda e para baixo; celular .16). Aro/360° antigos (.r360-*) não estão mais no HTML. Backup scratchpad/p360-antes-360home.html. CSS ?v=2611zz.

@@ -804,3 +804,19 @@ radial-gradient(80% 20% at 90% 96%,rgba(216,190,142,.16) 0%,rgba(216,190,142,0) 
 @media(max-width:600px){.r360-num{font-size:30px!important}}
 /* 26/11 v2: 360° mais colado ao aro e mais à direita (centro ~130°), escala junto com o aro em qualquer tela */ .r360-num{font-size:36px!important;letter-spacing:.06em!important}@media(max-width:600px){.r360-num{font-size:36px!important}}
 .r360-num{letter-spacing:.02em!important}
+/* 26/11: centro das Seis dimensões = desenho do 360° da página inicial (seta girando + círculo fino + medalhão verde "360°"); foto da sócia vai para o FUNDO, no canto da seção */
+.in-ring.h360{width:380px!important;height:380px!important;aspect-ratio:1!important;margin:0 auto!important;position:relative;display:block!important}
+.h360-arrow{position:absolute;inset:-26px;width:calc(100% + 52px);height:calc(100% + 52px);overflow:visible;pointer-events:none;animation:h360-spin 40s linear infinite}
+.h360-arrow path{fill:none;stroke:url(#h360a);stroke-width:1.1;stroke-linecap:round;stroke-linejoin:round}
+@keyframes h360-spin{to{transform:rotate(360deg)}}
+.h360-orbit{position:absolute;inset:18px;border-radius:50%;border:1px solid rgba(216,190,142,.5)}
+.h360-core{position:absolute;inset:26%;border-radius:50%;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at 32% 22%,#24573B 0%,#0F3520 50%,#04210B 100%);box-shadow:0 0 0 4px #F4EEE2,0 0 0 5px rgba(184,149,95,.85),0 24px 50px -18px rgba(0,0,0,.6)}
+.h360-core:before{content:"";position:absolute;inset:9px;border-radius:50%;border:1px solid rgba(243,223,177,.28)}
+.h360-core strong{font-family:var(--serif,Georgia,serif);font-weight:500;font-size:62px;line-height:1;letter-spacing:-.04em;background:linear-gradient(180deg,#F6E3B8 0%,#E2C58F 50%,#C9A266 100%);-webkit-background-clip:text;background-clip:text;color:transparent;font-variant-numeric:lining-nums}
+.h360-core strong sup{font-size:.5em;vertical-align:.75em}
+@media(prefers-reduced-motion:reduce){.h360-arrow{animation:none}}
+/* foto da sócia no fundo, canto inferior direito */
+#dimensoes .dim-bg-photo{position:absolute;right:0;bottom:0;width:42%;height:92%;z-index:0;pointer-events:none;border-bottom-right-radius:inherit;background:url(assets/socia-360.webp) right bottom/contain no-repeat;opacity:.26;-webkit-mask-image:linear-gradient(270deg,#000 35%,transparent 95%),linear-gradient(0deg,transparent 0,#000 25%);-webkit-mask-composite:source-in;mask-image:linear-gradient(270deg,#000 35%,transparent 95%),linear-gradient(0deg,transparent 0,#000 25%);mask-composite:intersect}
+@media(max-width:1100px){.in-ring.h360{margin:10px auto 40px!important}}
+@media(max-width:600px){.in-ring.h360{width:250px!important;height:250px!important}.h360-arrow{inset:-18px;width:calc(100% + 36px);height:calc(100% + 36px)}.h360-orbit{inset:12px}.h360-core strong{font-size:44px}#dimensoes .dim-bg-photo{width:70%;height:40%;opacity:.16}}
+.h360-arrow{animation:none!important}.h360-arrow path{transform-origin:50px 50px;transform-box:view-box;animation:h360-spin 40s linear infinite}@media(prefers-reduced-motion:reduce){.h360-arrow path{animation:none}}
