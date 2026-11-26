@@ -1378,3 +1378,28 @@ html body #portfolio .sv-item .sv-ico svg{background:none!important;padding:0!im
 html body #portfolio .in-chips li{background:#FFFFFF!important;border-color:#FFFFFF!important;color:#0F2E1F!important;box-shadow:0 8px 18px -10px rgba(0,0,0,.6)!important}
 html body #portfolio .in-chips li a{color:#0F2E1F!important}
 html body #portfolio .in-chips li:hover{background:#F3EBDA!important}
+/* 26/11: luzes douradas nos cantos da 1ª seção de Serviços */
+html body section#portfolio.in-sec:before{background:
+radial-gradient(34% 22% at 0% 0%,rgba(216,190,142,.42) 0%,rgba(216,190,142,.14) 45%,rgba(216,190,142,0) 75%),
+radial-gradient(34% 22% at 100% 0%,rgba(230,207,158,.34) 0%,rgba(230,207,158,0) 72%),
+radial-gradient(34% 22% at 0% 100%,rgba(230,207,158,.34) 0%,rgba(230,207,158,0) 72%),
+radial-gradient(34% 22% at 100% 100%,rgba(216,190,142,.42) 0%,rgba(216,190,142,.14) 45%,rgba(216,190,142,0) 75%),
+radial-gradient(30% 20% at 12% 55%,rgba(216,190,142,.18) 0%,rgba(216,190,142,0) 70%),
+radial-gradient(30% 20% at 88% 45%,rgba(216,190,142,.18) 0%,rgba(216,190,142,0) 70%)!important}
+@media(max-width:800px){html body section#portfolio.in-sec:before{background:
+radial-gradient(70% 12% at 0% 0%,rgba(216,190,142,.40) 0%,rgba(216,190,142,0) 75%),
+radial-gradient(70% 12% at 100% 35%,rgba(230,207,158,.28) 0%,rgba(230,207,158,0) 72%),
+radial-gradient(70% 12% at 0% 70%,rgba(230,207,158,.28) 0%,rgba(230,207,158,0) 72%),
+radial-gradient(70% 12% at 100% 100%,rgba(216,190,142,.40) 0%,rgba(216,190,142,0) 75%)!important}}
+html body section#portfolio.in-sec:before{background:
+radial-gradient(560px 460px at 0 160px,rgba(216,190,142,.50) 0%,rgba(216,190,142,.18) 45%,rgba(216,190,142,0) 75%),
+radial-gradient(560px 460px at 100% 160px,rgba(230,207,158,.40) 0%,rgba(230,207,158,.12) 45%,rgba(230,207,158,0) 75%),
+radial-gradient(560px 460px at 0 100%,rgba(230,207,158,.40) 0%,rgba(230,207,158,.12) 45%,rgba(230,207,158,0) 75%),
+radial-gradient(560px 460px at 100% 100%,rgba(216,190,142,.50) 0%,rgba(216,190,142,.18) 45%,rgba(216,190,142,0) 75%),
+radial-gradient(420px 420px at 0 50%,rgba(216,190,142,.22) 0%,rgba(216,190,142,0) 70%),
+radial-gradient(420px 420px at 100% 55%,rgba(216,190,142,.22) 0%,rgba(216,190,142,0) 70%)!important}
+@media(max-width:800px){html body section#portfolio.in-sec:before{background:
+radial-gradient(320px 300px at 0 0,rgba(216,190,142,.45) 0%,rgba(216,190,142,0) 75%),
+radial-gradient(320px 300px at 100% 35%,rgba(230,207,158,.32) 0%,rgba(230,207,158,0) 72%),
+radial-gradient(320px 300px at 0 70%,rgba(230,207,158,.32) 0%,rgba(230,207,158,0) 72%),
+radial-gradient(320px 300px at 100% 100%,rgba(216,190,142,.45) 0%,rgba(216,190,142,0) 75%)!important}}

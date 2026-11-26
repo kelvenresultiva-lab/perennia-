@@ -320,3 +320,4 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 26/11: cards das Seis dimensões (360) brancos/creme, texto e números verde-escuros, ícone verde com traço dourado (CSS v=2611zzb4).
 - 26/11: servicos-especializados — 1ª seção (#portfolio) em verde-escuro; cards .sv-item no design do card 'Perennia 360°' da home (verde degradê, filete dourado, ícone dourado solto, título caixa alta, 'SERVIÇO 0X' dourado, link sublinhado com círculo dourado) (CSS v=2611zzb5).
 - 26/11: atalhos (chips) da 1ª seção de Serviços com fundo branco e texto verde-escuro (CSS v=2611zzb6).
+- 26/11: luzes douradas nos 4 cantos (e laterais) da 1ª seção de Serviços (#portfolio:before) (CSS v=2611zzb8).
