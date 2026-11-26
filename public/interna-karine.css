@@ -1418,3 +1418,20 @@ html body #como-contratar .in-h2 em{color:#A9844B!important}
 html body #como-contratar .ks-scroll-cue{color:#8C6B3C!important}
 @media(max-width:600px){#portfolio .cp-dip{bottom:-18px!important}html body section#portfolio.in-sec{padding-bottom:120px!important}}
 /* 26/11: Serviços — Fale conosco também em fundo branco (rodapé continua igual) */ html body section#fale-conosco.sv-close{background:#FFFFFF!important}
+/* 26/11: Como contratar — cards no mesmo design dos cards de serviço (filete dourado, ícone solto, título caixa alta, etapa em dourado, alinhado à esquerda), mantendo as cores: claros continuam claros, o do meio continua verde */
+html body #como-contratar .sv-item{display:flex!important;flex-direction:column!important;align-items:flex-start!important;text-align:left!important;padding:44px 34px 36px!important;border-radius:16px!important;border:0!important;overflow:hidden;transform:none!important}
+html body #como-contratar .sv-item:not(.is-dark){background:linear-gradient(180deg,#FFFFFF 0%,#F7F4EC 100%)!important;box-shadow:0 0 0 1px rgba(201,168,106,.35),0 30px 50px -34px rgba(15,46,31,.45)!important}
+html body #como-contratar .sv-item.is-dark{background:linear-gradient(150deg,#1A4632 0%,#0F2E1F 55%,#08200F 100%)!important;box-shadow:0 0 0 1px rgba(216,190,142,.18),0 30px 50px -30px rgba(0,0,0,.6)!important}
+html body #como-contratar .sv-item:before{content:""!important;display:block!important;position:absolute!important;top:0!important;left:34px!important;right:auto!important;width:120px!important;height:4px!important;transform:none!important;border-radius:0 0 4px 4px!important;background:linear-gradient(90deg,#C9A86A,#E6CF9E,#C9A86A)!important;box-shadow:none!important}
+html body #como-contratar .sv-item:after{display:none!important}
+html body #como-contratar .sv-ico{order:0;position:static!important;display:block!important;width:auto!important;height:auto!important;margin:0 0 26px!important;padding:0!important;background:none!important;border:0!important;box-shadow:none!important;transform:none!important}
+html body #como-contratar .sv-ico:before,html body #como-contratar .sv-ico:after{display:none!important}
+html body #como-contratar .sv-ico svg{width:34px!important;height:34px!important;fill:none!important;stroke:#A9844B!important;stroke-width:1.5!important;background:none!important;padding:0!important;border:0!important;border-radius:0!important;box-shadow:none!important;transform:none!important}
+html body #como-contratar .sv-item.is-dark .sv-ico svg{stroke:#D8BE8E!important}
+html body #como-contratar .sv-item h3{order:1;margin:0 0 8px!important;font-size:21px!important;font-weight:500!important;letter-spacing:.02em!important;text-transform:uppercase;color:#0F2E1F!important;text-align:left!important}
+html body #como-contratar .sv-item.is-dark h3{color:#F6F1E6!important}
+html body #como-contratar .sv-n{order:2;display:block;margin:0 0 18px!important;font-size:12px!important;letter-spacing:.22em!important;font-weight:600!important;color:#A9844B!important;background:none!important;padding:0!important;border:0!important}
+html body #como-contratar .sv-item.is-dark .sv-n{color:#C9A86A!important}
+html body #como-contratar .sv-item p{order:3;margin:0!important;font-size:16px!important;line-height:1.65!important;color:#3D5547!important;text-align:left!important}
+html body #como-contratar .sv-item.is-dark p{color:rgba(237,230,214,.86)!important}
+@media(max-width:600px){html body #como-contratar .sv-item{padding:38px 22px 28px!important}html body #como-contratar .sv-item:before{left:22px!important}html body #como-contratar .sv-item h3{font-size:19px!important}}
