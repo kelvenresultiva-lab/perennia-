@@ -1060,3 +1060,17 @@ html body .cp-panel{background:linear-gradient(180deg,#FFFFFF,#F6F3EC)!important
 .cp-deliv{background:#0F2E1F!important;box-shadow:none!important}
 .cp-deliv .cp-label{color:#D8BE8E!important}
 .cp-deliv p{color:rgba(237,230,214,.85)!important}
+/* 26/11: fim do Compliance no modelo da referência — seção de baixo com cantos arredondados e "gota" escura descendo com a seta */
+#compliance .sx-notch{display:none!important}
+.cp-endcap{position:absolute;left:0;right:0;bottom:-1px;height:26px;background:#FFFFFF;border-radius:26px 26px 0 0;z-index:2;pointer-events:none}
+.cp-dip{position:absolute;left:50%;top:-1px;width:170px;height:48px;transform:translateX(-50%);z-index:3;pointer-events:none;display:block}
+.cp-dip path{fill:#0A2216}
+html body .in-sec#advisor{position:relative}
+#compliance .ks-scroll-cue{bottom:-26px!important;color:#D8BE8E!important;z-index:6!important}
+@media(max-width:600px){.cp-endcap{height:20px;border-radius:20px 20px 0 0}
+.cp-dip{width:130px;height:38px}
+#compliance .ks-scroll-cue{bottom:-20px!important}}
+.cp-dip{top:auto!important;bottom:-23px!important}
+#compliance .ks-scroll-cue{bottom:4px!important}
+@media(max-width:600px){.cp-dip{bottom:-19px!important}
+#compliance .ks-scroll-cue{bottom:2px!important}}
