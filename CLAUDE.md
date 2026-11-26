@@ -312,3 +312,4 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 26/11: no desktop (>1000px) letra ainda maior nos cards do Expert (título 30px, itens 19px) (CSS v=2611zza5).
 - 26/11: fim do Expert ganhou de volta o rodapé (faixa com cantos arredondados na cor do rodapé #06170D + gota + seta dourada) (CSS v=2611zza6).
 - 26/11: palavra EXPERT grande e esmaecida no fundo do card 1 (Para quem) do Expert, mesmo efeito do GESTÃO (span.ex-word) (CSS v=2611zza7).
+- 26/11: perennia-360 — Jornada de Valor no formato do LEGACY (pill + título + botão à esquerda; carrossel de 4 cards brancos 'Movimento 01–04' com número grande, bolinhas e nota) reaproveitando as classes lg-* (CSS v=2611zza8).
