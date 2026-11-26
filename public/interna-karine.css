@@ -957,3 +957,13 @@ html body .in-sec#expert.lg-green:before{-webkit-mask-image:none!important;mask-
 .lg-green .in-link{color:#E6CF9E!important}
 .lg-green .in-card .in-label{color:#D8BE8E!important}
 #expert.lg-green .ks-scroll-cue{display:block!important;color:#D8BE8E!important}
+/* 26/11: encaixes (rodapés) entre as seções da Soluções — a cor da seção de baixo sobe em aba */
+.sx-notch{position:absolute;left:50%;bottom:-1px;width:560px;height:61px;transform:translateX(-50%);pointer-events:none;z-index:3}
+.sx-notch svg{display:block;width:100%;height:100%}
+#compliance .sx-notch path,#expert .sx-notch path{fill:#FFFFFF}
+#advisor .sx-notch path{fill:#0F2E1F}
+#compliance .ks-scroll-cue,#advisor .ks-scroll-cue,#expert .ks-scroll-cue{bottom:6px!important;z-index:6!important}
+#compliance.lg-green .ks-scroll-cue,#expert.lg-green .ks-scroll-cue{color:#8C6B3C!important}
+#advisor .ks-scroll-cue{color:#D8BE8E!important}
+html body .in-sec#advisor{position:relative;padding-bottom:120px!important}
+@media(max-width:600px){.sx-notch{width:340px;height:47px}}
