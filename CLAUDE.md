@@ -301,3 +301,4 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 26/11: Método LEGACY (lg-sec) agora com fundo BRANCO, mesmo layout de carrossel: sem luzes, pílula verde-escura, título verde com itálico dourado, cards brancos com borda/sombra, bolinhas verdes/douradas; gota/cantos do fim escondidos (Gestão de baixo também é branca), seta padrão. CSS v=2611zzt. Backup CSS scratchpad/karine-antes-legacy-branco.css.
 - 26/11: carrossel do LEGACY sem card cortado: ≥1200px mostra 3 cards inteiros (coluna dos cards 1.28fr), 1001–1199px e 601–1000px mostram 2 inteiros; celular 80% (o seguinte aparece de propósito p/ indicar arraste). CSS v=2611zzu.
 - 26/11: LEGACY voltou ao layout anterior (cards ao lado do texto) e o carrossel agora sai pela borda direita da tela, mostrando os cards para o lado (CSS v=2611zzv).
+- 26/11: card da Perennia Gestão agora com fundo branco (textos escuros, ícones verdes, detalhes dourados) (CSS v=2611zzw).
