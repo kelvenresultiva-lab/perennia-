@@ -1133,3 +1133,49 @@ html body .av-light{background:#FFFFFF!important;box-shadow:0 0 0 1px rgba(15,46
 @media(min-width:1200px){html body .av-wide{grid-template-columns:minmax(0,.95fr) minmax(0,1.1fr)!important;gap:40px!important}}
 .av-btn{white-space:nowrap}
 @media(max-width:600px){.av-btn{white-space:normal!important;width:100%;justify-content:space-between;text-align:left}}
+
+/* 26/11: Método LEGACY no design "passo a passo": fundo escuro, texto à esquerda, carrossel de cards brancos com número grande e bolinhas */
+html body .in-sec.lg-sec{position:relative;isolation:isolate;z-index:3;overflow:visible!important;background:#0F2E1F linear-gradient(180deg,#0A2216 0%,#0F2E1F 100%)!important;padding:110px 0 130px!important;color:#EDE6D6}
+html body .in-sec.lg-sec:before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(36% 55% at 16% 40%,rgba(216,190,142,.20),transparent 70%),radial-gradient(30% 45% at 88% 20%,rgba(216,190,142,.12),transparent 70%),radial-gradient(30% 45% at 70% 100%,rgba(92,150,108,.22),transparent 70%)}
+.lg-wrap{display:grid!important;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:56px;align-items:center;max-width:1240px!important}
+.lg-pill{display:inline-block;padding:9px 16px;border-radius:6px;background:rgba(255,255,255,.05);box-shadow:inset 0 0 0 1px rgba(216,190,142,.3);font-size:11px;letter-spacing:.22em;color:#D8BE8E;margin-bottom:24px}
+.lg-h1{margin:0;font-weight:400;font-size:clamp(30px,3vw,42px);line-height:1.12;letter-spacing:-.01em;color:#F6F1E6;text-align:left!important}
+.lg-h1 em{display:block;font-style:italic;color:#E6CF9E}
+.lg-left p{margin:20px 0 0;font-size:15px;line-height:1.7;color:rgba(237,230,214,.8);max-width:440px}
+.lg-left p+p{margin-top:12px}
+.lg-btn{margin-top:30px!important;background:linear-gradient(135deg,#E6CF9E,#C9A86A)!important;color:#0F2E1F!important}
+.lg-right{min-width:0}
+.lg-track{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 2px 10px;scrollbar-width:none;outline:none;cursor:grab}
+.lg-track::-webkit-scrollbar{display:none}
+.lg-card{counter-increment:lgc;position:relative;flex:0 0 calc((100% - 36px)/2.3);min-height:330px;scroll-snap-align:start;overflow:hidden;border-radius:14px;padding:30px 26px 0;background:linear-gradient(180deg,#FFFFFF 0%,#F2F4F1 100%);box-shadow:0 30px 50px -30px rgba(0,0,0,.6)}
+.lg-card:before{content:"";position:absolute;top:0;left:50%;width:90px;height:4px;transform:translateX(-50%);border-radius:0 0 4px 4px;background:#0F2E1F}
+.lg-track{counter-reset:lgc}
+.lg-card .in-ico{display:grid!important;place-items:center;width:52px!important;height:52px!important;border-radius:50%!important;margin:0 0 22px!important;background:#0F2E1F!important;box-shadow:0 0 0 1px rgba(201,168,106,.6),0 0 0 6px rgba(15,46,31,.08)!important}
+.lg-card .in-ico svg{width:22px!important;height:22px!important;fill:none!important;stroke:#E6CF9E!important;stroke-width:1.6!important;stroke-linecap:round;stroke-linejoin:round}
+.lg-card .in-label{display:block;font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;color:#A9844B;margin-bottom:8px}
+.lg-card h3{margin:0 0 12px;font-size:19px;font-weight:600;color:#0F2E1F}
+.lg-card p{position:relative;padding-left:20px;margin:0;font-size:14.5px;line-height:1.55;color:#2F4438}
+.lg-card p:before{content:"";position:absolute;left:0;top:.42em;width:10px;height:10px;border-radius:50%;background:#fff;box-shadow:inset 0 0 0 3px #0F2E1F}
+.lg-card:after{content:counter(lgc,decimal-leading-zero);position:absolute;right:18px;bottom:-.3em;font:500 120px/1 "Rethink Sans",Arial,sans-serif;letter-spacing:-.04em;color:#0F2E1F;opacity:.92}
+.lg-dots{display:flex;gap:7px;margin-top:18px}
+.lg-dot{width:9px;height:9px;padding:0;border:0;border-radius:50%;background:rgba(255,255,255,.35);cursor:pointer;transition:background .25s,width .25s}
+.lg-dot.is-on{width:24px;border-radius:6px;background:linear-gradient(90deg,#E6CF9E,#C9A86A)}
+.lg-note{margin:20px 0 0;font-size:13.5px;line-height:1.6;color:rgba(237,230,214,.7);max-width:620px}
+.lg-note strong{color:#E6CF9E}
+#metodo-legacy .cp-dip path{fill:#0F2E1F}
+#metodo-legacy .ks-scroll-cue{display:block!important;bottom:4px!important;color:#D8BE8E!important;z-index:6!important}
+html body .in-sec.gs-sec{padding-top:120px!important}
+@media(max-width:1000px){.lg-wrap{grid-template-columns:1fr;gap:40px}
+.lg-card{flex-basis:calc((100% - 18px)/1.6)}}
+@media(max-width:600px){html body .in-sec.lg-sec{padding:80px 0 110px!important}
+.lg-left{text-align:center}
+.lg-h1{text-align:center!important}
+.lg-left p{margin-left:auto;margin-right:auto}
+.lg-card{flex-basis:82%;min-height:300px}
+.lg-card:after{font-size:100px}
+.lg-dots{justify-content:center}
+.lg-note{text-align:center}
+#metodo-legacy .ks-scroll-cue{bottom:2px!important}}
+.lg-card{flex:0 0 max(240px,calc((100% - 36px)/2.3))!important;min-height:0!important;padding-bottom:92px!important}
+.lg-card:after{font-size:110px!important;bottom:-.32em!important}
+@media(max-width:600px){.lg-card{flex-basis:80%!important;padding-bottom:84px!important}.lg-card:after{font-size:96px!important}}
