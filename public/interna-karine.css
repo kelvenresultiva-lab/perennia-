@@ -1441,3 +1441,4 @@ html body #como-contratar .cc-list li{position:relative;padding-left:22px;font-s
 html body #como-contratar .cc-list li:before{content:"";position:absolute;left:0;top:.45em;width:8px;height:8px;border-radius:50%;background:#C9A86A;box-shadow:0 0 0 3px rgba(201,168,106,.18)}
 html body #como-contratar .sv-item.is-dark .cc-list{border-top-color:rgba(216,190,142,.3)}
 html body #como-contratar .sv-item.is-dark .cc-list li{color:#E9E3D4}
+/* 26/11: no celular, cards claros do Como contratar em branco puro (fundo da seção sem mudança) */ @media(max-width:800px){html body #como-contratar .sv-item:not(.is-dark){background:#FFFFFF!important;box-shadow:0 0 0 1px rgba(201,168,106,.3),0 18px 34px -24px rgba(15,46,31,.35)!important}}
