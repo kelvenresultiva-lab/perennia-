@@ -1044,3 +1044,4 @@ radial-gradient(30% 45% at 4% 20%,rgba(92,150,108,.28) 0%,rgba(92,150,108,0) 70%
 radial-gradient(26% 35% at 6% 94%,rgba(216,190,142,.22) 0%,rgba(216,190,142,0) 70%)!important}
 .cp-panel{background:linear-gradient(160deg,rgba(255,255,255,.045),rgba(255,255,255,.012))!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important}
 /* 26/11: palavra GESTÃO mais baixa, mostrando o til inteiro (só a base fica cortada) */ .gs-word{height:.98em!important;line-height:1.32!important;overflow:hidden!important}
+/* 26/11: espaço no fim do card da Gestão p/ a palavra GESTÃO não encostar no botão/texto */ html body .gs-card{padding-bottom:calc(clamp(90px,15vw,210px) * .98 + 36px)!important}
