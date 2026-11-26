@@ -1374,3 +1374,7 @@ html body #portfolio .sv-go>span svg{width:16px!important;height:16px!important;
 html body #portfolio .sv-go:hover>span{transform:translateX(3px)}
 @media(max-width:600px){html body #portfolio .sv-item,html body #portfolio .sv-item.is-dark{padding:38px 22px 28px!important}html body #portfolio .sv-item:before{left:22px!important}html body #portfolio .sv-item h3{font-size:19px!important}}
 html body #portfolio .sv-item .sv-ico svg{background:none!important;padding:0!important;border:0!important;border-radius:0!important;box-shadow:none!important;transform:none!important}
+/* 26/11: atalhos (chips) da 1ª seção de Serviços com fundo branco e texto verde-escuro */
+html body #portfolio .in-chips li{background:#FFFFFF!important;border-color:#FFFFFF!important;color:#0F2E1F!important;box-shadow:0 8px 18px -10px rgba(0,0,0,.6)!important}
+html body #portfolio .in-chips li a{color:#0F2E1F!important}
+html body #portfolio .in-chips li:hover{background:#F3EBDA!important}
