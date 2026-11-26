@@ -1348,3 +1348,29 @@ html body .dm-card .in-ico svg{stroke:#E6CF9E!important}
 html body .dm-n{color:#0F2E1F!important;opacity:.9}
 html body .dm-card h3{color:#0F2E1F!important}
 html body .dm-card p{color:#3D5547!important}
+/* 26/11: Serviços especializados — 1ª seção em verde-escuro e cards no design "Perennia 360°" da home (card verde, filete dourado, ícone dourado solto, título em caixa alta, selo dourado, link com círculo dourado) */
+html body section#portfolio.in-sec{position:relative;isolation:isolate;background:#061A10 linear-gradient(180deg,#08200F 0%,#04130A 100%)!important;color:#EDE6D6}
+html body section#portfolio.in-sec:before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(35% 30% at 15% 20%,rgba(216,190,142,.14),transparent 70%),radial-gradient(35% 30% at 85% 60%,rgba(216,190,142,.10),transparent 70%),radial-gradient(40% 30% at 50% 100%,rgba(92,150,108,.16),transparent 70%)}
+html body #portfolio .in-eyebrow{color:#D8BE8E!important}
+html body #portfolio .in-h2{color:#F6F1E6!important}
+html body #portfolio .in-h2 em{color:#E6CF9E!important}
+html body #portfolio .in-lead{color:rgba(237,230,214,.78)!important}
+html body #portfolio .in-chips li{background:rgba(255,255,255,.05)!important;border-color:rgba(216,190,142,.35)!important;color:#E6CF9E!important}
+html body #portfolio .in-chips li a{color:#E6CF9E!important}
+html body #portfolio .ks-scroll-cue{color:#D8BE8E!important}
+html body #portfolio .sv-item,html body #portfolio .sv-item.is-dark{display:flex!important;flex-direction:column!important;align-items:flex-start!important;text-align:left!important;padding:44px 34px 36px!important;border-radius:16px!important;background:linear-gradient(150deg,#1A4632 0%,#0F2E1F 55%,#08200F 100%)!important;border:0!important;box-shadow:0 0 0 1px rgba(216,190,142,.18),0 30px 50px -30px rgba(0,0,0,.8)!important;color:#EDE6D6!important;overflow:hidden}
+html body #portfolio .sv-item:before{content:""!important;display:block!important;position:absolute!important;top:0!important;left:34px!important;right:auto!important;width:120px!important;height:4px!important;transform:none!important;border-radius:0 0 4px 4px!important;background:linear-gradient(90deg,#C9A86A,#E6CF9E,#C9A86A)!important;box-shadow:none!important}
+html body #portfolio .sv-item:after{display:none!important}
+html body #portfolio .sv-ico{position:static!important;display:block!important;width:auto!important;height:auto!important;margin:0 0 26px!important;padding:0!important;background:none!important;border:0!important;box-shadow:none!important;transform:none!important}
+html body #portfolio .sv-ico:before,html body #portfolio .sv-ico:after{display:none!important}
+html body #portfolio .sv-ico svg{width:34px!important;height:34px!important;fill:none!important;stroke:#D8BE8E!important;stroke-width:1.5!important}
+html body #portfolio .sv-item h3{order:1;margin:0 0 8px!important;font-size:21px!important;font-weight:500!important;letter-spacing:.02em!important;text-transform:uppercase;color:#F6F1E6!important;text-align:left!important}
+html body #portfolio .sv-n{order:2;display:block;margin:0 0 18px!important;font-size:12px!important;letter-spacing:.22em!important;font-weight:600!important;color:#C9A86A!important;background:none!important;padding:0!important;border:0!important}
+html body #portfolio .sv-item .sv-ico{order:0}
+html body #portfolio .sv-item p{order:3;margin:0!important;font-size:16px!important;line-height:1.65!important;color:rgba(237,230,214,.86)!important;text-align:left!important}
+html body #portfolio .sv-go{order:4;display:inline-flex!important;align-items:center;gap:14px;margin-top:auto!important;padding:26px 0 0!important;background:none!important;border:0!important;box-shadow:none!important;color:#E6CF9E!important;font-size:15px!important;font-weight:600!important;letter-spacing:0!important;text-transform:none!important;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:5px;cursor:pointer}
+html body #portfolio .sv-go>span{flex:none;display:grid!important;place-items:center;width:36px!important;height:36px!important;border-radius:50%!important;background:linear-gradient(135deg,#F3DFB1,#C9A86A)!important;box-shadow:0 6px 14px -6px rgba(0,0,0,.6)!important;transition:transform .25s}
+html body #portfolio .sv-go>span svg{width:16px!important;height:16px!important;stroke:#0F2E1F!important;fill:none!important}
+html body #portfolio .sv-go:hover>span{transform:translateX(3px)}
+@media(max-width:600px){html body #portfolio .sv-item,html body #portfolio .sv-item.is-dark{padding:38px 22px 28px!important}html body #portfolio .sv-item:before{left:22px!important}html body #portfolio .sv-item h3{font-size:19px!important}}
+html body #portfolio .sv-item .sv-ico svg{background:none!important;padding:0!important;border:0!important;border-radius:0!important;box-shadow:none!important;transform:none!important}
