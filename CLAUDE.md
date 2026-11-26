@@ -322,3 +322,4 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 26/11: atalhos (chips) da 1ª seção de Serviços com fundo branco e texto verde-escuro (CSS v=2611zzb6).
 - 26/11: luzes douradas nos 4 cantos (e laterais) da 1ª seção de Serviços (#portfolio:before) (CSS v=2611zzb8).
 - 26/11: luzes douradas de cima da 1ª seção de Serviços menores e mais suaves (CSS v=2611zzb9).
+- 26/11: Serviços — fim do #portfolio com faixa branca arredondada + gota (#04130A) + seta dourada; #como-contratar agora em fundo branco de ponta a ponta (sem notch), títulos escuros (CSS v=2611zzc1).

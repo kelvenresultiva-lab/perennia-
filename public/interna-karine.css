@@ -1403,3 +1403,17 @@ radial-gradient(320px 300px at 0 0,rgba(216,190,142,.45) 0%,rgba(216,190,142,0) 
 radial-gradient(320px 300px at 100% 35%,rgba(230,207,158,.32) 0%,rgba(230,207,158,0) 72%),
 radial-gradient(320px 300px at 0 70%,rgba(230,207,158,.32) 0%,rgba(230,207,158,0) 72%),
 radial-gradient(320px 300px at 100% 100%,rgba(216,190,142,.45) 0%,rgba(216,190,142,0) 75%)!important}}
+/* 26/11: Serviços — fim da 1ª seção com a transição (faixa branca arredondada + gota + seta) e Como contratar em fundo branco */
+html body section#portfolio.in-sec{z-index:2;padding-bottom:150px!important}
+#portfolio .cp-endcap{display:block!important;background:#FFFFFF!important}
+#portfolio .cp-dip{display:block!important;top:auto!important;bottom:-23px!important}
+#portfolio .cp-dip path{fill:#04130A!important}
+html body #portfolio .ks-scroll-cue{display:block!important;bottom:4px!important;color:#D8BE8E!important;z-index:6!important}
+html body section#como-contratar.cc-dark{background:#FFFFFF!important;margin:0!important;border-radius:0!important;color:#1F3A2C}
+html body section#como-contratar.cc-dark:before,html body section#como-contratar.cc-dark:after{display:none!important}
+#como-contratar .cc-notch{display:none!important}
+html body #como-contratar .in-eyebrow{color:#A9844B!important}
+html body #como-contratar .in-h2{color:#0F2E1F!important}
+html body #como-contratar .in-h2 em{color:#A9844B!important}
+html body #como-contratar .ks-scroll-cue{color:#8C6B3C!important}
+@media(max-width:600px){#portfolio .cp-dip{bottom:-18px!important}html body section#portfolio.in-sec{padding-bottom:120px!important}}
