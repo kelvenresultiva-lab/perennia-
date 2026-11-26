@@ -286,3 +286,4 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 26/11: Compliance: foto definitiva da sócia (vestido verde, notebook) em assets/socia-compliance.jpg no lugar da provisória; card da foto mais alto (4/4.3). CSS v=2611zzd.
 - 26/11: Compliance: foto da sócia (socia-compliance.jpg) também como fundo da seção, atrás do painel, coberta por véu verde (sólido no topo e no fim p/ emendar com Gestão e com o encaixe). CSS v=2611zze.
 - 26/11: Compliance: foto de fundo REMOVIDA; fundo agora é o mesmo do rodapé (#06170D, liso, sem luzes). Metade de baixo da .gs-sec também #06170D p/ emendar. Foto continua só no painel. CSS v=2611zzf.
+- 26/11: Compliance: fundo voltou ao verde #0F2E1F→#0A2216 com as MESMAS luzes douradas/verdes do Atendimento (sobre.html), um pouco mais fortes, + vinheta; painel mais transparente e sem blur p/ as luzes aparecerem. Metade de baixo da Gestão voltou a #0F2E1F. CSS v=2611zzh.

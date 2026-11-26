@@ -1016,3 +1016,30 @@ html body .in-sec.gs-sec{background:linear-gradient(180deg,#FFFFFF 0%,#FFFFFF 48
 @media(max-width:600px){html body .in-sec#compliance.cp-sec{background:#06170D!important}
 html body .in-sec.gs-sec{background:linear-gradient(180deg,#FFFFFF 0%,#FFFFFF 68%,#06170D 68%)!important}}
 .gs-sec:before{display:none!important}
+/* 26/11: Compliance com as mesmas luzes douradas do Atendimento (sobre.html) */
+html body .in-sec#compliance.cp-sec{background:#0F2E1F linear-gradient(180deg,#0F2E1F 0%,#0C2719 60%,#0A2216 100%)!important;box-shadow:0 -2px 0 #0F2E1F!important;isolation:isolate}
+html body .in-sec#compliance.cp-sec:before{display:block!important;content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;opacity:1!important;background:
+radial-gradient(42% 60% at 27% 55%,rgba(216,190,142,.42) 0%,rgba(216,190,142,.18) 36%,rgba(216,190,142,0) 72%),
+radial-gradient(26% 40% at 72% 30%,rgba(230,207,158,.20) 0%,rgba(230,207,158,0) 70%),
+radial-gradient(30% 45% at 92% 88%,rgba(216,190,142,.18) 0%,rgba(216,190,142,0) 70%),
+radial-gradient(36% 55% at 85% 95%,rgba(92,150,108,.28) 0%,rgba(92,150,108,0) 70%),
+radial-gradient(30% 45% at 4% 20%,rgba(92,150,108,.24) 0%,rgba(92,150,108,0) 70%),
+radial-gradient(24% 35% at 8% 92%,rgba(216,190,142,.14) 0%,rgba(216,190,142,0) 70%)!important;-webkit-mask-image:linear-gradient(180deg,transparent 0,#000 140px)!important;mask-image:linear-gradient(180deg,transparent 0,#000 140px)!important}
+html body .in-sec#compliance.cp-sec:after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(120% 90% at 50% 50%,rgba(0,0,0,0) 55%,rgba(0,0,0,.28) 100%);-webkit-mask-image:linear-gradient(180deg,transparent 0,#000 140px);mask-image:linear-gradient(180deg,transparent 0,#000 140px)}
+html body .in-sec.gs-sec{background:linear-gradient(180deg,#FFFFFF 0%,#FFFFFF 48%,#0F2E1F 48%,#0F2E1F 100%)!important}
+@media(max-width:900px){html body .in-sec#compliance.cp-sec:before{background:
+radial-gradient(80% 32% at 50% 22%,rgba(216,190,142,.40) 0%,rgba(216,190,142,.15) 40%,rgba(216,190,142,0) 75%),
+radial-gradient(70% 25% at 85% 62%,rgba(230,207,158,.16) 0%,rgba(230,207,158,0) 70%),
+radial-gradient(70% 28% at 10% 50%,rgba(92,150,108,.24) 0%,rgba(92,150,108,0) 70%),
+radial-gradient(80% 30% at 90% 96%,rgba(92,150,108,.28) 0%,rgba(92,150,108,0) 70%)!important}}
+@media(max-width:600px){html body .in-sec#compliance.cp-sec{background:#0F2E1F linear-gradient(180deg,#0F2E1F 0%,#0C2719 60%,#0A2216 100%)!important}
+html body .in-sec.gs-sec{background:linear-gradient(180deg,#FFFFFF 0%,#FFFFFF 68%,#0F2E1F 68%)!important}}
+/* luzes do Compliance mais fortes p/ aparecerem em volta e através do painel */
+html body .in-sec#compliance.cp-sec:before{background:
+radial-gradient(40% 55% at 22% 62%,rgba(216,190,142,.55) 0%,rgba(216,190,142,.22) 38%,rgba(216,190,142,0) 72%),
+radial-gradient(30% 42% at 78% 22%,rgba(230,207,158,.30) 0%,rgba(230,207,158,0) 70%),
+radial-gradient(34% 40% at 90% 90%,rgba(216,190,142,.26) 0%,rgba(216,190,142,0) 70%),
+radial-gradient(36% 55% at 85% 95%,rgba(92,150,108,.30) 0%,rgba(92,150,108,0) 70%),
+radial-gradient(30% 45% at 4% 20%,rgba(92,150,108,.28) 0%,rgba(92,150,108,0) 70%),
+radial-gradient(26% 35% at 6% 94%,rgba(216,190,142,.22) 0%,rgba(216,190,142,0) 70%)!important}
+.cp-panel{background:linear-gradient(160deg,rgba(255,255,255,.045),rgba(255,255,255,.012))!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important}
