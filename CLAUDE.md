@@ -359,3 +359,4 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 27/11: Soluções: "^" (.ks-to-top) do alto do rodapé removido só nessa página (body:has(section#expert)) (CSS v=2711y)
 - 27/11: 360 no iPhone: rolagem lateral corrigida sem depender de overflow:clip (foto fixa e faixa preta limitadas a -20px = margem da .dm2-wrap); gota das Seis dimensões mais alta (44px celular / 54px computador) para não deixar fio branco (CSS v=2711z)
 - 27/11: 360 — O que é o Perennia 360° virou card escuro (.oq-card): selo girando à esquerda, título+2 parágrafos à direita, linha, pílulas das áreas (Contábil, Fiscal, Trabalhista, Legal, Societário, Patrimonial) e 5 blocos com ícone tirados do próprio texto; citação centralizada abaixo (CSS v=2711aa)
+- 27/11: 360 — removido o rodapé da hero (curva .ks-hero-curve + .in-hero-cue no topo de #o-que-e)
