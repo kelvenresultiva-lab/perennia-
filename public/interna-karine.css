@@ -1584,3 +1584,5 @@ html body .ft-notch:after{content:""!important;display:block!important;position:
 html body .ft-notch .ft-seal{z-index:3}
 /* 27/11: fim das Seis dimensões no celular — abaixo do último card fica preto (a foto fixa não aparece mais entre o card e o rodapé) */
 @media(max-width:900px){html body section#dimensoes .dm2-list::after{content:"";position:absolute;left:-60px;right:-60px;top:auto;bottom:0;height:var(--dm-end,112px);background:#050605;pointer-events:none}}
+/* 27/11: celular — no fim do Portfólio o brilho dourado do canto chegava no meio e a "gota" ficava uma mancha preta; escurece suavemente o centro de baixo para a gota se misturar ao fundo (v=2711w) */
+@media(max-width:900px){html body section#portfolio.in-sec::after{content:"";position:absolute;left:0;right:0;bottom:0;height:260px;background:radial-gradient(260px 200px at 50% 100%,#04130A 0%,#04130A 35%,rgba(4,19,10,0) 100%);pointer-events:none;z-index:1}}
