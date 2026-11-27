@@ -356,3 +356,4 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 27/11: celular: linha dourada do topo do rodapé escondida embaixo do ombro do selo (.ft-notch:after); fim das Seis dimensões preto abaixo do último card (.dm2-list::after cobre o padding-bottom de 112px) (CSS v=2711v)
 - 27/11: Serviços (celular): centro de baixo do Portfólio escurecido (#portfolio::after radial #04130A) para a gota do rodapé não virar mancha preta sob o brilho dourado (CSS v=2711w)
 - 27/11: Soluções (celular): fim do Expert sem brilho verde de baixo, gradiente final mais escuro e gota #071810 — some a mancha no rodapé (CSS v=2711x)
+- 27/11: Soluções: "^" (.ks-to-top) do alto do rodapé removido só nessa página (body:has(section#expert)) (CSS v=2711y)

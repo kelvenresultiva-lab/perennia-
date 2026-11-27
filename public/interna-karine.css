@@ -1592,3 +1592,5 @@ html body section#expert.lg-green::before{background-image:radial-gradient(90% 2
 html body section#expert .cp-dip path{fill:#071810!important}
 html body section#expert.lg-green{background-image:linear-gradient(rgb(15,46,31) 0%,rgb(12,39,25) 60%,rgb(10,34,22) 92%,rgb(8,28,18) 100%)!important}
 }
+/* 27/11: Soluções — tira o "^" (voltar ao topo) do alto do rodapé, que ficava logo abaixo da seta da gota do Expert; o "Voltar ao topo" do fim do rodapé continua (v=2711y) */
+html body:has(section#expert) .ks-to-top{display:none!important}
