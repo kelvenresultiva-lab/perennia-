@@ -2487,3 +2487,5 @@ html body .perennia-hero .perennia-visual::before{content:""!important;position:
 @media(max-width:700px){html body .perennia-hero .perennia-visual::before{background:radial-gradient(ellipse 34% 16% at 6% 0%,rgba(10,50,24,.9),rgba(10,50,24,.5) 45%,transparent 80%)!important}}
 /* 27/11: hero mobile — mais verde na faixa escura da esquerda, ao lado da cabeça (sem chegar ao rosto) */
 @media(max-width:700px){html body .perennia-hero .perennia-visual::before{background:radial-gradient(ellipse 22% 46% at 0% 20%,rgba(10,50,24,.95),rgba(10,50,24,.6) 45%,transparent 82%),radial-gradient(ellipse 34% 16% at 6% 0%,rgba(10,50,24,.9),rgba(10,50,24,.5) 45%,transparent 80%)!important}}
+/* 27/11: hero mobile — verde mais forte contornando cabeça e terno da sócia da esquerda */
+@media(max-width:700px){html body .perennia-hero .perennia-visual::before{background:radial-gradient(ellipse 26% 75% at 0% 40%,rgba(10,50,24,.97),rgba(10,50,24,.7) 50%,transparent 88%),radial-gradient(ellipse 42% 13% at 18% 0%,rgba(10,50,24,.95),rgba(10,50,24,.55) 50%,transparent 85%),linear-gradient(90deg,rgba(10,50,24,.55),transparent 9%)!important}}

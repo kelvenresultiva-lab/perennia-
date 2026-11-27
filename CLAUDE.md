@@ -367,3 +367,4 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 27/11: Sobre — cartão da 1ª sócia preenchido: Joana Teixeira, Diretora Executiva da JL Contabilidade, síntese + Formação e trajetória (texto enviado por ela) + Instagram @joana_dvteixeira (.ps-ig, CSS v=2711ag). 2ª sócia ainda com [marcadores]
 - 27/11: hero mobile (home e Sobre) — mais verde na faixa escura da esquerda, ao lado da cabeça (perennia-karine v=2711w, interna v=2711ah)
 - 27/11: Sobre — 2ª sócia: Patrícia Teixeira; síntese marcada "(enviar biografia)" até ela mandar o texto; função ainda [marcador]
+- 27/11: hero mobile — verde mais forte contornando cabeça e terno da sócia da esquerda (perennia-karine v=2711x, interna v=2711ai)
