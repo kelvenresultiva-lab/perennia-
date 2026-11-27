@@ -1648,3 +1648,5 @@ html body #o-que-e .oq-hs .hs-sign{align-items:center!important;justify-content:
 /* 27/11: 360 — sem a linha acima da assinatura "Perennia 360°" (v=2711ac) */
 html body #o-que-e .oq-hs .hs-sign{border-top:0!important;padding-top:0!important}
 html body #o-que-e .oq-hs .hs-sign::before,html body #o-que-e .oq-hs .hs-sign::after{display:none!important}
+/* 27/11: 360 mobile — "O que é" resumido: 1º e último parágrafo, citação e assinatura (v=2711ad) */
+@media(max-width:700px){html body #o-que-e .oq-hs>div:first-child .hs-text p:nth-child(2),html body #o-que-e .oq-hs>div:first-child .hs-text p:nth-child(3),html body #o-que-e .oq-hs>div:first-child .hs-text p:nth-child(4),html body #o-que-e .oq-hs .hs-side .hs-text{display:none!important}}
