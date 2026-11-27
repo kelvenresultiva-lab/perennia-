@@ -363,3 +363,4 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 27/11: 360 — O que é o Perennia 360° trocado do card escuro para o desenho do Quem somos do Sobre (.in-split.hs-split.oq-hs: 5 parágrafos à esquerda, citação com filete + 3 parágrafos + assinatura 'Perennia 360° / Da empresa ao patrimônio dos sócios' à direita); textos novos tirados das dimensões, movimentos e entregas da própria página; regras antigas de centralizar #o-que-e com :not(.oq-hs) (CSS v=2711ab)
 - 27/11: 360 — sem a linha acima da assinatura Perennia 360° (CSS v=2711ac); rodapé da hero (curva + ícone) de volta no topo do O que é
 - 27/11: 360 mobile — O que é resumido (1º parágrafo + Mapa + citação + assinatura; demais ocultos só no mobile) (CSS v=2711ad)
+- 27/11: hero da home e do Sobre — véu verde (::before da .perennia-visual) na área escura ao lado da cabeça; no mobile, canto superior esquerdo (perennia-karine v=2711v, interna v=2711af)

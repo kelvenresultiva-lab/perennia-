@@ -2482,3 +2482,6 @@ html body .ks-btn,html body .perennia-cta,html body a.cta{min-width:min(420px,10
 /* 27/11: selo do último card (Método Legacy): o "P" era um recorte da logo inteira e ficava maior que o círculo interno; agora usa o P próprio (perennia-p.webp), proporcional ao círculo */
 html body #agendar .ks-seal .ks-closing-pimg{height:34px!important;width:auto!important;position:relative!important;z-index:3;margin:0 auto!important;display:block!important}
 @media(max-width:900px){html body #agendar .ks-seal .ks-closing-pimg{height:26px!important}}
+/* 27/11: hero — mais verde na área escura acima do ombro/ao lado da cabeça, sem tocar nos rostos */
+html body .perennia-hero .perennia-visual::before{content:""!important;position:absolute!important;inset:0!important;pointer-events:none!important;z-index:0!important;background:radial-gradient(ellipse 15% 34% at 45% 9%,rgba(10,50,24,.92),rgba(10,50,24,.55) 45%,transparent 78%)!important}
+@media(max-width:700px){html body .perennia-hero .perennia-visual::before{background:radial-gradient(ellipse 34% 16% at 6% 0%,rgba(10,50,24,.9),rgba(10,50,24,.5) 45%,transparent 80%)!important}}

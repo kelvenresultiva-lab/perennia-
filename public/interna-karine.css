@@ -1650,3 +1650,6 @@ html body #o-que-e .oq-hs .hs-sign{border-top:0!important;padding-top:0!importan
 html body #o-que-e .oq-hs .hs-sign::before,html body #o-que-e .oq-hs .hs-sign::after{display:none!important}
 /* 27/11: 360 mobile — "O que é" resumido: 1º e último parágrafo, citação e assinatura (v=2711ad) */
 @media(max-width:700px){html body #o-que-e .oq-hs>div:first-child .hs-text p:nth-child(2),html body #o-que-e .oq-hs>div:first-child .hs-text p:nth-child(3),html body #o-que-e .oq-hs>div:first-child .hs-text p:nth-child(4),html body #o-que-e .oq-hs .hs-side .hs-text{display:none!important}}
+/* 27/11: hero — mais verde na área escura acima do ombro/ao lado da cabeça, sem tocar nos rostos */
+html body .perennia-hero .perennia-visual::before{content:""!important;position:absolute!important;inset:0!important;pointer-events:none!important;z-index:0!important;background:radial-gradient(ellipse 15% 34% at 45% 9%,rgba(10,50,24,.92),rgba(10,50,24,.55) 45%,transparent 78%)!important}
+@media(max-width:700px){html body .perennia-hero .perennia-visual::before{background:radial-gradient(ellipse 34% 16% at 6% 0%,rgba(10,50,24,.9),rgba(10,50,24,.5) 45%,transparent 80%)!important}}
