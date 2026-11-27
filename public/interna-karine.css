@@ -1463,3 +1463,4 @@ html body .oq-jornada .lg-dots{justify-content:center}
 /* 27/11: hero da Perennia 360° (foto da sócia; a versão mobile ainda vai chegar — por enquanto usa a desktop puxada para a direita) */
 html body .p3-hero.sb2-hero .perennia-visual{background-image:url("assets/hero-360-desktop.webp")!important;background-position:right center!important}
 @media(max-width:700px){html body .p3-hero.sb2-hero .perennia-visual{background-image:url("assets/hero-360-desktop.webp")!important;background-position:78% center!important}}
+/* 27/11: hero mobile da 360 */ @media(max-width:700px){html body .p3-hero.sb2-hero .perennia-visual{background-image:url("assets/hero-360-mobile.webp")!important;background-position:center top!important}}
