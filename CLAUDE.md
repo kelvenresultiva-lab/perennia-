@@ -347,3 +347,4 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 27/11: desfeito: Seis dimensões voltou para a foto de terno dourado; foto de blazer preto e ajuste v=2711l removidos (CSS v=2711m)
 - 27/11: Seis dimensões: logo (assets/perennia-logo-transparente.webp, fundo removido) ao lado do rosto da sócia, só a partir de 1240px (CSS v=2711n)
 - 27/11: Seis dimensões: logo trocada pelo selo redondo da hero (.ks-seal.dm2-seal, a partir de 1100px) à direita do rosto; topo da cabeça menos escurecido (máscara 9%, brightness .9) (CSS v=2711o)
+- 27/11: Seis dimensões: selo mais à direita (até 570px, 40px antes dos cards) (CSS v=2711p)
