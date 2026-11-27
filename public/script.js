@@ -12,8 +12,8 @@ function openDialog(d){if(!d)return;d.showModal();document.body.style.overflow='
 
 // WhatsApp da Perennia: preencher o número (só dígitos, com 55 + DDD), ex.: "5531999999999".
 // Enquanto estiver vazio, os botões continuam abrindo o aviso (#perennia-dialog).
-const WHATSAPP_NUMERO = "";
-const WHATSAPP_MENSAGEM = "Olá! Vim pelo site da Perennia e gostaria de agendar uma conversa.";
+const WHATSAPP_NUMERO = "553191749665";
+const WHATSAPP_MENSAGEM = "Olá, Perennia! Vim pelo site e gostaria de agendar uma conversa para entender como vocês podem ajudar a minha empresa.";
 const waLink = extra => "https://wa.me/" + WHATSAPP_NUMERO + "?text=" +
   encodeURIComponent(WHATSAPP_MENSAGEM + (extra ? " Tenho interesse em: " + extra + "." : ""));
 

@@ -329,3 +329,4 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 26/11: no celular (≤800px), cards claros do Como contratar em branco puro; fundo da seção sem mudança (CSS v=2611zzc5).
 - 26/11: Advisor — seta do gráfico refeita como ponta triangular preenchida, alinhada à direção final da curva (CSS v=2611zzc6).
 - 26/11: perennia-360 — seção 'Diagnóstico e implementação' removida; seus 3 parágrafos foram para a seção Entregas (abaixo do título 'Mapa Perennia 360°'); os 2 cards (Perennia 360° / Método LEGACY) saíram a pedido; seta de Entregas agora vai para #perguntas.
+- 26/11: WhatsApp oficial configurado em script.js (WHATSAPP_NUMERO=553191749665, como informado: +55 31 9174-9665) com mensagem 'Olá, Perennia! Vim pelo site e gostaria de agendar uma conversa para entender como vocês podem ajudar a minha empresa.' + 'Tenho interesse em: <data-interesse>'. script.js?v=2611w nas 5 páginas.
