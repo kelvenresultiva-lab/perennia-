@@ -364,3 +364,4 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 27/11: 360 — sem a linha acima da assinatura Perennia 360° (CSS v=2711ac); rodapé da hero (curva + ícone) de volta no topo do O que é
 - 27/11: 360 mobile — O que é resumido (1º parágrafo + Mapa + citação + assinatura; demais ocultos só no mobile) (CSS v=2711ad)
 - 27/11: hero da home e do Sobre — véu verde (::before da .perennia-visual) na área escura ao lado da cabeça; no mobile, canto superior esquerdo (perennia-karine v=2711v, interna v=2711af)
+- 27/11: Sobre — cartão da 1ª sócia preenchido: Joana Teixeira, Diretora Executiva da JL Contabilidade, síntese + Formação e trajetória (texto enviado por ela) + Instagram @joana_dvteixeira (.ps-ig, CSS v=2711ag). 2ª sócia ainda com [marcadores]
