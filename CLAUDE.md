@@ -350,3 +350,4 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 27/11: Seis dimensões: selo mais à direita (até 570px, 40px antes dos cards) (CSS v=2711p)
 - 27/11: Seis dimensões: foto (left 10%) e selo (até 610px) mais à direita (CSS v=2711q)
 - 27/11: Jornada → Seis dimensões com o mesmo rodapé da hero (curva branca .dm-top-curve + .dm-top-cue); cue antigo da Jornada oculto; padding-top 180 (CSS v=2711r)
+- 27/11: Revisão geral de rodapés/logos (todas as páginas ok). Corrigido: fim das Seis dimensões → Entregas ganhou o rodapé padrão (cp-endcap + cp-dip #050605 + seta); seção com overflow-x:clip e, no celular, clip-path na .dm2-wrap para a foto fixa não vazar (CSS v=2711s)

@@ -1568,3 +1568,12 @@ html body section#dimensoes>.dm-top-curve path{fill:#fff}
 html body section#dimensoes>.dm-top-cue{z-index:4}
 html body section#dimensoes.dm-sec{padding-top:180px!important}
 @media(max-width:900px){html body section#dimensoes>.dm-top-curve{height:54px}html body section#dimensoes>.dm-top-cue{top:62px}html body section#dimensoes.dm-sec{padding-top:130px!important}}
+/* 27/11: fim das Seis dimensões (preto) → Entregas (branco) com o mesmo rodapé das outras páginas: faixa branca arredondada + gota + seta (v=2711s) */
+html body section#dimensoes.dm-sec{position:relative;z-index:2;overflow:clip!important;overflow-clip-margin:40px}
+html body section#dimensoes .cp-endcap{display:block!important;background:#FFFFFF!important}
+html body section#dimensoes .cp-dip{display:block!important;top:auto!important;bottom:-23px!important}
+html body section#dimensoes .cp-dip path{fill:#050605!important}
+html body section#dimensoes>.ks-scroll-cue{display:block!important;bottom:4px!important;color:#D8BE8E!important;z-index:6!important}
+@media(max-width:600px){html body section#dimensoes .cp-dip{bottom:-18px!important}}
+html body section#dimensoes.dm-sec{overflow:visible!important;overflow-x:clip!important;overflow-y:visible!important;overflow-clip-margin:0}
+@media(max-width:900px){html body section#dimensoes .dm2-wrap{clip-path:inset(-400px -40px 0 -40px)}}
