@@ -1579,3 +1579,8 @@ html body section#dimensoes.dm-sec{overflow:visible!important;overflow-x:clip!im
 @media(max-width:900px){html body section#dimensoes .dm2-wrap{clip-path:inset(-400px -40px 0 -40px)}}
 /* 27/11: P dos selos .in-seal (Atendimento do Sobre, rodapé, Gestão) era fixo em 46x58 e passava do círculo nos selos menores; agora proporcional ao selo (v=2711u) */
 html body .in-seal .in-seal-p{width:26%!important;height:33%!important}
+/* 27/11: celular — a linha dourada do topo do rodapé aparecia por baixo do "ombro" do selo; faixa da cor do rodapé cobre a linha só embaixo do ombro (v=2711v) */
+html body .ft-notch:after{content:""!important;display:block!important;position:absolute;left:3%;right:3%;bottom:-2px;height:4px;background:#06170D;z-index:1}
+html body .ft-notch .ft-seal{z-index:3}
+/* 27/11: fim das Seis dimensões no celular — abaixo do último card fica preto (a foto fixa não aparece mais entre o card e o rodapé) */
+@media(max-width:900px){html body section#dimensoes .dm2-list::after{content:"";position:absolute;left:-60px;right:-60px;top:auto;bottom:0;height:var(--dm-end,112px);background:#050605;pointer-events:none}}

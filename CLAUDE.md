@@ -353,3 +353,4 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 27/11: Revisão geral de rodapés/logos (todas as páginas ok). Corrigido: fim das Seis dimensões → Entregas ganhou o rodapé padrão (cp-endcap + cp-dip #050605 + seta); seção com overflow-x:clip e, no celular, clip-path na .dm2-wrap para a foto fixa não vazar (CSS v=2711s)
 - 27/11: Home, selo do último card (#agendar): P trocado do recorte da logo inteira para assets/perennia-p.webp (.ks-closing-pimg, 34px / 26px no celular), cabendo no círculo interno; perennia-karine.css?v=2711t no index
 - 27/11: P dos selos .in-seal (Atendimento do Sobre, rodapé das internas, Gestão) proporcional: 26%x33% do selo, antes fixo 46x58 (CSS v=2711u)
+- 27/11: celular: linha dourada do topo do rodapé escondida embaixo do ombro do selo (.ft-notch:after); fim das Seis dimensões preto abaixo do último card (.dm2-list::after cobre o padding-bottom de 112px) (CSS v=2711v)
