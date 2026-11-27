@@ -1658,3 +1658,5 @@ html body .ps-card .ps-ig{display:inline-flex;align-items:center;gap:10px;margin
 html body .ps-card .ps-ig svg{width:18px;height:18px;fill:none;stroke:#8C6B3C;stroke-width:1.7}
 html body .ps-card .ps-ig:hover{background:#14382A;color:#F4EBDD}
 html body .ps-card .ps-ig:hover svg{stroke:#D8BE8E}
+/* 27/11: hero mobile — mais verde na faixa escura da esquerda, ao lado da cabeça (sem chegar ao rosto) */
+@media(max-width:700px){html body .perennia-hero .perennia-visual::before{background:radial-gradient(ellipse 22% 46% at 0% 20%,rgba(10,50,24,.95),rgba(10,50,24,.6) 45%,transparent 82%),radial-gradient(ellipse 34% 16% at 6% 0%,rgba(10,50,24,.9),rgba(10,50,24,.5) 45%,transparent 80%)!important}}
