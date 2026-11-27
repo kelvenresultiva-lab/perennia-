@@ -1444,12 +1444,12 @@ html body #como-contratar .sv-item.is-dark .cc-list li{color:#E9E3D4}
 /* 26/11: no celular, cards claros do Como contratar em branco puro (fundo da seção sem mudança) */ @media(max-width:800px){html body #como-contratar .sv-item:not(.is-dark){background:#FFFFFF!important;box-shadow:0 0 0 1px rgba(201,168,106,.3),0 18px 34px -24px rgba(15,46,31,.35)!important}}
 /* 26/11: seta do gráfico do Advisor como ponta preenchida alinhada à direção da curva */ html body .av-arrow{fill:#0A2216!important;stroke:#0A2216!important;stroke-width:1.6!important;stroke-linejoin:round!important}
 /* 26/11: 360 — "O que é o Perennia 360°" centralizado (uma coluna) */
-html body #o-que-e>.in-wrap.in-split{display:flex!important;flex-direction:column!important;align-items:center!important;text-align:center!important;max-width:860px!important;gap:28px!important}
-html body #o-que-e>.in-wrap.in-split>div{width:100%;display:flex;flex-direction:column;align-items:center}
-html body #o-que-e>.in-wrap.in-split .in-h2{text-align:center!important}
-html body #o-que-e>.in-wrap.in-split .in-text{text-align:center!important;max-width:760px}
-html body #o-que-e>.in-wrap.in-split .in-text p{text-align:center!important;margin-left:auto;margin-right:auto}
-html body #o-que-e>.in-wrap.in-split .in-quote{text-align:center!important;border-left:0!important;padding:28px 0 0!important;margin:36px auto 0!important;max-width:720px;background:linear-gradient(90deg,transparent,#C9A86A,transparent) center top/160px 1px no-repeat!important}
+html body #o-que-e>.in-wrap.in-split:not(.oq-hs){display:flex!important;flex-direction:column!important;align-items:center!important;text-align:center!important;max-width:860px!important;gap:28px!important}
+html body #o-que-e>.in-wrap.in-split:not(.oq-hs)>div{width:100%;display:flex;flex-direction:column;align-items:center}
+html body #o-que-e>.in-wrap.in-split:not(.oq-hs) .in-h2{text-align:center!important}
+html body #o-que-e>.in-wrap.in-split:not(.oq-hs) .in-text{text-align:center!important;max-width:760px}
+html body #o-que-e>.in-wrap.in-split:not(.oq-hs) .in-text p{text-align:center!important;margin-left:auto;margin-right:auto}
+html body #o-que-e>.in-wrap.in-split:not(.oq-hs) .in-quote{text-align:center!important;border-left:0!important;padding:28px 0 0!important;margin:36px auto 0!important;max-width:720px;background:linear-gradient(90deg,transparent,#C9A86A,transparent) center top/160px 1px no-repeat!important}
 /* 27/11: 360 — Jornada de Valor com texto centralizado em cima e os 4 cards centralizados embaixo (no celular segue carrossel) */
 html body .oq-jornada.lg-wrap{display:flex!important;flex-direction:column!important;align-items:center!important;gap:44px!important;max-width:1180px!important}
 html body .oq-jornada .lg-left{display:flex;flex-direction:column;align-items:center;text-align:center}
@@ -1638,3 +1638,10 @@ html body .oq-tiles li{padding:20px 10px;font-size:14px}
 html body .oq-tiles li:last-child{grid-column:1/-1}
 }
 html body .oq-quote{border-left:0!important;padding-left:0!important;padding-right:0!important}
+/* 27/11: 360 — O que é o Perennia 360° no desenho do Quem somos (card escuro desfeito); centralizado no celular igual ao Sobre (v=2711ab) */
+@media(max-width:900px){
+html body #o-que-e .oq-hs,html body #o-que-e .oq-hs *{text-align:center!important}
+html body #o-que-e .oq-hs .in-eyebrow,html body #o-que-e .oq-hs .in-h2{margin-left:auto!important;margin-right:auto!important}
+html body #o-que-e .oq-hs .hs-quote{border-left:0!important;padding:22px 6px!important;border-top:1px solid rgba(216,190,142,.55)!important;border-bottom:1px solid rgba(216,190,142,.55)!important}
+html body #o-que-e .oq-hs .hs-sign{align-items:center!important;justify-content:center!important;flex-direction:column}
+}
