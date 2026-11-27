@@ -1460,3 +1460,6 @@ html body .oq-jornada .lg-note{text-align:center;margin-left:auto!important;marg
 html body .oq-jornada .lg-dots{justify-content:center}
 @media(min-width:1001px){html body .oq-jornada .lg-track{overflow:visible!important;cursor:default}html body .oq-jornada .lg-card{flex:1 1 0!important;min-width:0}html body .oq-jornada .lg-dots{display:none!important}}
 @media(max-width:1000px){html body .oq-jornada .lg-track{justify-content:flex-start;margin-right:calc(-1 * max(24px,(100vw - 1240px)/2))!important;padding-right:24px!important}}
+/* 27/11: hero da Perennia 360° (foto da sócia; a versão mobile ainda vai chegar — por enquanto usa a desktop puxada para a direita) */
+html body .p3-hero.sb2-hero .perennia-visual{background-image:url("assets/hero-360-desktop.webp")!important;background-position:right center!important}
+@media(max-width:700px){html body .p3-hero.sb2-hero .perennia-visual{background-image:url("assets/hero-360-desktop.webp")!important;background-position:78% center!important}}
