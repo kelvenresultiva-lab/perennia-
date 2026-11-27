@@ -369,3 +369,4 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 27/11: Sobre — 2ª sócia: Patrícia Teixeira; síntese marcada "(enviar biografia)" até ela mandar o texto; função ainda [marcador]
 - 27/11: hero mobile — verde mais forte contornando cabeça e terno da sócia da esquerda (perennia-karine v=2711x, interna v=2711ai)
 - 27/11: desfeito — removido todo o verde extra da hero (desktop e mobile, home e Sobre); .perennia-visual::before não existe mais (perennia-karine v=2711y, interna v=2711aj)
+- 27/11: prévia de link (WhatsApp/redes) — og:image com a foto da hero mobile em quadrado 900x900 JPG: assets/og-home.jpg (home, soluções, serviços), og-sobre.jpg, og-360.jpg; URLs absolutas em perennia-phi.vercel.app (trocar se mudar o domínio)
