@@ -340,3 +340,4 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 27/11: Seis dimensões — fotos das duas sócias trocadas por uma foto da sócia de terno dourado recortada (assets/socia-dourado-recorte.webp, fundo branco removido com sharp) sobre painel preto 640px; cards .dm2-card menores; esquerda deixou de ser sticky (CSS v=2711f).
 - 27/11: Seis dimensões em preto com foto da sócia ao fundo à esquerda (CSS v=2711g)
 - 27/11: Seis dimensões: foto da sócia desce para baixo do texto/botão (CSS v=2711h)
+- 27/11: Seis dimensões: cards na largura padrão da home (470px) e mesma altura (CSS v=2711i)

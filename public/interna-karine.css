@@ -1536,3 +1536,7 @@ html body .dm2-solo .dm2-solo-img{left:4%!important;opacity:.6!important}}
 /* 27/11: foto da sócia desce para baixo do texto/botão (v=2711h) */
 @media(min-width:901px){html body .dm2-solo{top:640px!important;height:min(1250px,calc(100% - 640px))!important}
 html body .dm2-solo .dm2-solo-img{opacity:.85!important}}
+/* 27/11: cards das seis dimensões no tamanho padrão dos cards da home (470px) e todos com a mesma altura (v=2711i) */
+@media(min-width:901px){html body section#dimensoes .dm2-wrap{grid-template-columns:1fr 470px!important;justify-content:space-between}
+html body section#dimensoes .dm2-list{display:grid!important;grid-auto-rows:1fr!important;gap:22px!important;width:470px!important;max-width:470px!important}}
+html body section#dimensoes .dm2-card{height:100%;box-sizing:border-box}
