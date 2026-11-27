@@ -336,3 +336,4 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 27/11: hero mobile da 360 recebida e aplicada (assets/hero-360-mobile.webp, ≤700px) (CSS v=2711c).
 - 27/11: Seis dimensões — cards em pé no desktop: 3 colunas (2 no tablet), ~344×480px, wrap 1080px (CSS v=2711d).
 - 27/11: Seis dimensões (360) sem a foto da sócia no fundo (span .dm-photo removido do HTML).
+- 27/11: Seis dimensões (360) refeita no design de 'Serviços especializados' da home (.dm2-*): esquerda fixa (sticky) com pill, título, nota, botão e as fotos das sócias (socia-joana-blazer.jpg + socia-2-amarelo.jpg) esmaecidas em verde; direita com 6 cards empilhados (ícone na aba, seta em pílula, título, filete, texto, número grande) (CSS v=2711e).
