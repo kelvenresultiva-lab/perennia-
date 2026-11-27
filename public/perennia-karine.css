@@ -2479,3 +2479,6 @@ html body .ks-btn,html body .perennia-cta,html body a.cta{min-width:min(420px,10
 
 /* 24/11: cabeçalho (logo + menu) removido a pedido do usuário; para voltar, apagar esta regra */
 .ks-nav,.ks-nav-logo{display:none!important}
+/* 27/11: selo do último card (Método Legacy): o "P" era um recorte da logo inteira e ficava maior que o círculo interno; agora usa o P próprio (perennia-p.webp), proporcional ao círculo */
+html body #agendar .ks-seal .ks-closing-pimg{height:34px!important;width:auto!important;position:relative!important;z-index:3;margin:0 auto!important;display:block!important}
+@media(max-width:900px){html body #agendar .ks-seal .ks-closing-pimg{height:26px!important}}
