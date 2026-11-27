@@ -334,3 +334,4 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 27/11: 360 — Jornada de Valor com texto (pill, título, botão) centralizado em cima e os 4 cards lado a lado centralizados embaixo no desktop; no celular segue carrossel (CSS v=2711a).
 - 27/11: 360 ganhou hero (.p3-hero, mesmo desenho do Sobre via sobre-hero.css) com foto da sócia (assets/hero-360-desktop.webp); kicker PERENNIA 360°, h1 'Diagnóstico técnico e multidisciplinar. Da empresa ao patrimônio dos sócios.', texto da meta description; 'O que é' virou h2 com curva + seta do hero. Hero MOBILE pendente (usuário vai enviar) — hoje usa a desktop em 78% (CSS v=2711b).
 - 27/11: hero mobile da 360 recebida e aplicada (assets/hero-360-mobile.webp, ≤700px) (CSS v=2711c).
+- 27/11: Seis dimensões — cards em pé no desktop: 3 colunas (2 no tablet), ~344×480px, wrap 1080px (CSS v=2711d).

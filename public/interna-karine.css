@@ -1464,3 +1464,12 @@ html body .oq-jornada .lg-dots{justify-content:center}
 html body .p3-hero.sb2-hero .perennia-visual{background-image:url("assets/hero-360-desktop.webp")!important;background-position:right center!important}
 @media(max-width:700px){html body .p3-hero.sb2-hero .perennia-visual{background-image:url("assets/hero-360-desktop.webp")!important;background-position:78% center!important}}
 /* 27/11: hero mobile da 360 */ @media(max-width:700px){html body .p3-hero.sb2-hero .perennia-visual{background-image:url("assets/hero-360-mobile.webp")!important;background-position:center top!important}}
+/* 27/11: Seis dimensões — cards em pé (3 colunas no desktop, 2 no tablet), mais altos e estreitos */
+@media(min-width:801px){html body .dm-wrap{max-width:1180px!important}
+html body .dm-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:24px!important}
+html body .dm-card{min-height:400px;padding:40px 30px 34px!important;display:flex;flex-direction:column}
+html body .dm-card .in-ico{margin:30px 0 34px!important}
+html body .dm-card h3{font-size:20px!important;padding-right:0!important;margin-bottom:14px!important}
+html body .dm-card p{font-size:15px!important;line-height:1.65!important}}
+@media(min-width:801px) and (max-width:1000px){html body .dm-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+@media(min-width:801px){html body .dm-wrap{max-width:1080px!important}html body .dm-card{min-height:480px!important}html body .dm-card .in-ico{margin:44px 0 44px!important}}
