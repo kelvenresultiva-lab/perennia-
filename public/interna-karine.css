@@ -1554,5 +1554,3 @@ html body section#dimensoes .dm2-list{position:relative;z-index:1}
 html body section#dimensoes .dm2-card{position:sticky!important;top:max(24px,calc(50vh - 150px));transform-origin:50% 0;will-change:transform,opacity}
 }
 @media(max-width:900px){html body section#dimensoes.dm-sec{overflow:clip!important}}
-/* 27/11: foto nova (blazer preto) tem mais espaço acima da cabeça: sobe no celular para mostrar rosto e braços (v=2711l) */
-@media(max-width:900px){html body section#dimensoes .dm2-bgm img{margin-top:-16%!important}}
