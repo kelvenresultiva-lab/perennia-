@@ -371,3 +371,4 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 27/11: desfeito — removido todo o verde extra da hero (desktop e mobile, home e Sobre); .perennia-visual::before não existe mais (perennia-karine v=2711y, interna v=2711aj)
 - 27/11: prévia de link (WhatsApp/redes) — og:image com a foto da hero mobile em quadrado 900x900 JPG: assets/og-home.jpg (home, soluções, serviços), og-sobre.jpg, og-360.jpg; URLs absolutas em perennia-phi.vercel.app (trocar se mudar o domínio)
 - 27/11: domínio agora é perenniaconsultoria.vercel.app (perennia-phi redireciona 307); og:url/og:image apontam para o novo; conferir no ar por esse domínio
+- 27/11: páginas internas (Sobre, Soluções, 360, Serviços) — setinha .pp-home fixa no canto inferior esquerdo para voltar à página inicial; aparece após 60% da tela rolada; hover abre "Início" (CSS v=2711ak)

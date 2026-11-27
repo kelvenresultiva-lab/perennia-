@@ -26,7 +26,7 @@
 <link rel="icon" href="assets/favicon-perennia.svg?v=1" type="image/svg+xml">
 <link rel="preload" href="assets/rethink-sans.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="interna.css">
-<link rel="stylesheet" href="interna-karine.css?v=2711aj">
+<link rel="stylesheet" href="interna-karine.css?v=2711ak">
 <link rel="stylesheet" href="rodape-home.css">
 </head>
 <body>
@@ -198,5 +198,8 @@
 <script src="script.js?v=2611w"></script>
 <script src="interna.js"></script>
 <script>/* 26/11: bolinhas do carrossel do Método LEGACY */(function(){var t=document.querySelector('.lg-track');if(!t)return;var c=[].slice.call(t.children),d=[].slice.call(document.querySelectorAll('.lg-dot'));function on(){var x=t.scrollLeft,b=0,m=1e9;c.forEach(function(e,i){var k=Math.abs(e.offsetLeft-t.offsetLeft-x);if(k<m){m=k;b=i}});if(t.scrollLeft+t.clientWidth>=t.scrollWidth-4)b=c.length-1;d.forEach(function(e,i){e.classList.toggle('is-on',i===b)})}t.addEventListener('scroll',function(){requestAnimationFrame(on)},{passive:true});d.forEach(function(e,i){e.addEventListener('click',function(){t.scrollTo({left:c[i].offsetLeft-t.offsetLeft,behavior:'smooth'})})})})();</script>
+<!-- 27/11: setinha elegante para voltar à página inicial (aparece depois da hero) -->
+<a class="pp-home" href="index.html" aria-label="Voltar para a página inicial"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5.5M11 6l-6 6 6 6"/></svg><span>Início</span></a>
+<script>(function(){var b=document.querySelector(".pp-home");if(!b)return;var t=function(){b.classList.toggle("is-on",scrollY>window.innerHeight*.6)};addEventListener("scroll",t,{passive:true});t()})();</script>
 </body>
 </html>

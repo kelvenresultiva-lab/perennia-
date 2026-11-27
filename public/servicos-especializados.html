@@ -26,7 +26,7 @@
 <link rel="icon" href="assets/favicon-perennia.svg?v=1" type="image/svg+xml">
 <link rel="preload" href="assets/rethink-sans.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="interna.css">
-<link rel="stylesheet" href="interna-karine.css?v=2711aj">
+<link rel="stylesheet" href="interna-karine.css?v=2711ak">
 <link rel="stylesheet" href="rodape-home.css">
 </head>
 <body>
@@ -98,5 +98,8 @@
 <dialog id="perennia-dialog" class="dialog"><button class="dialog-close" aria-label="Fechar janela">×</button><h2>Converse com a Perennia</h2><p>Conte o momento da sua empresa e a solução de interesse para conversarmos sobre o próximo passo.</p><p class="demo-copy">O canal de contato da Perennia será conectado assim que o link oficial de agendamento ou WhatsApp for informado.</p><button class="cta dialog-done">ENTENDI</button></dialog>
 <script src="script.js?v=2611w"></script>
 <script src="interna.js"></script>
+<!-- 27/11: setinha elegante para voltar à página inicial (aparece depois da hero) -->
+<a class="pp-home" href="index.html" aria-label="Voltar para a página inicial"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5.5M11 6l-6 6 6 6"/></svg><span>Início</span></a>
+<script>(function(){var b=document.querySelector(".pp-home");if(!b)return;var t=function(){b.classList.toggle("is-on",scrollY>window.innerHeight*.6)};addEventListener("scroll",t,{passive:true});t()})();</script>
 </body>
 </html>

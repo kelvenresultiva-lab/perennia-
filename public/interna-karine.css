@@ -1655,3 +1655,12 @@ html body .ps-card .ps-ig{display:inline-flex;align-items:center;gap:10px;margin
 html body .ps-card .ps-ig svg{width:18px;height:18px;fill:none;stroke:#8C6B3C;stroke-width:1.7}
 html body .ps-card .ps-ig:hover{background:#14382A;color:#F4EBDD}
 html body .ps-card .ps-ig:hover svg{stroke:#D8BE8E}
+/* 27/11: setinha para voltar à página inicial — discreta, canto inferior esquerdo; abre "Início" no hover (v=2711ak) */
+html body .pp-home{position:fixed;left:22px;bottom:22px;z-index:60;display:inline-flex;align-items:center;gap:0;height:42px;min-width:42px;padding:0 13px;border-radius:999px;background:rgba(6,23,13,.82);border:1px solid rgba(216,190,142,.55);color:#D8BE8E;text-decoration:none;font-size:12px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);box-shadow:0 8px 24px rgba(0,0,0,.22);opacity:0;visibility:hidden;transform:translateY(10px);transition:opacity .35s,transform .35s,visibility .35s,background .25s,gap .3s}
+html body .pp-home.is-on{opacity:1;visibility:visible;transform:none}
+html body .pp-home svg{width:16px;height:16px;flex:0 0 16px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;transition:transform .3s}
+html body .pp-home span{max-width:0;overflow:hidden;white-space:nowrap;transition:max-width .35s}
+html body .pp-home:hover,html body .pp-home:focus-visible{background:#14382A;gap:8px}
+html body .pp-home:hover span,html body .pp-home:focus-visible span{max-width:80px}
+html body .pp-home:hover svg{transform:translateX(-2px)}
+@media(max-width:700px){html body .pp-home{left:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px));height:38px;min-width:38px;padding:0 11px}html body .pp-home svg{width:15px;height:15px;flex-basis:15px}}

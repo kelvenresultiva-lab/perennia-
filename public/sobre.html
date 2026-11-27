@@ -26,7 +26,7 @@
 <link rel="icon" href="assets/favicon-perennia.svg?v=1" type="image/svg+xml">
 <link rel="preload" href="assets/rethink-sans.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="interna.css">
-<link rel="stylesheet" href="interna-karine.css?v=2711aj">
+<link rel="stylesheet" href="interna-karine.css?v=2711ak">
 <link rel="stylesheet" href="rodape-home.css">
 <link rel="stylesheet" href="sobre-hero.css?v=2511a">
 </head>
@@ -145,5 +145,8 @@
 <script src="script.js?v=2611w"></script>
 <script src="interna.js"></script>
 <script>(function(){var NS="http://www.w3.org/2000/svg";function draw(){var g=document.querySelector(".tl-grid");if(!g)return;var cards=[].slice.call(g.querySelectorAll(".tl-card"));if(cards.length<2)return;var svg=g.querySelector(".tl-line");if(!svg){svg=document.createElementNS(NS,"svg");svg.setAttribute("class","tl-line");svg.setAttribute("aria-hidden","true");g.insertBefore(svg,g.firstChild)}var G=g.getBoundingClientRect(),R=cards.map(function(c){var b=c.getBoundingClientRect();return{l:b.left-G.left,r:b.right-G.left,t:b.top-G.top,b:b.bottom-G.top}});var rows=[];R.forEach(function(b){var row=rows.find(function(x){return Math.abs(x[0].t-b.t)<4});row?row.push(b):rows.push([b])});var d="",dots=[],r=14;if(rows[0].length===1){var x=(R[0].l+R[0].r)/2;d="M"+x+" "+R[0].t+"V"+R[R.length-1].b;for(var i=0;i<R.length-1;i++)dots.push([x,(R[i].b+R[i+1].t)/2])}else{var room=Math.max(8,Math.min(30,innerWidth-G.left-rows[0][rows[0].length-1].r-8,G.left+rows[0][0].l-8));rows.forEach(function(row,k){var y=row[0].t+57,x0=row[0].l,x1=row[row.length-1].r;if(k===0)d+="M"+((x0+row[0].r)/2)+" "+y;var last=k===rows.length-1;d+="H"+(last?(x1+row[row.length-1].l)/2:x1+room-r);for(var j=0;j<row.length-1;j++)dots.push([(row[j].r+row[j+1].l)/2,y]);if(!last){var nx=rows[k+1],ym=(row[0].b+nx[0].t)/2,y2=nx[0].t+57,xl=nx[0].l-room;d+="Q"+(x1+room)+" "+y+" "+(x1+room)+" "+(y+r)+"V"+(ym-r)+"Q"+(x1+room)+" "+ym+" "+(x1+room-r)+" "+ym+"H"+(xl+r)+"Q"+xl+" "+ym+" "+xl+" "+(ym+r)+"V"+(y2-r)+"Q"+xl+" "+y2+" "+(xl+r)+" "+y2;dots.push([(x1+xl)/2,ym])}})}svg.setAttribute("viewBox","0 0 "+G.width+" "+G.height);svg.setAttribute("width",G.width);svg.setAttribute("height",G.height);svg.innerHTML="<path class='tl-line-glow' d='"+d+"'/><path class='tl-line-path' d='"+d+"'/>"+dots.map(function(p){return"<circle class='tl-line-dot' cx='"+p[0]+"' cy='"+p[1]+"' r='4.5'/>"}).join("")}var t;function q(){clearTimeout(t);t=setTimeout(draw,80)}addEventListener("resize",q);addEventListener("load",draw);if(document.fonts)document.fonts.ready.then(draw);draw()})();</script>
+<!-- 27/11: setinha elegante para voltar à página inicial (aparece depois da hero) -->
+<a class="pp-home" href="index.html" aria-label="Voltar para a página inicial"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5.5M11 6l-6 6 6 6"/></svg><span>Início</span></a>
+<script>(function(){var b=document.querySelector(".pp-home");if(!b)return;var t=function(){b.classList.toggle("is-on",scrollY>window.innerHeight*.6)};addEventListener("scroll",t,{passive:true});t()})();</script>
 </body>
 </html>
