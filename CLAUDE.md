@@ -349,3 +349,4 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 27/11: Seis dimensões: logo trocada pelo selo redondo da hero (.ks-seal.dm2-seal, a partir de 1100px) à direita do rosto; topo da cabeça menos escurecido (máscara 9%, brightness .9) (CSS v=2711o)
 - 27/11: Seis dimensões: selo mais à direita (até 570px, 40px antes dos cards) (CSS v=2711p)
 - 27/11: Seis dimensões: foto (left 10%) e selo (até 610px) mais à direita (CSS v=2711q)
+- 27/11: Jornada → Seis dimensões com o mesmo rodapé da hero (curva branca .dm-top-curve + .dm-top-cue); cue antigo da Jornada oculto; padding-top 180 (CSS v=2711r)

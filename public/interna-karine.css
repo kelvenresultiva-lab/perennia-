@@ -1561,3 +1561,10 @@ html body section#dimensoes .dm2-seal{display:none}
 html body section#dimensoes .dm2-solo .dm2-solo-img{filter:grayscale(.3) brightness(.9)!important}}
 /* 27/11: foto da sócia um pouco mais à direita no computador (v=2711q) */
 @media(min-width:901px){html body section#dimensoes .dm2-solo .dm2-solo-img{left:10%!important}}
+/* 27/11: fim da Jornada → Seis dimensões com o mesmo rodapé da hero (curva branca + ícone de rolagem); o ícone antigo da Jornada sai (v=2711r) */
+html body section#o-que-e .ks-scroll-cue[href="#dimensoes"]{display:none!important}
+html body section#dimensoes>.dm-top-curve{position:absolute;top:-2px;left:0;z-index:2;display:block;width:100%;height:98px;pointer-events:none}
+html body section#dimensoes>.dm-top-curve path{fill:#fff}
+html body section#dimensoes>.dm-top-cue{z-index:4}
+html body section#dimensoes.dm-sec{padding-top:180px!important}
+@media(max-width:900px){html body section#dimensoes>.dm-top-curve{height:54px}html body section#dimensoes>.dm-top-cue{top:62px}html body section#dimensoes.dm-sec{padding-top:130px!important}}
