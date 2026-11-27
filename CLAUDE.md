@@ -343,3 +343,4 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 27/11: Seis dimensões: cards na largura padrão da home (470px) e mesma altura (CSS v=2711i)
 - 27/11: Seis dimensões: título menor (40px) em duas linhas equilibradas (CSS v=2711j)
 - 27/11: Seis dimensões no celular: foto da sócia presa no topo (braços pra cima, .dm2-bgm) e cards sticky empilhando com script igual Serviços da home; seção com overflow:clip (CSS v=2711k)
+- 27/11: Seis dimensões: foto trocada pela sócia de blazer preto (assets/socia-preto-recorte.webp, fundo recortado), no celular sobe 16% (CSS v=2711l)
