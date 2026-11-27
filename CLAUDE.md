@@ -357,3 +357,4 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 27/11: Serviços (celular): centro de baixo do Portfólio escurecido (#portfolio::after radial #04130A) para a gota do rodapé não virar mancha preta sob o brilho dourado (CSS v=2711w)
 - 27/11: Soluções (celular): fim do Expert sem brilho verde de baixo, gradiente final mais escuro e gota #071810 — some a mancha no rodapé (CSS v=2711x)
 - 27/11: Soluções: "^" (.ks-to-top) do alto do rodapé removido só nessa página (body:has(section#expert)) (CSS v=2711y)
+- 27/11: 360 no iPhone: rolagem lateral corrigida sem depender de overflow:clip (foto fixa e faixa preta limitadas a -20px = margem da .dm2-wrap); gota das Seis dimensões mais alta (44px celular / 54px computador) para não deixar fio branco (CSS v=2711z)

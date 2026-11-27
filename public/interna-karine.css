@@ -1594,3 +1594,10 @@ html body section#expert.lg-green{background-image:linear-gradient(rgb(15,46,31)
 }
 /* 27/11: Soluções — tira o "^" (voltar ao topo) do alto do rodapé, que ficava logo abaixo da seta da gota do Expert; o "Voltar ao topo" do fim do rodapé continua (v=2711y) */
 html body:has(section#expert) .ks-to-top{display:none!important}
+/* 27/11: iPhone — a página 360 rolava para os lados (foto fixa e faixa preta passavam da tela, e o Safari antigo ignora overflow:clip) e aparecia um fio branco atravessando a gota; agora nada passa da largura e a gota sobrepõe a faixa branca (v=2711z) */
+@media(max-width:900px){
+html body section#dimensoes .dm2-bgm{margin-left:-20px!important;margin-right:-20px!important}
+html body section#dimensoes .dm2-list::after{left:-20px!important;right:-20px!important}
+html body section#dimensoes .cp-dip{height:44px!important}
+}
+@media(min-width:901px){html body section#dimensoes .cp-dip{height:54px!important}}
