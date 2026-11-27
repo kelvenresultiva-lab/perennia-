@@ -1577,3 +1577,5 @@ html body section#dimensoes>.ks-scroll-cue{display:block!important;bottom:4px!im
 @media(max-width:600px){html body section#dimensoes .cp-dip{bottom:-18px!important}}
 html body section#dimensoes.dm-sec{overflow:visible!important;overflow-x:clip!important;overflow-y:visible!important;overflow-clip-margin:0}
 @media(max-width:900px){html body section#dimensoes .dm2-wrap{clip-path:inset(-400px -40px 0 -40px)}}
+/* 27/11: P dos selos .in-seal (Atendimento do Sobre, rodapé, Gestão) era fixo em 46x58 e passava do círculo nos selos menores; agora proporcional ao selo (v=2711u) */
+html body .in-seal .in-seal-p{width:26%!important;height:33%!important}
