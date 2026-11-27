@@ -1543,3 +1543,14 @@ html body section#dimensoes .dm2-card{height:100%;box-sizing:border-box}
 /* 27/11: título das seis dimensões menor e em duas linhas equilibradas (v=2711j) */
 html body section#dimensoes .dm-h2{font-size:clamp(30px,2.8vw,40px)!important;line-height:1.15!important;letter-spacing:-.02em!important;text-wrap:balance}
 html body section#dimensoes .dm-h2 em{display:block;margin-top:4px}
+/* 27/11: seis dimensões no celular: foto da sócia presa no topo (dos braços pra cima) e cards subindo e empilhando por cima (v=2711k) */
+.dm2-bgm{display:none}
+@media(max-width:900px){
+html body section#dimensoes .dm2-solo{display:none!important}
+html body section#dimensoes .dm2-bgm{display:block;position:sticky;top:0;z-index:0;height:min(480px,62vh);margin:8px -24px calc(-1 * min(480px,62vh) + 300px);overflow:hidden;pointer-events:none;
+  -webkit-mask:linear-gradient(180deg,#000 70%,transparent);mask:linear-gradient(180deg,#000 70%,transparent)}
+html body section#dimensoes .dm2-bgm img{display:block;width:118%;max-width:none;margin-left:-9%;height:auto;opacity:.6;filter:saturate(.85) brightness(.85)}
+html body section#dimensoes .dm2-list{position:relative;z-index:1}
+html body section#dimensoes .dm2-card{position:sticky!important;top:max(24px,calc(50vh - 150px));transform-origin:50% 0;will-change:transform,opacity}
+}
+@media(max-width:900px){html body section#dimensoes.dm-sec{overflow:clip!important}}
