@@ -1533,3 +1533,6 @@ html body .dm2-n{background:linear-gradient(180deg,#C9A86A 0%,#3A3A36 100%)!impo
 html body section#dimensoes .dm2-left>*:not(.dm2-solo){position:relative;z-index:2}
 html body .dm2-solo{top:180px!important;bottom:auto!important;height:min(1250px,calc(100% - 200px))!important;width:min(56vw,820px)!important}
 html body .dm2-solo .dm2-solo-img{left:4%!important;opacity:.6!important}}
+/* 27/11: foto da sócia desce para baixo do texto/botão (v=2711h) */
+@media(min-width:901px){html body .dm2-solo{top:640px!important;height:min(1250px,calc(100% - 640px))!important}
+html body .dm2-solo .dm2-solo-img{opacity:.85!important}}
