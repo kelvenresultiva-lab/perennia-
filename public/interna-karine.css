@@ -1586,3 +1586,9 @@ html body .ft-notch .ft-seal{z-index:3}
 @media(max-width:900px){html body section#dimensoes .dm2-list::after{content:"";position:absolute;left:-60px;right:-60px;top:auto;bottom:0;height:var(--dm-end,112px);background:#050605;pointer-events:none}}
 /* 27/11: celular — no fim do Portfólio o brilho dourado do canto chegava no meio e a "gota" ficava uma mancha preta; escurece suavemente o centro de baixo para a gota se misturar ao fundo (v=2711w) */
 @media(max-width:900px){html body section#portfolio.in-sec::after{content:"";position:absolute;left:0;right:0;bottom:0;height:260px;background:radial-gradient(260px 200px at 50% 100%,#04130A 0%,#04130A 35%,rgba(4,19,10,0) 100%);pointer-events:none;z-index:1}}
+/* 27/11: celular — fim do Expert (Soluções): a gota ficava num tom diferente do fundo; tira o brilho verde de baixo e pinta a gota no mesmo tom do fundo escurecido (v=2711x) */
+@media(max-width:900px){
+html body section#expert.lg-green::before{background-image:radial-gradient(90% 22% at 50% 35%,rgba(216,190,142,.5) 0%,rgba(216,190,142,0) 75%),radial-gradient(90% 22% at 50% 70%,rgba(230,207,158,.36) 0%,rgba(230,207,158,0) 75%)!important}
+html body section#expert .cp-dip path{fill:#071810!important}
+html body section#expert.lg-green{background-image:linear-gradient(rgb(15,46,31) 0%,rgb(12,39,25) 60%,rgb(10,34,22) 92%,rgb(8,28,18) 100%)!important}
+}
