@@ -345,3 +345,4 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 27/11: Seis dimensões no celular: foto da sócia presa no topo (braços pra cima, .dm2-bgm) e cards sticky empilhando com script igual Serviços da home; seção com overflow:clip (CSS v=2711k)
 - 27/11: Seis dimensões: foto trocada pela sócia de blazer preto (assets/socia-preto-recorte.webp, fundo recortado), no celular sobe 16% (CSS v=2711l)
 - 27/11: desfeito: Seis dimensões voltou para a foto de terno dourado; foto de blazer preto e ajuste v=2711l removidos (CSS v=2711m)
+- 27/11: Seis dimensões: logo (assets/perennia-logo-transparente.webp, fundo removido) ao lado do rosto da sócia, só a partir de 1240px (CSS v=2711n)

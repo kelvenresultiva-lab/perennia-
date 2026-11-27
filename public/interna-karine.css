@@ -1554,3 +1554,6 @@ html body section#dimensoes .dm2-list{position:relative;z-index:1}
 html body section#dimensoes .dm2-card{position:sticky!important;top:max(24px,calc(50vh - 150px));transform-origin:50% 0;will-change:transform,opacity}
 }
 @media(max-width:900px){html body section#dimensoes.dm-sec{overflow:clip!important}}
+/* 27/11: logo da Perennia (versão transparente) ao lado do rosto da sócia, só no computador (v=2711n) */
+html body section#dimensoes .dm2-logo{display:none}
+@media(min-width:1240px){html body section#dimensoes .dm2-left>.dm2-logo{display:block;position:absolute!important;left:var(--lgx,500px);top:calc(640px + var(--lgy,180px));width:var(--lgw,170px);height:auto;z-index:1!important;opacity:.95;pointer-events:none}}
