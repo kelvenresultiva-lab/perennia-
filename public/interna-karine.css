@@ -1450,3 +1450,13 @@ html body #o-que-e>.in-wrap.in-split .in-h2{text-align:center!important}
 html body #o-que-e>.in-wrap.in-split .in-text{text-align:center!important;max-width:760px}
 html body #o-que-e>.in-wrap.in-split .in-text p{text-align:center!important;margin-left:auto;margin-right:auto}
 html body #o-que-e>.in-wrap.in-split .in-quote{text-align:center!important;border-left:0!important;padding:28px 0 0!important;margin:36px auto 0!important;max-width:720px;background:linear-gradient(90deg,transparent,#C9A86A,transparent) center top/160px 1px no-repeat!important}
+/* 27/11: 360 — Jornada de Valor com texto centralizado em cima e os 4 cards centralizados embaixo (no celular segue carrossel) */
+html body .oq-jornada.lg-wrap{display:flex!important;flex-direction:column!important;align-items:center!important;gap:44px!important;max-width:1180px!important}
+html body .oq-jornada .lg-left{display:flex;flex-direction:column;align-items:center;text-align:center}
+html body .oq-jornada .lg-h1{text-align:center!important}
+html body .oq-jornada .lg-right{width:100%}
+html body .oq-jornada .lg-track{margin-right:0!important;padding-right:2px!important;justify-content:center}
+html body .oq-jornada .lg-note{text-align:center;margin-left:auto!important;margin-right:auto!important}
+html body .oq-jornada .lg-dots{justify-content:center}
+@media(min-width:1001px){html body .oq-jornada .lg-track{overflow:visible!important;cursor:default}html body .oq-jornada .lg-card{flex:1 1 0!important;min-width:0}html body .oq-jornada .lg-dots{display:none!important}}
+@media(max-width:1000px){html body .oq-jornada .lg-track{justify-content:flex-start;margin-right:calc(-1 * max(24px,(100vw - 1240px)/2))!important;padding-right:24px!important}}
