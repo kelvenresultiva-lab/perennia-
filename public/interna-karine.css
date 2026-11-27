@@ -1540,3 +1540,6 @@ html body .dm2-solo .dm2-solo-img{opacity:.85!important}}
 @media(min-width:901px){html body section#dimensoes .dm2-wrap{grid-template-columns:1fr 470px!important;justify-content:space-between}
 html body section#dimensoes .dm2-list{display:grid!important;grid-auto-rows:1fr!important;gap:22px!important;width:470px!important;max-width:470px!important}}
 html body section#dimensoes .dm2-card{height:100%;box-sizing:border-box}
+/* 27/11: título das seis dimensões menor e em duas linhas equilibradas (v=2711j) */
+html body section#dimensoes .dm-h2{font-size:clamp(30px,2.8vw,40px)!important;line-height:1.15!important;letter-spacing:-.02em!important;text-wrap:balance}
+html body section#dimensoes .dm-h2 em{display:block;margin-top:4px}
