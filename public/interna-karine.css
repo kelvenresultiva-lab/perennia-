@@ -1645,3 +1645,6 @@ html body #o-que-e .oq-hs .in-eyebrow,html body #o-que-e .oq-hs .in-h2{margin-le
 html body #o-que-e .oq-hs .hs-quote{border-left:0!important;padding:22px 6px!important;border-top:1px solid rgba(216,190,142,.55)!important;border-bottom:1px solid rgba(216,190,142,.55)!important}
 html body #o-que-e .oq-hs .hs-sign{align-items:center!important;justify-content:center!important;flex-direction:column}
 }
+/* 27/11: 360 — sem a linha acima da assinatura "Perennia 360°" (v=2711ac) */
+html body #o-que-e .oq-hs .hs-sign{border-top:0!important;padding-top:0!important}
+html body #o-que-e .oq-hs .hs-sign::before,html body #o-que-e .oq-hs .hs-sign::after{display:none!important}
