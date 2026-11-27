@@ -1500,3 +1500,21 @@ html body section#dimensoes.dm2-sec{background:#0C2719 linear-gradient(180deg,#0
 .dm2-photos:after{display:none!important}
 .dm2-photos img{filter:grayscale(1) sepia(.55) hue-rotate(75deg) saturate(1.5) brightness(.72) contrast(1.05)!important;opacity:1!important}
 @media(min-width:901px){.dm2-left{position:sticky;top:90px;align-self:start;height:calc(100vh - 100px);min-height:720px}.dm2-photos{min-height:0!important;margin-top:40px}.dm2-photos img{max-height:none!important;height:100%!important}}
+/* 27/11: Seis dimensões — foto única da sócia (recorte, terno dourado) sobre painel preto; cards menores */
+.dm2-solo{position:relative;border-radius:22px;overflow:hidden;background:radial-gradient(70% 55% at 50% 40%,rgba(201,168,106,.20),rgba(0,0,0,0) 70%),#000!important;box-shadow:0 0 0 1px rgba(216,190,142,.2),0 40px 70px -40px rgba(0,0,0,.9);margin:44px 0 0!important;width:100%!important}
+.dm2-solo:before,.dm2-solo:after{display:none!important}
+html body .dm2-solo .dm2-solo-img{position:absolute;left:50%;bottom:0;transform:translateX(-50%);width:auto!important;height:96%!important;max-width:100%;object-fit:contain;object-position:center bottom;filter:none!important;-webkit-mask-image:none!important;mask-image:none!important;opacity:1!important}
+@media(max-width:900px){.dm2-solo{min-height:460px!important}}
+@media(max-width:600px){.dm2-solo{min-height:420px!important}}
+.dm2-list{gap:18px!important}
+.dm2-card{padding:80px 28px 26px!important;min-height:0!important;border-radius:16px!important}
+.dm2-card .dm2-ico{width:56px!important;height:56px!important;border-radius:12px!important;box-shadow:0 0 0 7px #0D2A1B,0 0 0 8px rgba(216,190,142,.18)!important}
+.dm2-card .dm2-ico svg{width:21px!important;height:21px!important}
+.dm2-pill{top:16px!important;right:18px!important;width:60px!important;height:30px!important}
+.dm2-pill svg{width:18px!important;height:18px!important}
+.dm2-card h3{font-size:clamp(20px,1.7vw,24px)!important;margin-bottom:16px!important;padding-bottom:16px!important}
+.dm2-card p{font-size:14.5px!important;max-width:66%!important}
+.dm2-n{font-size:clamp(76px,7vw,100px)!important;right:20px!important}
+@media(max-width:600px){.dm2-card p{max-width:100%!important;padding-bottom:58px}.dm2-n{font-size:76px!important}}
+@media(min-width:901px){.dm2-left{height:auto!important;min-height:0!important}html body .dm2-solo{flex:none!important;height:clamp(360px,calc(100vh - 400px),600px)!important;min-height:0!important}}
+@media(min-width:901px){html body .dm2-left{position:relative!important;top:auto!important}html body .dm2-solo{height:640px!important}}
