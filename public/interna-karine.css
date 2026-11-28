@@ -1664,3 +1664,123 @@ html body .pp-home:hover,html body .pp-home:focus-visible{background:#14382A;gap
 html body .pp-home:hover span,html body .pp-home:focus-visible span{max-width:80px}
 html body .pp-home:hover svg{transform:translateX(-2px)}
 @media(max-width:700px){html body .pp-home{left:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px));height:38px;min-width:38px;padding:0 11px}html body .pp-home svg{width:15px;height:15px;flex-basis:15px}}
+/* 27/11: hero de Serviços especializados — fotos próprias (desktop e mobile) (v=2711al) */
+html body .p3-hero.sv-hero .perennia-visual{background-image:url("assets/hero-servicos-desktop.webp?v=3")!important;background-position:right center!important}
+@media(max-width:700px){html body .p3-hero.sv-hero .perennia-visual{background-image:url("assets/hero-servicos-mobile.webp")!important;background-position:center top!important}}
+/* 27/11: Serviços desktop — mais verde na área ao lado da cabeça/ombro da sócia (v=2711an) */
+@media(min-width:1200px){html body .p3-hero.sv-hero .perennia-visual::before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse 13% 55% at 48% 36%,rgba(4,24,11,.94),rgba(4,24,11,.7) 50%,transparent 90%)}}
+/* 27/11: Serviços desktop — título da hero em 2 linhas equilibradas, um pouco menor (v=2711ap) */
+@media(min-width:701px){html body .p3-hero.sv-hero .perennia-copy h1{font-size:clamp(34px,3.4vw,54px)!important;width:max-content!important;max-width:none!important}html body .p3-hero.sv-hero .perennia-copy h1 em{white-space:nowrap!important}}
+/* 27/11: Serviços — seção dos serviços (#portfolio) em BRANCO; cards verdes mantidos; encaixe de baixo branco entrando no verde (v=2711as) */
+html body section#portfolio.in-sec{background:#fff!important;background-image:none!important;color:#0F2E1F!important}
+html body section#portfolio.in-sec::before,html body section#portfolio.in-sec::after{display:none!important}
+html body section#portfolio.in-sec #port-t{color:#0F2E1F!important}
+html body section#portfolio.in-sec #port-t em{color:#9A7A45!important}
+html body section#portfolio.in-sec .in-chips li{border:1px solid rgba(15,46,31,.16)!important;box-shadow:0 6px 18px rgba(15,46,31,.06)!important}
+html body section#portfolio.in-sec .cp-endcap{display:none!important}
+html body section#portfolio.in-sec .cp-dip path{fill:#fff!important}
+/* 27/11: Serviços — foto desktop nova já vem com o verde escuro à esquerda; o véu extra sai (v=2711au) */
+html body .p3-hero.sv-hero .perennia-visual::before{display:none!important}
+/* 27/11: Serviços desktop — verde escuro na faixa entre o texto e a sócia (onde começa a madeira), só ≥1200px (v=2711av) */
+@media(min-width:1200px){html body .p3-hero.sv-hero .perennia-visual::before{display:block!important;content:""!important;position:absolute!important;inset:0!important;pointer-events:none!important;background:radial-gradient(ellipse 9% 80% at 55% 45%,rgba(4,24,11,.96),rgba(4,24,11,.75) 45%,transparent 85%)!important}}
+/* 27/11: Serviços desktop — transição verde→madeira em degradê longo e suave (sem faixa dura) e selo ao lado do ombro da sócia, como na home (v=2711ax) */
+@media(min-width:1200px){
+html body .p3-hero.sv-hero .perennia-visual::before{background:linear-gradient(90deg,transparent 36%,rgba(4,24,11,.82) 46%,rgba(4,24,11,.62) 52%,rgba(4,24,11,.3) 56.5%,rgba(4,24,11,.08) 59%,transparent 61%)!important}
+}@media(min-width:1500px){html body .p3-hero.sv-hero .ks-seal{left:calc(55% - 75px)!important;right:auto!important;top:40%!important;bottom:auto!important}
+}
+/* 27/11: Serviços desktop — degradê ainda mais suave (curva com várias paradas, sem faixa escura) (v=2711az) */
+@media(min-width:1200px){html body .p3-hero.sv-hero .perennia-visual::before{background:linear-gradient(90deg,rgba(4,24,11,0) 28%,rgba(4,24,11,.12) 34%,rgba(4,24,11,.28) 40%,rgba(4,24,11,.42) 45%,rgba(4,24,11,.46) 49%,rgba(4,24,11,.38) 53%,rgba(4,24,11,.24) 56.5%,rgba(4,24,11,.1) 59.5%,rgba(4,24,11,0) 62%)!important}}
+/* 27/11: Serviços — cards no desenho da referência: brancos, borda leve, ícone em círculo verde, título sem caixa-alta, filetes verde+dourado no rodapé do card (v=2711ba) */
+html body section#portfolio.in-sec .sv-item,html body section#portfolio.in-sec .sv-item.is-dark{background:#fff!important;border:1px solid rgba(15,46,31,.09)!important;border-radius:14px!important;box-shadow:0 14px 34px -18px rgba(15,46,31,.22)!important;padding:32px 30px 28px!important;transition:transform .3s,box-shadow .3s!important}
+html body section#portfolio.in-sec .sv-item:hover{transform:translateY(-4px)!important;box-shadow:0 24px 44px -20px rgba(15,46,31,.3)!important}
+html body section#portfolio.in-sec .sv-item:before{display:none!important}
+html body section#portfolio.in-sec .sv-item:after{content:""!important;display:block!important;order:5;position:static!important;width:100%!important;height:3px!important;margin-top:24px!important;border-radius:3px!important;background:linear-gradient(90deg,#1A4632 0 60%,transparent 60% 76%,#C9A86A 76% 92%,transparent 92%)!important}
+html body section#portfolio.in-sec .sv-ico{display:grid!important;place-items:center!important;width:48px!important;height:48px!important;margin:0 0 24px!important;border-radius:50%!important;background:linear-gradient(135deg,#1F5A3E,#0F2E1F)!important;box-shadow:0 0 0 6px rgba(20,56,42,.08),0 8px 18px -8px rgba(15,46,31,.5)!important}
+html body section#portfolio.in-sec .sv-ico svg{width:22px!important;height:22px!important;stroke:#E6CF9E!important;stroke-width:1.6!important}
+html body section#portfolio.in-sec .sv-item h3{font-size:22px!important;line-height:1.25!important;font-weight:500!important;letter-spacing:0!important;text-transform:none!important;color:#0F2E1F!important;margin:0 0 6px!important}
+html body section#portfolio.in-sec .sv-n{color:#A8834B!important;margin:0 0 14px!important;font-size:11px!important}
+html body section#portfolio.in-sec .sv-item p{font-size:15px!important;line-height:1.6!important;color:#4A5D52!important}
+html body section#portfolio.in-sec .sv-go{color:#14382A!important;padding-top:22px!important;font-size:14px!important}
+@media(max-width:600px){html body section#portfolio.in-sec .sv-item,html body section#portfolio.in-sec .sv-item.is-dark{padding:28px 22px 24px!important}html body section#portfolio.in-sec .sv-item h3{font-size:20px!important}}
+/* 27/11: Serviços — cabeçalho no desenho da referência: texto à esquerda, selo + quadro verde com a sócia à direita, grade suave ao fundo (v=2711bb) */
+html body section#portfolio.in-sec .sv-top{position:relative;display:grid;grid-template-columns:1fr auto;align-items:end;gap:40px;max-width:1120px;margin:0 auto 64px;padding:8px 0 0}
+html body section#portfolio.in-sec .sv-top::before{content:"";position:absolute;inset:-60px -40px -30px;z-index:0;pointer-events:none;background-image:linear-gradient(rgba(15,46,31,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(15,46,31,.05) 1px,transparent 1px);background-size:72px 72px;-webkit-mask-image:radial-gradient(ellipse 70% 80% at 50% 40%,#000 30%,transparent 80%);mask-image:radial-gradient(ellipse 70% 80% at 50% 40%,#000 30%,transparent 80%)}
+html body section#portfolio.in-sec .sv-top>*{position:relative;z-index:1}
+html body section#portfolio.in-sec .sv-top-txt{text-align:left}
+html body section#portfolio.in-sec .sv-top-txt .in-eyebrow{margin:0 0 22px!important}
+html body section#portfolio.in-sec .sv-top-txt #port-t{text-align:left!important;margin:0 0 18px!important;font-size:clamp(34px,3.6vw,50px)!important;line-height:1.12!important}
+html body section#portfolio.in-sec .sv-top-lead{margin:0!important;max-width:440px;font-size:16px;line-height:1.6;color:#4A5D52;text-align:left}
+html body section#portfolio.in-sec .sv-top-vis{display:flex;align-items:center;gap:0}
+html body section#portfolio.in-sec .sv-top-pill{display:inline-flex;align-items:center;gap:12px;margin-right:-22px;position:relative;z-index:2;padding:16px 26px 16px 18px;background:#fff;border:1px solid rgba(15,46,31,.1);border-radius:12px;box-shadow:0 14px 30px -16px rgba(15,46,31,.3);font-size:17px;font-weight:500;color:#0F2E1F;white-space:nowrap}
+html body section#portfolio.in-sec .sv-top-pill-ic{display:grid;place-items:center;width:30px;height:30px;border-radius:8px;border:1px solid rgba(154,122,69,.5)}
+html body section#portfolio.in-sec .sv-top-pill-ic svg{width:16px;height:16px;fill:none;stroke:#9A7A45;stroke-width:1.6;stroke-linejoin:round}
+html body section#portfolio.in-sec .sv-top-card{position:relative;display:block;width:230px;height:132px;border-radius:14px;background:linear-gradient(135deg,#1F5A3E 0%,#0F2E1F 100%);box-shadow:0 20px 36px -18px rgba(15,46,31,.55)}
+html body section#portfolio.in-sec .sv-top-card>img{position:absolute;left:50%;bottom:0;width:178px;height:auto;transform:translateX(-50%);-webkit-mask-image:linear-gradient(#000 80%,transparent);mask-image:linear-gradient(#000 80%,transparent)}
+html body section#portfolio.in-sec .sv-top-dot{position:absolute;display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:#14382A;border:2px solid #fff;box-shadow:0 6px 14px -6px rgba(15,46,31,.6)}
+html body section#portfolio.in-sec .sv-top-dot img{width:13px;height:auto}
+html body section#portfolio.in-sec .sv-top-dot svg{width:16px;height:16px;fill:none;stroke:#E6CF9E;stroke-width:1.6}
+html body section#portfolio.in-sec .sv-top-dot-1{left:14px;top:-58px}
+html body section#portfolio.in-sec .sv-top-dot-2{right:-12px;bottom:-12px}
+@media(max-width:860px){html body section#portfolio.in-sec .sv-top{grid-template-columns:1fr;gap:56px;margin-bottom:44px}html body section#portfolio.in-sec .sv-top-vis{justify-content:center;padding-top:30px}}
+@media(max-width:600px){html body section#portfolio.in-sec .sv-top-txt{text-align:center}html body section#portfolio.in-sec .sv-top-txt #port-t,html body section#portfolio.in-sec .sv-top-lead{text-align:center!important;margin-left:auto!important;margin-right:auto!important}html body section#portfolio.in-sec .sv-top-pill{padding:12px 18px 12px 12px;font-size:15px;margin-right:-18px}html body section#portfolio.in-sec .sv-top-card{width:170px;height:104px}html body section#portfolio.in-sec .sv-top-card>img{width:136px}html body section#portfolio.in-sec .sv-top-dot-1{top:-48px;left:8px}}
+@media(max-width:860px){html body section#portfolio.in-sec .sv-top{grid-template-columns:minmax(0,1fr)}html body section#portfolio.in-sec .sv-top::before{inset:-40px 0 -20px}}
+@media(max-width:600px){html body section#portfolio.in-sec .sv-top-pill{font-size:14px;padding:11px 16px 11px 10px;gap:9px;margin-right:-40px}html body section#portfolio.in-sec .sv-top-pill-ic{width:26px;height:26px}html body section#portfolio.in-sec .sv-top-card{width:150px;height:96px}html body section#portfolio.in-sec .sv-top-card>img{width:124px}html body section#portfolio.in-sec .sv-top-dot-2{right:-6px;bottom:-10px}}
+/* 27/11: Serviços — Como contratar no desenho da referência (palavra gigante, painel branco, cards em linha, carrossel no celular) (v=2711bd) */
+html body section#como-contratar.cc2{position:relative;background:#EEF1EC!important;background-image:none!important;padding:70px 24px 120px!important;overflow:hidden;overflow:clip;color:#0F2E1F}
+html body section#como-contratar.cc2::before,html body section#como-contratar.cc2::after{display:none!important}
+html body section#como-contratar.cc2 .cc2-word{position:relative;z-index:0;text-align:center;font-size:clamp(96px,17.5vw,300px);line-height:.78;font-weight:600;letter-spacing:-.045em;white-space:nowrap;background:linear-gradient(180deg,#2C6E4B 0%,#14382A 100%);-webkit-background-clip:text;background-clip:text;color:transparent;margin:0 0 -.24em;user-select:none}
+html body section#como-contratar.cc2 .cc2-panel{position:relative;z-index:1;max-width:1180px;margin:0 auto;padding:60px 56px 52px;background:#fff;border-radius:30px;box-shadow:0 30px 60px -40px rgba(15,46,31,.35);text-align:center}
+html body section#como-contratar.cc2 .cc2-badges{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:12px;margin:0 0 26px}
+html body section#como-contratar.cc2 .cc2-badge{display:inline-flex;align-items:center;gap:10px;height:44px;padding:0 18px;border-radius:10px;background:#F3F1EA;font-size:11px;font-weight:700;letter-spacing:.2em;color:#14382A}
+html body section#como-contratar.cc2 .cc2-team{background:#F7F5EF;letter-spacing:0;font-weight:500;font-size:12px;line-height:1.25;text-align:left;color:#3D5547;padding:0 16px 0 8px}
+html body section#como-contratar.cc2 .cc2-avs{display:flex}
+html body section#como-contratar.cc2 .cc2-avs img{width:32px;height:32px;border-radius:50%;object-fit:cover;object-position:center 18%;border:2px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.12)}
+html body section#como-contratar.cc2 .cc2-avs img+img{margin-left:-10px}
+html body section#como-contratar.cc2 #contratar-t{margin:0 0 16px!important;text-align:center!important;font-size:clamp(32px,3.4vw,46px)!important;line-height:1.14!important;color:#0F2E1F!important}
+html body section#como-contratar.cc2 #contratar-t em{color:#9A7A45!important}
+html body section#como-contratar.cc2 .cc2-lead{margin:0 auto 40px!important;max-width:560px;font-size:16px;line-height:1.6;color:#4A5D52}
+html body section#como-contratar.cc2 .cc2-car{position:relative}
+html body section#como-contratar.cc2 .cc2-track{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;text-align:left}
+html body section#como-contratar.cc2 .cc2-card{display:flex;flex-direction:column;padding:28px 26px 26px;background:#fff;border:1px solid rgba(15,46,31,.09);border-radius:16px;box-shadow:0 18px 40px -26px rgba(15,46,31,.35);transition:transform .3s,box-shadow .3s}
+html body section#como-contratar.cc2 .cc2-card:hover{transform:translateY(-4px);box-shadow:0 26px 48px -26px rgba(15,46,31,.45)}
+html body section#como-contratar.cc2 .cc2-card-top{display:flex;align-items:center;gap:12px;margin:0 0 20px}
+html body section#como-contratar.cc2 .cc2-ico{display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,#1F5A3E,#0F2E1F)}
+html body section#como-contratar.cc2 .cc2-ico svg{width:18px;height:18px;fill:none;stroke:#E6CF9E;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+html body section#como-contratar.cc2 .cc2-step{font-size:11px;font-weight:700;letter-spacing:.22em;color:#A8834B}
+html body section#como-contratar.cc2 .cc2-card h3{margin:0 0 8px!important;font-size:22px!important;font-weight:500!important;letter-spacing:0!important;text-transform:none!important;color:#0F2E1F!important}
+html body section#como-contratar.cc2 .cc2-card p{margin:0 0 20px!important;font-size:15px;line-height:1.6;color:#4A5D52}
+html body section#como-contratar.cc2 .cc2-card ul{list-style:none;margin:0;padding:18px 0 0;border-top:1px solid rgba(15,46,31,.08);display:grid;gap:10px}
+html body section#como-contratar.cc2 .cc2-card li{display:flex;gap:10px;align-items:flex-start;font-size:14px;line-height:1.45;color:#0F2E1F}
+html body section#como-contratar.cc2 .cc2-card li svg{flex:0 0 18px;width:18px;height:18px;margin-top:1px;padding:3px;border-radius:50%;background:#E9F0EA;fill:none;stroke:#14382A;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+html body section#como-contratar.cc2 .cc2-nav{display:none;position:absolute;top:50%;z-index:2;width:34px;height:34px;margin-top:-17px;border-radius:8px;border:1px solid rgba(15,46,31,.25);background:#fff;color:#14382A;cursor:pointer;place-items:center;padding:0}
+html body section#como-contratar.cc2 .cc2-nav svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+html body section#como-contratar.cc2 .cc2-dots{display:none;justify-content:center;gap:6px;margin:22px 0 0}
+html body section#como-contratar.cc2 .cc2-dots span{width:6px;height:6px;border-radius:50%;background:rgba(15,46,31,.2);transition:width .3s,background .3s}
+html body section#como-contratar.cc2 .cc2-dots span.is-on{width:18px;border-radius:4px;background:#14382A}
+html body section#como-contratar.cc2 .cc2-cta{display:inline-flex;align-items:center;gap:16px;margin:40px auto 0;height:60px;padding:0 10px 0 30px;border:0;border-radius:999px;background:linear-gradient(135deg,#1F5A3E,#0B2618);color:#F6F1E6;font-size:14px;font-weight:600;letter-spacing:.06em;cursor:pointer;box-shadow:0 16px 30px -14px rgba(11,38,24,.6);transition:transform .25s}
+html body section#como-contratar.cc2 .cc2-cta:hover{transform:translateY(-2px)}
+html body section#como-contratar.cc2 .cc2-cta>span{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#F3DFB1,#C9A86A)}
+html body section#como-contratar.cc2 .cc2-cta>span svg{width:16px;height:16px;fill:none;stroke:#0F2E1F;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+html body section#como-contratar.cc2 .cc2-note{margin:16px 0 0!important;font-size:13px;color:#4A5D52;display:flex;justify-content:center;align-items:center;gap:8px}
+html body section#como-contratar.cc2 .cc2-note i{width:7px;height:7px;border-radius:50%;background:#2C8A55;box-shadow:0 0 0 4px rgba(44,138,85,.15)}
+html body section#como-contratar.cc2 .ks-scroll-cue{color:#9A7A45!important}
+@media(max-width:900px){html body section#como-contratar.cc2{padding:50px 14px 110px!important}html body section#como-contratar.cc2 .cc2-panel{padding:40px 18px 40px;border-radius:24px}html body section#como-contratar.cc2 .cc2-word{margin-bottom:-.3em}
+html body section#como-contratar.cc2 .cc2-track{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:16px;padding:6px 4px 18px;margin:0 -4px;scrollbar-width:none}html body section#como-contratar.cc2 .cc2-track::-webkit-scrollbar{display:none}
+html body section#como-contratar.cc2 .cc2-card{flex:0 0 86%;scroll-snap-align:center}html body section#como-contratar.cc2 .cc2-card:hover{transform:none}
+html body section#como-contratar.cc2 .cc2-nav{display:grid;top:auto;bottom:-46px;margin:0}html body section#como-contratar.cc2 .cc2-prev{left:calc(50% - 82px)}html body section#como-contratar.cc2 .cc2-next{right:calc(50% - 82px)}
+html body section#como-contratar.cc2 .cc2-dots{display:flex;margin-top:30px}html body section#como-contratar.cc2 .cc2-cta{margin-top:34px;height:54px;padding-left:22px;font-size:13px}html body section#como-contratar.cc2 .cc2-badge{height:40px}}
+/* 27/11: Serviços — botão dourado da antiga seção final dentro do painel do Como contratar (v=2711bg) */
+html body section#como-contratar.cc2 .cc2-btn{display:inline-flex!important;margin:42px auto 0!important;max-width:100%}
+@media(max-width:900px){html body section#como-contratar.cc2 .cc2-btn{margin-top:34px!important;width:100%;justify-content:center}}
+/* 27/11: Serviços — Como contratar com fundo verde escuro e luzes douradas; "Perennia" gigante em dourado (v=2711bh) */
+html body section#como-contratar.cc2{background:radial-gradient(620px 460px at 10% 18%,rgba(230,207,158,.26),rgba(230,207,158,.08) 45%,transparent 72%),radial-gradient(560px 420px at 92% 78%,rgba(216,190,142,.2),transparent 70%),radial-gradient(900px 500px at 50% 0%,rgba(44,110,75,.35),transparent 70%),linear-gradient(180deg,#0B2618 0%,#06170D 100%)!important;background-color:#06170D!important}
+html body section#como-contratar.cc2 .cc2-word{background:linear-gradient(180deg,#F3DFB1 0%,#C9A86A 55%,#8E6E3E 100%);-webkit-background-clip:text;background-clip:text;color:transparent;opacity:.92}
+html body section#como-contratar.cc2 .cc2-panel{box-shadow:0 40px 80px -40px rgba(0,0,0,.6)}
+html body section#como-contratar.cc2 .ks-scroll-cue{color:#D8BE8E!important}
+@media(max-width:900px){html body section#como-contratar.cc2{background:radial-gradient(360px 300px at 0% 8%,rgba(230,207,158,.26),transparent 72%),radial-gradient(320px 280px at 100% 92%,rgba(216,190,142,.2),transparent 70%),linear-gradient(180deg,#0B2618 0%,#06170D 100%)!important}}
+/* 27/11: Serviços — selos do Como contratar em verde com letras douradas; rodapé com o "ombro" central e o selo (igual à 360) (v=2711bi) */
+html body section#como-contratar.cc2 .cc2-badge{background:linear-gradient(135deg,#1F5A3E,#0F2E1F)!important;color:#E6CF9E!important;box-shadow:0 8px 18px -10px rgba(15,46,31,.6)}
+html body section#como-contratar.cc2 .cc2-team{color:#E6CF9E!important}
+html body section#como-contratar.cc2 .cc2-avs img{border-color:#14382A}
+html body section#como-contratar.cc2{padding-bottom:190px!important}
+@media(max-width:900px){html body section#como-contratar.cc2{padding-bottom:160px!important}}
