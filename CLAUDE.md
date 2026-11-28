@@ -392,3 +392,4 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 27/11: publicado o pacote de Serviços especializados (hero com foto, seções e rodapé novos) — CSS v=2711bi
 - 28/11: selo da hero de Serviços (≥1500px) desceu para top:54% para não encostar no título — CSS v=2811a
 - 28/11: Serviços — recorte da Patrícia no quadro verde do cabeçalho refeito sem as bordas brancas (cabelo e ombro): mesma foto (WhatsApp 08/11), script imgtool/cut5.js com alfa pela distância ao fundo, descontaminação da cor e remoção do halo do ombro; img com ?v=2
+- 28/11: Serviços — foto do quadro verde do cabeçalho trocada pela Patrícia de AMARELO (recorte de socia-2-amarelo.jpg com imgtool/cut5.js, BG=azul, fundo cinza-azulado + sombra à esquerda removidos) no mesmo arquivo socia-servicos-busto-patricia.webp, img ?v=3
