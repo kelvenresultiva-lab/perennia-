@@ -1787,3 +1787,7 @@ html body section#como-contratar.cc2{padding-bottom:190px!important}
 
 /* 28/11: selo da hero de Serviços desce para não encostar no título */
 @media(min-width:1500px){html body .p3-hero.sv-hero .ks-seal{top:54%!important}}
+/* 28/11: Serviços > Como contratar com fundo BRANCO (pedido); painel branco mantido, ganha contorno e sombra suave para destacar do fundo */
+html body section#como-contratar.cc2,html body section#como-contratar.cc2{background:#FFFFFF!important;background-image:none!important;background-color:#FFFFFF!important}
+html body section#como-contratar.cc2 .cc2-panel{border:1px solid rgba(15,46,31,.1);box-shadow:0 30px 70px -36px rgba(15,46,31,.32)}
+html body section#como-contratar.cc2 .ks-scroll-cue{color:#9A7A45!important}
