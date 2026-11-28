@@ -1784,3 +1784,6 @@ html body section#como-contratar.cc2 .cc2-team{color:#E6CF9E!important}
 html body section#como-contratar.cc2 .cc2-avs img{border-color:#14382A}
 html body section#como-contratar.cc2{padding-bottom:190px!important}
 @media(max-width:900px){html body section#como-contratar.cc2{padding-bottom:160px!important}}
+
+/* 28/11: selo da hero de Serviços desce para não encostar no título */
+@media(min-width:1500px){html body .p3-hero.sv-hero .ks-seal{top:54%!important}}
