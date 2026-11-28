@@ -391,3 +391,4 @@ Como funciona (22/11): etapas em círculos verdes com ícones dourados (document
 - 27/11: Serviços — selos do Como contratar em verde com letras douradas; rodapé ganhou o "ombro" central com o selo (ft-notch, footer.has-notch, igual à 360); padding-bottom do Como contratar 190px (160 no celular) (CSS v=2711bi). Ainda NÃO PUBLICADO
 - 27/11: publicado o pacote de Serviços especializados (hero com foto, seções e rodapé novos) — CSS v=2711bi
 - 28/11: selo da hero de Serviços (≥1500px) desceu para top:54% para não encostar no título — CSS v=2811a
+- 28/11: Serviços — recorte da Patrícia no quadro verde do cabeçalho refeito sem as bordas brancas (cabelo e ombro): mesma foto (WhatsApp 08/11), script imgtool/cut5.js com alfa pela distância ao fundo, descontaminação da cor e remoção do halo do ombro; img com ?v=2
